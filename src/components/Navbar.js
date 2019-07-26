@@ -7,33 +7,36 @@ class Workspace extends Component {
   render() {
     return (
       <div>
-        <nav class="navbar navbar-expand-md navbar-light border-bottom border-secondary sticky-top">
-          <a class="navbar-brand" href="#">Logo</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-md navbar-light border-bottom border-secondary fixed-top bg-white">
+          <a className="navbar-brand" href="#">Logo</a>
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <Link class="nav-link" to='/about'>About</Link>
+          <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link className="nav-link" to='/about'>About</Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to='/challenge'>Challenge</Link>
+              <li className="nav-item">
+                <Link className="nav-link" to='/challenge'>Challenge</Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to='/resources'>Resources</Link>
+              <li className="nav-item">
+                <Link className="nav-link" to='/resources'>Resources</Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to='/faq'>FAQs</Link>
+              <li className="nav-item">
+                <Link className="nav-link" to='/faq'>FAQs</Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to='/forum'>Forum</Link>
+              <li className="nav-item">
+                <Link className="nav-link" to='/events'>Events</Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to='/involve'>Get Involved</Link>
+              <li className="nav-item">
+                <Link className="nav-link" to='/forum'>Forum</Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to='/#'>Sign Up</Link>
+              <li className="nav-item">
+                <Link className="nav-link" to='/involve'>Get Involved</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to='/#'>Log in</Link>
               </li>
             </ul>
           </div>
