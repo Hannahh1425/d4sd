@@ -16,7 +16,7 @@ class Challenge extends Component {
             <div className="col-lg-10">
                   <div className="div-large"/>
                   <div className="text-block">
-                      <h1>Challenge Briefs</h1>
+                      <h3>Challenge Briefs</h3>
                       <h6>The challenges below explore the concerns currently facing San
                       Diegans while also looking towards the future of transportation.
                       Join a conversation about the issue that concerns you most and find
@@ -28,20 +28,35 @@ class Challenge extends Component {
                   <div className="image-grid">
                       <div className="row">
                           <div className="col-lg-6">
-                              <img src={ClimateImage} className="w-100 h-100 img-fluid"></img>
+                          <Link to='/'>
+                              <div className="image">
+                                  <div className="image-filter">
+                                      <h4>CLIMATE</h4>
+                                  </div>
+                              </div>
+                          </Link>
                           </div>
                           <div className="col-lg-6">
-                              <img src={ClimateImage} className="w-100 h-100 img-fluid"></img>
+                              <div className="image">
+                                  <div className="image-filter">
+                                  </div>
+                              </div>
                           </div>
                       </div>
                       <br className="div-small"/>
                       <div className="row">
-                          <div className="col-lg-6">
-                              <img src={ClimateImage} className="w-100 h-100 img-fluid"></img>
+                      <div className="col-lg-6">
+                          <div className="image">
+                              <div className="image-filter">
+                              </div>
                           </div>
-                          <div className="col-lg-6">
-                              <img src={ClimateImage} className="w-100 h-100 img-fluid"></img>
+                      </div>
+                      <div className="col-lg-6">
+                          <div className="image">
+                              <div className="image-filter">
+                              </div>
                           </div>
+                      </div>
                       </div>
                   </div>
                   <div className="div-endpage"/>

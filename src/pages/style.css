@@ -47,7 +47,7 @@ h6 {
 
 .div-large{
   display: block;
-  height:8vh;
+  height:18vh;
 }
 
 .div-small{
@@ -61,5 +61,28 @@ h6 {
 }
 
 img{
-  max-height: 50vh;
+  max-height: 45vh;
+}
+
+.image{
+  background:url('../img/lajollacove.png');
+  position: relative;
+  height: 45vh;
+  width: 100%;
+}
+
+.image-filter{
+  background: linear-gradient(-45deg, rgba(12,46,90), rgba(45,115,167));
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image-filter h4{
+  color: white;
+  opacity: 1.0;
+  font-weight: bold;
 }

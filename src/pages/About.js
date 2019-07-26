@@ -11,12 +11,11 @@ class Home extends Component {
     return (
       <div id="about">
         <Navbar/>
-        <img src={header} alt="header" className="w-100"/>
         <div className="container">
-          <br/><br/>
           <div className="row">
-            <div className="col"></div>
+            <div className="col"/>
             <div className="col-lg-10">
+              <div className="div-large"/>
               <h3>What is D4SD</h3>
               <h6>
                 Design for San Diego (D4SD) is a civic design competition that brings
@@ -37,12 +36,13 @@ class Home extends Component {
               <br/>
               <div className="row">
                 <div className="col-lg-3">
-                  <Button page="CHALLENGE BREIF" to="/"/>
+                  <Button page="CHALLENGE BRIEFS" to="/"/>
                 </div>
                 <div className="col-lg-3">
-                  <Button page="GET INVOLVE" to="/"/>
+                  <Button page="GET INVOLVED" to="/"/>
                 </div>
               </div>
+              <div className="div-endpage"/>
             </div>
             <div className="col"/>
           </div>
