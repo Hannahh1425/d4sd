@@ -1,0 +1,38 @@
+/*****************************Mobile (default)*****************************/
+.container {
+    max-width: 375px;
+    padding: 0;
+}
+
+.inner-container {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.desktop {
+    display: none;
+}
+
+
+/*****************************Tablet*****************************/
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+  }
+
+/*****************************Laptop*****************************/
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: none;
+    }
+
+    .mobile * {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+}

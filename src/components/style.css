@@ -1,0 +1,45 @@
+/****************************Global******************************/
+.border-secondary {
+    border-color: #4496FF!important;
+}
+
+/****************************Sidebar******************************/
+
+#sidebar {
+    height: calc(100vh - 57px);
+    display: none;
+}
+
+/****************************Submission******************************/
+#submission button {
+    background: none;
+    border: none;
+}
+
+/*****************************Tablet*****************************/
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+  }
+
+/*****************************Laptop*****************************/
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: none;
+    }
+
+    .mobile * {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    #sidebar {
+        height: calc(100vh - 57px);
+        display: block;
+    }
+
+}

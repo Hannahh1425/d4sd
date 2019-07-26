@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import {Switch, Route } from 'react-router-dom';
 
 //Import components
-import Home from "./components/scenes/Home";
+import Home from "./pages/Home";
+import Workspace from "./pages/workspace/Workspace";
 
 class App extends Component<{}> {
   render() {
@@ -10,6 +11,7 @@ class App extends Component<{}> {
       <main>
         <Switch>
           <Route exact path='/' component={Home}/>
+          <Route exact path='/workspace' component={Workspace}/>
         </Switch>
       </main>
     );
