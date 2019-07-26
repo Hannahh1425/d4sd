@@ -12,16 +12,25 @@ class Workspace extends Component {
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link float-right" href="#">Link</a>
+                <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link float-right" href="#">Link</a>
+                <a class="nav-link" href="#">Challenges</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link float-right" href="#">Link</a>
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Forum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Get Involved</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Log In</a>
               </li>
             </ul>
           </div>
