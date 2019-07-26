@@ -24,7 +24,7 @@
 /*****************************Laptop*****************************/
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: none;
+        max-width: 1140px;
     }
 
     .mobile * {
@@ -35,4 +35,23 @@
         display: none;
     }
 
+}
+
+.div-large{
+  display: block;
+  height:8vh;
+}
+
+.div-small{
+  display: block;
+  height:5vh;
+}
+
+.div-endpage{
+  display: block;
+  height:10vh;
+}
+
+img{
+  max-height: 50vh;
 }
