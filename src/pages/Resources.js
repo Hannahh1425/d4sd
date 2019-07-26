@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import './style.css';
 
-class Challenge extends Component {
+class Resources extends Component {
 
   render() {
     return (
       <div>
         <Navbar/>
-        <h1>Challenge</h1>
+        <h1>Resources</h1>
       </div>
     );
   }
 }
 
-export default Challenge;
+export default Resources;

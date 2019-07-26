@@ -15,22 +15,25 @@ class Workspace extends Component {
           <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <Link class="nav-link" to='/about'>About</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Challenges</a>
+                <Link class="nav-link" to='/challenge'>Challenge</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
+                <Link class="nav-link" to='/resources'>Resources</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Forum</a>
+                <Link class="nav-link" to='/faq'>FAQs</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Get Involved</a>
+                <Link class="nav-link" to='/forum'>Forum</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Log In</a>
+                <Link class="nav-link" to='/involve'>Get Involved</Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link" to='/#'>Sign Up</Link>
               </li>
             </ul>
           </div>
