@@ -1,3 +1,12 @@
+html * {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h6 {
+    line-height: 26px;
+}
+
+
 /*****************************Mobile (default)*****************************/
 .container {
     max-width: 375px;
@@ -13,7 +22,6 @@
     display: none;
 }
 
-
 /*****************************Tablet*****************************/
 @media screen and (min-width: 768px) {
     .container {
@@ -24,7 +32,7 @@
 /*****************************Laptop*****************************/
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: none;
+        max-width: 1140px;
     }
 
     .mobile * {
