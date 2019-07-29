@@ -27,38 +27,39 @@ class Challenge extends Component {
                       <div className="row">
                           <div className="col-lg-6">
                           <Link to='/'>
-                              <div className="image">
-                                  <div className="image-filter">
-                                      <h4>CLIMATE</h4>
-                                  </div>
+                              <div className="image d-flex align-items-center justify-content-center">
+                                      <h3>CLIMATE</h3>
                               </div>
                           </Link>
                           </div>
                           <div className="col-lg-6">
-                              <div className="image">
-                                  <div className="image-filter">
-                                  </div>
+                          <Link to='/'>
+                              <div className="image d-flex align-items-center justify-content-center">
+                                      <h3>CLIMATE</h3>
                               </div>
+                          </Link>
                           </div>
                       </div>
                       <br className="div-small"/>
                       <div className="row">
-                      <div className="col-lg-6">
-                          <div className="image">
-                              <div className="image-filter">
+                          <div className="col-lg-6">
+                          <Link to='/'>
+                              <div className="image d-flex align-items-center justify-content-center">
+                                      <h3>CLIMATE</h3>
                               </div>
+                          </Link>
                           </div>
-                      </div>
-                      <div className="col-lg-6">
-                          <div className="image">
-                              <div className="image-filter">
+                          <div className="col-lg-6">
+                          <Link to='/'>
+                              <div className="image d-flex align-items-center justify-content-center">
+                                      <h3>CLIMATE</h3>
                               </div>
+                          </Link>
                           </div>
-                      </div>
                       </div>
                   </div>
                   <div className="div-endpage"/>
-            </Container>        
+            </Container>
       </div>
     );
   }
