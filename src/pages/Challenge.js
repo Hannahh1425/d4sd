@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Container from '../components/Container';
 import Navbar from '../components/Navbar';
 import ClimateImage from '../img/lajollacove.png';
 import './style.css';
@@ -10,10 +11,7 @@ class Challenge extends Component {
     return (
       <div>
         <Navbar/>
-        <div className="container">
-        <div className="row">
-        <div className="col"/>
-            <div className="col-lg-10">
+        <Container>
                   <div className="div-large"/>
                   <div className="text-block">
                       <h3>Challenge Briefs</h3>
@@ -60,10 +58,7 @@ class Challenge extends Component {
                       </div>
                   </div>
                   <div className="div-endpage"/>
-            </div>
-        <div className="col"/>
-        </div>
-        </div>
+            </Container>        
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Container from '../components/Container';
 import Navbar from '../components/Navbar';
 import Button from '../components/landing/Button';
 import EventCard from '../components/landing/EventCard';
@@ -12,23 +13,32 @@ class Events extends Component {
     return (
       <div id="about">
         <Navbar/>
-        <div className="container">
+        <Container>
           <br/><br/><br/><br/><br/><br/><br/><br/>
           <div className="row">
-            <div className="col-lg-3">
-              <EventCard/>
+            <div className="col">
+              <EventCard
+                title="Fireside Chat at Ideate High"
+                date="Sept. 29, 4pm-6pm"
+                location="Ideate High, San Diego, CA"
+              />
             </div>
-            <div className="col-lg-3">
-              <EventCard/>
+            <div className="col">
+              <EventCard
+                title="Fireside Chat at Ideate High"
+                date="Sept. 29, 4pm-6pm"
+                location="Ideate High, San Diego, CA"
+              />
             </div>
-            <div className="col-lg-3">
-              <EventCard/>
-            </div>
-            <div className="col-lg-3">
-              <EventCard/>
+            <div className="col">
+              <EventCard
+                title="Fireside Chat at Ideate High"
+                date="Sept. 29, 4pm-6pm"
+                location="Ideate High, San Diego, CA"
+              />
             </div>
           </div>
-        </div>
+        </Container>
       </div>
     );
   }

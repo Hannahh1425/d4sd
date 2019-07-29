@@ -5,7 +5,11 @@ html * {
 h6 {
     line-height: 26px;
 }
-
+/*****************************About*****************************/
+#about h5 {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5em;
+}
 
 /*****************************Mobile (default)*****************************/
 .container {
@@ -58,10 +62,6 @@ h6 {
 .div-endpage{
   display: block;
   height:10vh;
-}
-
-img{
-  max-height: 45vh;
 }
 
 .image{

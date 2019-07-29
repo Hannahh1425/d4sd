@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Container from '../components/Container';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import Button from '../components/landing/Button';
 import header from '../img/about.png';
+import timeline from '../img/timeline-vertical.png';
 import './style.css';
 
 class Home extends Component {
@@ -11,13 +14,10 @@ class Home extends Component {
     return (
       <div id="about">
         <Navbar/>
-        <div className="container">
-          <div className="row">
-            <div className="col"/>
-            <div className="col-lg-10">
+        <Container>
               <div className="div-large"/>
-              <h3>What is D4SD</h3>
-              <h6>
+              <h3 className="font-weight-bold">What is D4SD</h3>
+              <h5>
                 Design for San Diego (D4SD) is a civic design competition that brings
                 together innovators, designers, mentors and experts from the region
                 to address San Diego’s most challenging issues through human-centered
@@ -32,7 +32,7 @@ class Home extends Component {
                 settle in? Check out the challenge briefs to see the problem space
                 that you could explore and sign up to be part of this innovative
                 process for the city’s future!
-              </h6>
+              </h5>
               <br/>
               <div className="row">
                 <div className="col-lg-3">
@@ -42,11 +42,12 @@ class Home extends Component {
                   <Button page="GET INVOLVED" to="/"/>
                 </div>
               </div>
-              <div className="div-endpage"/>
-            </div>
-            <div className="col"/>
-          </div>
-        </div>
+              <br/><br/><br/>
+              <h3 className="font-weight-bold">Event Timeline</h3>
+              <img src={timeline} alt="timeline" className="w-100"/>
+        </Container>        
+        <br/><br/><br/><br/><br/> <br/><br/>
+        <Footer/>
       </div>
     );
   }
