@@ -5,9 +5,15 @@ class Container extends Component {
 
   render() {
     return (
-        <div onClick={this.props.onClick} className={`container d-flex flex-column ${this.props.className}`} align="center">
+      <div className="container">
+        <div className="row">
+          <div className="col"/>
+          <div className="col-lg-10">
             {this.props.children}
+          </div>
+          <div className="col"/>
         </div>
+      </div>
     )
   }
 }
