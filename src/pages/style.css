@@ -1,14 +1,61 @@
-html * {
-    font-family: 'Montserrat', sans-serif;
+/*****************************Homepage*****************************/
+.home-content {
+  position: relative;
+  z-index: 100;
+  width: 40%;
+  margin-bottom: 10px;
+  margin-left: 10%;
 }
 
-h6 {
-    line-height: 26px;
+.origin {
+  position: fixed;
+  width: 100%;
 }
+
+.zoom-in {
+  position: fixed;
+  bottom: -200px;
+  object-fit: cover;
+  width: 200%;
+}
+
+.leave {
+  opacity: 0;
+  transform: scale(2, 2);
+  -webkit-transition: transform 2s ease-in-out;
+  position: fixed;
+  bottom: -200;
+  object-fit: cover;
+  width: 200%;
+}
+
+/*****************************Involve*****************************/
+.involve-roles img {
+  width: 70%;
+  margin: 1em 0;
+}
+
+.involve-roles a:hover {
+  filter: drop-shadow(5px 5px 5px #89A4D2);
+  text-decoration: none;
+  text-decoration-color: #4496FF;
+}
+
+.involve-roles h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+.involve-roles h5:hover {
+  color: #4496FF;
+}
+
 /*****************************About*****************************/
-#about h5 {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5em;
+.about-value {
+  border-radius: 10px;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  box-shadow: 1px 1px 8px 1px #666666;
 }
 
 /*****************************Mobile (default)*****************************/

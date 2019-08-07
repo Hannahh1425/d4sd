@@ -6,48 +6,91 @@ import Footer from '../components/Footer';
 import Button from '../components/landing/Button';
 import header from '../img/about.png';
 import timeline from '../img/timeline-vertical.png';
+import playbook_educator from "../img/involve_playbook.pdf";
+
+import educator from "../img/about_educator.png";
+import sponsor from "../img/about_sponsor.png";
+import expert from "../img/about_expert.png";
+import innovator from "../img/about_participant.png";
+import icon from "../img/icon.png";
 import './style.css';
 
+const values = [
+  "To collaboratively explore a range of civic problems that the San Diego region faces.",
+  "To connect innovators, experts, city officials, professional designers, business leaders, and community members through a combination of in-person events and online activities.",
+  "To increase and diversify participation, particularly for typically underrepresented or marginalized populations, by creating a range of specific roles within the civic design framework and striving for diversity, equity, and inclusion.",
+  "To provide an educational opportunity that serves people from a wide range of ages, backgrounds, and motivations",
+  "To contribute to the burgeoning design-driven economy in San Diego by providing resources to help launch top proposals by bringing together leaders from various sectors"
+]
+
+const roles = [
+  {
+    image: innovator,
+    txt: "Innovator"
+  },
+  {
+    image: expert,
+    txt: "Experts"
+  },
+  {
+    image: educator,
+    txt: "Educator"
+  },
+  {
+    image: sponsor,
+    txt: "Sponsor"
+  },
+]
+
 class Home extends Component {
+  constructor() {
+    super();
+  }
 
   render() {
     return (
       <div id="about">
         <Navbar/>
         <Container>
-              <div className="div-large"/>
-              <h3 className="font-weight-bold">What is D4SD</h3>
+              <br/><br/><br/><br/>
+              <h1>What is D4SD?</h1>
               <h5>
-                Design for San Diego (D4SD) is a civic design competition that brings
-                together innovators, designers, mentors and experts from the region
-                to address San Diego’s most challenging issues through human-centered
-                design. Our aim is to provide a space that allows for the community
-                to engage the issues, prototype solutions to the problems they see,
+                Design for San Diego (D4SD) is a civic design challenge that
+                aims at providing a space for all citizens to address San Diego's
+                most challening issues, prototype solutions through human-centered design,
                 and link them to resources in their communities that can bring those
-                solutions to life. This is the 2nd D4SD Civic Design Challenge and the
-                theme of this year is Sustainable City. To make cities and human
-                settlements inclusive, safe, resilient and sustainable is one of the
-                17 goals that the United Nations envisioned to transform our world by
-                2030. What can we do to make San Diego a more sustainable city to
-                settle in? Check out the challenge briefs to see the problem space
-                that you could explore and sign up to be part of this innovative
-                process for the city’s future!
+                solutions to life.<br/><br/>
+                Everyone is welcome to be part of the challenge!
               </h5>
-              <br/>
-              <div className="row">
-                <div className="col-lg-3">
-                  <Button page="CHALLENGE BRIEFS" to="/"/>
-                </div>
-                <div className="col-lg-3">
-                  <Button page="GET INVOLVED" to="/"/>
-                </div>
+              <div className="row text-center">
+                {roles.map(role => (
+                  <div className="col-3 involve-roles">
+                    <a href={playbook_educator}>
+                      <img src={role.image}/>
+                      <h5>{role.txt}</h5>
+                    </a>
+                  </div>
+                ))}
               </div>
+              <br/>
+              <h4>Here is timeline</h4>
+              <button>Innovators</button>
+              <button>Community members</button>
               <br/><br/><br/>
-              <h3 className="font-weight-bold">Event Timeline</h3>
-              <img src={timeline} alt="timeline" className="w-100"/>
-        </Container>        
+              <h1>What does D4SD envision?</h1>
+              <br/>
+              {values.map((value, i) => (
+                <div className="row">
+                  <div className="col-4">
+                    <img src={educator} className="w-100"/>
+                  </div>
+                  <div className="col-8">
+                    <h5>{value}</h5>
+                  </div>
+                </div>
+              ))}
+        </Container>
         <br/><br/><br/><br/><br/> <br/><br/>
-        <Footer/>
       </div>
     );
   }

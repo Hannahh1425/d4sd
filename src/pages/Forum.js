@@ -1,18 +1,19 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-import './style.css';
+import React, { useRef } from 'react';
+import { useInView, InView } from 'react-intersection-observer';
 
-class Forum extends Component {
-
-  render() {
-    return (
-      <div>
-        <Navbar/>
-        <h1>Forum</h1>
-      </div>
-    );
-  }
+const Forum = (inView, entry) => {
+  return (
+    <div>
+      <div style={{"height":"2000px"}}>hi</div>
+      <InView>
+        {({ ref }) => (
+          <div ref={ref}>
+            <h2>{`Header inside viewport ${!inView}.`}</h2>
+          </div>
+        )}
+      </InView>
+    </div>
+  );
 }
 
-export default Forum;
+export default Forum

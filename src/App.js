@@ -10,6 +10,7 @@ import FAQ from "./pages/FAQ";
 import Forum from "./pages/Forum";
 import Events from "./pages/Events";
 import Involve from "./pages/Involve";
+import Playbook from "./pages/Playbook";
 import PastSolution from "./pages/PastSolution";
 import Workspace from "./pages/workspace/Workspace";
 
@@ -27,6 +28,7 @@ class App extends Component<{}> {
           <Route exact path='/forum' component={Forum}/>
           <Route exact path='/events' component={Events}/>
           <Route exact path='/involve' component={Involve}/>
+          <Route exact path='/involve/:role' component={Playbook}/>
           <Route exact path='/workspace' component={Workspace}/>
         </Switch>
       </main>

@@ -5,7 +5,7 @@
 
 /****************************Navbar******************************/
 .navbar {
-    border-bottom: 1px solid #4496FF;
+    /* border-bottom: 1px solid #4496FF; */
 }
 
 .navbar img {
@@ -14,6 +14,25 @@
 
 .navbar a {
     font-family: 'Roboto', sans-serif;
+}
+
+.nav-link:hover {
+    color: #4496FF!important;
+    font-weight: 900;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #4496FF;
+}
+
+.nav-link.active {
+    color: #4496FF!important;
+    font-weight: 900;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #4496FF;
+}
+
+.involve-btn {
+    border: 2px solid #4496FF;
+    color: #4496FF;
 }
 
 /****************************Footer******************************/
@@ -38,6 +57,12 @@
     padding: 0.75em 1.5em 0.75em 1.5em;
 }
 
+#landing_btn a:hover {
+    text-decoration: none;
+    background-color: #1A89DB;
+    color: white;
+}
+
 /****************************EventCard******************************/
 #event-card {
     border-radius: 10px;
@@ -55,6 +80,38 @@
 
 #event-card .row {
     margin: 0;
+}
+
+/****************************EventCard******************************/
+#role-card img {
+    width: 95%;
+}
+
+#role-card h5 {
+  width: 95%;
+
+}
+
+#role-card h6 {
+    width: 70%;
+    margin-left: 0;
+
+}
+
+#role-card a {
+    border-radius: 25px;
+    border: 2px solid #1A89DB;
+    font-size: 12px;
+    color: #1A89DB;
+    text-align: center;
+    font-weight: 600;
+    padding: 0.75em 1em;
+}
+
+#role-card a:hover {
+    text-decoration: none;
+    background-color: #1A89DB;
+    color: white;
 }
 
 /****************************Sidebar******************************/
