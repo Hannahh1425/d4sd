@@ -9,10 +9,10 @@ class EventCard extends Component {
     return (
       <div id="event-card" className="w-100 pb-4">
         <img src={event1} alt='event1' className="w-100 rounded-lg"/>
-          <br/><br/>
-          <h5 className="font-weight-bold text-center">{this.props.title}</h5>
-          <h5 className="text-center">{this.props.date}</h5>
-          <p className="text-center"><i class="fas fa-map-marker-alt pr-2"></i>{this.props.location}</p>          
+        <br/><br/>
+        <h5 className="font-weight-bold text-center">{this.props.title}</h5>
+        <h5 className="text-center">{this.props.date}</h5>
+        <p className="text-center"><i className="fas fa-map-marker-alt pr-2"></i>{this.props.location}</p>          
       </div>
     );
   }

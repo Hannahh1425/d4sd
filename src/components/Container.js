@@ -5,7 +5,7 @@ class Container extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container mb-5">
         <div className="row">
           <div className="col"/>
           <div className="col-lg-10">

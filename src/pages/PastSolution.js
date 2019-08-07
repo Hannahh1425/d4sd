@@ -86,13 +86,14 @@ class PastSolution extends Component {
         <Navbar/>
         <Container>
           <div className="div-large"/>
-          <h3 className="font-weight-bold">Past Solutions</h3>          
-            <div className="d-flex flex-wrap justify-content-around">
-              <img src={gate}/>
-              <img src={gate}/>
-              <img src={gate}/>
-              <img src={gate}/>
+          <h3 className="font-weight-bold">Past Solutions</h3>
+          <div className="d-flex flex-wrap justify-content-around">
+          {data.map(data => (
+            <div>
+              <img src={data.teamImg}/>            
             </div>
+          ))}
+          </div>
         </Container>
         <br/><br/><br/><br/><br/> <br/><br/>
         <Footer/>
