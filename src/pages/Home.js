@@ -117,7 +117,7 @@ class Home extends Component {
           {content.map((content, i) => (
             <div className="vh-100" ref={this[`ref${i}`]} key={i} id={i}>
               <br/><br/><br/><br/>
-              <h1 className="home-content">{content.title}</h1>
+              <h1 className="home-content">{content.title}</h1><br/>
               <h5 className="home-content">{content.txt}</h5>
             </div>
           ))}
