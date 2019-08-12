@@ -12,15 +12,37 @@ import educator from "../img/about_educator.png";
 import sponsor from "../img/about_sponsor.png";
 import expert from "../img/about_expert.png";
 import innovator from "../img/about_participant.png";
+import city from "../img/about_city.png";
+import connect from "../img/about_connect.png";
+import div from "../img/about_div.png";
+import edu from "../img/about_edu.png";
+import find from "../img/about_find.png";
+import diagram from "../img/about_diagram.png";
+
 import icon from "../img/icon.png";
 import './style.css';
 
 const values = [
-  "To collaboratively explore a range of civic problems that the San Diego region faces.",
-  "To connect innovators, experts, city officials, professional designers, business leaders, and community members through a combination of in-person events and online activities.",
-  "To increase and diversify participation, particularly for typically underrepresented or marginalized populations, by creating a range of specific roles within the civic design framework and striving for diversity, equity, and inclusion.",
-  "To provide an educational opportunity that serves people from a wide range of ages, backgrounds, and motivations",
-  "To contribute to the burgeoning design-driven economy in San Diego by providing resources to help launch top proposals by bringing together leaders from various sectors"
+  {
+    txt: "To collaboratively explore a range of civic problems that the San Diego region faces.",
+    img: find
+  },
+  {
+    txt: "To connect innovators, experts, city officials, professional designers, business leaders, and community members through a combination of in-person events and online activities.",
+    img: connect
+  },
+  {
+    txt: "To increase and diversify participation, particularly for typically underrepresented or marginalized populations, by creating a range of specific roles within the civic design framework and striving for diversity, equity, and inclusion.",
+    img: div
+  },
+  {
+    txt: "To provide an educational opportunity that serves people from a wide range of ages, backgrounds, and motivations",
+    img: edu
+  },
+  {
+    txt: "To contribute to the burgeoning design-driven economy in San Diego by providing resources to help launch top proposals by bringing together leaders from various sectors",
+    img: city
+  }
 ]
 
 const roles = [
@@ -62,16 +84,7 @@ class Home extends Component {
                 solutions to life.<br/><br/>
                 Everyone is welcome to be part of the challenge!
               </h5>
-              <div className="row text-center">
-                {roles.map(role => (
-                  <div className="col-3 involve-roles">
-                    <a href={playbook_educator}>
-                      <img src={role.image}/>
-                      <h5>{role.txt}</h5>
-                    </a>
-                  </div>
-                ))}
-              </div>
+              <img src={diagram} className="w-100"/>
               <br/>
               <h4>Here is timeline</h4>
               <button>Innovators</button>
@@ -80,12 +93,12 @@ class Home extends Component {
               <h1>What does D4SD envision?</h1>
               <br/>
               {values.map((value, i) => (
-                <div className="row">
-                  <div className="col-4">
-                    <img src={educator} className="w-100"/>
+                <div className="row align-items-center mb-4">
+                  <div className="col-lg-1 col-2">
+                    <img src={value.img} className="w-100"/>
                   </div>
-                  <div className="col-8">
-                    <h5>{value}</h5>
+                  <div className="col-lg-11 col-10">
+                    <h5>{value.txt}</h5>
                   </div>
                 </div>
               ))}

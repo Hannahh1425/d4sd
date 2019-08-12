@@ -6,12 +6,12 @@ import Zoom from 'react-reveal/Zoom';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Container from '../components/Container';
-import home0 from '../img/home1_2.png';
-import home1 from '../img/home2.png';
+import home0 from '../img/home_landing.png';
+import home1 from '../img/home_mobility.png';
 import home2 from '../img/home5.png';
-import home3 from '../img/home3.png';
-import home4 from '../img/home4.png';
-import home5 from '../img/home6.png';
+import home3 from '../img/home_housing.png';
+import home4 from '../img/home_health.png';
+import home5 from '../img/home_about.png';
 import './style.css';
 
 const content = [
@@ -117,8 +117,8 @@ class Home extends Component {
           {content.map((content, i) => (
             <div className="vh-100" ref={this[`ref${i}`]} key={i} id={i}>
               <br/><br/><br/><br/>
-              <h1 className="home-content">{content.title}</h1>
-              <h5 className="home-content">{content.txt}</h5>
+              <h1 className={i === 3 ? "home-content text-white":"home-content"}>{content.title}</h1><br/>
+              <h5 className={i === 3 ? "home-content text-white":"home-content"}>{content.txt}</h5>
             </div>
           ))}
           <Transition

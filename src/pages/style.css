@@ -1,15 +1,16 @@
 /*****************************Homepage*****************************/
-.home-content {
-  position: relative;
-  z-index: 100;
-  width: 40%;
-  margin-bottom: 10px;
-  margin-left: 10%;
-}
 
 .origin {
   position: fixed;
   width: 100%;
+}
+
+.home-content ~ img {
+  opacity: 0;
+}
+
+.home-content-wt {
+  color: white;
 }
 
 .zoom-in {
@@ -92,6 +93,14 @@
 
     .mobile {
         display: none;
+    }
+
+    .home-content {
+      position: relative;
+      z-index: 100;
+      width: 50%;
+      margin-bottom: 10px;
+      margin-left: 10%;
     }
 
 }
