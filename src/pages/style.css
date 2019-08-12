@@ -5,6 +5,14 @@
   width: 100%;
 }
 
+.home-content ~ img {
+  opacity: 0;
+}
+
+.home-content-wt {
+  color: white;
+}
+
 .zoom-in {
   position: fixed;
   bottom: -200px;

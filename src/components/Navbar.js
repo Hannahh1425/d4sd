@@ -9,7 +9,7 @@ class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-md navbar-light fixed-top bg-white">
+        <nav className="navbar navbar-expand-md navbar-light fixed-top">
           <Link className="navbar-brand" to='/'><img src={logo} alt="logo"/></Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span className="navbar-toggler-icon"></span>
