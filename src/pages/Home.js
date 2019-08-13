@@ -2,7 +2,7 @@ import React, { Component, useRef, useState } from 'react';
 import { useInView, InView } from 'react-intersection-observer';
 import { Transition, animated } from 'react-spring/renderprops';
 import Zoom from 'react-reveal/Zoom';
-
+import 'intersection-observer';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Container from '../components/Container';
@@ -71,6 +71,8 @@ class Home extends Component {
     this.ref4 = React.createRef();
     this.ref5 = React.createRef();
 
+    this.loadPolyfills = this.loadPolyfills.bind(this);
+    
     this.state = ({
       currentImg: home0,
       animate: false
@@ -103,9 +105,16 @@ class Home extends Component {
   }
 
   componentDidMount() {
+    this.loadPolyfills();
     for (let i = 0; i < 6; i++) {
       console.log(this[`ref${i}`]);
       this.observer.observe(this[`ref${i}`].current);
+    }
+  }
+
+  async loadPolyfills() {
+    if (typeof window.IntersectionObserver === 'undefined') {
+      await import('intersection-observer')
     }
   }
 
