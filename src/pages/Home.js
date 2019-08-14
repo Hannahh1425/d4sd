@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar';
 import Container from '../components/Container';
 import home0 from '../img/home_landing.png';
 import home1 from '../img/home_mobility.png';
-import home2 from '../img/home5.png';
+import home2 from '../img/home_climate.png';
 import home3 from '../img/home_housing.png';
 import home4 from '../img/home_health.png';
 import home5 from '../img/home_about.png';
@@ -72,7 +72,7 @@ class Home extends Component {
     this.ref5 = React.createRef();
 
     this.loadPolyfills = this.loadPolyfills.bind(this);
-    
+
     this.state = ({
       currentImg: home0,
       animate: false
@@ -126,8 +126,8 @@ class Home extends Component {
           {content.map((content, i) => (
             <div className="vh-100" ref={this[`ref${i}`]} key={i} id={i}>
               <br/><br/><br/><br/>
-              <h1 className={i === 3 ? "home-content text-white":"home-content"}>{content.title}</h1><br/>
-              <h5 className={i === 3 ? "home-content text-white":"home-content"}>{content.txt}</h5>
+              <h1 className="home-content">{content.title}</h1><br/>
+              <h5 className="home-content">{content.txt}</h5>
             </div>
           ))}
           <Transition
