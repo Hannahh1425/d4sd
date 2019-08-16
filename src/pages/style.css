@@ -18,7 +18,7 @@ h4 {
 h5{
   /* paragraphs of text */
   font-size:1em;
-  font-family: 'Roboto';
+  font-family: 'Roboto', serif;
   text-shadow: 0px 0px 5px #FFFFFF;
 }
 /*****************************Homepage*****************************/

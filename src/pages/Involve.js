@@ -38,10 +38,10 @@ const content = [
     playbook: playbook1
   },
   {
-    title: "Integrate our curriculum into your educational offering",
+    title: "Integrate D4SD into your educational offering",
     icon1: icon,
     icon2: icon,
-    txt1: "Offer experiential Learning opportunities to your students",
+    txt1: "Offer experiential learning opportunities to your students",
     txt2: "Implement a civic innovation class in your institution",
     image: educator,
     playbook: playbook1
@@ -73,7 +73,7 @@ class Involve extends Component {
           <br/>
           <div className="d-flex flex-wrap justify-content-around">
           {content.map(content => (
-            <div className="w-50">
+            <div className="col-xs-6 col-md-6">
               <RoleCard
                 title={content.title}
                 icon1={content.icon1}

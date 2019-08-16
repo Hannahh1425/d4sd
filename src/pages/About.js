@@ -89,7 +89,7 @@ class Home extends Component {
               </div>
               <br/><br/><br/><br/>
 
-              <h4>Timeline</h4>
+              <h4>D4SD Timeline</h4>
               <div className="d-flex justify-content-center">
               <img src={timeline} className="w-100"/>
               </div>

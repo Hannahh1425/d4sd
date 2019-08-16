@@ -14,7 +14,7 @@ class RoleCard extends Component {
           <div className="col-1" style={{"padding":"0"}}>
             <img src={this.props.icon1} className="w-50"/>
           </div>
-          <div className="col-11" style={{"padding":"0"}}>
+          <div className="col-10" style={{"padding":"0"}}>
             <h5>{this.props.txt1}</h5>
           </div>
         </div>
@@ -22,7 +22,7 @@ class RoleCard extends Component {
           <div className="col-1" style={{"padding":"0"}}>
             <img src={this.props.icon2} className="w-50"/>
           </div>
-          <div className="col-11" style={{"padding":"0"}}>
+          <div className="col-10" style={{"padding":"0"}}>
             <h5>{this.props.txt2}</h5>
           </div>
         </div>
@@ -30,7 +30,7 @@ class RoleCard extends Component {
           <div className="col-1" style={{"padding":"0"}}>
             <img src={this.props.icon3} className="w-50"/>
           </div>
-          <div className="col-11" style={{"padding":"0"}}>
+          <div className="col-10" style={{"padding":"0"}}>
             <h5>{this.props.txt3}</h5>
           </div>
         </div>
@@ -38,14 +38,14 @@ class RoleCard extends Component {
           <div className="col-1" style={{"padding":"0"}}>
             <img src={this.props.icon4} className="w-50"/>
           </div>
-          <div className="col-11" style={{"padding":"0"}}>
+          <div className="col-10" style={{"padding":"0"}}>
             <h5>{this.props.txt4}</h5>
           </div>
         </div>
         <br/>
         <a href={this.props.playbook}>View Playbook</a>
         </div>
-        <img src={this.props.image} />
+        <img className="vh-90" src={this.props.image} />
       </div>
     );
   }

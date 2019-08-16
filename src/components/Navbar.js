@@ -19,6 +19,7 @@ class Navbar extends Component {
               <li className="nav-item align-">
                 <NavLink className="nav-link mr-5" to='/about' activeClassName="active">About</NavLink>
               </li>
+              <br/>
               <li className="nav-item">
                 <Button to="/involve" page="Get Involved"/>
               </li>
