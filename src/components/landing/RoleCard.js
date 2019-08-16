@@ -15,7 +15,7 @@ class RoleCard extends Component {
             <img src={this.props.icon1} className="w-50"/>
           </div>
           <div className="col-11" style={{"padding":"0"}}>
-            <h6>{this.props.txt1}</h6>
+            <h5>{this.props.txt1}</h5>
           </div>
         </div>
         <div className="row justify-content-center">
@@ -23,7 +23,7 @@ class RoleCard extends Component {
             <img src={this.props.icon2} className="w-50"/>
           </div>
           <div className="col-11" style={{"padding":"0"}}>
-            <h6>{this.props.txt2}</h6>
+            <h5>{this.props.txt2}</h5>
           </div>
         </div>
         <div className="row justify-content-center">
@@ -31,7 +31,7 @@ class RoleCard extends Component {
             <img src={this.props.icon3} className="w-50"/>
           </div>
           <div className="col-11" style={{"padding":"0"}}>
-            <h6>{this.props.txt3}</h6>
+            <h5>{this.props.txt3}</h5>
           </div>
         </div>
         <div className="row justify-content-center">
@@ -39,7 +39,7 @@ class RoleCard extends Component {
             <img src={this.props.icon4} className="w-50"/>
           </div>
           <div className="col-11" style={{"padding":"0"}}>
-            <h6>{this.props.txt4}</h6>
+            <h5>{this.props.txt4}</h5>
           </div>
         </div>
         <br/>

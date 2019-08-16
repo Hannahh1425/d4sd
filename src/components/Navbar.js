@@ -9,7 +9,7 @@ class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-md navbar-light fixed-top">
+        <nav className="navbar navbar-expand-md navbar-light fixed-top mh-5">
           <Link className="navbar-brand" to='/'><img src={logo} alt="logo"/></Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span className="navbar-toggler-icon"></span>
@@ -20,7 +20,7 @@ class Navbar extends Component {
                 <NavLink className="nav-link mr-5" to='/about' activeClassName="active">About</NavLink>
               </li>
               <li className="nav-item">
-                <Button to="/involve" page="GET INVOLVED"/>
+                <Button to="/involve" page="Get Involved"/>
               </li>
               {/**<li className="nav-item">
                 <Link className="nav-link pr-3" to='/challenge'>Challenge</Link>

@@ -19,7 +19,7 @@ import './style.css';
 const content = [
   {
     title: "Take part in the challenge",
-    txt1: "Participate in a variety of in-person events and create innovative solutions in a team.",
+    txt1: "Participate in a variety of in-person events and create innovative solutions in a team",
     icon1: icon,
     image: participants,
     playbook: playbook1
@@ -30,19 +30,19 @@ const content = [
     icon2: icon,
     icon3: icon,
     icon4: icon,
-    txt1: "Provide Feedback to the innovative teams.",
-    txt2: "Mentor our teams.",
-    txt3: "Judge the work.",
-    txt4: "Provide expertise and resources.",
+    txt1: "Provide Feedback to the innovative teams",
+    txt2: "Mentor our teams",
+    txt3: "Judge the work",
+    txt4: "Provide expertise and resources",
     image: expert,
     playbook: playbook1
   },
   {
-    title: "Integrate into your educational offerring",
+    title: "Integrate our curriculum into your educational offering",
     icon1: icon,
     icon2: icon,
-    txt1: "Offer experiential Learning opportunities to your students.",
-    txt2: "Implement a civic innovation class in your institution.",
+    txt1: "Offer experiential Learning opportunities to your students",
+    txt2: "Implement a civic innovation class in your institution",
     image: educator,
     playbook: playbook1
   },
@@ -51,9 +51,9 @@ const content = [
     icon1: icon,
     icon2: icon,
     icon3: icon,
-    txt1: "Provide funding and resources for the challenge.",
-    txt2: "Increase your brand awareness through D4SD events.",
-    txt3: "Explore business opportunities within the larger challenge.",
+    txt1: "Provide funding and resources for the challenge",
+    txt2: "Increase your brand awareness through D4SD events",
+    txt3: "Explore business opportunities within the larger challenge",
     image: sponsor,
     playbook: playbook1
   }
@@ -69,7 +69,7 @@ class Involve extends Component {
         <Navbar/>
         <Container>
           <br/><br/><br/><br/>
-          <h1>Be Part of the Challenge!</h1>
+          <h2>Be Part of the Challenge!</h2>
           <br/>
           <div className="d-flex flex-wrap justify-content-around">
           {content.map(content => (

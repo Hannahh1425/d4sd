@@ -5,7 +5,6 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Button from '../components/landing/Button';
 import header from '../img/about.png';
-import timeline from '../img/timeline-vertical.png';
 import playbook_educator from "../img/involve_playbook.pdf";
 
 import educator from "../img/about_educator.png";
@@ -18,6 +17,7 @@ import div from "../img/about_div.png";
 import edu from "../img/about_edu.png";
 import find from "../img/about_find.png";
 import diagram from "../img/about_diagram.png";
+import timeline from "../img/about_timeline.png";
 
 import icon from "../img/icon.png";
 import './style.css';
@@ -75,7 +75,7 @@ class Home extends Component {
         <Navbar/>
         <Container>
               <br/><br/><br/><br/>
-              <h1>What is D4SD?</h1>
+              <h2>What is D4SD?</h2>
               <h5>
                 Design for San Diego (D4SD) is a civic design challenge that
                 aims at providing a space for all citizens to address San Diego's
@@ -84,13 +84,18 @@ class Home extends Component {
                 solutions to life.<br/><br/>
                 Everyone is welcome to be part of the challenge!
               </h5>
-              <img src={diagram} className="w-100"/>
-              <br/>
-              <h4>Here is timeline</h4>
-              <button>Innovators</button>
-              <button>Community members</button>
-              <br/><br/><br/>
-              <h1>What does D4SD envision?</h1>
+              <div className="d-flex justify-content-center">
+                <img src={diagram} className="w-75"/>
+              </div>
+              <br/><br/><br/><br/>
+
+              <h4>Timeline</h4>
+              <div className="d-flex justify-content-center">
+              <img src={timeline} className="w-100"/>
+              </div>
+              <br/><br/><br/><br/>
+
+              <h4>What does D4SD envision?</h4>
               <br/>
               {values.map((value, i) => (
                 <div className="row align-items-center mb-4">
@@ -103,7 +108,7 @@ class Home extends Component {
                 </div>
               ))}
         </Container>
-        <br/><br/><br/><br/><br/> <br/><br/>
+        <br/><br/><br/><br/><br/><br/><br/>
       </div>
     );
   }

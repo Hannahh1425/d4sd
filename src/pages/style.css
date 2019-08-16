@@ -1,3 +1,26 @@
+/*****************************Global*****************************/
+h2 {
+  /* big headings */
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px #FFFFFF;
+}
+
+h4 {
+  /* subheadings */
+  font-size:1.5em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px #FFFFFF;
+}
+
+h5{
+  /* paragraphs of text */
+  font-size:1em;
+  font-family: 'Roboto';
+  text-shadow: 0px 0px 5px #FFFFFF;
+}
 /*****************************Homepage*****************************/
 
 .origin {
