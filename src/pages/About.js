@@ -84,17 +84,14 @@ class Home extends Component {
                 solutions to life.<br/><br/>
                 Everyone is welcome to be part of the challenge!
               </h5>
-              <div className="d-flex justify-content-center">
-                <img src={diagram} className="w-75"/>
-              </div>
+              <img src={diagram} className="w-100"/>
               <br/><br/><br/><br/>
 
               <h4>D4SD Timeline</h4>
-              <div className="d-flex justify-content-center">
+              </Container>
               <img src={timeline} className="w-100"/>
-              </div>
               <br/><br/><br/><br/>
-
+              <Container>
               <h4>What does D4SD envision?</h4>
               <br/>
               {values.map((value, i) => (
@@ -107,7 +104,7 @@ class Home extends Component {
                   </div>
                 </div>
               ))}
-        </Container>
+              </Container>
         <br/><br/><br/><br/><br/><br/><br/>
       </div>
     );
