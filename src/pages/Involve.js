@@ -69,7 +69,7 @@ class Involve extends Component {
         <Navbar/>
         <Container>
           <br/><br/><br/><br/>
-          <h2>Be Part of the Challenge!</h2>
+          <h2 className="text-center">Be Part of the Challenge!</h2>
           <br/>
           <div className="d-flex flex-wrap justify-content-around">
           {content.map(content => (

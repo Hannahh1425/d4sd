@@ -18,7 +18,9 @@ import div from "../img/about_div.png";
 import edu from "../img/about_edu.png";
 import find from "../img/about_find.png";
 import diagram from "../img/about_diagram.svg";
-import timeline from "../img/about_timeline.png";
+import timeline from "../img/about_timeline.svg";
+// import { ReactComponent as Diagram } from "../img/about_diagram.svg";
+// import { ReactComponent as Timeline } from "../img/about_timeline.svg";
 
 import icon from "../img/icon.png";
 import './style.css';
@@ -75,7 +77,11 @@ class Home extends Component {
     this.review = React.createRef();
   }
 
-  scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop, {behavior: 'smooth'});
+  scrollToRef = ref => window.scrollTo({
+    left: 0,
+    top: ref.current.offsetTop,
+    behavior: 'smooth'
+  });
 
   render() {
     return (
@@ -106,9 +112,10 @@ class Home extends Component {
         </div>
         <section ref={this.overview}>
           <Container style={{"backgroundColor":"#EFF8FF"}}>
-            <br/><br/><br/>
+            <br/><br/><br/><br/>
             <h2>What is D4SD?</h2>
-            <h5>
+            <br/>
+            <h5 className="text-left">
               Design for San Diego (D4SD) is a civic design challenge that
               aims at providing a space for all citizens to address San Diego's
               most challening issues, prototype solutions through human-centered design,
@@ -116,7 +123,7 @@ class Home extends Component {
               solutions to life.
             </h5>
             <br/>
-            <h5>
+            <h5 className="text-left">
               This is the 2nd D4SD Civic Design Challenge and the theme of this year
               is Sustainable City. To make cities and human settlements inclusive,
               safe, resilient and sustainable is one of the 17 goals that the United
@@ -125,22 +132,22 @@ class Home extends Component {
               challenge briefs to see the problem space that you could explore and sign
               up to be part of this innovative process for the city’s future!
             </h5>
-            <br/><br/><br/>
+            <br/><br/><br/><br/><br/>
           </Container>
         </section>
-        <br/>
+        <br/><br/>
         <section ref={this.join}>
           <h2>Who can participate?</h2>
           <h5>Everyone who cares about the city and have a passion for innovation
             is more than welcome to participate! Find your place in the challenge!
           </h5>
-          <br/><br/>
+          <br/><br/><br/>
           <img src={diagram} className="w-75" />
         </section>
-        <br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
         <section ref={this.value}>
           <Container style={{"backgroundColor":"#EFF8FF"}}>
-            <br/><br/><br/>
+            <br/><br/><br/><br/>
             <h2>What does D4SD envision?</h2>
             <br/>
             {values.map((value, i) => (
@@ -153,19 +160,19 @@ class Home extends Component {
                 </div>
               </div>
               ))}
-              <br/>
+              <br/><br/><br/>
             </Container>
           </section>
-
+          <br/><br/>
           <section ref={this.timeline}>
             <h2>D4SD Timeline</h2>
-            <img src={timeline} className="w-100"/>
+            <img src={timeline} className="w-75"/>
           </section>
-          <br/>
+          <br/><br/>
 
           <section ref={this.review}>
             <Container style={{"backgroundColor":"#EFF8FF"}}>
-              <br/><br/><br/>
+              <br/><br/><br/><br/>
               <h2>What does D4SD look like in the past?</h2>
               <h5>Want to learn more about how it actually works? <br/> Check out
                 the overview of D4SD 2017 where 23 teams generated concepts on

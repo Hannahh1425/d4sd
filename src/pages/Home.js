@@ -86,20 +86,26 @@ class Home extends Component {
           if (entry.isIntersecting === true) {
             console.log("id: " + `home${entry.target.id}`);
             this.setState({currentImg: images[entry.target.id]});
+            this.setState({animate: true});
             console.log(window);
             console.log(this[`ref${entry.target.id}`].current.scrollTop);
             window.scrollTo({
                top: this[`ref${entry.target.id}`].current.offsetTop,
                behavior: 'smooth'
            })
+           console.log("insideloop");
+           console.log(this.state.animate);
           }
+          this.setState({animate: false});
+          console.log("outsideloop");
+          console.log(this.state.animate);
         }
         );
       },
       {
         // root: this.rootRef.current,
         rootMargin: '0px',
-        threshold: 0.2
+        threshold: 0.1
       }
     );
   }
