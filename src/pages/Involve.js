@@ -67,19 +67,15 @@ class Involve extends Component {
     return (
       <div id="involve">
         <Navbar/>
-        <Container>
           <br/><br/><br/><br/>
           <h2 className="text-center">Be Part of the Challenge!</h2>
-          <br/>
+          <br/><br/>
+          <div style={{"width":"90%", "marginLeft":"5%"}}>
           <div className="d-flex flex-wrap justify-content-around">
           {content.map(content => (
-            <div className="col-xs-6 col-md-6">
+            <div className="col-xs-3 col-md-3">
               <RoleCard
                 title={content.title}
-                icon1={content.icon1}
-                icon2={content.icon2}
-                icon3={content.icon3}
-                icon4={content.icon4}
                 txt1={content.txt1}
                 txt2={content.txt2}
                 txt3={content.txt3}
@@ -90,7 +86,7 @@ class Involve extends Component {
             </div>
           ))}
         </div>
-        </Container>
+        </div>
       </div>
     );
   }

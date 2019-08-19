@@ -9,8 +9,8 @@ import Container from '../components/Container';
 import home0 from '../img/home_landing.png';
 import home1 from '../img/home_mobility.png';
 import home2 from '../img/home_climate.png';
-import home3 from '../img/home_housing.png';
-import home4 from '../img/home_health.png';
+import home3 from '../img/home_housing.svg';
+import home4 from '../img/home_health.svg';
 import home5 from '../img/home_about.png';
 import './style.css';
 
@@ -84,6 +84,7 @@ class Home extends Component {
           console.log("calllled");
           console.log(entry);
           if (entry.isIntersecting === true) {
+            console.log("is intersectiongggg");
             console.log("id: " + `home${entry.target.id}`);
             this.setState({currentImg: images[entry.target.id]});
             this.setState({animate: true});
@@ -92,10 +93,11 @@ class Home extends Component {
             window.scrollTo({
                top: this[`ref${entry.target.id}`].current.offsetTop,
                behavior: 'smooth'
-           })
+           });
            console.log("insideloop");
            console.log(this.state.animate);
           }
+          console.log("is noooooooooot intersectiongggg");
           this.setState({animate: false});
           console.log("outsideloop");
           console.log(this.state.animate);
@@ -130,7 +132,7 @@ class Home extends Component {
         <Navbar/>
         <div>
           {content.map((content, i) => (
-            <div className="vh-100" ref={this[`ref${i}`]} key={i} id={i}>
+            <div className="vh-100" ref={this[`ref${i}`]} key={i} id={i} style={{"minHeight":"1px"}}>
               <br/><br/><br/><br/><br/>
               <h2 className="home-content">{content.title}</h2><br/>
               <h5 className="home-content">{content.txt}</h5>

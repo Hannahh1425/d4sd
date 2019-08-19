@@ -86,24 +86,46 @@ h5{
 }
 
 .subnav {
-  font-size: 16px!important;
-  text-decoration: underline!important;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    top: 3.5em;
+    left: 0.5em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.2);
+    padding: 1.5em 1em;
 }
 
-.subnav:hover {
+.subnav-link:hover {
     color: rgba(0, 0, 0, 0.7)!important;
     font-weight: 700;
     border: none;
     cursor: pointer;
 }
 
+.subnav-link-active {
+    color: rgba(0, 0, 0, 0.7)!important;
+    font-weight: 700;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
 
+.subnav-link-active:hover {
+    color: rgba(0, 0, 0, 0.7)!important;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+svg:hover {
+    cursor: pointer;
+}
+/*
 .header {
   background-image: url('../img/about_header.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
+} */
 
 .header h1 {
   padding-top: 3em;

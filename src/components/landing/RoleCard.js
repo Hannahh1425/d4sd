@@ -7,45 +7,17 @@ class RoleCard extends Component {
   render() {
     return (
       <div id="role-card" className="position-relative">
-      <div style={{"position":"absolute","top":"3em", "left":"3em"}}  >
-        <h4>{this.props.title}</h4>
+      <div>
+        <h4 style={{"fontSize":"1.35em"}}>{this.props.title}</h4>
         <br/>
-        <div className="row justify-content-center">
-          <div className="col-1" style={{"padding":"0"}}>
-            <img src={this.props.icon1} className="w-50"/>
-          </div>
-          <div className="col-10" style={{"padding":"0"}}>
-            <h5>{this.props.txt1}</h5>
-          </div>
-        </div>
-        <div className="row justify-content-center">
-          <div className="col-1" style={{"padding":"0"}}>
-            <img src={this.props.icon2} className="w-50"/>
-          </div>
-          <div className="col-10" style={{"padding":"0"}}>
-            <h5>{this.props.txt2}</h5>
-          </div>
-        </div>
-        <div className="row justify-content-center">
-          <div className="col-1" style={{"padding":"0"}}>
-            <img src={this.props.icon3} className="w-50"/>
-          </div>
-          <div className="col-10" style={{"padding":"0"}}>
-            <h5>{this.props.txt3}</h5>
-          </div>
-        </div>
-        <div className="row justify-content-center">
-          <div className="col-1" style={{"padding":"0"}}>
-            <img src={this.props.icon4} className="w-50"/>
-          </div>
-          <div className="col-10" style={{"padding":"0"}}>
-            <h5>{this.props.txt4}</h5>
-          </div>
-        </div>
-        <br/>
+        <h5 style={{"padding":"0.3em 0", "lineHeight":"1.2rem"}}>{this.props.txt1}</h5>
+        <h5 style={{"padding":"0.3em 0", "lineHeight":"1.2rem"}}>{this.props.txt2}</h5>
+        <h5 style={{"padding":"0.3em 0", "lineHeight":"1.2rem"}}>{this.props.txt3}</h5>
+        <h5 style={{"padding":"0.3em 0", "lineHeight":"1.2rem"}}>{this.props.txt4}</h5>
         <a href={this.props.playbook} className="btn-style" target="_blank">View Playbook</a>
+
+        <img className="ml-3" src={this.props.image} />
         </div>
-        <img className="vh-90" src={this.props.image} />
       </div>
     );
   }
