@@ -17,11 +17,17 @@ h4 {
 
 h5{
   /* paragraphs of text */
-  font-size:1em;
+  font-size: 1em;
   font-family: 'Roboto', serif;
-  text-shadow: 0px 0px 5px #FFFFFF;
+  /* text-shadow: 0px 0px 5px #FFFFFF; */
 }
+
+
 /*****************************Homepage*****************************/
+
+#home {
+  background-color: #EFF8FF;
+}
 
 .origin {
   position: fixed;
@@ -75,6 +81,34 @@ h5{
 }
 
 /*****************************About*****************************/
+#about * {
+  text-align: center;
+}
+
+.subnav {
+  font-size: 16px!important;
+  text-decoration: underline!important;
+}
+
+.subnav:hover {
+    color: rgba(0, 0, 0, 0.7)!important;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+
+.header {
+  background-image: url('../img/about_header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header h1 {
+  padding-top: 3em;
+}
+
 .about-value {
   border-radius: 10px;
   margin-bottom: 1em;

@@ -5,6 +5,7 @@ class Container extends Component {
 
   render() {
     return (
+      <div style={this.props.style}>
       <div className="container mb-5">
         <div className="row">
           <div className="col"/>
@@ -14,6 +15,7 @@ class Container extends Component {
           <div className="col"/>
         </div>
       </div>
+    </div>
     )
   }
 }
