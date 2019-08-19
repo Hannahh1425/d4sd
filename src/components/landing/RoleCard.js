@@ -43,7 +43,7 @@ class RoleCard extends Component {
           </div>
         </div>
         <br/>
-        <a href={this.props.playbook}>View Playbook</a>
+        <a href={this.props.playbook} className="btn-style" target="_blank">View Playbook</a>
         </div>
         <img className="vh-90" src={this.props.image} />
       </div>

@@ -4,9 +4,9 @@
 }
 
 /****************************Navbar******************************/
-.navbar {
+.main-nav {
   background-color: #FFFFFF;
-  opacity: 0.8;
+  /* opacity: 0.8; */
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
   padding-bottom: 6px;
 }
@@ -105,7 +105,7 @@
 
 }
 
-#role-card a {
+.btn-style {
   border-radius: 25px;
   border: 1px solid #1A89DB;
   font-size: 0.9em;
@@ -115,7 +115,7 @@
   padding: 0.5em 1em 0.5em 1em;
 }
 
-#role-card a:hover {
+.btn-style:hover {
   text-decoration: none;
   background-color: #1A89DB;
   color: white;
