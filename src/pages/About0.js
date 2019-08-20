@@ -7,10 +7,6 @@ import Button from '../components/landing/Button';
 import header from '../img/about.png';
 import playbook_educator from "../img/involve_playbook.pdf";
 
-import educator from "../img/about_educator.png";
-import sponsor from "../img/about_sponsor.png";
-import expert from "../img/about_expert.png";
-import innovator from "../img/about_participant.png";
 import city from "../img/about_city.png";
 import connect from "../img/about_connect.png";
 import div from "../img/about_div.png";
@@ -45,24 +41,6 @@ const values = [
   }
 ]
 
-const roles = [
-  {
-    image: innovator,
-    txt: "Innovator"
-  },
-  {
-    image: expert,
-    txt: "Experts"
-  },
-  {
-    image: educator,
-    txt: "Educator"
-  },
-  {
-    image: sponsor,
-    txt: "Sponsor"
-  },
-]
 
 class Home extends Component {
   constructor() {

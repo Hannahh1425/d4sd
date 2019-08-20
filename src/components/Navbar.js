@@ -21,7 +21,7 @@ class Navbar extends Component {
               </li>
               <br/>
               <li className="nav-item">
-                <Button to="/involve" page="Get Involved"/>
+                <NavLink className="nav-link mr-5" to='/involve' activeClassName="active">Get Involved</NavLink>
               </li>
               {/**<li className="nav-item">
                 <Link className="nav-link pr-3" to='/challenge'>Challenge</Link>

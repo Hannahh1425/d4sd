@@ -29,17 +29,13 @@ h5{
   background-color: #EFF8FF;
 }
 
+#home h2 h5 {
+  top: 5%;
+}
+
 .origin {
   position: fixed;
   width: 100%;
-}
-
-.home-content ~ img {
-  opacity: 0;
-}
-
-.home-content-wt {
-  color: white;
 }
 
 .zoom-in {
@@ -62,48 +58,90 @@ h5{
 /*****************************Involve*****************************/
 .involve-roles img {
   width: 70%;
-  margin: 1em 0;
+  padding: 1em 0;
+}
+
+.involve-action {
+  font-size: 1.1em;
+  color: #333;
+  position: absolute;
+  border-radius: 10px;
+  font-weight: bold;
+  top: 4em;
+  left: 15%;
+  right: 15%;
+  cursor: pointer;
+}
+
+.involve-action-img {
+  width: 70%;
+  padding: 1em 0;
+  opacity: 0.1;
+  filter: alpha(opacity=10);
 }
 
 .involve-roles a:hover {
-  filter: drop-shadow(5px 5px 5px #89A4D2);
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
   text-decoration: none;
   text-decoration-color: #4496FF;
+}
+
+.involve-roles a:hover h5 {
+  color: #4496FF;
 }
 
 .involve-roles h5 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
 }
-
-.involve-roles h5:hover {
-  color: #4496FF;
-}
-
 /*****************************About*****************************/
 #about * {
   text-align: center;
 }
 
 .subnav {
-  font-size: 16px!important;
-  text-decoration: underline!important;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    top: 3.5em;
+    left: 0.5em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.2);
+    padding: 1.5em 1em;
+    background-color: white;
+    z-index: 1000;
 }
 
-.subnav:hover {
+.subnav-link:hover {
     color: rgba(0, 0, 0, 0.7)!important;
     font-weight: 700;
     border: none;
     cursor: pointer;
 }
 
+.subnav-link-active {
+    color: rgba(0, 0, 0, 0.7)!important;
+    font-weight: 700;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
 
+.subnav-link-active:hover {
+    color: rgba(0, 0, 0, 0.7)!important;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+svg:hover {
+    cursor: pointer;
+}
+/*
 .header {
   background-image: url('../img/about_header.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
+} */
 
 .header h1 {
   padding-top: 3em;
@@ -152,12 +190,27 @@ h5{
         display: none;
     }
 
-    .home-content {
-      position: relative;
+    .home-content h2 {
+      position: absolute;
       z-index: 100;
       width: 50%;
-      margin-bottom: 10px;
-      margin-left: 10%;
+      top: 4em;
+      left: 8%;
+    }
+
+    .home-content h5 {
+      position: absolute;
+      z-index: 100;
+      width: 50%;
+      top: 14em;
+      left: 8%;
+    }
+
+    .home-content a {
+      position: absolute;
+      z-index: 100;
+      top: 25em;
+      left: 9%;
     }
 
 }

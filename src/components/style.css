@@ -90,19 +90,14 @@
 }
 
 /****************************RoleCard******************************/
+#role-card {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 2em;
+}
+
 #role-card img {
-    width: 95%;
-}
-
-#role-card h5 {
-  width: 95%;
-
-}
-
-#role-card h6 {
-    width: 70%;
-    margin-left: 0;
-
+    width: 100%;
 }
 
 .btn-style {
