@@ -5,7 +5,6 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Button from '../components/landing/Button';
 import header from '../img/about_header.png';
-import playbook_educator from "../img/involve_playbook.pdf";
 import whitepaper from '../img/D4SD_2017_WhitePaper.pdf';
 
 import city from "../img/about_city.png";
@@ -43,6 +42,7 @@ const values = [
     img: city
   }
 ]
+
 
 class Home extends Component {
   constructor() {
@@ -155,7 +155,7 @@ class Home extends Component {
         <section ref={this.value} id="value">
           <Container style={{"backgroundColor":"#EFF8FF"}}>
             <br/><br/><br/><br/>
-            <h2>What does D4SD envision?</h2>
+            <h2>What is the goal?</h2>
             <br/>
             {values.map((value, i) => (
               <div className="row align-items-center mb-4">
@@ -173,7 +173,7 @@ class Home extends Component {
           <br/><br/>
           <section ref={this.timeline} id="timeline">
             <Container>
-              <h2>D4SD Timeline</h2>
+              <h2>What is the process?</h2>
               <img src={timeline} className="w-100"/>
             </Container>
           </section>
@@ -181,7 +181,7 @@ class Home extends Component {
           <section ref={this.review} id="review">
             <Container style={{"backgroundColor":"#EFF8FF"}}>
               <br/><br/><br/><br/>
-              <h2>What does D4SD look like in the past?</h2>
+              <h2>Learn more about the previous D4SD</h2>
               <h5>Want to learn more about how it actually works? <br/> Check out
                 the overview of D4SD 2017 where 23 teams generated concepts on
                 the theme of transportation.

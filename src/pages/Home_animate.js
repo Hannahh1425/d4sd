@@ -6,8 +6,6 @@ import 'intersection-observer';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Container from '../components/Container';
-import Button from '../components/landing/Button';
-
 import home0 from '../img/home_landing.png';
 import home1 from '../img/home_mobility.png';
 import home2 from '../img/home_climate.png';
@@ -28,7 +26,7 @@ const content = [
     id: 1,
     src: home1,
     animate: false,
-    title: "How can we create a San Diego where we all move freely?",
+    title: "How can create a San Diego where we all move freely?",
     txt: "Mobility is an everyday problem as people commute to work, go to school, go out to eat and surf in the sea on a daily basis. As people are looking for a more efficient way to move around, the mission of reducing our emissions and increasing the inclusivity of transportation continues to be an essential topic/point of discussion in our urban environments."
   },
   {
@@ -65,8 +63,68 @@ class Home extends Component {
   constructor() {
     super();
     const images = [home0, home1, home2, home3, home4, home5];
+    //Target element
+    this.ref0 = React.createRef();
+    this.ref1 = React.createRef();
+    this.ref2 = React.createRef();
+    this.ref3 = React.createRef();
+    this.ref4 = React.createRef();
+    this.ref5 = React.createRef();
+
+    this.loadPolyfills = this.loadPolyfills.bind(this);
+
+    this.state = ({
+      currentImg: home0,
+      animate: false
+    });
+
+    this.observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          console.log("calllled");
+          console.log(entry);
+          if (entry.isIntersecting === true) {
+            console.log("is intersectiongggg");
+            console.log("id: " + `home${entry.target.id}`);
+            this.setState({currentImg: images[entry.target.id]});
+            this.setState({animate: true});
+            console.log(window);
+            console.log(this[`ref${entry.target.id}`].current.scrollTop);
+            window.scrollTo({
+               top: this[`ref${entry.target.id}`].current.offsetTop,
+               behavior: 'smooth'
+           });
+           console.log("insideloop");
+           console.log(this.state.animate);
+          }
+          console.log("is noooooooooot intersectiongggg");
+          this.setState({animate: false});
+          console.log("outsideloop");
+          console.log(this.state.animate);
+        }
+        );
+      },
+      {
+        // root: this.rootRef.current,
+        rootMargin: '0px',
+        threshold: 0.1
+      }
+    );
   }
 
+  componentDidMount() {
+    this.loadPolyfills();
+    for (let i = 0; i < 6; i++) {
+      console.log(this[`ref${i}`]);
+      this.observer.observe(this[`ref${i}`].current);
+    }
+  }
+
+  async loadPolyfills() {
+    if (typeof window.IntersectionObserver === 'undefined') {
+      await import('intersection-observer')
+    }
+  }
 
   render() {
   return (
@@ -74,13 +132,37 @@ class Home extends Component {
         <Navbar/>
         <div>
           {content.map((content, i) => (
-            <div key={i} id={i} className="position-relative home-content">
-              <img src={content.src} className="w-100"/>
-              <h2>{content.title}</h2>
-              <h5>{content.txt}</h5>
-              <Button page="Get Involve"/>
+            <div className="vh-100" ref={this[`ref${i}`]} key={i} id={i} style={{"minHeight":"1px"}}>
+              <br/><br/><br/><br/><br/>
+              <h2 className="home-content">{content.title}</h2><br/>
+              <h5 className="home-content">{content.txt}</h5>
             </div>
           ))}
+          <Transition
+            items={this.state.currentImg}
+            from={{
+              opacity: 0,
+              transform: 'translate3d(100%,0,0)',
+              position: 'fixed',
+              width: '100%'
+            }}
+            enter={{
+              opacity: 1,
+              transform: 'translate3d(0%,0,0)',
+              width: '100%',
+              position: 'fixed',
+              bottom: 0
+            }}
+            leave={{
+              opacity: 0,
+              transform: 'scale(3, 3)',
+              position: 'fixed',
+              bottom: -200,
+              objectFit: 'cover',
+              width: '200%'
+            }}>
+            {item => props => <animated.div style={props}><img src={item} className="w-100"/></animated.div>}
+          </Transition>
         </div>
       </div>
     );
