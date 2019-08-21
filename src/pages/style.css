@@ -154,6 +154,32 @@ svg:hover {
   box-shadow: 1px 1px 8px 1px #666666;
 }
 
+
+.about_button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.about_button:hover {
+    color: #4496FF!important;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.about_button:active {
+    color: #566ED1!important;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+#comm_timeline {
+  display: none;
+}
+
 /*****************************Mobile (default)*****************************/
 .container {
     max-width: 375px;
