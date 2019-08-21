@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Button from '../components/landing/Button';
 import HeaderCard from '../components/landing/HeaderCard';
-import header from '../img/about_header.png';
+import header from '../img/involve_header.svg';
 import whitepaper from '../img/D4SD_2017_WhitePaper.pdf';
 
 import city from "../img/about_city.png";
@@ -27,19 +27,23 @@ const values = [
     img: find
   },
   {
-    txt: "To provide an educational opportunity that serves people from a wide range of ages, backgrounds, and motivations",
-    img: edu
-  },
-  {
-    txt: "To connect innovators, experts, city officials, professional designers, business leaders, and community members through a combination of in-person events and online activities.",
-    img: connect
-  },
-  {
-    txt: "To increase and diversify participation, particularly for typically underrepresented or marginalized populations, by creating a range of specific roles within the civic design framework and striving for diversity, equity, and inclusion.",
+    txt: "To provide an educational opportunity that serves people from a wide range of ages, backgrounds, and motivations.",
     img: div
   },
   {
-    txt: "To contribute to the burgeoning design-driven economy in San Diego by providing resources to help launch top proposals by bringing together leaders from various sectors",
+    txt: "To connect innovators, experts, city officials, professional designers, business leaders, and community members through a combination of in-person events and online activities.",
+    img: edu
+  },
+  {
+    txt: "To increase and diversify participation, particularly for typically underrepresented or marginalized populations, by creating a range of specific roles within the civic design framework and striving for diversity, equity, and inclusion.",
+    img: connect
+  },
+  {
+    txt: "To contribute to the burgeoning design-driven economy in San Diego by providing resources to help launch top proposals by bringing together leaders from various sectors.",
+    img: city
+  },
+  {
+    txt: "To provide bottom-up community actions with more agency and to enhance the communications between the government and the local groups.",
     img: city
   }
 ]
@@ -163,11 +167,11 @@ class Home extends Component {
             <div className="d-flex flex-wrap justify-content-around">
             {values.map((value, i) => (
               <React.Fragment>
-                <img src={value.img} style={{"width":"10%", "alignSelf":"center", "padding":"0 10px"}} />
-                <h5 className="text-left" style={{"width":"40%"}}>
-                {value.txt}
-              </h5>
-            </React.Fragment>
+                <img src={value.img} style={{"width":"10%", "alignSelf":"baseline", "padding":"32px 24px"}} />
+                <h5 className="text-left" style={{"width":"40%", "padding":"32px 0"}}>
+                  {value.txt}
+                </h5>
+              </React.Fragment>
             ))}
           </div>
             <br/><br/><br/>

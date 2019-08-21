@@ -1,12 +1,4 @@
 /*****************************Global*****************************/
-h2 {
-  /* big headings */
-  font-size: 2em;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  text-shadow: 0px 0px 5px #FFFFFF;
-}
-
 h4 {
   /* subheadings */
   font-size:1.5em;
@@ -14,14 +6,6 @@ h4 {
   font-weight: bold;
   text-shadow: 0px 0px 5px #FFFFFF;
 }
-
-h5{
-  /* paragraphs of text */
-  font-size: 1em;
-  font-family: 'Roboto', serif;
-  /* text-shadow: 0px 0px 5px #FFFFFF; */
-}
-
 
 /*****************************Homepage*****************************/
 
@@ -169,10 +153,22 @@ svg:hover {
     display: none;
 }
 
+.home-content {
+    position: relative;
+    top: 5em;
+}
+
 /*****************************Tablet*****************************/
 @media screen and (min-width: 768px) {
     .container {
         max-width: 720px;
+    }
+
+    .home-content {
+      position: relative;
+      top: 6em;
+      width: 80%;
+      margin-left: 10%;
     }
   }
 
@@ -190,28 +186,12 @@ svg:hover {
         display: none;
     }
 
-    .home-content h2 {
+    .home-content {
       position: absolute;
-      z-index: 100;
       width: 50%;
-      top: 4em;
-      left: 8%;
+      top: 8em;      
     }
 
-    .home-content h5 {
-      position: absolute;
-      z-index: 100;
-      width: 50%;
-      top: 14em;
-      left: 8%;
-    }
-
-    .home-content a {
-      position: absolute;
-      z-index: 100;
-      top: 25em;
-      left: 9%;
-    }
 
 }
 

@@ -61,6 +61,8 @@ const content = [
   }
 ]
 
+
+
 class Home extends Component {
   constructor() {
     super();
@@ -74,11 +76,18 @@ class Home extends Component {
         <Navbar/>
         <div>
           {content.map((content, i) => (
-            <div key={i} id={i} className="position-relative home-content">
+            <div key={i} id={i} style={{"position":"relative"}}>
+              <div className="home-content">
+                <div style={{"position":"relative"}}>
+                  <h2>{content.title}</h2>
+                  <h5>{content.txt}</h5>
+                  <br/>
+                  <div className="pl-3">
+                    <Button page="Get Involved"/>
+                  </div>
+                </div>
+              </div>
               <img src={content.src} className="w-100"/>
-              <h2>{content.title}</h2>
-              <h5>{content.txt}</h5>
-              <Button page="Get Involved"/>
             </div>
           ))}
         </div>
