@@ -23,18 +23,16 @@
 
 .nav-link:hover {
     color: #4496FF!important;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 0.9em;
-    padding-bottom: 6px;
-    border-bottom: 2px solid #4496FF;
+    padding-bottom: 8px;
 }
 
 .nav-link.active {
-    color: #4496FF!important;
+    color: #566ED1!important;
     font-weight: 700;
     font-size: 0.9em;
-    padding-bottom: 6px;
-    border-bottom: 2px solid #4496FF;
+    padding-bottom: 8px;
 }
 
 .involve-btn {
@@ -87,6 +85,18 @@
 
 #event-card .row {
     margin: 0;
+}
+
+/****************************HeaderCard******************************/
+#header-card {
+  height: 40vh;
+  background-image: linear-gradient(45deg, #A1CBFF, #4497FF, #566ED1);
+}
+
+#header-card h2{
+  color: black;
+  font-size: 2.7em;
+  text-shadow: 0px 0px 0px #FFFFFF;
 }
 
 /****************************RoleCard******************************/

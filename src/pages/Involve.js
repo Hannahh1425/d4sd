@@ -5,6 +5,7 @@ import Container from '../components/Container';
 import Button from '../components/landing/Button';
 import RoleCard from '../components/landing/RoleCard';
 import Mailchimp from 'react-mailchimp-form';
+import HeaderCard from '../components/landing/HeaderCard';
 import playbook_educator from "../img/involve_playbook.pdf";
 import educator from "../img/about_educator.png";
 import sponsor from "../img/about_sponsor.png";
@@ -125,9 +126,11 @@ class Involve extends Component {
     return (
       <div id="involve">
         <Navbar/>
-          <br/><br/><br/><br/>
-          <h2 className="text-center">Ready to get involve?</h2>
           <br/><br/>
+          <HeaderCard title="Ready to get involved?"/>
+          <br/><br/>
+          {/*<h2 className="text-center">Ready to get involved?</h2>
+          <br/><br/>*/}
           <Container>
             <div className="row text-center">
               {roles.map(role => (
@@ -138,11 +141,12 @@ class Involve extends Component {
                   onMouseOver={() => this.onHover(this[role.id])}
                   onMouseOut={() => this.onLeave(this[role.id])}
                 >
-                  <h5 className={this.state[role.id] ? "involve-action":"d-none"}>Sign up for mailing list!</h5>
+                  <h5 className={this.state[role.id] ? "involve-action":"d-none"}>Sign up for the mailing list!</h5>
                   <a href={playbook_educator}>
                     <img src={role.name} className={this.state[role.id] ? "involve-action-img":""}/>
                     <h5>{role.txt}</h5>
                   </a>
+                  <br/><br/><br/><br/>
                 </div>
               ))}
             </div>
