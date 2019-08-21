@@ -5,6 +5,7 @@ import Container from '../components/Container';
 import Button from '../components/landing/Button';
 import RoleCard from '../components/landing/RoleCard';
 import Mailchimp from 'react-mailchimp-form';
+import HeaderCard from '../components/landing/HeaderCard';
 import playbook_educator from "../img/involve_playbook.pdf";
 import educator from "../img/involve_educator.png";
 import sponsor from "../img/involve_sponsor.png";
@@ -76,10 +77,10 @@ class Involve extends Component {
     return (
       <div id="involve">
         <Navbar/>
-          <br/><br/><br/><br/>
-          <h2 className="text-center">Ready to get involve?</h2>
           <br/><br/>
+
           {/**<Container>
+
             <div className="row text-center">
               {roles.map(role => (
                 <div
@@ -91,9 +92,11 @@ class Involve extends Component {
                 >
                   <h5 className={this.state[role.id] ? "involve-action":"d-none"}>Sign up for mailing list!</h5>
                   <a href={role.link} target="_blank">
+
                     <img src={role.name} className={this.state[role.id] ? "involve-action-img":""}/>
                     <h5 className="mb-0">{role.txt}</h5>
                   </a>
+                  <br/><br/><br/><br/>
                 </div>
               ))}
             </div>

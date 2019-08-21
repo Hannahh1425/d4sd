@@ -4,6 +4,7 @@ import Container from '../components/Container';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Button from '../components/landing/Button';
+import HeaderCard from '../components/landing/HeaderCard';
 import header from '../img/about_header.png';
 import whitepaper from '../img/D4SD_2017_WhitePaper.pdf';
 
@@ -96,7 +97,9 @@ class Home extends Component {
     return (
       <div id="about">
         <Navbar/>
-        <nav className="navbar navbar-light justify-content-left position-fixed subnav">
+        <br/><br/>
+        <HeaderCard title="About D4SD"/>
+        {/*<nav className="navbar navbar-light justify-content-left position-fixed subnav">
           <ul className="navbar-nav justify-content-center">
             <li className="nav-item">
               <a className={this.state.overview ? "nav-link text-left subnav-link-active":"nav-link text-left subnav-link"} onClick={() => this.scrollToRef(this.overview)}>What is D4SD</a>
@@ -114,9 +117,9 @@ class Home extends Component {
               <a className={this.state.review ? "nav-link text-left subnav-link-active":"nav-link text-left subnav-link"} onClick={() => this.scrollToRef(this.review)}>Review D4SD2017</a>
             </li>
           </ul>
-        </nav>
+        </nav>*/}
         <section ref={this.overview} id="overview">
-          <Container style={{"backgroundImage":`url(${header})`, "backgroundRepeat":"no-repeat", "backgroundSize":"cover",}}>
+          <Container style={{"backgroundColor":"#EFF8FF"}}>
             <br/><br/><br/><br/>
             <h2>What is D4SD?</h2>
             <br/>

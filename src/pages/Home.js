@@ -78,7 +78,7 @@ class Home extends Component {
               <img src={content.src} className="w-100"/>
               <h2>{content.title}</h2>
               <h5>{content.txt}</h5>
-              <Button page="Get Involve"/>
+              <Button page="Get Involved"/>
             </div>
           ))}
         </div>
