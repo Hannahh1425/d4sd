@@ -6,10 +6,10 @@ import Button from '../components/landing/Button';
 import RoleCard from '../components/landing/RoleCard';
 import Mailchimp from 'react-mailchimp-form';
 import playbook_educator from "../img/involve_playbook.pdf";
-import educator from "../img/about_educator.png";
-import sponsor from "../img/about_sponsor.png";
-import expert from "../img/about_expert.png";
-import innovator from "../img/about_participants.png";
+import educator from "../img/involve_educator.png";
+import sponsor from "../img/involve_sponsor.png";
+import expert from "../img/involve_expert.png";
+import innovator from "../img/involve_participant.png";
 
 import icon from '../img/icon.png';
 
@@ -17,81 +17,42 @@ import playbook1 from '../img/involve_playbook.pdf';
 
 import './style.css';
 
-// const content = [
-//   {
-//     title: "Take part in the challenge",
-//     txt1: "Participate in a variety of in-person events and create innovative solutions in a team",
-//     icon1: icon,
-//     image: participants,
-//     playbook: playbook1
-//   },
-//   {
-//     title: "Offer your expertise",
-//     icon1: icon,
-//     icon2: icon,
-//     icon3: icon,
-//     icon4: icon,
-//     txt1: "Provide Feedback to the innovative teams",
-//     txt2: "Mentor our teams",
-//     txt3: "Judge the work",
-//     txt4: "Provide expertise and resources",
-//     image: expert,
-//     playbook: playbook1
-//   },
-//   {
-//     title: "Integrate D4SD into your educational offering",
-//     icon1: icon,
-//     icon2: icon,
-//     txt1: "Offer experiential learning opportunities to your students",
-//     txt2: "Implement a civic innovation class in your institution",
-//     image: educator,
-//     playbook: playbook1
-//   },
-//   {
-//     title: "Sponsor us",
-//     icon1: icon,
-//     icon2: icon,
-//     icon3: icon,
-//     txt1: "Provide funding and resources for the challenge",
-//     txt2: "Increase your brand awareness through D4SD events",
-//     txt3: "Explore business opportunities within the larger challenge",
-//     image: sponsor,
-//     playbook: playbook1
-//   }
-// ]
-
-
-const roles = [
+const content = [
   {
-    name: innovator,
-    txt: "Take part in the challenge",
-    id: "innovators"
+    title: "Take part in the challenge",
+    txt: "Participate in a variety of in-person events and create innovative solutions in a team. D4SD gives innovators the opportunity to unpack large problems, generate potential solutions, learn human-centered design, showcase their ideas, and network with the larger design community.",
+    image: innovator,
+    id: "innovators",
+    link: "http://eepurl.com/c2kFon"
   },
   {
-    name: expert,
-    txt: "Offer your expertise",
-    id: "experts"
+    title: "Offer your expertise",
+    txt: "D4SD requires the collective effort of people with a variety of backgrounds. There are other dimensions to the challenge which needs additional support. So we encourage all of those who resonate with your cause to reach out and learn about the different ways you can get involved.",
+    image: innovator,
+    id: "experts",
+    link: "http://eepurl.com/c2kFon"
   },
   {
-    name: educator,
-    txt: "Bring D4SD to your class",
-    id: "educators"
+    title: "Bring D4SD to your class",
+    txt: "Offer experiential learning opportunities to your students/ Implement a civic innovation class in your institution. D4SD provides a unique supplemental learning experience participants regardless of their exposure to design thinking. The program builds from first principles and guides students along the human-centered design process.",
+    image: innovator,
+    id: "educators",
+    link: "http://eepurl.com/c2kFon"
   },
   {
-    name: sponsor,
-    txt: "Bring awareness to your business",
-    id: "sponsors"
-  },
+    title: "Sponsor D4SD",
+    txt: "D4SD has the ability to open your business to a wider network, particularly, the community and continue to foster and develop existing relationships.",
+    image: innovator,
+    id: "sponsors",
+    link: "http://eepurl.com/c2kFon"
+  }
 ]
 
 class Involve extends Component {
   constructor() {
     super();
     this.state = ({
-      innovators: false,
-      experts: false,
-      educators: false,
-      sponsors: false,
+      hovered: ""
     })
     this.innovators = React.createRef();
     this.experts = React.createRef();
@@ -100,24 +61,14 @@ class Involve extends Component {
   }
 
   onHover = ref => {
-    let states = ["innovators", "experts", "educators", "sponsors"];
-    states.forEach(state => {
-      if (state === ref.current.id) {
-        this.setState({[ref.current.id]: true});
-      }
-      else {
-        this.setState({[state]: false});
-      }
-    })
+    this.setState({hovered: ref.current.props.id});
+    console.log("clalllll");
+    console.log(ref.current.props.id);
   }
 
   onLeave = ref => {
-    let states = ["innovators", "experts", "educators", "sponsors"];
-    states.forEach(state => {
-      if (state === ref.current.id) {
-        this.setState({[ref.current.id]: false});
-      }
-    })
+    this.setState({hovered: "removed"});
+    console.log("noo")
   }
 
 
@@ -128,7 +79,7 @@ class Involve extends Component {
           <br/><br/><br/><br/>
           <h2 className="text-center">Ready to get involve?</h2>
           <br/><br/>
-          <Container>
+          {/**<Container>
             <div className="row text-center">
               {roles.map(role => (
                 <div
@@ -139,31 +90,35 @@ class Involve extends Component {
                   onMouseOut={() => this.onLeave(this[role.id])}
                 >
                   <h5 className={this.state[role.id] ? "involve-action":"d-none"}>Sign up for mailing list!</h5>
-                  <a href={playbook_educator}>
+                  <a href={role.link} target="_blank">
                     <img src={role.name} className={this.state[role.id] ? "involve-action-img":""}/>
-                    <h5>{role.txt}</h5>
+                    <h5 className="mb-0">{role.txt}</h5>
                   </a>
                 </div>
               ))}
             </div>
-          </Container>
-          {/**<div style={{"width":"90%", "marginLeft":"5%"}}>
+          </Container>**/}
+          <Container>
+          <div>
           <div className="d-flex flex-wrap justify-content-around">
-          {/content.map(content => (
-            <div className="col-xs-3 col-md-3">
+          {content.map(content => (
+            <div className="col-xs-6 col-md-6">
               <RoleCard
+                onMouseOver={() => this.onHover(this[content.id])}
+                onMouseOut={() => this.onLeave(this[content.id])}
+                ref={this[content.id]}
+                id={content.id}
+                hovered = {this.state.hovered}
                 title={content.title}
-                txt1={content.txt1}
-                txt2={content.txt2}
-                txt3={content.txt3}
-                txt4={content.txt4}
+                txt={content.txt}
                 image={content.image}
-                playbook={content.playbook}
+                link={content.link}
               />
             </div>
           ))}
         </div>
-        </div>**/}
+        </div>
+      </Container>
       </div>
     );
   }
