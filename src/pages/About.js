@@ -27,16 +27,16 @@ const values = [
     img: find
   },
   {
+    txt: "To provide an educational opportunity that serves people from a wide range of ages, backgrounds, and motivations",
+    img: edu
+  },
+  {
     txt: "To connect innovators, experts, city officials, professional designers, business leaders, and community members through a combination of in-person events and online activities.",
     img: connect
   },
   {
     txt: "To increase and diversify participation, particularly for typically underrepresented or marginalized populations, by creating a range of specific roles within the civic design framework and striving for diversity, equity, and inclusion.",
     img: div
-  },
-  {
-    txt: "To provide an educational opportunity that serves people from a wide range of ages, backgrounds, and motivations",
-    img: edu
   },
   {
     txt: "To contribute to the burgeoning design-driven economy in San Diego by providing resources to help launch top proposals by bringing together leaders from various sectors",
@@ -160,18 +160,18 @@ class Home extends Component {
             <br/><br/><br/><br/>
             <h2>What is the goal?</h2>
             <br/>
+            <div className="d-flex flex-wrap justify-content-around">
             {values.map((value, i) => (
-              <div className="row align-items-center mb-4">
-                <div className="col-lg-1 col-2">
-                  <img src={value.img} className="w-100"/>
-                </div>
-                <div className="col-lg-11 col-10">
-                  <h5 className="text-left">{value.txt}</h5>
-                </div>
-              </div>
-              ))}
-              <br/><br/><br/>
-            </Container>
+              <React.Fragment>
+                <img src={value.img} style={{"width":"10%", "alignSelf":"center", "padding":"0 10px"}} />
+                <h5 className="text-left" style={{"width":"40%"}}>
+                {value.txt}
+              </h5>
+            </React.Fragment>
+            ))}
+          </div>
+            <br/><br/><br/>
+          </Container>
           </section>
           <br/><br/>
           <section ref={this.timeline} id="timeline">
