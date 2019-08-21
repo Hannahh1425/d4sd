@@ -14,7 +14,9 @@ import div from "../img/about_div.png";
 import edu from "../img/about_edu.png";
 import find from "../img/about_find.png";
 // import diagram from "../img/about_diagram.svg";
-import timeline from "../img/about_timeline.svg";
+// import timeline from "../img/about_timeline.svg";
+import ppttimeline from "../img/about_participanttimeline.png"
+import commtimeline from "../img/about_communitytimeline.png"
 import { ReactComponent as Diagram } from "../img/about_diagram.svg";
 // import { ReactComponent as Timeline } from "../img/about_timeline.svg";
 
@@ -47,7 +49,6 @@ const values = [
     img: city
   }
 ]
-
 
 class Home extends Component {
   constructor() {
@@ -85,6 +86,7 @@ class Home extends Component {
     })
     console.log("after");
     console.log(this.state);
+
   }
 
   onHover = e => {
@@ -97,6 +99,25 @@ class Home extends Component {
   unHover = e => {
 
   }
+
+  handlePpt = e =>{
+    console.log("participant");
+    var ppt_timeline = document.getElementById("ppt_timeline");
+    var comm_timeline = document.getElementById("comm_timeline");
+    console.log(ppt_timeline);
+    ppt_timeline.style.display = "inline-block";
+    comm_timeline.style.display = "none";
+  }
+
+  handleComm = e =>{
+    console.log("community");
+    var ppt_timeline = document.getElementById("ppt_timeline");
+    var comm_timeline = document.getElementById("comm_timeline");
+    console.log(ppt_timeline);
+    ppt_timeline.style.display = "none";
+    comm_timeline.style.display = "inline-block";
+  }
+
   render() {
     return (
       <div id="about">
@@ -180,8 +201,14 @@ class Home extends Component {
           <br/><br/>
           <section ref={this.timeline} id="timeline">
             <Container>
-              <h2>What is the process?</h2>
-              <img src={timeline} className="w-100"/>
+              <h2>What is our process?</h2>
+              <div className="d-flex flex-row align-items-center justify-content-center">
+                <button onClick={this.handlePpt} className="about_button">Participant Timeline</button>
+                <button onClick={this.handleComm} className="about_button">Community Timeline</button>
+              </div>
+              <br/><br/>
+              <img src={ppttimeline} className="w-75" id="ppt_timeline"/>
+              <img src={commtimeline} className="w-75" id="comm_timeline"/>
             </Container>
           </section>
           <br/><br/>
@@ -191,7 +218,7 @@ class Home extends Component {
               <h2>Learn more about the previous D4SD</h2>
               <h5>Want to learn more about how it actually works? <br/> Check out
                 the overview of D4SD 2017 where 23 teams generated concepts on
-                the theme of transportation.
+                the theme of mobility.
               </h5>
               <br/>
               <a className="btn-style mr-3" href={whitepaper} target="_blank">Download Whitepaper</a>
