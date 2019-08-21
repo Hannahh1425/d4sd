@@ -9,7 +9,7 @@ class Container extends Component {
       <div className="container mb-5">
         <div className="row">
           <div className="col"/>
-          <div className="col-lg-10">
+          <div className="col-lg-11">
             {this.props.children}
           </div>
           <div className="col"/>
