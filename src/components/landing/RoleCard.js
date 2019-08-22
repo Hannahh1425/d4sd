@@ -25,9 +25,8 @@ class RoleCard extends Component {
             <div className="row">
               <h4>{this.props.title}</h4>
             </div>
-
             <div className="row">
-              <a href="http://eepurl.com/c2kFon" className="btn-style">{this.props.action}</a>
+              <a href={this.props.link} target="_blank" className="btn-style">{this.props.action}</a>
             </div>
           </div>
         </div>
