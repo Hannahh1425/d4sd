@@ -40,7 +40,7 @@ const content = [
     txt: "Offer experiential learning opportunities to your students/ Implement a civic innovation class in your institution. D4SD provides a unique supplemental learning experience participants regardless of their exposure to design thinking. The program builds from first principles and guides students along the human-centered design process.",
     image: educator,
     id: "educators",
-    link: "http://eepurl.com/c2kFon",
+    link: playbook_educator,
     action: "View playbook"
   },
   {
