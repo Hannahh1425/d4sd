@@ -4,7 +4,6 @@ import Container from '../components/Container';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Button from '../components/landing/Button';
-import header from '../img/about.png';
 import playbook_educator from "../img/involve_playbook.pdf";
 
 import city from "../img/about_city.png";

@@ -7,11 +7,12 @@ import Button from '../components/landing/Button';
 import HeaderCard from '../components/landing/HeaderCard';
 import whitepaper from '../img/D4SD_2017_WhitePaper.pdf';
 
-import city from "../img/about_city.png";
-import connect from "../img/about_connect.png";
-import div from "../img/about_div.png";
-import edu from "../img/about_edu.png";
-import find from "../img/about_find.png";
+import city from "../img/about_city.svg";
+import connect from "../img/about_connect.svg";
+import div from "../img/about_div.svg";
+import edu from "../img/about_edu.svg";
+import find from "../img/about_find.svg";
+import communicate from "../img/about_communicate.svg";
 // import diagram from "../img/about_diagram.svg";
 // import timeline from "../img/about_timeline.svg";
 import ppttimeline from "../img/about_participanttimeline.png"
@@ -45,7 +46,7 @@ const values = [
   },
   {
     txt: "To provide bottom-up community actions with more agency and to enhance the communications between the government and the local groups.",
-    img: city
+    img: communicate
   }
 ]
 
@@ -208,11 +209,11 @@ class Home extends Component {
                 as they align with our themes.
               </h5>
               <br/>
-              <h5 className="d-flex flex-row align-items-center justify-content-center">
+              <h5>
                 <button onClick={this.handlePpt} className="about_button">Innovators</button>
-                and
+                <span className="text-dark px-2">and</span>
                 <button onClick={this.handleComm} className="about_button">Community members</button>
-                will have slightly different process.
+                <span className="text-dark px-2">will have slightly different process.</span>
               </h5>
               <br/><br/>
               <img src={ppttimeline} className="w-75" id="ppt_timeline"/>
@@ -229,9 +230,9 @@ class Home extends Component {
                 the overview of D4SD 2017 where 23 teams generated concepts on
                 the theme of mobility.
               </h5>
-              <br/>
-              <a className="btn-style mr-3" href={whitepaper} target="_blank">Download 2017 Whitepaper</a>
-              <a className="btn-style" href="http://d4sd.org" target="_blank">D4SD 2017 website</a>
+              <br/><br/>
+              <a className="btn-style-big mr-3" href={whitepaper} target="_blank">Download 2017 Whitepaper</a>
+              <a className="btn-style-big" href="http://d4sd.org" target="_blank">D4SD 2017 website</a>
               <br/><br/>
               {/**<a href="http://eepurl.com/c2kFon" target="_blank">
                 <h2>Join our mailing list</h2>

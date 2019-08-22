@@ -22,6 +22,9 @@ h1, h2 {
   padding: 0 14px;
 }
 
+a {
+  font-family: 'Montserrat', sans-serif;
+}
 
 h5 {
   font-family: 'Open Sans', sans-serif;

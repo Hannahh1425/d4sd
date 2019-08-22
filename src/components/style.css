@@ -42,7 +42,7 @@
 
 /****************************Footer******************************/
 #footer {
-    background-image: url('../img/footer.png');
+    /* background-image: url('../img/footer.png'); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -54,12 +54,12 @@
 /****************************Button******************************/
 #landing_btn a {
     border-radius: 25px;
-    border: 1px solid #1A89DB;
-    font-size: 0.9em;
+    border: 1.5px solid #1A89DB;
+    font-size: 1em;
     color: #1A89DB;
     text-align: center;
-    font-weight: 500;
-    padding: 0.5em 1em 0.5em 1em;
+    font-weight: 900;
+    padding: 0.75em 1.25em;
 }
 
 #landing_btn a:hover {
@@ -131,7 +131,7 @@
 .btn-style {
     border-radius: 25px;
     border: 1px solid #1A89DB;
-    font-size: 0.9em;
+    font-size: 0.75em;
     color: #1A89DB;
     text-align: center;
     font-weight: 500;

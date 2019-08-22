@@ -4,7 +4,6 @@ import Container from '../components/Container';
 import Navbar from '../components/Navbar';
 import Button from '../components/landing/Button';
 import EventCard from '../components/landing/EventCard';
-import header from '../img/about.png';
 import './style.css';
 
 class Events extends Component {
