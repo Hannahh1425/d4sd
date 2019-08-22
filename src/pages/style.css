@@ -103,7 +103,7 @@ span {
   text-align: center;
 }
 
-#about h5, h4 {
+#about h5 {
   width: 90%;
   margin-left: 5%;
   text-align: left;
@@ -142,9 +142,14 @@ span {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
+
+/* .slider:after {
+  content: "innovator";
+  padding-left: 34px;
+} */
 
 input:checked + .slider {
   background-color: #2196F3;
@@ -155,9 +160,16 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  right: 0;
+  bottom: 4px;
+  background-color: white;
+  /* -webkit-transform: translateX(68px);
+  -ms-transform: translateX(68px);
+  transform: translateX(68px); */
 }
 
 /* Rounded sliders */
@@ -299,6 +311,14 @@ svg:hover {
       position: absolute;
       width: 50%;
       top: 8em;
+    }
+
+    .vertical {
+      display: none;
+    }
+
+    .horizontal {
+      display: inline;
     }
 
 

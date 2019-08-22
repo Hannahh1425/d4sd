@@ -11,6 +11,7 @@ import educator from "../img/involve_educator.png";
 import sponsor from "../img/involve_sponsor.png";
 import expert from "../img/involve_expert.png";
 import innovator from "../img/involve_participant.png";
+import question from "../img/involve_question.svg";
 
 import icon from '../img/icon.png';
 
@@ -25,7 +26,7 @@ const content = [
     image: innovator,
     id: "innovators",
     link: "http://eepurl.com/c2kFon",
-    action: "Sign up for Mailing List"
+    action: ""
   },
   {
     title: "Offer your expertise",
@@ -33,7 +34,7 @@ const content = [
     image: expert,
     id: "experts",
     link: "http://eepurl.com/c2kFon",
-    action: "Join the community"
+    action: ""
   },
   {
     title: "Bring D4SD to your class",
@@ -41,7 +42,7 @@ const content = [
     image: educator,
     id: "educators",
     link: playbook_educator,
-    action: "View playbook"
+    action: ""
   },
   {
     title: "Sponsor D4SD",
@@ -49,7 +50,15 @@ const content = [
     image: sponsor,
     id: "sponsors",
     link: "http://eepurl.com/c2kFon",
-    action: "Contact Us"
+    action: ""
+  },
+  {
+    title: "Still don’t see a way to get involved?",
+    txt: "No worries! We promise that everyone is able to take part in D4SD in the way that they like. You are offered the opportunity to design your own roles and actions! We are going to try our best to incorporate your distinguished personality and background once we hear from you.",
+    image: question,
+    id: "question",
+    link: "https://forms.gle/1GzRdAVandg68rTP9",
+    action: "Make your Suggestion"
   }
 ]
 
@@ -93,11 +102,17 @@ class Involve extends Component {
     return (
       <div id="involve">
         <Navbar/>
+        <br/><br/>
         <HeaderCard title="Get Involved"/>
           <br/><br/>
-          <div>
           <Container>
-          <div className="d-flex flex-wrap justify-content-around">
+          <div className="text-center">
+            <h4>If you're interested in being part of D4SD, Join our Mailing List</h4>
+            <br/>
+            <a href="http://eepurl.com/c2kFon" className="btn-style-big" target="_blank">Join our Mailing List</a>
+          </div>
+          <br/><br/><br/><br/>
+          <div className="d-flex flex-wrap justify-content-between">
           {content.map(content => (
             <div className="col-xs-6 col-md-6 mb-4">
               <RoleCard
@@ -115,8 +130,6 @@ class Involve extends Component {
           ))}
         </div>
         </Container>
-        </div>
-
       </div>
     );
   }
