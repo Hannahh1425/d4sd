@@ -15,8 +15,10 @@ import find from "../img/about_find.svg";
 import communicate from "../img/about_communicate.svg";
 // import diagram from "../img/about_diagram.svg";
 // import timeline from "../img/about_timeline.svg";
-import ppttimeline from "../img/about_participanttimeline.png"
-import commtimeline from "../img/about_communitytimeline.png"
+import ppttimeline_horizontal from "../img/about_participants_horizontal.png";
+import commtimeline_horizontal from "../img/about_community_horizontal.png";
+import ppttimeline from "../img/about_participanttimeline.png";
+import commtimeline from "../img/about_communitytimeline.png";
 import { ReactComponent as Diagram } from "../img/about_diagram.svg";
 // import { ReactComponent as Timeline } from "../img/about_timeline.svg";
 
@@ -24,18 +26,6 @@ import icon from "../img/icon.png";
 import './style.css';
 
 const values = [
-  {
-    txt: "To collaboratively explore a range of civic problems that the San Diego region faces.",
-    img: find
-  },
-  {
-    txt: "To provide an educational opportunity that serves people from a wide range of ages, backgrounds, and motivations.",
-    img: div
-  },
-  {
-    txt: "To connect innovators, experts, city officials, professional designers, business leaders, and community members through a combination of in-person events and online activities.",
-    img: edu
-  },
   {
     txt: "To increase and diversify participation, particularly for typically underrepresented or marginalized populations, by creating a range of specific roles within the civic design framework and striving for diversity, equity, and inclusion.",
     img: connect
@@ -47,6 +37,18 @@ const values = [
   {
     txt: "To provide bottom-up community actions with more agency and to enhance the communications between the government and the local groups.",
     img: communicate
+  },
+  {
+    txt: "To collaboratively explore a range of civic problems that the San Diego region faces.",
+    img: find
+  },
+  {
+    txt: "To provide an educational opportunity that serves people from a wide range of ages, backgrounds, and motivations.",
+    img: div
+  },
+  {
+    txt: "To connect innovators, experts, city officials, professional designers, business leaders, and community members through a combination of in-person events and online activities.",
+    img: edu
   }
 ]
 
@@ -190,7 +192,7 @@ class Home extends Component {
           <Container>
             <h2>Who can participate?</h2>
             <br/>
-            <h5>Everyone who cares about the city and have a passion for innovation
+            <h5>Everyone who cares about the city and has a passion for innovation
               is more than welcome to participate! Find your place in the challenge!
             </h5>
             <br/><br/><br/>
@@ -222,12 +224,12 @@ class Home extends Component {
               <h2>How do I participate?</h2>
               <br/>
               <h5>
-                D4SD will have 4 major events: <span>Fireside Chats</span>, <span>Designathons</span>, <span>Feedback Session</span> and <span>Summit</span>.
-                <br/><br/><span>Fireside chats</span> operate as a chance
+                D4SD will have 4 major events: <b>Fireside Chats</b>, <b>Designathons</b>, <b>Feedback Session</b> and <b>Summit</b>.
+                <br/><br/><b>Fireside chats</b> operate as a chance
                 to gather knowledge and explore the problem with experts who have
-                an in-depth knowledge of the problem space. <span>Designathons</span> serve as
+                an in-depth knowledge of the problem space. <b>Designathons</b> serve as
                 opportunities to explore and develop potential solutions where
-                prototypes are built. <span>Feedback</span> Session is an online stage where
+                prototypes are built. <b>Feedback</b> Session is an online stage where
                 community members are able to critique innovators’ work and help them
                 improve their solutions through D4SD website.
                 <br/><br/>Since our aim is to be as inclusive as possible to all
@@ -240,15 +242,17 @@ class Home extends Component {
                 Different roles will have slightly different process.
               </h5>
               <br/>
-                <h4 className="text-left">
+                <h4 className="text-left" style={{"width":"90%", "marginLeft":"5%"}}>
                   <label className="switch mr-3">
                   <input type="checkbox" onClick={this.toggle}/>
                   <span className="slider round"></span>
                   </label>
                 {this.state.role} process</h4>
-              <br/>
+              <br/>              
               <img src={ppttimeline} className="w-75" id="ppt_timeline"/>
               <img src={commtimeline} className="w-75" id="comm_timeline"/>
+              {/**<img src={ppttimeline_horizontal} className="w-100 horizontal" id="ppt_timeline"/>
+            <img src={commtimeline_horizontal} className="w-100 horizontal" id="comm_timeline"/>**/}
             </Container>
           </section>
           <br/><br/>
