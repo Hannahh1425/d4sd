@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Container from '../components/Container';
 import Button from '../components/landing/Button';
+import styled from 'styled-components';
 
 import home0 from '../img/home_landing.png';
 import home1 from '../img/home_mobility.png';
@@ -22,7 +23,7 @@ const content = [
     src: home0,
     animate: false,
     title: "How can we make San Diego a more sustainable city?",
-    txt: "San Diego is an amazing place to live, but like any city, faces some difficult challenges that we must face together. In order to address these complex problems, we introduce Design for San Diego (D4SD), -- which is a city-wide initiative centered on using human-centered design and crowdsourcing to explore solutions for issues related to mobility, housing, health, and climate."
+    txt: "D4SD 2020 theme is Sustainable Cities, inspired by the United Nations 17 goals for a more inclusive, safe, resilient and sustainable world. Check out the challenge briefs to see the problem space that you could explore and sign up to be part of this innovative process for the city’s future!"
   },
   {
     id: 1,

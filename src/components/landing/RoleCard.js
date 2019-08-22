@@ -13,9 +13,23 @@ class RoleCard extends Component {
     }
     return (
       <div id={this.props.id} ref={this.props.ref} className="role-card-hovered">
-        <div className="d-flex align-items-center">
+        {/**<div className="d-flex align-items-center">
           <img src={this.props.image} className="w-25 align-self-center" />
           <h4 style={{"width":"72%", "paddingLeft":"3%", "align":"center"}}>{this.props.title}</h4>
+        </div>**/}
+        <div className="row align-items-xl-center">
+          <div className="col-3">
+            <img src={this.props.image} className="w-100" />
+          </div>
+          <div className="col-9">
+            <div className="row">
+              <h4>{this.props.title}</h4>
+            </div>
+
+            <div className="row">
+              <a href="http://eepurl.com/c2kFon" className="btn-style">{this.props.action}</a>
+            </div>
+          </div>
         </div>
         {this.props.show.includes(this.props.id) && <h5 className="p-0"><br/>{this.props.txt}</h5>}
         <br/>
