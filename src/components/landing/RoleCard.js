@@ -5,24 +5,44 @@ import '../style.css';
 class RoleCard extends Component {
 
   render() {
+    let button;
+    if (this.props.show.includes(this.props.id)) {
+      button = <i class="fas fa-chevron-up"></i>
+    } else {
+      button = <i class="fas fa-chevron-down"></i>
+    }
     return (
-      <div id="role-card" className="position-relative">
-      <div>
-        <h4 style={{"fontSize":"1.35em"}}>{this.props.title}</h4>
-        <br/>
-        <h5 style={{"padding":"0.3em 0", "lineHeight":"1.2rem"}}>{this.props.txt1}</h5>
-        <h5 style={{"padding":"0.3em 0", "lineHeight":"1.2rem"}}>{this.props.txt2}</h5>
-        <h5 style={{"padding":"0.3em 0", "lineHeight":"1.2rem"}}>{this.props.txt3}</h5>
-        <h5 style={{"padding":"0.3em 0", "lineHeight":"1.2rem"}}>{this.props.txt4}</h5>
-        <div className="row">
-          <div className="col-8">
-            <a href={this.props.playbook} className="btn-style" target="_blank">View Playbook</a>
+      <div id={this.props.id} ref={this.props.ref} className="role-card-hovered">
+        {/**<div className="d-flex align-items-center">
+          <img src={this.props.image} className="w-25 align-self-center" />
+          <h4 style={{"width":"72%", "paddingLeft":"3%", "align":"center"}}>{this.props.title}</h4>
+        </div>**/}
+        <div className="row align-items-xl-center">
+          <div className="col-3">
+            <img src={this.props.image} className="w-100" />
           </div>
-          <div className="col-4">
-            <img src={this.props.image} />
+          <div className="col-9">
+            <div className="row">
+              <h4>{this.props.title}</h4>
+            </div>
+
+            <div className="row">
+              <a href="http://eepurl.com/c2kFon" className="btn-style">{this.props.action}</a>
+            </div>
           </div>
         </div>
-      </div>
+        {this.props.show.includes(this.props.id) && <h5 className="p-0"><br/>{this.props.txt}</h5>}
+        <br/>
+        <div className="row action-btn py-2 justify-content-center" onClick={this.props.onClick}>
+          {button}
+        </div>
+        {/**
+          this.props.hovered === this.props.id &&
+          (<div className="row action-btn py-3 justify-content-center">
+              <a href={this.props.link} target="_blank"><h5>{this.props.action}</h5></a>
+            </div>
+          )**/}
+        {/**<a href={this.props.link} className="btn-style" target="_blank">{this.props.action}</a>**/}
       </div>
     );
   }

@@ -4,7 +4,7 @@ import Container from '../components/Container';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Button from '../components/landing/Button';
-import header from '../img/about_header.png';
+import HeaderCard from '../components/landing/HeaderCard';
 import whitepaper from '../img/D4SD_2017_WhitePaper.pdf';
 
 import city from "../img/about_city.png";
@@ -13,7 +13,9 @@ import div from "../img/about_div.png";
 import edu from "../img/about_edu.png";
 import find from "../img/about_find.png";
 // import diagram from "../img/about_diagram.svg";
-import timeline from "../img/about_timeline.svg";
+// import timeline from "../img/about_timeline.svg";
+import ppttimeline from "../img/about_participanttimeline.png"
+import commtimeline from "../img/about_communitytimeline.png"
 import { ReactComponent as Diagram } from "../img/about_diagram.svg";
 // import { ReactComponent as Timeline } from "../img/about_timeline.svg";
 
@@ -26,23 +28,26 @@ const values = [
     img: find
   },
   {
-    txt: "To connect innovators, experts, city officials, professional designers, business leaders, and community members through a combination of in-person events and online activities.",
-    img: connect
-  },
-  {
-    txt: "To increase and diversify participation, particularly for typically underrepresented or marginalized populations, by creating a range of specific roles within the civic design framework and striving for diversity, equity, and inclusion.",
+    txt: "To provide an educational opportunity that serves people from a wide range of ages, backgrounds, and motivations.",
     img: div
   },
   {
-    txt: "To provide an educational opportunity that serves people from a wide range of ages, backgrounds, and motivations",
+    txt: "To connect innovators, experts, city officials, professional designers, business leaders, and community members through a combination of in-person events and online activities.",
     img: edu
   },
   {
-    txt: "To contribute to the burgeoning design-driven economy in San Diego by providing resources to help launch top proposals by bringing together leaders from various sectors",
+    txt: "To increase and diversify participation, particularly for typically underrepresented or marginalized populations, by creating a range of specific roles within the civic design framework and striving for diversity, equity, and inclusion.",
+    img: connect
+  },
+  {
+    txt: "To contribute to the burgeoning design-driven economy in San Diego by providing resources to help launch top proposals by bringing together leaders from various sectors.",
+    img: city
+  },
+  {
+    txt: "To provide bottom-up community actions with more agency and to enhance the communications between the government and the local groups.",
     img: city
   }
 ]
-
 
 class Home extends Component {
   constructor() {
@@ -80,6 +85,7 @@ class Home extends Component {
     })
     console.log("after");
     console.log(this.state);
+
   }
 
   onHover = e => {
@@ -92,11 +98,32 @@ class Home extends Component {
   unHover = e => {
 
   }
+
+  handlePpt = e =>{
+    console.log("participant");
+    var ppt_timeline = document.getElementById("ppt_timeline");
+    var comm_timeline = document.getElementById("comm_timeline");
+    console.log(ppt_timeline);
+    ppt_timeline.style.display = "inline-block";
+    comm_timeline.style.display = "none";
+  }
+
+  handleComm = e =>{
+    console.log("community");
+    var ppt_timeline = document.getElementById("ppt_timeline");
+    var comm_timeline = document.getElementById("comm_timeline");
+    console.log(ppt_timeline);
+    ppt_timeline.style.display = "none";
+    comm_timeline.style.display = "inline-block";
+  }
+
   render() {
     return (
       <div id="about">
         <Navbar/>
-        <nav className="navbar navbar-light justify-content-left position-fixed subnav">
+        <br/><br/>
+        <HeaderCard title="About D4SD"/>
+        {/*<nav className="navbar navbar-light justify-content-left position-fixed subnav">
           <ul className="navbar-nav justify-content-center">
             <li className="nav-item">
               <a className={this.state.overview ? "nav-link text-left subnav-link-active":"nav-link text-left subnav-link"} onClick={() => this.scrollToRef(this.overview)}>What is D4SD</a>
@@ -114,28 +141,18 @@ class Home extends Component {
               <a className={this.state.review ? "nav-link text-left subnav-link-active":"nav-link text-left subnav-link"} onClick={() => this.scrollToRef(this.review)}>Review D4SD2017</a>
             </li>
           </ul>
-        </nav>
+        </nav>*/}
         <section ref={this.overview} id="overview">
-          <Container style={{"backgroundImage":`url(${header})`, "backgroundRepeat":"no-repeat", "backgroundSize":"cover",}}>
+          <Container style={{"backgroundColor":"#EFF8FF"}}>
             <br/><br/><br/><br/>
             <h2>What is D4SD?</h2>
             <br/>
-            <h5 className="text-left">
-              Design for San Diego (D4SD) is a civic design challenge that
-              aims at providing a space for all citizens to address San Diego's
-              most challening issues, prototype solutions through human-centered design,
-              and link them to resources in their communities that can bring those
-              solutions to life.
-            </h5>
-            <br/>
-            <h5 className="text-left">
-              This is the 2nd D4SD Civic Design Challenge and the theme of this year
-              is Sustainable City. To make cities and human settlements inclusive,
-              safe, resilient and sustainable is one of the 17 goals that the United
-              Nations envisioned to transform our world by 2030. What can we do to
-              make San Diego a more sustainable city to settle in? Check out the
-              challenge briefs to see the problem space that you could explore and sign
-              up to be part of this innovative process for the city’s future!
+            <h5>
+              Design for San Diego (D4SD) is a civic design challenge that aims
+              at providing a space for all citizens to address San Diego's most
+              challenging issues, prototype solutions through human-centered design,
+              and link them to resources in their communities that can bring
+              those solutions to life.
             </h5>
             <br/><br/><br/><br/><br/>
           </Container>
@@ -144,6 +161,7 @@ class Home extends Component {
         <section ref={this.join} id="join">
           <Container>
             <h2>Who can participate?</h2>
+            <br/>
             <h5>Everyone who cares about the city and have a passion for innovation
               is more than welcome to participate! Find your place in the challenge!
             </h5>
@@ -155,40 +173,65 @@ class Home extends Component {
         <section ref={this.value} id="value">
           <Container style={{"backgroundColor":"#EFF8FF"}}>
             <br/><br/><br/><br/>
-            <h2>What is the goal?</h2>
+            <h2>What are our goals?</h2>
             <br/>
+            <div className="d-flex flex-wrap justify-content-around">
             {values.map((value, i) => (
-              <div className="row align-items-center mb-4">
-                <div className="col-lg-1 col-2">
-                  <img src={value.img} className="w-100"/>
-                </div>
-                <div className="col-lg-11 col-10">
-                  <h5 className="text-left">{value.txt}</h5>
-                </div>
-              </div>
-              ))}
-              <br/><br/><br/>
-            </Container>
+              <React.Fragment>
+                <img src={value.img} style={{"width":"10%", "alignSelf":"baseline", "padding":"32px 24px"}} />
+                <h5 className="text-left" style={{"width":"40%", "padding":"32px 0", "margin":"0"}}>
+                  {value.txt}
+                </h5>
+              </React.Fragment>
+            ))}
+          </div>
+            <br/><br/><br/>
+          </Container>
           </section>
           <br/><br/>
           <section ref={this.timeline} id="timeline">
             <Container>
-              <h2>What is the process?</h2>
-              <img src={timeline} className="w-100"/>
+              <h2>How do I participate?</h2>
+              <br/>
+              <h5>
+                D4SD will have 4 major events: <span>Fireside Chats</span>, <span>Designathons</span>, <span>Feedback Session</span> and <span>Summit</span>.
+                <br/><br/><span>Fireside chats</span> operate as a chance
+                to gather knowledge and explore the problem with experts who have
+                an in-depth knowledge of the problem space. <span>Designathons</span> serve as
+                opportunities to explore and develop potential solutions where
+                prototypes are built. <span>Feedback</span> Session is an online stage where
+                community members are able to critique innovators’ work and help them
+                improve their solutions through D4SD website.
+                <br/><br/>Since our aim is to be as inclusive as possible to all
+                participants, you are more than welcome to create your own fireside
+                chat and designathon events at your convenient time and space, as long
+                as they align with our themes.
+              </h5>
+              <br/>
+              <h5 className="d-flex flex-row align-items-center justify-content-center">
+                <button onClick={this.handlePpt} className="about_button">Innovators</button>
+                and
+                <button onClick={this.handleComm} className="about_button">Community members</button>
+                will have slightly different process.
+              </h5>
+              <br/><br/>
+              <img src={ppttimeline} className="w-75" id="ppt_timeline"/>
+              <img src={commtimeline} className="w-75" id="comm_timeline"/>
             </Container>
           </section>
           <br/><br/>
           <section ref={this.review} id="review">
             <Container style={{"backgroundColor":"#EFF8FF"}}>
               <br/><br/><br/><br/>
-              <h2>Learn more about the previous D4SD</h2>
-              <h5>Want to learn more about how it actually works? <br/> Check out
+              <h2 className="text-center">Learn more about the previous D4SD</h2>
+              <br/>
+              <h5 className="text-center">Want to learn more about how it actually works? <br/> Check out
                 the overview of D4SD 2017 where 23 teams generated concepts on
-                the theme of transportation.
+                the theme of mobility.
               </h5>
               <br/>
-              <a className="btn-style mr-3" href={whitepaper} target="_blank">Download Whitepaper</a>
-              <a className="btn-style" href="http://d4sd.org" target="_blank">Checkout website</a>
+              <a className="btn-style mr-3" href={whitepaper} target="_blank">Download 2017 Whitepaper</a>
+              <a className="btn-style" href="http://d4sd.org" target="_blank">D4SD 2017 website</a>
               <br/><br/>
               {/**<a href="http://eepurl.com/c2kFon" target="_blank">
                 <h2>Join our mailing list</h2>
