@@ -98,12 +98,11 @@ class Home extends Component {
   render() {
   return (
     <div>
-    (this.state.loaded &&
-      {<div id="home">
+    <div id="home">
       <Navbar/>
       <div>
         {content.map((content, i) => (
-          <div key={i} id={i} style={{"position":"relative"}}>
+          <div key={i} id={i} style={{"position":"relative"}} className="vh-100">
             <div className="home-content">
               <div style={{"position":"relative"}}>
                 <h2>{content.title}</h2>
@@ -118,7 +117,7 @@ class Home extends Component {
           </div>
         ))}
       </div>
-    </div>})
+    </div>
     </div>
     );
   }
