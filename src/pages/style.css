@@ -7,6 +7,10 @@ h4 {
   text-shadow: 0px 0px 5px #FFFFFF;
 }
 
+span {
+  color: #566ED1;
+}
+
 /*****************************Homepage*****************************/
 
 #home {
@@ -83,6 +87,12 @@ h4 {
   text-align: center;
 }
 
+#about h5 {
+  width: 90%;
+  margin-left: 5%;
+  text-align: left;
+}
+
 .subnav {
     border: 1px solid rgba(0, 0, 0, 0.2);
     top: 3.5em;
@@ -140,9 +150,8 @@ svg:hover {
 
 
 .about_button {
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.9em;
-    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;    
+    font-weight: 900;
     padding: 0;
     border: none;
     background: none;
@@ -150,8 +159,6 @@ svg:hover {
 
 .about_button:hover {
     color: #4496FF!important;
-    font-weight: 600;
-    font-size: 0.9em;
 }
 
 .about_button:active {
@@ -215,7 +222,7 @@ svg:hover {
     .home-content {
       position: absolute;
       width: 50%;
-      top: 8em;      
+      top: 8em;
     }
 
 

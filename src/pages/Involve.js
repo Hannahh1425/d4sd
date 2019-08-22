@@ -21,7 +21,7 @@ import './style.css';
 const content = [
   {
     title: "Take part in the challenge",
-    txt: "Participate in a variety of in-person events and create innovative solutions in a team. D4SD gives innovators the opportunity to unpack large problems, generate potential solutions, learn human-centered design, showcase their ideas, and network with the larger design community.",
+    txt: "As an innovator, you can participate in a variety of in-person events and create innovative solutions in a team. D4SD gives innovators the opportunity to unpack large problems, generate potential solutions, learn human-centered design, showcase their ideas, and network with the larger design community.",
     image: innovator,
     id: "innovators",
     link: "http://eepurl.com/c2kFon",
@@ -89,43 +89,12 @@ class Involve extends Component {
     }
   }
 
-  unexpand = ref => {
-    this.setState({show: this.state.show.filter(show => {
-        return show !== ref.current.props.id
-    })});
-  }
-
-
   render() {
     return (
       <div id="involve">
         <Navbar/>
-        <HeaderCard/>
+        <HeaderCard title="Get Involved"/>
           <br/><br/>
-
-          {/**<Container>
-
-            <div className="row text-center">
-              {roles.map(role => (
-                <div
-                  className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 involve-roles"
-                  id={role.id}
-                  ref={this[role.id]}
-                  onMouseOver={() => this.onHover(this[role.id])}
-                  onMouseOut={() => this.onLeave(this[role.id])}
-                >
-                  <h5 className={this.state[role.id] ? "involve-action":"d-none"}>Sign up for mailing list!</h5>
-                  <a href={role.link} target="_blank">
-
-                    <img src={role.name} className={this.state[role.id] ? "involve-action-img":""}/>
-                    <h5 className="mb-0">{role.txt}</h5>
-                  </a>
-                  <br/><br/><br/><br/>
-                </div>
-              ))}
-            </div>
-          </Container>**/}
-
           <div>
           <Container>
           <div className="d-flex flex-wrap justify-content-around">

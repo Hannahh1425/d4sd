@@ -5,7 +5,6 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Button from '../components/landing/Button';
 import HeaderCard from '../components/landing/HeaderCard';
-import header from '../img/involve_header.svg';
 import whitepaper from '../img/D4SD_2017_WhitePaper.pdf';
 
 import city from "../img/about_city.png";
@@ -148,22 +147,12 @@ class Home extends Component {
             <br/><br/><br/><br/>
             <h2>What is D4SD?</h2>
             <br/>
-            <h5 className="text-left">
-              Design for San Diego (D4SD) is a civic design challenge that
-              aims at providing a space for all citizens to address San Diego's
-              most challening issues, prototype solutions through human-centered design,
-              and link them to resources in their communities that can bring those
-              solutions to life.
-            </h5>
-            <br/>
-            <h5 className="text-left">
-              This is the 2nd D4SD Civic Design Challenge and the theme of this year
-              is Sustainable City. To make cities and human settlements inclusive,
-              safe, resilient and sustainable is one of the 17 goals that the United
-              Nations envisioned to transform our world by 2030. What can we do to
-              make San Diego a more sustainable city to settle in? Check out the
-              challenge briefs to see the problem space that you could explore and sign
-              up to be part of this innovative process for the city’s future!
+            <h5>
+              Design for San Diego (D4SD) is a civic design challenge that aims
+              at providing a space for all citizens to address San Diego's most
+              challenging issues, prototype solutions through human-centered design,
+              and link them to resources in their communities that can bring
+              those solutions to life.
             </h5>
             <br/><br/><br/><br/><br/>
           </Container>
@@ -172,6 +161,7 @@ class Home extends Component {
         <section ref={this.join} id="join">
           <Container>
             <h2>Who can participate?</h2>
+            <br/>
             <h5>Everyone who cares about the city and have a passion for innovation
               is more than welcome to participate! Find your place in the challenge!
             </h5>
@@ -183,13 +173,13 @@ class Home extends Component {
         <section ref={this.value} id="value">
           <Container style={{"backgroundColor":"#EFF8FF"}}>
             <br/><br/><br/><br/>
-            <h2>What is the goal?</h2>
+            <h2>What are our goals?</h2>
             <br/>
             <div className="d-flex flex-wrap justify-content-around">
             {values.map((value, i) => (
               <React.Fragment>
                 <img src={value.img} style={{"width":"10%", "alignSelf":"baseline", "padding":"32px 24px"}} />
-                <h5 className="text-left" style={{"width":"40%", "padding":"32px 0"}}>
+                <h5 className="text-left" style={{"width":"40%", "padding":"32px 0", "margin":"0"}}>
                   {value.txt}
                 </h5>
               </React.Fragment>
@@ -201,11 +191,29 @@ class Home extends Component {
           <br/><br/>
           <section ref={this.timeline} id="timeline">
             <Container>
-              <h2>What is our process?</h2>
-              <div className="d-flex flex-row align-items-center justify-content-center">
-                <button onClick={this.handlePpt} className="about_button">Participant Timeline</button>
-                <button onClick={this.handleComm} className="about_button">Community Timeline</button>
-              </div>
+              <h2>How do I participate?</h2>
+              <br/>
+              <h5>
+                D4SD will have 4 major events: <span>Fireside Chats</span>, <span>Designathons</span>, <span>Feedback Session</span> and <span>Summit</span>.
+                <br/><br/><span>Fireside chats</span> operate as a chance
+                to gather knowledge and explore the problem with experts who have
+                an in-depth knowledge of the problem space. <span>Designathons</span> serve as
+                opportunities to explore and develop potential solutions where
+                prototypes are built. <span>Feedback</span> Session is an online stage where
+                community members are able to critique innovators’ work and help them
+                improve their solutions through D4SD website.
+                <br/><br/>Since our aim is to be as inclusive as possible to all
+                participants, you are more than welcome to create your own fireside
+                chat and designathon events at your convenient time and space, as long
+                as they align with our themes.
+              </h5>
+              <br/>
+              <h5 className="d-flex flex-row align-items-center justify-content-center">
+                <button onClick={this.handlePpt} className="about_button">Innovators</button>
+                and
+                <button onClick={this.handleComm} className="about_button">Community members</button>
+                will have slightly different process.
+              </h5>
               <br/><br/>
               <img src={ppttimeline} className="w-75" id="ppt_timeline"/>
               <img src={commtimeline} className="w-75" id="comm_timeline"/>
@@ -215,14 +223,15 @@ class Home extends Component {
           <section ref={this.review} id="review">
             <Container style={{"backgroundColor":"#EFF8FF"}}>
               <br/><br/><br/><br/>
-              <h2>Learn more about the previous D4SD</h2>
-              <h5>Want to learn more about how it actually works? <br/> Check out
+              <h2 className="text-center">Learn more about the previous D4SD</h2>
+              <br/>
+              <h5 className="text-center">Want to learn more about how it actually works? <br/> Check out
                 the overview of D4SD 2017 where 23 teams generated concepts on
                 the theme of mobility.
               </h5>
               <br/>
-              <a className="btn-style mr-3" href={whitepaper} target="_blank">Download Whitepaper</a>
-              <a className="btn-style" href="http://d4sd.org" target="_blank">Checkout website</a>
+              <a className="btn-style mr-3" href={whitepaper} target="_blank">Download 2017 Whitepaper</a>
+              <a className="btn-style" href="http://d4sd.org" target="_blank">D4SD 2017 website</a>
               <br/><br/>
               {/**<a href="http://eepurl.com/c2kFon" target="_blank">
                 <h2>Join our mailing list</h2>

@@ -90,7 +90,7 @@
 /****************************HeaderCard******************************/
 #header-card {
   height: 40vh;
-  background-image: url('../img/involve_header.svg');
+  background-image: url('../img/header.svg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
