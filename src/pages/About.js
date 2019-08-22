@@ -59,6 +59,8 @@ class Home extends Component {
       value: false,
       timeline: false,
       review: false,
+      innovator: true,
+      role: "Innovators'"
     });
     this.overview = React.createRef();
     this.join = React.createRef();
@@ -100,6 +102,31 @@ class Home extends Component {
 
   }
 
+  style = e => {
+    console.log("called");
+    const ppt_timeline = document.getElementById("ppt_timeline");
+    const comm_timeline = document.getElementById("comm_timeline");
+    if (this.state.innovator) {
+      ppt_timeline.style.display = "inline-block";
+      comm_timeline.style.display = "none";
+      this.setState({role:"Innovators'"});
+    }
+    else {
+      ppt_timeline.style.display = "none";
+      comm_timeline.style.display = "inline-block";
+      this.setState({role:"Community Members'"});
+    }
+  }
+
+  toggle = e => {
+      console.log("participantcall");
+      this.setState(prevState => ({
+        innovator: !prevState.innovator,
+      }),
+      this.style
+      );
+  }
+
   handlePpt = e =>{
     console.log("participant");
     var ppt_timeline = document.getElementById("ppt_timeline");
@@ -114,8 +141,8 @@ class Home extends Component {
     var ppt_timeline = document.getElementById("ppt_timeline");
     var comm_timeline = document.getElementById("comm_timeline");
     console.log(ppt_timeline);
-    ppt_timeline.style.display = "none";
-    comm_timeline.style.display = "inline-block";
+    ppt_timeline.style.display = "inline-block";
+    comm_timeline.style.display = "none";
   }
 
   render() {
@@ -210,12 +237,16 @@ class Home extends Component {
               </h5>
               <br/>
               <h5>
-                <button onClick={this.handlePpt} className="about_button">Innovators</button>
-                <span className="text-dark px-2">and</span>
-                <button onClick={this.handleComm} className="about_button">Community members</button>
-                <span className="text-dark px-2">will have slightly different process.</span>
+                Different roles will have slightly different process.
               </h5>
-              <br/><br/>
+              <br/>
+                <h4 className="text-left">
+                  <label className="switch mr-3">
+                  <input type="checkbox" onClick={this.toggle}/>
+                  <span className="slider round"></span>
+                  </label>
+                {this.state.role} process</h4>
+              <br/>
               <img src={ppttimeline} className="w-75" id="ppt_timeline"/>
               <img src={commtimeline} className="w-75" id="comm_timeline"/>
             </Container>
