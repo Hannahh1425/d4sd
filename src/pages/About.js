@@ -178,11 +178,10 @@ class Home extends Component {
             <h2>What is D4SD?</h2>
             <br/>
             <h5>
-              Design for San Diego (D4SD) is a civic design challenge that aims
-              at providing a space for all citizens to address San Diego's most
-              challenging issues, prototype solutions through human-centered design,
-              and link them to resources in their communities that can bring
-              those solutions to life.
+               Design for San Diego (D4SD) is a civic design challenge that provides 
+               a space for San Diegans  to address San Diego's most challenging issues 
+               by framing human-centered design problems, prototyping solutions, and 
+               connecting with their community  to bring those solutions to life.
             </h5>
             <br/><br/><br/><br/><br/>
           </Container>
