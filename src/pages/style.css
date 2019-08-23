@@ -11,22 +11,6 @@ span {
   color: #566ED1;
 }
 
-.btn-style-big {
-    border-radius: 25px;
-    border: 1.5px solid #1A89DB;
-    font-size: 1em;
-    color: #1A89DB;
-    text-align: center;
-    font-weight: 900;
-    padding: 0.7em 1.35em;
-}
-
-.btn-style-big:hover {
-  text-decoration: none;
-  background-color: #1A89DB;
-  color: white;
-}
-
 /*****************************Homepage*****************************/
 
 #home {
