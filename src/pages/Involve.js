@@ -21,8 +21,8 @@ import './style.css';
 
 const content = [
   {
-    title: "Take part in the challenge",
-    txt: "As an innovator, you can participate in a variety of in-person events and create innovative solutions in a team. D4SD gives innovators the opportunity to unpack large problems, generate potential solutions, learn human-centered design, showcase their ideas, and network with the larger design community.",
+    title: "Start innovating!",
+    txt: "As an innovator, you can participate in a variety of in-person events and create innovative solutions in a team. D4SD gives innovators the opportunity to unpack large problems, develop solutions, learn about human-centered design, showcase their ideas, and network with the larger design community.",
     image: innovator,
     id: "innovators",
     link: "http://eepurl.com/c2kFon",
@@ -37,8 +37,8 @@ const content = [
     action: ""
   },
   {
-    title: "Bring D4SD to your class",
-    txt: "Offer experiential learning opportunities to your students/ Implement a civic innovation class in your institution. D4SD provides a unique supplemental learning experience participants regardless of their exposure to design thinking. The program builds from first principles and guides students along the human-centered design process.",
+    title: "Teach your class with D4SD",
+    txt: "D4SD offers a curriculum to help educators use the challenge as a teaching opportunity. Students get experience working on big civic problems using the human-centered design process. This scaffolded learning process is designed to support all skill levels and backgrounds. The topics are also designed to be applicable in many class formats to address a variety of intended learning outcomes.",
     image: educator,
     id: "educators",
     link: playbook_educator,
@@ -46,15 +46,15 @@ const content = [
   },
   {
     title: "Sponsor D4SD",
-    txt: "D4SD has the ability to open your business to a wider network, particularly, the community and continue to foster and develop existing relationships.",
+    txt: "D4SD provides a stage to share the problems and topics you care about. You can tap into a network of innovators to solve problems that matter to you. There are also many opportunities to interact with the broader San Diego community to get further support and traction for the developed solutions.",
     image: sponsor,
     id: "sponsors",
     link: "http://eepurl.com/c2kFon",
     action: ""
   },
   {
-    title: "Still don’t see a way to get involved?",
-    txt: "No worries! We promise that everyone is able to take part in D4SD in the way that they like. You are offered the opportunity to design your own roles and actions! We are going to try our best to incorporate your distinguished personality and background once we hear from you.",
+    title: "There are infinite ways to get involved",
+    txt: "We’ve imagined a number of ways to get involved, but we’re all about innovation so don’t feel limited! If you want to be involved in a way that isn’t listed above, we hope you will design your own role and join the action! We look forward to innovating with you and leveraging your unique talents and perspective!",
     image: question,
     id: "question",
     link: "https://forms.gle/1GzRdAVandg68rTP9",
