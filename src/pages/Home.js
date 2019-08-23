@@ -18,7 +18,7 @@ const content1 = {
   src: home0,
   isAction: true,
   title: "How can we make San Diego a more sustainable city?",
-  txt: "D4SD 2020 theme is Sustainable Cities, inspired by the United Nations 17 goals for a more inclusive, safe, resilient and sustainable world. Check out the challenge briefs to see the problem space that you could explore and sign up to be part of this innovative process for the city’s future!",
+  txt: "San Diego is an amazing place to live, but like many cities, faces a number of difficult questions around improving public access to transportation, affordable housing, and health services. Simultaneously, global temperatures continue to rise, adding another layer of complexity to these existing problems. As a result, the issue becomes how can we sustain these civic resources in the face of climate change? Design for San Diego (D4SD)is a city-wide initiative centered on using human-centered design to develop solutions to these vexing civic challenges.",
   action: "Join our Mailing List",
   link: "http://eepurl.com/c2kFon"
 }
@@ -28,7 +28,7 @@ const content = [
     id: 1,
     src: home1,
     isAction: false,
-    title: "How can we create a San Diego where we all move freely?",
+    title: "How might we help people move more easily through our city?",
     txt: "Mobility is an everyday problem as people commute to work, go to school, go out to eat and surf in the sea on a daily basis. As people are looking for a more efficient way to move around, the mission of reducing our emissions and increasing the inclusivity of transportation continues to be an essential topic/point of discussion in our urban environments.",
     action: "",
     link: "http://eepurl.com/c2kFon"
