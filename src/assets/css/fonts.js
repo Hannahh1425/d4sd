@@ -57,7 +57,7 @@ export const H5 = styled.h5 `
 
 export const H6 = styled.h6 `
     font-family: 'Open Sans', sans-serif;
-    color: #333333;
+    color: #D0D0D0;
     line-height: 1em;
     @media ${device.mobileS} {
         font-size: 0.7em;
