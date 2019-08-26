@@ -95,6 +95,18 @@ class About extends Component {
       }));
   }
 
+  innovator = () => {
+    this.setState(prevState => ({
+      isInnovator: true
+    }));
+  }
+
+  community = () => {
+    this.setState(prevState => ({
+      isInnovator: false
+    }));
+  }
+
   onHover = e => {
     console.log("hoverr");
     console.log(e.target);
@@ -238,10 +250,11 @@ class About extends Component {
                 Different roles will have slightly different process.
               </H5>
               <br/>
-
-                <ToggleBtn>{this.state.role} process</ToggleBtn>
-                <ToggleBtn>{this.state.role} process</ToggleBtn>
-              <br/>
+              <InnerFlexBox start>
+              <ToggleBtn left onClick={this.innovator} active={this.state.isInnovator}>Innovators</ToggleBtn>
+              <ToggleBtn onClick={this.community} active={!this.state.isInnovator}>Community members</ToggleBtn>
+              </InnerFlexBox>
+              <br/><br/><br/>
               <ResponsiveImgVertical src={ppttimeline} isInnovator={this.state.isInnovator} />
               <ResponsiveImgVertical src={commtimeline} isInnovator={!this.state.isInnovator} />
               <ResponsiveImgHorizontal src={ppttimeline_horizontal} isInnovator={this.state.isInnovator} />
