@@ -16,13 +16,12 @@ class Navbar extends Component {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-            <ul className="navbar-nav align-items-center">
-              <li className="nav-item align-">
-                <NavLink className="nav-link mr-5" to='/about' activeClassName="active">About</NavLink>
-              </li>
-              <br/>
+            <ul className="navbar-nav align-items-end">
               <li className="nav-item">
-                <NavLink className="nav-link mr-5" to='/involve' activeClassName="active">Get Involved</NavLink>
+                <NavLink className="nav-link mr-xl-4" to='/about' activeClassName="active">About</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link mr-xl-4" to='/involve' activeClassName="active">Get Involved</NavLink>
               </li>
               {/**<li className="nav-item">
                 <Link className="nav-link pr-3" to='/challenge'>Challenge</Link>

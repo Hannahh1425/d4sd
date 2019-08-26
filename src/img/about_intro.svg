@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8fc0ff"/>
+      <stop offset="1" stop-color="#eff8ff"/>
+    </linearGradient>
+    <clipPath id="clip-what_is_d4sd">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="what_is_d4sd" data-name="what is d4sd" clip-path="url(#clip-what_is_d4sd)">
+    <rect width="1920" height="1080" fill="#fff"/>
+    <rect id="sky" width="2109" height="1284" transform="translate(-76 -172)" fill="#eff8ff"/>
+    <ellipse id="椭圆_2" data-name="椭圆 2" cx="249.85" cy="249.85" rx="249.85" ry="249.85" transform="translate(114 540.097)" fill="#e3eefc"/>
+    <ellipse id="椭圆_1" data-name="椭圆 1" cx="160.869" cy="160.869" rx="160.869" ry="160.869" transform="translate(202.086 625.183)" fill="#8fc0ff" opacity="0.454"/>
+    <path id="路径_1" data-name="路径 1" d="M-92.344,177.445,14.095,69.319,115.687,178.757H49.168l.138,920.871H-24.2V178.757Z" transform="translate(273.948 810.36) rotate(64)" opacity="0.454" fill="url(#linear-gradient)"/>
+    <path id="路径_2" data-name="路径 2" d="M11.384,110.645,109.984,0,211.576,109.438H145.057l.138,920.871H71.686V109.438Z" transform="matrix(-0.899, 0.438, -0.438, -0.899, 396.877, 590.117)" opacity="0.454" fill="url(#linear-gradient)"/>
+    <path id="路径_4" data-name="路径 4" d="M3.318,107.265,109.984,0,211.576,109.438H145.057l.138,920.871H71.686V109.438Z" transform="matrix(0.899, -0.438, 0.438, 0.899, 327.056, 981.83)" opacity="0.454" fill="url(#linear-gradient)"/>
+    <path id="路径_8" data-name="路径 8" d="M6.2,108.173,109.984,0,211.576,109.438H145.057l6.895,1521.081-73.941-30.929L71.686,109.438Z" transform="matrix(-0.438, -0.899, 0.899, -0.438, 560.323, 819.384)" opacity="0.454" fill="url(#linear-gradient)"/>
+    <path id="Group" d="M0,162.342l141.3-.254V0Zm111.467-26.429-48.9-.254,49.05-57.633Z" transform="matrix(0.899, -0.438, 0.438, 0.899, 243.058, 741.354)" fill="#fff"/>
+  </g>
+</svg>
