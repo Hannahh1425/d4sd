@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 // import Container from '../components/Container';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import FooterCard from '../components/landing/FooterCard';
 import HeaderCard from '../components/landing/HeaderCard';
 //Contents
 import { aboutContent } from './content.js';
@@ -238,7 +238,7 @@ class About extends Component {
                 Different roles will have slightly different process.
               </H5>
               <br/>
-              
+
                 <ToggleBtn>{this.state.role} process</ToggleBtn>
                 <ToggleBtn>{this.state.role} process</ToggleBtn>
               <br/>
@@ -272,6 +272,7 @@ class About extends Component {
               <br/><br/><br/>
             </OuterContainer>
           </Bg>
+          <FooterCard/>
       </div>
     );
   }

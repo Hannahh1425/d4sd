@@ -6,6 +6,7 @@ import { FullImg, IconImg } from '../assets/css/images.js';
 import { H2, H4, H5 } from '../assets/css/fonts.js';
 import { Btn } from '../assets/css/buttons.js';
 import HeaderCard from '../components/landing/HeaderCard';
+import FooterCard from '../components/landing/FooterCard';
 import RoleCard from '../components/landing/RoleCard';
 import { involveContent } from './content.js';
 
@@ -85,6 +86,7 @@ class Involve extends Component {
             </OuterFlexBox>
           </InnerContainer>
         </OuterContainer>
+        <FooterCard/>
       </div>
     );
   }

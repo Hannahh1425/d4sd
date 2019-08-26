@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Container from '../components/Container';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import FooterCard from '../components/landing/FooterCard';
 import Button from '../components/landing/Button';
 
 import audioMovement from '../img/sol_audioMovement.jpg';
@@ -90,13 +90,13 @@ class PastSolution extends Component {
           <div className="d-flex flex-wrap justify-content-around">
           {data.map(data => (
             <div>
-              <img src={data.teamImg}/>            
+              <img src={data.teamImg}/>
             </div>
           ))}
           </div>
         </Container>
         <br/><br/><br/><br/><br/> <br/><br/>
-        <Footer/>
+        <FooterCard/>
       </div>
     );
   }
