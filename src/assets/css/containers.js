@@ -51,9 +51,7 @@ export const OuterFlexBox = styled.div `
 export const InnerFlexBox = styled.div `
     display: flex;
     align-items: ${props => props.center ? "center":"flex-start"};
-    justify-content: space-between;
-
-
+    justify-content: ${props => props.start ? "flex-start":"space-between"};
     @media ${device.laptop} {
         width: ${props => props.half ? "50%!important":"100%"};
     }
