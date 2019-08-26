@@ -1,4 +1,6 @@
-
+#home {
+  background-color: #EFF8FF;
+}
 .switch {
   position: relative;
   display: inline-block;
@@ -145,7 +147,7 @@ svg:hover {
     font-weight: 700;
     font-size: 0.9em;
 }
-/* 
+/*
 #comm_timeline {
   display: none;
 } */
