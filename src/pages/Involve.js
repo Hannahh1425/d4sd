@@ -1,57 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import Container from '../components/Container';
+import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox } from '../assets/css/containers.js';
+import { FullImg, IconImg } from '../assets/css/images.js';
+import { H2, H4, H5 } from '../assets/css/fonts.js';
+import { Btn } from '../assets/css/buttons.js';
 import HeaderCard from '../components/landing/HeaderCard';
-import Button from '../components/landing/Button';
 import RoleCard from '../components/landing/RoleCard';
-import Mailchimp from 'react-mailchimp-form';
-import playbook_educator from "../img/involve_playbook.pdf";
-import educator from "../img/involve_educator.png";
-import sponsor from "../img/involve_sponsor.png";
-import expert from "../img/involve_expert.png";
-import innovator from "../img/involve_participant.png";
-
-import icon from '../img/icon.png';
-
-import playbook1 from '../img/involve_playbook.pdf';
+import { involveContent } from './content.js';
 
 import './style.css';
 
-const content = [
-  {
-    title: "Take part in the challenge",
-    txt: "As an innovator, you can participate in a variety of in-person events and create innovative solutions in a team. D4SD gives innovators the opportunity to unpack large problems, generate potential solutions, learn human-centered design, showcase their ideas, and network with the larger design community.",
-    image: innovator,
-    id: "innovators",
-    link: "http://eepurl.com/c2kFon",
-    action: "Sign up for Mailing List"
-  },
-  {
-    title: "Offer your expertise",
-    txt: "D4SD requires the collective effort of people with a variety of backgrounds. There are other dimensions to the challenge which needs additional support. So we encourage all of those who resonate with your cause to reach out and learn about the different ways you can get involved.",
-    image: expert,
-    id: "experts",
-    link: "http://eepurl.com/c2kFon",
-    action: "Join the community"
-  },
-  {
-    title: "Bring D4SD to your class",
-    txt: "Offer experiential learning opportunities to your students/ Implement a civic innovation class in your institution. D4SD provides a unique supplemental learning experience participants regardless of their exposure to design thinking. The program builds from first principles and guides students along the human-centered design process.",
-    image: educator,
-    id: "educators",
-    link: "http://eepurl.com/c2kFon",
-    action: "View playbook"
-  },
-  {
-    title: "Sponsor D4SD",
-    txt: "D4SD has the ability to open your business to a wider network, particularly, the community and continue to foster and develop existing relationships.",
-    image: sponsor,
-    id: "sponsors",
-    link: "http://eepurl.com/c2kFon",
-    action: "Contact Us"
-  }
-]
 
 class Involve extends Component {
   constructor() {
@@ -93,30 +52,39 @@ class Involve extends Component {
     return (
       <div id="involve">
         <Navbar/>
+        <br/><br/>
         <HeaderCard title="Get Involved"/>
-          <br/><br/>
+        <br/><br/>
+        <OuterContainer center>
           <div>
-          <Container>
-          <div className="d-flex flex-wrap justify-content-around">
-          {content.map(content => (
-            <div className="col-xs-6 col-md-6 mb-4">
-              <RoleCard
-                onClick={() => this.expand(this[content.id])}
-                ref={this[content.id]}
-                id={content.id}
-                show = {this.state.show}
-                title={content.title}
-                txt={content.txt}
-                image={content.image}
-                link={content.link}
-                action={content.action}
-              />
-            </div>
-          ))}
-        </div>
-        </Container>
-        </div>
-
+            <H4>If you're interested in being part of D4SD, Join our Mailing List</H4>
+            <br/>
+            <Btn href="http://eepurl.com/c2kFon" target="_blank">Join our Mailing List</Btn>
+          </div>
+          <br/><br/>
+        </OuterContainer>
+        <OuterContainer>
+          <InnerContainer>
+            <OuterFlexBox>
+              {involveContent.map(content => (
+                <InnerFlexBox half>
+                  <RoleCard
+                    onClick={() => this.expand(this[content.id])}
+                    ref={this[content.id]}
+                    id={content.id}
+                    show = {this.state.show}
+                    title={content.title}
+                    txt={content.txt}
+                    image={content.image}
+                    link={content.link}
+                    action={content.action}
+                    isAction={content.isAction}
+                  />
+                </InnerFlexBox>
+              ))}
+            </OuterFlexBox>
+          </InnerContainer>
+        </OuterContainer>
       </div>
     );
   }

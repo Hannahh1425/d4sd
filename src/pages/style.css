@@ -1,97 +1,76 @@
-/*****************************Global*****************************/
-h4 {
-  /* subheadings */
-  font-size:1.5em;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  text-shadow: 0px 0px 5px #FFFFFF;
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
-span {
-  color: #566ED1;
-}
-
-/*****************************Homepage*****************************/
-
-#home {
-  background-color: #EFF8FF;
-}
-
-#home h2 h5 {
-  top: 5%;
-}
-
-.origin {
-  position: fixed;
-  width: 100%;
-}
-
-.zoom-in {
-  position: fixed;
-  bottom: -200px;
-  object-fit: cover;
-  width: 200%;
-}
-
-.leave {
+.switch input {
   opacity: 0;
-  transform: scale(2, 2);
-  -webkit-transition: transform 2s ease-in-out;
-  position: fixed;
-  bottom: -200;
-  object-fit: cover;
-  width: 200%;
+  width: 0;
+  height: 0;
 }
 
-/*****************************Involve*****************************/
-.involve-roles img {
-  width: 70%;
-  padding: 1em 0;
-}
-
-.involve-action {
-  font-size: 1.1em;
-  color: #333;
+.slider {
   position: absolute;
-  border-radius: 10px;
-  font-weight: bold;
-  top: 4em;
-  left: 15%;
-  right: 15%;
   cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-.involve-action-img {
-  width: 70%;
-  padding: 1em 0;
-  opacity: 0.1;
-  filter: alpha(opacity=10);
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
-.involve-roles a:hover {
-  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
-  text-decoration: none;
-  text-decoration-color: #4496FF;
+/* .slider:after {
+  content: "innovator";
+  padding-left: 34px;
+} */
+
+input:checked + .slider {
+  background-color: #2196F3;
 }
 
-.involve-roles a:hover h5 {
-  color: #4496FF;
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
 }
 
-.involve-roles h5 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-}
-/*****************************About*****************************/
-#about * {
-  text-align: center;
+input:checked + .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  right: 0;
+  bottom: 4px;
+  background-color: white;
+  /* -webkit-transform: translateX(68px);
+  -ms-transform: translateX(68px);
+  transform: translateX(68px); */
 }
 
-#about h5 {
-  width: 90%;
-  margin-left: 5%;
-  text-align: left;
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
 }
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 
 .subnav {
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -150,7 +129,7 @@ svg:hover {
 
 
 .about_button {
-    font-family: 'Montserrat', sans-serif;    
+    font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     padding: 0;
     border: none;
@@ -166,10 +145,10 @@ svg:hover {
     font-weight: 700;
     font-size: 0.9em;
 }
-
+/* 
 #comm_timeline {
   display: none;
-}
+} */
 
 /*****************************Mobile (default)*****************************/
 .container {
@@ -223,6 +202,14 @@ svg:hover {
       position: absolute;
       width: 50%;
       top: 8em;
+    }
+
+    .vertical {
+      display: none;
+    }
+
+    .horizontal {
+      display: inline;
     }
 
 
