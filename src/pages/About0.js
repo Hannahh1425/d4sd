@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Container from '../components/Container';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import FooterCard from '../components/FooterCard';
 import Button from '../components/landing/Button';
 import playbook_educator from "../img/involve_playbook.pdf";
 

@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import Container from '../components/Container';
+// import Container from '../components/Container';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import Button from '../components/landing/Button';
+import FooterCard from '../components/landing/FooterCard';
 import HeaderCard from '../components/landing/HeaderCard';
-import whitepaper from '../img/D4SD_2017_WhitePaper.pdf';
+//Contents
+import { aboutContent } from './content.js';
+//Styles
+import styled from 'styled-components';
+import { Bg, Background } from '../assets/css/others.js';
+import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox } from '../assets/css/containers.js';
+import { H2, H5 } from '../assets/css/fonts.js';
+import { device } from '../assets/css/breakpoints.js';
+import { Btn, ToggleBtn } from '../assets/css/buttons.js';
+import { FullImg, IconImg } from '../assets/css/images.js';
 
-import city from "../img/about_city.svg";
-import connect from "../img/about_connect.svg";
-import div from "../img/about_div.svg";
-import edu from "../img/about_edu.svg";
-import find from "../img/about_find.svg";
-import communicate from "../img/about_communicate.svg";
-// import diagram from "../img/about_diagram.svg";
-// import timeline from "../img/about_timeline.svg";
+import whitepaper from '../img/D4SD_2017_WhitePaper.pdf';
 import ppttimeline_horizontal from "../img/about_participants_horizontal.png";
 import commtimeline_horizontal from "../img/about_community_horizontal.png";
 import ppttimeline from "../img/about_participanttimeline.png";
@@ -22,37 +23,31 @@ import commtimeline from "../img/about_communitytimeline.png";
 import { ReactComponent as Diagram } from "../img/about_diagram.svg";
 // import { ReactComponent as Timeline } from "../img/about_timeline.svg";
 
-import icon from "../img/icon.png";
 import './style.css';
 
-const values = [
-  {
-    txt: "To increase and diversify participation, particularly for typically underrepresented or marginalized populations, by creating a range of specific roles within the civic design framework and striving for diversity, equity, and inclusion.",
-    img: connect
-  },
-  {
-    txt: "To contribute to the burgeoning design-driven economy in San Diego by providing resources to help launch top proposals by bringing together leaders from various sectors.",
-    img: city
-  },
-  {
-    txt: "To provide bottom-up community actions with more agency and to enhance the communications between the government and the local groups.",
-    img: communicate
-  },
-  {
-    txt: "To collaboratively explore a range of civic problems that the San Diego region faces.",
-    img: find
-  },
-  {
-    txt: "To provide an educational opportunity that serves people from a wide range of ages, backgrounds, and motivations.",
-    img: div
-  },
-  {
-    txt: "To connect innovators, experts, city officials, professional designers, business leaders, and community members through a combination of in-person events and online activities.",
-    img: edu
-  }
-]
+const H5Half = styled(H5) `
+    width: 90%;
+`
 
-class Home extends Component {
+const ResponsiveImgVertical = styled(FullImg) `
+    @media ${device.mobileS} {
+        display: ${props => props.isInnovator ? "inline":"none"}
+    }
+    @media ${device.tablet} {
+        display: none;
+    }
+`
+
+const ResponsiveImgHorizontal = styled(FullImg)  `
+    @media ${device.mobileS} {
+        display: none;
+    }
+    @media ${device.tablet} {
+        display: ${props => props.isInnovator ? "inline":"none"}
+    }
+`
+
+class About extends Component {
   constructor() {
     super();
     this.state=({
@@ -61,7 +56,7 @@ class Home extends Component {
       value: false,
       timeline: false,
       review: false,
-      innovator: true,
+      isInnovator: true,
       role: "Innovators'"
     });
     this.overview = React.createRef();
@@ -93,6 +88,25 @@ class Home extends Component {
 
   }
 
+  toggle = e => {
+      console.log("participantcall");
+      this.setState(prevState => ({
+        isInnovator: !prevState.isInnovator
+      }));
+  }
+
+  innovator = () => {
+    this.setState(prevState => ({
+      isInnovator: true
+    }));
+  }
+
+  community = () => {
+    this.setState(prevState => ({
+      isInnovator: false
+    }));
+  }
+
   onHover = e => {
     console.log("hoverr");
     console.log(e.target);
@@ -104,48 +118,39 @@ class Home extends Component {
 
   }
 
-  style = e => {
-    console.log("called");
-    const ppt_timeline = document.getElementById("ppt_timeline");
-    const comm_timeline = document.getElementById("comm_timeline");
-    if (this.state.innovator) {
-      ppt_timeline.style.display = "inline-block";
-      comm_timeline.style.display = "none";
-      this.setState({role:"Innovators'"});
-    }
-    else {
-      ppt_timeline.style.display = "none";
-      comm_timeline.style.display = "inline-block";
-      this.setState({role:"Community Members'"});
-    }
-  }
-
-  toggle = e => {
-      console.log("participantcall");
-      this.setState(prevState => ({
-        innovator: !prevState.innovator,
-      }),
-      this.style
-      );
-  }
-
-  handlePpt = e =>{
-    console.log("participant");
-    var ppt_timeline = document.getElementById("ppt_timeline");
-    var comm_timeline = document.getElementById("comm_timeline");
-    console.log(ppt_timeline);
-    ppt_timeline.style.display = "inline-block";
-    comm_timeline.style.display = "none";
-  }
-
-  handleComm = e =>{
-    console.log("community");
-    var ppt_timeline = document.getElementById("ppt_timeline");
-    var comm_timeline = document.getElementById("comm_timeline");
-    console.log(ppt_timeline);
-    ppt_timeline.style.display = "inline-block";
-    comm_timeline.style.display = "none";
-  }
+  // style = e => {
+  //   console.log("called");
+  //   const ppt_timeline = document.getElementById("ppt_timeline");
+  //   const comm_timeline = document.getElementById("comm_timeline");
+  //   if (this.state.isInnovator) {
+  //     ppt_timeline.style.display = "inline-block";
+  //     comm_timeline.style.display = "none";
+  //     this.setState({role:"Innovators'"});
+  //   }
+  //   else {
+  //     ppt_timeline.style.display = "none";
+  //     comm_timeline.style.display = "inline-block";
+  //     this.setState({role:"Community Members'"});
+  //   }
+  // }
+  //
+  // handlePpt = e =>{
+  //   console.log("participant");
+  //   var ppt_timeline = document.getElementById("ppt_timeline");
+  //   var comm_timeline = document.getElementById("comm_timeline");
+  //   console.log(ppt_timeline);
+  //   ppt_timeline.style.display = "inline-block";
+  //   comm_timeline.style.display = "none";
+  // }
+  //
+  // handleComm = e =>{
+  //   console.log("community");
+  //   var ppt_timeline = document.getElementById("ppt_timeline");
+  //   var comm_timeline = document.getElementById("comm_timeline");
+  //   console.log(ppt_timeline);
+  //   ppt_timeline.style.display = "inline-block";
+  //   comm_timeline.style.display = "none";
+  // }
 
   render() {
     return (
@@ -172,111 +177,118 @@ class Home extends Component {
             </li>
           </ul>
         </nav>*/}
-        <section ref={this.overview} id="overview">
-          <Container style={{"backgroundColor":"#EFF8FF"}}>
+        <Background ref={this.overview} id="overview">
+          <OuterContainer center>
+            <InnerContainer>
             <br/><br/><br/><br/>
-            <h2>What is D4SD?</h2>
+            <H2>{aboutContent.title1}</H2>
             <br/>
-            <h5>
-               Design for San Diego (D4SD) is a civic design challenge that provides 
-               a space for San Diegans  to address San Diego's most challenging issues 
-               by framing human-centered design problems, prototyping solutions, and 
-               connecting with their community  to bring those solutions to life.
-            </h5>
+            <H5>{aboutContent.content1}</H5>
             <br/><br/><br/><br/><br/>
-          </Container>
-        </section>
+            </InnerContainer>
+          </OuterContainer>
+        </Background>
+
         <br/><br/>
-        <section ref={this.join} id="join">
-          <Container>
-            <h2>Who can participate?</h2>
-            <br/>
-            <h5>Everyone who cares about the city and has a passion for innovation
-              is more than welcome to participate! Find your place in the challenge!
-            </h5>
-            <br/><br/><br/>
-            <Diagram onMouseOver={this.onHover} onMouseOut={this.unHover}/>
-          </Container>
-        </section>
+
+        <Bg ref={this.join} id="join">
+          <OuterContainer center>
+            <InnerContainer>
+              <H2>{aboutContent.title2}</H2>
+              <br/>
+              <H5>{aboutContent.content2}</H5>
+              <br/><br/><br/>
+              <Diagram onMouseOver={this.onHover} onMouseOut={this.unHover}/>
+            </InnerContainer>
+          </OuterContainer>
+        </Bg>
+
         <br/><br/><br/><br/><br/>
-        <section ref={this.value} id="value">
-          <Container style={{"backgroundColor":"#EFF8FF"}}>
-            <br/><br/><br/><br/>
-            <h2>What are our goals?</h2>
-            <br/>
-            <div className="d-flex flex-wrap justify-content-around">
-            {values.map((value, i) => (
-              <React.Fragment>
-                <img src={value.img} style={{"width":"10%", "alignSelf":"baseline", "padding":"32px 24px"}} />
-                <h5 className="text-left" style={{"width":"40%", "padding":"32px 0", "margin":"0"}}>
-                  {value.txt}
-                </h5>
-              </React.Fragment>
-            ))}
-          </div>
-            <br/><br/><br/>
-          </Container>
-          </section>
-          <br/><br/>
-          <section ref={this.timeline} id="timeline">
-            <Container>
-              <h2>How do I participate?</h2>
-              <br/>
-              <h5>
-                D4SD will have 4 major events: <b>Fireside Chats</b>, <b>Designathons</b>, <b>Feedback Session</b> and <b>Summit</b>.
-                <br/><br/><b>Fireside chats</b> operate as a chance
-                to gather knowledge and explore the problem with experts who have
-                an in-depth knowledge of the problem space. <b>Designathons</b> serve as
-                opportunities to explore and develop potential solutions where
-                prototypes are built. <b>Feedback</b> Session is an online stage where
-                community members are able to critique innovators’ work and help them
-                improve their solutions through D4SD website.
-                <br/><br/>Since our aim is to be as inclusive as possible to all
-                participants, you are more than welcome to create your own fireside
-                chat and designathon events at your convenient time and space, as long
-                as they align with our themes.
-              </h5>
-              <br/>
-              <h5>
-                Different roles will have slightly different process.
-              </h5>
-              <br/>
-                <h4 className="text-left" style={{"width":"90%", "marginLeft":"5%"}}>
-                  <label className="switch mr-3">
-                  <input type="checkbox" onClick={this.toggle}/>
-                  <span className="slider round"></span>
-                  </label>
-                {this.state.role} process</h4>
-              <br/>              
-              <img src={ppttimeline} className="w-75" id="ppt_timeline"/>
-              <img src={commtimeline} className="w-75" id="comm_timeline"/>
-              {/**<img src={ppttimeline_horizontal} className="w-100 horizontal" id="ppt_timeline"/>
-            <img src={commtimeline_horizontal} className="w-100 horizontal" id="comm_timeline"/>**/}
-            </Container>
-          </section>
-          <br/><br/>
-          <section ref={this.review} id="review">
-            <Container style={{"backgroundColor":"#EFF8FF"}}>
+
+        <Bg blue ref={this.value} id="value">
+          <OuterContainer>
+            <InnerContainer>
               <br/><br/><br/><br/>
-              <h2 className="text-center">Learn more about the previous D4SD</h2>
+              <H2 center>{aboutContent.title3}</H2>
               <br/>
-              <h5 className="text-center">Want to learn more about how it actually works? <br/> Check out
+              <OuterFlexBox>
+                {aboutContent.content3.map((value, i) => (
+                  <InnerFlexBox half>
+                    <IconImg small src={value.img} />
+                    <H5Half>{value.txt}</H5Half>
+                  </InnerFlexBox>
+                ))}
+              </OuterFlexBox>
+              <br/><br/><br/>
+            </InnerContainer>
+          </OuterContainer>
+        </Bg>
+
+
+          <br/><br/>
+          <Bg ref={this.timeline} id="timeline">
+            <OuterContainer>
+              <InnerContainer>
+              <H2 center>{aboutContent.title4}</H2>
+              <br/>
+                <H5>
+                  D4SD will have 4 major events: <b>Fireside Chats</b>, <b>Designathons</b>, <b>Feedback Session</b> and <b>Summit</b>.
+                  <br/><br/><b>Fireside chats</b> operate as a chance
+                  to gather knowledge and explore the problem with experts who have
+                  an in-depth knowledge of the problem space. <b>Designathons</b> serve as
+                  opportunities to explore and develop potential solutions where
+                  prototypes are built. <b>Feedback</b> Session is an online stage where
+                  community members are able to critique innovators’ work and help them
+                  improve their solutions through D4SD website.
+                  <br/><br/>Since our aim is to be as inclusive as possible to all
+                  participants, you are more than welcome to create your own fireside
+                  chat and designathon events at your convenient time and space, as long
+                  as they align with our themes.
+                </H5>
+              <br/><br/>
+              <H5>
+                Different roles will have slightly different process.
+              </H5>
+              <br/>
+              <InnerFlexBox start>
+              <ToggleBtn left onClick={this.innovator} active={this.state.isInnovator}>Innovators</ToggleBtn>
+              <ToggleBtn onClick={this.community} active={!this.state.isInnovator}>Community members</ToggleBtn>
+              </InnerFlexBox>
+              <br/><br/><br/>
+              <ResponsiveImgVertical src={ppttimeline} isInnovator={this.state.isInnovator} />
+              <ResponsiveImgVertical src={commtimeline} isInnovator={!this.state.isInnovator} />
+              <ResponsiveImgHorizontal src={ppttimeline_horizontal} isInnovator={this.state.isInnovator} />
+              <ResponsiveImgHorizontal src={commtimeline_horizontal} isInnovator={!this.state.isInnovator} />
+            </InnerContainer>
+            </OuterContainer>
+          </Bg>
+
+          <br/><br/>
+          <Bg blue ref={this.review} id="review">
+            <OuterContainer center>
+              <br/><br/><br/><br/>
+              <H2>{aboutContent.title5}</H2>
+              <br/>
+              <H5>Want to learn more about how it actually works? <br/> Check out
                 the overview of D4SD 2017 where 23 teams generated concepts on
                 the theme of mobility.
-              </h5>
+              </H5>
               <br/><br/>
-              <a className="btn-style-big mr-3" href={whitepaper} target="_blank">Download 2017 Whitepaper</a>
-              <a className="btn-style-big" href="http://d4sd.org" target="_blank">D4SD 2017 website</a>
+              <OuterFlexBox center>
+                <Btn href={whitepaper} target="_blank">Download 2017 Whitepaper</Btn>
+                <Btn href="http://d4sd.org" target="_blank" top left>D4SD 2017 website</Btn>
+              </OuterFlexBox>
               <br/><br/>
               {/**<a href="http://eepurl.com/c2kFon" target="_blank">
-                <h2>Join our mailing list</h2>
+                <H2>Join our mailing list</H2>
               </a>**/}
               <br/><br/><br/>
-            </Container>
-          </section>
+            </OuterContainer>
+          </Bg>
+          <FooterCard/>
       </div>
     );
   }
 }
 
-export default Home;
+export default About;
