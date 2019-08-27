@@ -102,10 +102,10 @@ export const aboutContent = {
   title2: "Who can participate?",
   content2: "Everyone who cares about the city and has a passion for innovation is more than welcome to participate! Find your place in the challenge!",
   title3: "What are our goals?",
-  title4: "How do I participate?",
+  title4: "What are D4SD's events?",
   content4: "",
-  title5: "Learn more about the previous D4SD",
-  content5: "Want to learn more about how it actually works? <br/> Check out the overview of D4SD 2017 where 23 teams generated concepts on the theme of mobility.",
+  title5: "Learn more about D4SD 2017",
+  content5: "Check out the overview of D4SD 2017 where 23 teams generated concepts on the theme of mobility.",
   content3: [
   {
     txt: "To increase and diversify participation, particularly for typically underrepresented or marginalized populations, by creating a range of specific roles within the civic design framework and striving for diversity, equity, and inclusion.",

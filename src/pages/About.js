@@ -232,8 +232,8 @@ class About extends Component {
               <H2 center>{aboutContent.title4}</H2>
               <br/>
                 <H5>
-                  D4SD will have 4 major events: <b>Round Table Discussions</b>, <b>Designathons</b>, <b>Feedback Session</b> and <b>Summit</b>.
-                  <br/><br/><b>Round Table Discussions</b> operate as a chance
+                  D4SD will have 4 major events: <b>Round-Table Discussions</b>, <b>Designathons</b>, <b>Feedback Session</b> and <b>Summit</b>.
+                  <br/><br/><b>Round-Table Discussions</b> operate as a chance
                   to gather knowledge and explore the problem with experts who have
                   an in-depth knowledge of the problem space. <b>Designathons</b> serve as
                   opportunities to explore and develop potential solutions where
@@ -255,11 +255,11 @@ class About extends Component {
                 <ToggleBtn onClick={this.community} active={!this.state.isInnovator}>Community members</ToggleBtn>
               </ToggleFlexBox>
               <br/><br/><br/>
-              <ResponsiveImgVertical src={ppttimeline_vertical} isInnovator={this.state.isInnovator} />
-              <ResponsiveImgVertical src={commtimeline_vertical} isInnovator={!this.state.isInnovator} />
-              <ResponsiveImgHorizontal src={ppttimeline_horizontal} isInnovator={this.state.isInnovator} />
-              <ResponsiveImgHorizontal src={commtimeline_horizontal} isInnovator={!this.state.isInnovator} />
             </InnerContainer>
+            <ResponsiveImgVertical src={ppttimeline_vertical} isInnovator={this.state.isInnovator} />
+            <ResponsiveImgVertical src={commtimeline_vertical} isInnovator={!this.state.isInnovator} />
+            <ResponsiveImgHorizontal src={ppttimeline_horizontal} isInnovator={this.state.isInnovator} />
+            <ResponsiveImgHorizontal src={commtimeline_horizontal} isInnovator={!this.state.isInnovator} />
             </OuterContainer>
           </Bg>
 
@@ -269,7 +269,7 @@ class About extends Component {
               <br/><br/><br/><br/>
               <H2 center>{aboutContent.title5}</H2>
               <br/>
-              <H5>Want to learn more about how it actually works? <br/> Check out
+              <H5>Check out
                 the overview of D4SD 2017 where 23 teams generated concepts on
                 the theme of mobility.
               </H5>
