@@ -29,8 +29,8 @@ export const homeContent = [
       txt: "San Diego is an amazing place to live, but like many cities, faces a number of difficult questions around improving public access to transportation, affordable housing, and health services. Simultaneously, global temperatures continue to rise, adding another layer of complexity to these existing problems. As a result, the issue becomes how can we sustain these civic resources in the face of climate change? Design for San Diego (D4SD)is a city-wide initiative centered on using human-centered design to develop solutions to these vexing civic challenges.",
       action: "Join our Mailing List!",
       link: "http://eepurl.com/c2kFon",
-      isAction2: "true",
-      action2: "Checkout the D4SD 2017 Website",
+      isAction2: "false",
+      action2: "",
       link2: "http://d4sd.org"
   },
   {
@@ -41,8 +41,8 @@ export const homeContent = [
     txt: "Mobility is an everyday problem as people commute to work, go to school, go out to eat and surf in the sea on a daily basis. As people are looking for a more efficient way to move around, the mission of reducing our emissions and increasing the inclusivity of transportation continues to be an essential topic/point of discussion in our urban environments.",
     action: "",
     link: "http://eepurl.com/c2kFon",
-    isAction2: "false",
-    action2: "",
+    isAction2: "true",
+    action2: "See what happened in 2017",
     link2: ""
   },
   {

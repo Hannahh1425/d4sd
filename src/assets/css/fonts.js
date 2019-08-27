@@ -70,3 +70,12 @@ export const H6 = styled.h6 `
         font-size: 1.7em!important;
     }
 `
+
+export const A = styled.a `
+    font-family: 'Open Sans', sans-serif;
+    color: #4496FF;
+    &:hover {
+    color: #8FC0FF;
+    text-decoration: none;
+    }
+`
