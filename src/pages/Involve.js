@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox } from '../assets/css/containers.js';
 import { FullImg, IconImg } from '../assets/css/images.js';
-import { H2, H4, H5 } from '../assets/css/fonts.js';
+import { H2, H4, H5, A } from '../assets/css/fonts.js';
 import { Btn } from '../assets/css/buttons.js';
 import HeaderCard from '../components/landing/HeaderCard';
+import FooterCard from '../components/landing/FooterCard';
 import RoleCard from '../components/landing/RoleCard';
 import { involveContent } from './content.js';
 
@@ -55,11 +56,13 @@ class Involve extends Component {
         <br/><br/>
         <HeaderCard title="Get Involved"/>
         <br/><br/>
-        <OuterContainer center>
+        <OuterContainer>
           <div>
-            <H4>If you're interested in being part of D4SD, Join our Mailing List</H4>
-            <br/>
-            <Btn href="http://eepurl.com/c2kFon" target="_blank">Join our Mailing List</Btn>
+            <H5>If you're interested in being part of D4SD, <span>&nbsp;</span>
+            <A href="http://eepurl.com/c2kFon">
+            join our mailing list.
+            </A>
+            <br/>Here are some ways that you can get involved.</H5>
           </div>
           <br/><br/>
         </OuterContainer>
@@ -85,6 +88,7 @@ class Involve extends Component {
             </OuterFlexBox>
           </InnerContainer>
         </OuterContainer>
+        <FooterCard/>
       </div>
     );
   }

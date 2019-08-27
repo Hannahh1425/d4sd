@@ -54,3 +54,28 @@ export const H5 = styled.h5 `
         font-size: 2em!important;
     }
 `
+
+export const H6 = styled.h6 `
+    font-family: 'Open Sans', sans-serif;
+    color: #D0D0D0;
+    line-height: 1em;
+    @media ${device.mobileS} {
+        font-size: 0.7em;
+    }
+    @media ${device.laptopL} {
+        font-size: 1em;!important;
+        line-height: 1.2em!important;
+    }
+    @media ${device.desktop} {
+        font-size: 1.7em!important;
+    }
+`
+
+export const A = styled.a `
+    font-family: 'Open Sans', sans-serif;
+    color: #4496FF;
+    &:hover {
+    color: #8FC0FF;
+    text-decoration: none;
+    }
+`

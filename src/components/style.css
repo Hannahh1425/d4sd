@@ -21,30 +21,14 @@
 }
 
 .nav-link:hover {
-    color: #4496FF!important;
+    color: #8FC0FF!important;
     font-weight: 600;
 }
 
 .nav-link.active {
-    color: #566ED1!important;
+    color: #4496FF!important;
     font-weight: 700;
 }
-
-.involve-btn {
-    border: 2px solid #4496FF;
-    color: #4496FF;
-}
-
-/****************************Footer******************************/
-#footer {
-    /* background-image: url('../img/footer.png'); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 170px;
-}
-
 
 /****************************Button******************************/
 #landing_btn a {

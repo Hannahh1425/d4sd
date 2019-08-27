@@ -45,15 +45,27 @@ export const Card = styled.div `
 export const OuterFlexBox = styled.div `
     display: flex;
     flex-wrap: wrap;
-    justify-content: ${props => props.center ? "center":"space-between"};
+    justify-content: ${props => props.center ? "center":"flex-start"};
 `
 
 export const InnerFlexBox = styled.div `
     display: flex;
     align-items: ${props => props.center ? "center":"flex-start"};
-    justify-content: space-between;
+    justify-content: ${props => props.start ? "flex-start":"space-between"};
+    @media ${device.laptop} {
+        width: ${props => props.half ? "50%!important":"100%"};
+    }
+    @media ${device.mobileS} {
+        width: 100%;
+        padding: ${props => props.half ? "14px":"0"}
+    }
+`
 
-
+export const ToggleFlexBox = styled.div `
+    display: flex;
+    border-radius: 15px;
+    align-items: ${props => props.center ? "center":"flex-start"};
+    justify-content: ${props => props.start ? "flex-start":"space-between"};
     @media ${device.laptop} {
         width: ${props => props.half ? "50%!important":"100%"};
     }
