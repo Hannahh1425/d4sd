@@ -58,15 +58,16 @@ export const SmallBtn = styled(Btn) `
 
 export const ToggleBtn = styled.div `
     cursor: pointer;
-    border: 1.5px solid #1A89DB;
-    color: #1A89DB;
+    border: 1.5px solid #4496FF;
+    color: #4496FF;
     text-align: center;
     margin-left: ${props => props.left ? "1rem":"0"};
-    background-color: ${props => props.active ? "#1A89DB":"white"};
-    color: ${props => props.active ? "white":"#1A89DB"};
+    background-color: ${props => props.active ? "#4496FF":"white"};
+    color: ${props => props.active ? "white":"#4496FF"};
     &:hover {
         text-decoration: none;
-        background-color: #566ED1;
+        border: 1.5px solid #8FC0FF;
+        background-color: #8FC0FF;
         color: white;
     }
     @media ${device.mobileS} {
