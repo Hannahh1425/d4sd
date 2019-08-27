@@ -18,9 +18,14 @@ export const Btn = styled.a `
     @media ${device.mobileS} {
         font-size: 0.75em;
         margin-top: ${props => props.top ? "1rem":"0"};
-        margin-left: ${props => props.left ? "1rem":"0"};
+        margin-left: 0;
     }
     @media ${device.tablet} {
+        font-size: 0.75em!important;
+        margin-top: 0!important;
+        margin-left: ${props => props.left ? "1rem!important":"0!important"};
+    }
+    @media ${device.laptopL} {
         font-size: 1em!important;
         margin-top: 0!important;
         margin-left: ${props => props.left ? "1rem!important":"0!important"};

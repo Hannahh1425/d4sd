@@ -45,7 +45,7 @@ export const Card = styled.div `
 export const OuterFlexBox = styled.div `
     display: flex;
     flex-wrap: wrap;
-    justify-content: ${props => props.center ? "center":"space-between"};
+    justify-content: ${props => props.center ? "center":"flex-start"};
 `
 
 export const InnerFlexBox = styled.div `

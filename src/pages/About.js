@@ -250,9 +250,9 @@ class About extends Component {
                 Different roles will have slightly different process.
               </H5>
               <br/>
-              <InnerFlexBox start>
-              <ToggleBtn left onClick={this.innovator} active={this.state.isInnovator}>Innovators</ToggleBtn>
-              <ToggleBtn onClick={this.community} active={!this.state.isInnovator}>Community members</ToggleBtn>
+              <InnerFlexBox start="true">
+                <ToggleBtn left onClick={this.innovator} active={this.state.isInnovator}>Innovators</ToggleBtn>
+                <ToggleBtn onClick={this.community} active={!this.state.isInnovator}>Community members</ToggleBtn>
               </InnerFlexBox>
               <br/><br/><br/>
               <ResponsiveImgVertical src={ppttimeline} isInnovator={this.state.isInnovator} />

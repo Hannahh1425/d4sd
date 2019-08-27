@@ -23,6 +23,11 @@ export const Bg = styled.div `
     background-color: ${props => props.blue ? "#EFF8FF":"white"}
 `
 
+export const FooterBg = styled.div `
+    background-color: ${props => props.grey ? "#474747":"white"}
+`
+
+
 export const Background = styled.div `
     background-image: url(${intro});
     background-size: cover;
