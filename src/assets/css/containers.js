@@ -60,3 +60,17 @@ export const InnerFlexBox = styled.div `
         padding: ${props => props.half ? "14px":"0"}
     }
 `
+
+export const ToggleFlexBox = styled.div `
+    display: flex;
+    border-radius: 15px;
+    align-items: ${props => props.center ? "center":"flex-start"};
+    justify-content: ${props => props.start ? "flex-start":"space-between"};
+    @media ${device.laptop} {
+        width: ${props => props.half ? "50%!important":"100%"};
+    }
+    @media ${device.mobileS} {
+        width: 100%;
+        padding: ${props => props.half ? "14px":"0"}
+    }
+`

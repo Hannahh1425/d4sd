@@ -9,7 +9,7 @@ import { aboutContent } from './content.js';
 //Styles
 import styled from 'styled-components';
 import { Bg, Background } from '../assets/css/others.js';
-import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox } from '../assets/css/containers.js';
+import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox, ToggleFlexBox } from '../assets/css/containers.js';
 import { H2, H5 } from '../assets/css/fonts.js';
 import { device } from '../assets/css/breakpoints.js';
 import { Btn, ToggleBtn } from '../assets/css/buttons.js';
@@ -178,10 +178,10 @@ class About extends Component {
           </ul>
         </nav>*/}
         <Background ref={this.overview} id="overview">
-          <OuterContainer center>
+          <OuterContainer>
             <InnerContainer>
             <br/><br/><br/><br/>
-            <H2>{aboutContent.title1}</H2>
+            <H2 center>{aboutContent.title1}</H2>
             <br/>
             <H5>{aboutContent.content1}</H5>
             <br/><br/><br/><br/><br/>
@@ -192,9 +192,9 @@ class About extends Component {
         <br/><br/>
 
         <Bg ref={this.join} id="join">
-          <OuterContainer center>
+          <OuterContainer>
             <InnerContainer>
-              <H2>{aboutContent.title2}</H2>
+              <H2 center>{aboutContent.title2}</H2>
               <br/>
               <H5>{aboutContent.content2}</H5>
               <br/><br/><br/>
@@ -250,10 +250,10 @@ class About extends Component {
                 Different roles will have slightly different process.
               </H5>
               <br/>
-              <InnerFlexBox start="true">
+              <ToggleFlexBox start="true">
                 <ToggleBtn left onClick={this.innovator} active={this.state.isInnovator}>Innovators</ToggleBtn>
                 <ToggleBtn onClick={this.community} active={!this.state.isInnovator}>Community members</ToggleBtn>
-              </InnerFlexBox>
+              </ToggleFlexBox>
               <br/><br/><br/>
               <ResponsiveImgVertical src={ppttimeline_vertical} isInnovator={this.state.isInnovator} />
               <ResponsiveImgVertical src={commtimeline_vertical} isInnovator={!this.state.isInnovator} />
@@ -265,9 +265,9 @@ class About extends Component {
 
           <br/><br/>
           <Bg blue ref={this.review} id="review">
-            <OuterContainer center>
+            <OuterContainer>
               <br/><br/><br/><br/>
-              <H2>{aboutContent.title5}</H2>
+              <H2 center>{aboutContent.title5}</H2>
               <br/>
               <H5>Want to learn more about how it actually works? <br/> Check out
                 the overview of D4SD 2017 where 23 teams generated concepts on

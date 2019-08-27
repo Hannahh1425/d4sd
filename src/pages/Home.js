@@ -34,6 +34,7 @@ class Home extends Component {
           <Relative key={i} id={i}>
             <HomeStyle>
               <Relative>
+                <br/>
                 <H2>{homeContent.title}</H2>
                 <H5>{homeContent.txt}</H5>
                 <br/>
