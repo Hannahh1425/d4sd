@@ -18,8 +18,8 @@ import { FullImg, IconImg } from '../assets/css/images.js';
 import whitepaper from '../img/D4SD_2017_WhitePaper.pdf';
 import ppttimeline_horizontal from "../img/about_participants_horizontal.png";
 import commtimeline_horizontal from "../img/about_community_horizontal.png";
-import ppttimeline from "../img/about_participanttimeline.png";
-import commtimeline from "../img/about_communitytimeline.png";
+import ppttimeline_vertical from "../img/about_participants_vertical.png";
+import commtimeline_vertical from "../img/about_community_vertical.png";
 import { ReactComponent as Diagram } from "../img/about_diagram.svg";
 // import { ReactComponent as Timeline } from "../img/about_timeline.svg";
 
@@ -232,8 +232,8 @@ class About extends Component {
               <H2 center>{aboutContent.title4}</H2>
               <br/>
                 <H5>
-                  D4SD will have 4 major events: <b>Fireside Chats</b>, <b>Designathons</b>, <b>Feedback Session</b> and <b>Summit</b>.
-                  <br/><br/><b>Fireside chats</b> operate as a chance
+                  D4SD will have 4 major events: <b>Round Table Discussions</b>, <b>Designathons</b>, <b>Feedback Session</b> and <b>Summit</b>.
+                  <br/><br/><b>Round Table Discussions</b> operate as a chance
                   to gather knowledge and explore the problem with experts who have
                   an in-depth knowledge of the problem space. <b>Designathons</b> serve as
                   opportunities to explore and develop potential solutions where
@@ -255,8 +255,8 @@ class About extends Component {
                 <ToggleBtn onClick={this.community} active={!this.state.isInnovator}>Community members</ToggleBtn>
               </InnerFlexBox>
               <br/><br/><br/>
-              <ResponsiveImgVertical src={ppttimeline} isInnovator={this.state.isInnovator} />
-              <ResponsiveImgVertical src={commtimeline} isInnovator={!this.state.isInnovator} />
+              <ResponsiveImgVertical src={ppttimeline_vertical} isInnovator={this.state.isInnovator} />
+              <ResponsiveImgVertical src={commtimeline_vertical} isInnovator={!this.state.isInnovator} />
               <ResponsiveImgHorizontal src={ppttimeline_horizontal} isInnovator={this.state.isInnovator} />
               <ResponsiveImgHorizontal src={commtimeline_horizontal} isInnovator={!this.state.isInnovator} />
             </InnerContainer>
