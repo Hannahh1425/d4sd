@@ -56,14 +56,12 @@ class Involve extends Component {
         <br/><br/>
         <HeaderCard title="Get Involved"/>
         <br/><br/>
-        <OuterContainer>
-          <div>
+        <OuterContainer center>
             <H5>If you're interested in being part of D4SD, <span>&nbsp;</span>
-            <A href="http://eepurl.com/c2kFon">
+            <A href="http://eepurl.com/c2kFon" target="_blank">
             join our mailing list.
             </A>
             <br/>Here are some ways that you can get involved.</H5>
-          </div>
           <br/><br/>
         </OuterContainer>
         <OuterContainer>
