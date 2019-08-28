@@ -265,7 +265,7 @@ class About extends Component {
 
           <br/><br/>
           <Bg blue ref={this.review} id="review">
-            <OuterContainer>
+            <OuterContainer center>
               <br/><br/><br/><br/>
               <H2 center>{aboutContent.title5}</H2>
               <br/>
