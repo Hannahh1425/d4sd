@@ -36,14 +36,14 @@ export const homeContent = [
   {
     id: 1,
     src: home1,
-    isAction: "false",
+    isAction: "true",
     title: "How might we help people move more easily through our city?",
     txt: "As people are looking for a more efficient way to move around, the mission of reducing our emissions and increasing the inclusivity of transportation continues to be an essential topic of discussion in our urban environments.",
-    action: "",
-    link: "http://eepurl.com/c2kFon",
-    isAction2: "true",
-    action2: "See what happened in 2017",
-    link2: "http://d4sd.org"
+    action: "See what happened in 2017",
+    link: "http://d4sd.org",
+    isAction2: "false",
+    action2: "",
+    link2: ""
   },
   {
     id: 2,
