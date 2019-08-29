@@ -6,15 +6,15 @@ export const Relative = styled.div `
 `
 
 export const HomeStyle = styled.div `
+    @media ${device.mobileS} {
+        position: relative;
+        top: 3em;
+    }
     @media ${device.laptop} {
         position: absolute!important;
         left: 10%;
         width: 50%;
         top: 3em!important;
-    }
-    @media ${device.mobileS} {
-        position: relative;
-        top: 3em;
     }
 `
 
@@ -32,7 +32,33 @@ export const Background = styled.div `
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 50vh;
+    @media ${device.mobileS} {
+        height: 35vh;
+    }
+    @media ${device.tablet} {
+        height: 30vh!important;
+    }
+    @media ${device.laptop} {
+        height: 35vh!important;
+    }
+    @media ${device.laptopL} {
+        height: 45vh!important;
+    }
+`
+
+export const Br = styled.div `
+    @media ${device.mobileS} {
+        height: 32px;
+    }
+    @media ${device.tablet} {
+        height: 36px!important;
+    }
+    @media ${device.laptop} {
+        height: 40px!important;
+    }
+    @media ${device.laptopL} {
+        height: 72px!important;
+    }
 `
 
 
