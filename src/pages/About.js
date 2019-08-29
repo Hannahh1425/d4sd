@@ -178,25 +178,24 @@ class About extends Component {
             </li>
           </ul>
         </nav>*/}
-        <br/><br/>
+        <br/><br/><br/>
         <Bg ref={this.join} id="join">
           <OuterContainer>
             <InnerContainer>
               <H2 center>{aboutContent.title2}</H2>
-              <br/>
               <H5>{aboutContent.content2}</H5>
-              <br/><br/><br/>
+              <br/>
               <Diagram onMouseOver={this.onHover} onMouseOut={this.unHover}/>
             </InnerContainer>
           </OuterContainer>
         </Bg>
 
-        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/>
 
         <Bg blue ref={this.value} id="value">
           <OuterContainer>
             <InnerContainer>
-              <br/><br/><br/><br/>
+              <br/><br/><br/>
               <H2 center>{aboutContent.title3}</H2>
               <br/>
               <OuterFlexBox>
@@ -226,7 +225,7 @@ class About extends Component {
                 <ToggleBtn left onClick={this.innovator} active={this.state.isInnovator}>Innovators</ToggleBtn>
                 <ToggleBtn onClick={this.community} active={!this.state.isInnovator}>Community members</ToggleBtn>
               </ToggleFlexBox>
-            </InnerContainer>
+            </InnerContainer>            
             <ResponsiveImgVertical src={ppttimeline_vertical} isInnovator={this.state.isInnovator} />
             <ResponsiveImgVertical src={commtimeline_vertical} isInnovator={!this.state.isInnovator} />
             <ResponsiveImgHorizontal src={ppttimeline_horizontal} isInnovator={this.state.isInnovator} />
@@ -239,7 +238,6 @@ class About extends Component {
             <OuterContainer center>
               <br/><br/><br/><br/>
               <H2 center>{aboutContent.title5}</H2>
-              <br/>
               <H5>Check out
                 the overview of D4SD 2017 where 23 teams generated concepts on
                 the theme of mobility.
