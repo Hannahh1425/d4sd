@@ -8,6 +8,7 @@ import { Btn } from '../assets/css/buttons.js';
 import HeaderCard from '../components/landing/HeaderCard';
 import FooterCard from '../components/landing/FooterCard';
 import RoleCard from '../components/landing/RoleCard';
+import header from '../img/involve_header.svg';
 import { involveContent } from './content.js';
 
 import './style.css';
@@ -54,16 +55,8 @@ class Involve extends Component {
       <div id="involve">
         <Navbar/>
         <br/><br/>
-        <HeaderCard title="Get Involved"/>
+        <HeaderCard title="Get Involved" content="You can take part in D4SD in a variety of ways" bg={header} isAction="true"/>
         <br/><br/>
-        <OuterContainer center>
-            <H5>If you're interested in being part of D4SD, <span>&nbsp;</span>
-            <A href="http://eepurl.com/c2kFon" target="_blank">
-            join our mailing list.
-            </A>
-            <br/>Here are some ways that you can get involved.</H5>
-          <br/><br/>
-        </OuterContainer>
         <OuterContainer>
           <InnerContainer>
             <OuterFlexBox>
@@ -86,6 +79,7 @@ class Involve extends Component {
             </OuterFlexBox>
           </InnerContainer>
         </OuterContainer>
+        <br/><br/>
         <FooterCard/>
       </div>
     );

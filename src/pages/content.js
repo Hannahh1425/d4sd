@@ -36,14 +36,14 @@ export const homeContent = [
   {
     id: 1,
     src: home1,
-    isAction: "false",
+    isAction: "true",
     title: "How might we help people move more easily through our city?",
     txt: "As people are looking for a more efficient way to move around, the mission of reducing our emissions and increasing the inclusivity of transportation continues to be an essential topic of discussion in our urban environments.",
-    action: "",
-    link: "http://eepurl.com/c2kFon",
-    isAction2: "true",
-    action2: "See what happened in 2017",
-    link2: "http://d4sd.org"
+    action: "See what happened in 2017",
+    link: "http://d4sd.org",
+    isAction2: "false",
+    action2: "",
+    link2: ""
   },
   {
     id: 2,
@@ -98,7 +98,7 @@ export const homeContent = [
 /*************************************About content***************************************/
 export const aboutContent = {
   title1: "What is D4SD?",
-  content1: "Design for San Diego (D4SD) is a civic design challenge that provides a space for San Diegans  to address San Diego's most challenging issues by framing human-centered design problems, prototyping solutions, and connecting with their community  to bring those solutions to life.",
+  content1: "Design for San Diego (D4SD) is a civic design challenge that provides a space for San Diegans to address San Diego's most challenging issues by framing human-centered design problems, prototyping solutions, and connecting with their community to bring those solutions to life.",
   title2: "Who can participate?",
   content2: "Everyone who cares about the city and has a passion for innovation is more than welcome to participate! Find your place in the challenge!",
   title3: "What are our goals?",
