@@ -16,8 +16,9 @@ import { Btn, ToggleBtn } from '../assets/css/buttons.js';
 import { FullImg, IconImg } from '../assets/css/images.js';
 
 import whitepaper from '../img/D4SD_2017_WhitePaper.pdf';
-import ppttimeline_horizontal from "../img/about_participants_horizontal.png";
-import commtimeline_horizontal from "../img/about_community_horizontal.png";
+import header from "../img/about_header.svg";
+import ppttimeline_horizontal from "../img/about_participants_horizontal.svg";
+import commtimeline_horizontal from "../img/about_community_horizontal.svg";
 import ppttimeline_vertical from "../img/about_participants_vertical.png";
 import commtimeline_vertical from "../img/about_community_vertical.png";
 import { ReactComponent as Diagram } from "../img/about_diagram.svg";
@@ -157,7 +158,7 @@ class About extends Component {
       <div id="about">
         <Navbar/>
         <br/><br/>
-        <HeaderCard title="About D4SD"/>
+        <HeaderCard title="About D4SD" content={aboutContent.content1} bg={header} isAction="false"/>
         {/*<nav className="navbar navbar-light justify-content-left position-fixed subnav">
           <ul className="navbar-nav justify-content-center">
             <li className="nav-item">
@@ -177,20 +178,7 @@ class About extends Component {
             </li>
           </ul>
         </nav>*/}
-        <Background ref={this.overview} id="overview">
-          <OuterContainer>
-            <InnerContainer>
-            <br/><br/><br/><br/>
-            <H2 center>{aboutContent.title1}</H2>
-            <br/>
-            <H5>{aboutContent.content1}</H5>
-            <br/><br/><br/><br/><br/>
-            </InnerContainer>
-          </OuterContainer>
-        </Background>
-
         <br/><br/>
-
         <Bg ref={this.join} id="join">
           <OuterContainer>
             <InnerContainer>
@@ -227,34 +215,17 @@ class About extends Component {
 
           <br/><br/>
           <Bg ref={this.timeline} id="timeline">
-            <OuterContainer>
+            <OuterContainer center>
               <InnerContainer>
               <H2 center>{aboutContent.title4}</H2>
-              <br/>
-                <H5>
-                  D4SD will have 4 major events: <b>Round-Table Discussions</b>, <b>Designathons</b>, <b>Feedback Session</b> and <b>Summit</b>.
-                  <br/><br/><b>Round-Table Discussions</b> operate as a chance
-                  to gather knowledge and explore the problem with experts who have
-                  an in-depth knowledge of the problem space. <b>Designathons</b> serve as
-                  opportunities to explore and develop potential solutions where
-                  prototypes are built. <b>Feedback</b> Session is an online stage where
-                  community members are able to critique innovators’ work and help them
-                  improve their solutions through D4SD website.
-                  <br/><br/>Since our aim is to be as inclusive as possible to all
-                  participants, you are more than welcome to create your own fireside
-                  chat and designathon events at your convenient time and space, as long
-                  as they align with our themes.
-                </H5>
-              <br/><br/>
               <H5>
                 Different roles will have slightly different process.
               </H5>
               <br/>
-              <ToggleFlexBox start="true">
+              <ToggleFlexBox middle>
                 <ToggleBtn left onClick={this.innovator} active={this.state.isInnovator}>Innovators</ToggleBtn>
                 <ToggleBtn onClick={this.community} active={!this.state.isInnovator}>Community members</ToggleBtn>
               </ToggleFlexBox>
-              <br/><br/><br/>
             </InnerContainer>
             <ResponsiveImgVertical src={ppttimeline_vertical} isInnovator={this.state.isInnovator} />
             <ResponsiveImgVertical src={commtimeline_vertical} isInnovator={!this.state.isInnovator} />

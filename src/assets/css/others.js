@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { device } from './breakpoints.js';
-import intro from '../../img/about_intro.svg';
 
 export const Relative = styled.div `
     position: relative;
@@ -29,10 +28,11 @@ export const FooterBg = styled.div `
 
 
 export const Background = styled.div `
-    background-image: url(${intro});
+    background-image: ${props => `url(${props.image})`};
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 50vh;
 `
 
 
