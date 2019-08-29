@@ -56,14 +56,19 @@ class Involve extends Component {
         <br/><br/>
         <HeaderCard title="Get Involved"/>
         <br/><br/>
-        <OuterContainer center>
-            <H5>If you're interested in being part of D4SD, <span>&nbsp;</span>
-            <A href="http://eepurl.com/c2kFon" target="_blank">
-            join our mailing list.
-            </A>
-            <br/>Here are some ways that you can get involved.</H5>
-          <br/><br/>
+        <OuterContainer>
+            <H5>
+            Here are some ways that you can get involved.<br/>
+            If you're interested in being part of D4SD, join our mailing list.
+            <br/><br/>
+            </H5>
         </OuterContainer>
+        <OuterContainer center>
+            <Btn href="http://eepurl.com/c2kFon" target="_blank" center>
+            Join our Mailing List
+            </Btn>
+        </OuterContainer>
+        <br/><br/>
         <OuterContainer>
           <InnerContainer>
             <OuterFlexBox>
@@ -86,6 +91,7 @@ class Involve extends Component {
             </OuterFlexBox>
           </InnerContainer>
         </OuterContainer>
+        <br/><br/><br/>
         <FooterCard/>
       </div>
     );

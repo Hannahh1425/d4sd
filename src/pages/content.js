@@ -98,7 +98,7 @@ export const homeContent = [
 /*************************************About content***************************************/
 export const aboutContent = {
   title1: "What is D4SD?",
-  content1: "Design for San Diego (D4SD) is a civic design challenge that provides a space for San Diegans  to address San Diego's most challenging issues by framing human-centered design problems, prototyping solutions, and connecting with their community  to bring those solutions to life.",
+  content1: "Design for San Diego (D4SD) is a civic design challenge that provides a space for San Diegans to address San Diego's most challenging issues by framing human-centered design problems, prototyping solutions, and connecting with their community to bring those solutions to life.",
   title2: "Who can participate?",
   content2: "Everyone who cares about the city and has a passion for innovation is more than welcome to participate! Find your place in the challenge!",
   title3: "What are our goals?",
