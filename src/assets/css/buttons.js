@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { device } from './breakpoints.js';
-import { H5 } from './fonts.js';
 
 export const Btn = styled.a `
     cursor: pointer;

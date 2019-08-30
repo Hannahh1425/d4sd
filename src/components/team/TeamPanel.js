@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import photo from '../../img/kashdog.jpg';
 import '../style.css';
 
@@ -9,7 +8,7 @@ class TeamPanel extends Component {
       <div>
         <div classNameName="row align-items-center">
           <div className="col-4">
-            <img className="mobile rounded-circle w-100" src={photo}/>
+            <img className="mobile rounded-circle w-100" src={photo} alt="profile"/>
           </div>
           <div className="col-8">Aneesh Kashalikar</div>
         </div>

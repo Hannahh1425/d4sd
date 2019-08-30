@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import '../style.css';
-import { H2, H5, H1 } from '../../assets/css/fonts.js';
-import { OuterContainer, InnerContainer, InnerFlexBox } from '../../assets/css/containers.js';
-import { Background, Bg, Br } from '../../assets/css/others.js';
+import { H5, H1 } from '../../assets/css/fonts.js';
+import { OuterContainer, InnerContainer } from '../../assets/css/containers.js';
+import { Bg, Br } from '../../assets/css/others.js';
 import { BtnConditional } from '../../assets/css/buttons.js';
 
 class HeaderCard extends Component {

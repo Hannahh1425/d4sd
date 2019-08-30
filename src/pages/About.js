@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-// import Container from '../components/Container';
 import Navbar from '../components/Navbar';
 import FooterCard from '../components/landing/FooterCard';
 import HeaderCard from '../components/landing/HeaderCard';
@@ -8,7 +6,7 @@ import HeaderCard from '../components/landing/HeaderCard';
 import { aboutContent } from './content.js';
 //Styles
 import styled from 'styled-components';
-import { Bg, Background, Br } from '../assets/css/others.js';
+import { Bg, Br } from '../assets/css/others.js';
 import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox, ToggleFlexBox } from '../assets/css/containers.js';
 import { H2, H5 } from '../assets/css/fonts.js';
 import { device } from '../assets/css/breakpoints.js';
@@ -21,7 +19,7 @@ import ppttimeline_horizontal from "../img/about_participants_horizontal.svg";
 import commtimeline_horizontal from "../img/about_community_horizontal.svg";
 import ppttimeline_vertical from "../img/about_participants_vertical.png";
 import commtimeline_vertical from "../img/about_community_vertical.png";
-import { ReactComponent as Diagram } from "../img/about_diagram.svg";
+// import { ReactComponent as Diagram } from "../img/about_diagram.svg";
 import diagram from "../img/about_diagram.svg";
 // import { ReactComponent as Timeline } from "../img/about_timeline.svg";
 
@@ -186,7 +184,7 @@ class About extends Component {
               <H2 center>{aboutContent.title2}</H2>
               <H5>{aboutContent.content2}</H5>
               <br/>
-              <img src={diagram}/>
+              <img src={diagram} alt="diagram"/>
               {/*}<Diagram onMouseOver={this.onHover} onMouseOut={this.unHover}/>*/}
             </InnerContainer>
           </OuterContainer>

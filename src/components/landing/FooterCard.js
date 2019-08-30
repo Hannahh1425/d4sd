@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import '../style.css';
 import designlab from '../../img/footer_ucsddesignlabimg.png';
-import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox } from '../../assets/css/containers.js';
+import { OuterContainer, OuterFlexBox } from '../../assets/css/containers.js';
 import { FooterBg } from '../../assets/css/others.js';
-import { H2, H5, H6, A } from '../../assets/css/fonts.js';
+import { H6, A } from '../../assets/css/fonts.js';
 
 class FooterCard extends Component {
 

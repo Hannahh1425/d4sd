@@ -3,10 +3,10 @@ import Navbar from '../components/Navbar';
 import { Relative, HomeStyle, Br } from '../assets/css/others.js';
 import { BtnConditional } from '../assets/css/buttons.js';
 import { FullImg } from '../assets/css/images.js';
-import { H2, H5, H6, H3 } from '../assets/css/fonts.js';
+import { H2, H5, H3 } from '../assets/css/fonts.js';
 import { OuterFlexBox } from '../assets/css/containers.js';
 import { homeContent } from './content.js';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 class Home extends Component {
   constructor() {

@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox } from '../assets/css/containers.js';
-import { FullImg, IconImg } from '../assets/css/images.js';
-import { H2, H4, H5, A } from '../assets/css/fonts.js';
-import { Btn } from '../assets/css/buttons.js';
+// import { Btn } from '../assets/css/buttons.js';
 import HeaderCard from '../components/landing/HeaderCard';
 import FooterCard from '../components/landing/FooterCard';
 import RoleCard from '../components/landing/RoleCard';
