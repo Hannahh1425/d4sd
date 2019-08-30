@@ -218,15 +218,15 @@ class About extends Component {
           <Bg ref={this.timeline} id="timeline">
             <OuterContainer>
               <InnerContainer>
-              <H2 center>{aboutContent.title4}</H2>
-              <H5 left>
-                Different roles will have slightly different process.
-              </H5>
               <br/>
+              <H2 center>{aboutContent.title4}</H2>
+              <H5 left>{aboutContent.content4}</H5>
+              <br/><br/>
               <ToggleFlexBox middle>
                 <ToggleBtn left onClick={this.innovator} active={this.state.isInnovator}>Innovators</ToggleBtn>
                 <ToggleBtn onClick={this.community} active={!this.state.isInnovator}>Community members</ToggleBtn>
               </ToggleFlexBox>
+              <br/>
             </InnerContainer>
             <ResponsiveImgVertical src={ppttimeline_vertical} isInnovator={this.state.isInnovator} />
             <ResponsiveImgVertical src={commtimeline_vertical} isInnovator={!this.state.isInnovator} />
@@ -241,11 +241,9 @@ class About extends Component {
               <br/><br/><br/><br/>
               <InnerContainer>
               <H2 center>{aboutContent.title5}</H2>
-              <H5 left>Check out
-                the overview of D4SD 2017 where 23 teams generated concepts on
-                the theme of mobility.
-              </H5>
+              <H5 left>{aboutContent.content5}</H5>
               </InnerContainer>
+              <br/>
               <OuterFlexBox center>
                 <Btn href={whitepaper} target="_blank">Download 2017 Whitepaper</Btn>
                 <Btn href="http://d4sd.org" target="_blank" top left>D4SD 2017 website</Btn>

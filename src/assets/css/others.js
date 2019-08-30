@@ -20,6 +20,10 @@ export const HomeStyle = styled.div `
 
 export const Bg = styled.div `
     background-color: ${props => props.blue ? "#EFF8FF":"white"}
+    background-image: ${props => `url(${props.image})`};
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 `
 
 export const FooterBg = styled.div `
@@ -33,7 +37,7 @@ export const Background = styled.div `
     background-repeat: no-repeat;
     background-position: center;
     @media ${device.mobileS} {
-        height: 35vh;
+        height: 40vh!important;
     }
     @media ${device.tablet} {
         height: 35vh!important;
@@ -42,7 +46,7 @@ export const Background = styled.div `
         height: 40vh!important;
     }
     @media ${device.laptopL} {
-        height: 45vh!important;
+        height: 40vh!important;
     }
 `
 

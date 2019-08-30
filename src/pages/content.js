@@ -95,7 +95,7 @@ export const homeContent = [
       title: "What steps can we take to make San Diego more sustainable?",
       txt: "Design for San Diego (D4SD) is a civic initiative that brings together innovators, designers, mentors and community leaders to address our region’s most challenging issues through human-centered design. We want these problems to be shaped by your experiences. Click below to tell us your experiences with these problems.",
       action: "Share your story",
-      link: "https://docs.google.com/forms/d/1LyUHMOctPmt9wL9FhtSyKi3ZR-43G172RuPq4aQC6Y0/edit",
+      link: "https://forms.gle/KKQwFL3JPrDfASmw6",
       isAction2: "true",
       action2: "Sign up for D4SD",
       link2: "http://eepurl.com/c2kFon"
@@ -110,9 +110,9 @@ export const aboutContent = {
   content2: "Everyone who cares about the city and has a passion for innovation is more than welcome to participate! Find your place in the challenge!",
   title3: "What are our goals?",
   title4: "What are D4SD's events?",
-  content4: "",
+  content4: "D4SD will have three public events that link together a human-centered design process: round-table discussions, designathons, and the D4SD Summit. Different roles will have a slightly different process and these events will hold a different purpose. Innovators will be the ones gathering information and iterating upon ideas while community members will be teaching innovators about the problem topics and giving feedback throughout the process.",
   title5: "Learn more about D4SD 2017",
-  content5: "Check out the overview of D4SD 2017 where 23 teams generated concepts on the theme of mobility.",
+  content5: "In 2017, we started Design For San Diego, where hundreds of people were involved with generating concepts with the goal to create a San Diego where we all move freely. 23 teams ideated solutions using human-centered design principles to help solve the city’s problems regarding mobility. Visit our 2017 website to learn more about what we did in 2017 and to see some of the projects worked on during this time.",
   content3: [
   {
     txt: "To connect innovators, experts, city officials, professional designers, business leaders, and community members through a combination of in-person events and online activities.",
@@ -192,7 +192,7 @@ export const involveContent = [
     txt: "We’ve imagined a number of ways to get involved, but we’re all about innovation so don’t feel limited! If you want to be involved in a way that isn’t listed above, we hope you will design your own role and join the action! We look forward to innovating with you and leveraging your unique talents and perspective!",
     image: question,
     id: "question",
-    link: "https://forms.gle/1GzRdAVandg68rTP9",
+    link: "https://forms.gle/KKQwFL3JPrDfASmw6",
     isAction: "true",
     action: "Make your Suggestion"
   }
