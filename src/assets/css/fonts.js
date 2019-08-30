@@ -20,6 +20,24 @@ export const H2 = styled.h2 `
     }
 `
 
+export const H3 = styled.h3 `
+    font-family: 'Open Sans', sans-serif;
+    color: #A7A7A7;
+    font-weight: 700;
+    line-height: 0.8em;
+    margin: 15px 15px;
+    @media ${device.mobileS} {
+        font-size: 0.8em;
+    }
+    @media ${device.laptopL} {
+        font-size: 1.1em;!important;
+        line-height: 1.3em!important;
+    }
+    @media ${device.desktop} {
+        font-size: 1.9em!important;
+    }
+`
+
 export const H4 = styled.h4 `
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
@@ -43,7 +61,7 @@ export const H5 = styled.h5 `
     font-family: 'Open Sans', sans-serif;
     color: #333333;
     line-height: 1.5em;
-    @media ${device.mobileS} {        
+    @media ${device.mobileS} {
         font-size: 1em;
     }
     @media ${device.laptopL} {

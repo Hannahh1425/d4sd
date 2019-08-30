@@ -55,7 +55,7 @@ class Involve extends Component {
       <div id="involve">
         <Navbar/>
         <br/><br/>
-        <HeaderCard title="Get Involved" content="You can take part in D4SD in a variety of ways" bg={header} isAction="true"/>
+        <HeaderCard title="Get Involved" content="You can take part in D4SD in a variety of ways." bg={header} isAction="true"/>
         <br/><br/>
         <OuterContainer>
           <InnerContainer>

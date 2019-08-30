@@ -48,16 +48,16 @@ export const Background = styled.div `
 
 export const Br = styled.div `
     @media ${device.mobileS} {
-        height: 32px;
+        height: 24px;
     }
     @media ${device.tablet} {
-        height: 36px!important;
+        height: 28px!important;
     }
     @media ${device.laptop} {
-        height: 40px!important;
+        height: 32px!important;
     }
     @media ${device.laptopL} {
-        height: 72px!important;
+        height: 40px!important;
     }
 `
 

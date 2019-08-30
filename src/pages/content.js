@@ -25,6 +25,7 @@ export const homeContent = [
       id: 0,
       src: home0,
       isAction: "true",
+      header: "DESIGN FOR SAN DIEGO'S 2020 CIVIC CHALLENGE",
       title: "How can we make San Diego a more sustainable city?",
       txt: "San Diego is an amazing place to live, but like many cities, faces a number of difficult questions around improving mobility, affordable housing, health services, and mitigating climate change. Design for San Diego (D4SD) is a city-wide initiative centered on using human-centered design to develop solutions to these civic challenges.",
       action: "Join our Mailing List",
@@ -37,6 +38,7 @@ export const homeContent = [
     id: 1,
     src: home1,
     isAction: "true",
+    header: "IMPROVING MOBILITY",
     title: "How might we help people move more easily through our city?",
     txt: "As people are looking for a more efficient way to move around, the mission of reducing our emissions and increasing the inclusivity of transportation continues to be an essential topic of discussion in our urban environments.",
     action: "See what happened in 2017",
@@ -49,6 +51,7 @@ export const homeContent = [
     id: 2,
     src: home2,
     isAction: "false",
+    header: "ADDRESSING CLIMATE EFFECTS",
     title: "How can we help San Diego prepare for and mitigate climate change?",
     txt: "Global temperatures will continue to rise for decades to come, largely due to greenhouse gases produced by human activities. What steps might people adopt to mitigate and adapt to climate change? How might we help people to reduce greenhouse gas emissions?",
     action: "Get Involved",
@@ -61,6 +64,7 @@ export const homeContent = [
     id: 3,
     src: home3,
     isAction: "false",
+    header: "CREATING ACCESSIBLE HOUSING",
     title: "How can we reimagine housing to meets the needs of all San Diegans?",
     txt: "After food and water, shelter is the most fundamental human need. As such, housing is an issue which extends into the lives of all San Diegans. However, housing is just limited to the building itself but extends to other areas such as  homelessness, IoT,affordability, material/resources, etc. Since housing is central to everyday life, everyday people should be able to join the conversation, and begin to generate solutions to some of their housing related problems. ",
     action: "Get Involved",
@@ -73,6 +77,7 @@ export const homeContent = [
     id: 4,
     src: home4,
     isAction: "false",
+    header: "LIVING HEALTHY LIVES",
     title: "How can we help all San Diegans live healthy and active lives?",
     txt: "Many people have limited access to preventative and restorative health services. As our community continues to grow, how might we improve the capacity of existing health services to reach more people?",
     action: "Get Involved",
@@ -85,13 +90,14 @@ export const homeContent = [
       id: 5,
       src: home5,
       isAction: "true",
+      header: "DESIGN FOR SAN DIEGO",
       title: "What steps can we take to make San Diego more sustainable?",
       txt: "Design for San Diego (D4SD) is a civic initiative that brings together innovators, designers, mentors and community leaders to address our region’s most challenging issues through human-centered design. We want these problems to be shaped by your experiences. Click below to tell us your experiences with these problems.",
-      action: "Share your experience",
+      action: "Share your story",
       link: "https://docs.google.com/forms/d/1LyUHMOctPmt9wL9FhtSyKi3ZR-43G172RuPq4aQC6Y0/edit",
-      isAction2: "false",
-      action2: "",
-      link2: ""
+      isAction2: "true",
+      action2: "Sign up for D4SD",
+      link2: "http://eepurl.com/c2kFon"
     }
 ]
 
@@ -108,28 +114,28 @@ export const aboutContent = {
   content5: "Check out the overview of D4SD 2017 where 23 teams generated concepts on the theme of mobility.",
   content3: [
   {
-    txt: "To increase and diversify participation, particularly for typically underrepresented or marginalized populations, by creating a range of specific roles within the civic design framework and striving for diversity, equity, and inclusion.",
+    txt: "To connect innovators, experts, city officials, professional designers, business leaders, and community members through a combination of in-person events and online activities.",
     img: connect
   },
   {
-    txt: "To contribute to the burgeoning design-driven economy in San Diego by providing resources to help launch top proposals by bringing together leaders from various sectors.",
-    img: city
+    txt: "To increase and diversify participation, particularly for typically underrepresented or marginalized populations, by creating a range of specific roles within the civic design framework and striving for diversity, equity, and inclusion.",
+    img: div
   },
   {
     txt: "To provide bottom-up community actions with more agency and to enhance the communications between the government and the local groups.",
     img: communicate
   },
   {
-    txt: "To collaboratively explore a range of civic problems that the San Diego region faces.",
-    img: find
+    txt: "To contribute to the burgeoning design-driven economy in San Diego by providing resources to help launch top proposals by bringing together leaders from various sectors.",
+    img: city
   },
   {
     txt: "To provide an educational opportunity that serves people from a wide range of ages, backgrounds, and motivations.",
-    img: div
+    img: edu
   },
   {
-    txt: "To connect innovators, experts, city officials, professional designers, business leaders, and community members through a combination of in-person events and online activities.",
-    img: edu
+    txt: "To collaboratively explore a range of civic problems that the San Diego region faces.",
+    img: find
   }
 ]}
 
@@ -170,6 +176,15 @@ export const involveContent = [
     link: "http://eepurl.com/c2kFon",
     isAction: "false",
     action: ""
+  },
+  {
+    title: "Sign up for D4SD",
+    txt: "EDIT THIS TEXT",
+    image: sponsor,
+    id: "sponsors",
+    link: "http://eepurl.com/c2kFon",
+    isAction: "true",
+    action: "Join our mailing list"
   },
   {
     title: "There are infinite ways to get involved",

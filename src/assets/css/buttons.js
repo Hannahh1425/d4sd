@@ -58,6 +58,7 @@ export const SmallBtn = styled(Btn) `
 
 export const BtnConditional = styled(Btn) `
   display: ${props => props.isAction === "true" ? "inline":"none"}
+  margin: 10px;
 `
 
 

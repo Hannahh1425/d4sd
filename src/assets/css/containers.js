@@ -34,6 +34,9 @@ export const InnerContainer = styled.div `
         margin: auto;
         width: 70%!important;
     }
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 `
 
 export const Card = styled.div `
