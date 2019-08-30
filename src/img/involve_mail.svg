@@ -1,1 +1,30 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 875.79 1223.82"><defs><style>.cls-1,.cls-5{fill:none;}.cls-2{fill:#d6c8e6;}.cls-3{clip-path:url(#clip-path);}.cls-4{fill:#838bc5;}.cls-5{stroke:#d6c8e6;stroke-miterlimit:10;stroke-width:26px;}</style><clipPath id="clip-path" transform="translate(5.89 368.07)"><rect class="cls-1" x="181.27" y="237.65" width="501.45" height="388.69" rx="43.39"/></clipPath></defs><title>mail icon</title><circle class="cls-2" cx="437.89" cy="800.07" r="423.75"/><g class="cls-3"><rect class="cls-4" x="187.17" y="605.72" width="501.45" height="388.69" rx="43.39"/><rect class="cls-5" x="122.14" y="-240.03" width="619.72" height="619.72" rx="32.15" transform="translate(83.05 693.99) rotate(-45)"/><line class="cls-5" x1="162.71" y1="1026.3" x2="381.28" y2="807.74"/><line class="cls-5" x1="716.75" y1="1018.63" x2="498.18" y2="800.07"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 875.8 847.5" style="enable-background:new 0 0 875.8 847.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#D6C8E6;}
+	.st1{clip-path:url(#SVGID_2_);}
+	.st2{fill:#838BC5;}
+	.st3{fill:none;stroke:#D6C8E6;stroke-width:26;stroke-miterlimit:10;}
+</style>
+<title>mail icon</title>
+<circle class="st0" cx="437.9" cy="423.8" r="423.8"/>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M230.6,229.4h414.7c24,0,43.4,19.4,43.4,43.4v301.9c0,24-19.4,43.4-43.4,43.4H230.6
+			c-24,0-43.4-19.4-43.4-43.4V272.8C187.2,248.8,206.6,229.4,230.6,229.4z"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st1">
+		<path class="st2" d="M230.6,229.4h414.7c24,0,43.4,19.4,43.4,43.4v301.9c0,24-19.4,43.4-43.4,43.4H230.6
+			c-24,0-43.4-19.4-43.4-43.4V272.8C187.2,248.8,206.6,229.4,230.6,229.4z"/>
+		<path class="st3" d="M22.4,38.8l392.7-392.7c12.6-12.6,32.9-12.6,45.5,0L853.4,38.8c12.6,12.6,12.6,32.9,0,45.5L460.6,477.1
+			c-12.6,12.6-32.9,12.6-45.5,0L22.4,84.3C9.9,71.8,9.9,51.4,22.4,38.8z"/>
+		<line class="st3" x1="162.7" y1="650" x2="381.3" y2="431.4"/>
+		<line class="st3" x1="716.8" y1="642.3" x2="498.2" y2="423.8"/>
+	</g>
+</g>
+</svg>

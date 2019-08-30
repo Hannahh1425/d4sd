@@ -1,6 +1,25 @@
 import styled from 'styled-components';
 import { device } from './breakpoints.js';
 
+export const H1 = styled.h1 `
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1200;
+    color: #333333;
+    position: relative;
+    z-index: 100;
+    padding: 0 14px;
+    text-align: ${props => props.center ? "center":"inherit"}
+    @media ${device.mobileS} {
+        font-size: 30px;
+    }
+    @media ${device.laptopL} {
+        font-size: 2.5em!important;
+    }
+    @media ${device.desktop} {
+        font-size: 4.0em!important;
+    }
+`
+
 export const H2 = styled.h2 `
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
