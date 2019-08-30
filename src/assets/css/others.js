@@ -10,6 +10,12 @@ export const HomeStyle = styled.div `
         position: relative;
         top: 3em;
     }
+    @media ${device.tablet} {
+      position: relative;
+      left: 5%;
+      width: 85%;
+      top: 3em;
+    }
     @media ${device.laptop} {
         position: absolute!important;
         left: 10%;
@@ -24,6 +30,7 @@ export const Bg = styled.div `
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-width: 100%;
 `
 
 export const FooterBg = styled.div `
@@ -52,13 +59,13 @@ export const Background = styled.div `
 
 export const Br = styled.div `
     @media ${device.mobileS} {
-        height: 24px;
+        height: 20px;
     }
     @media ${device.tablet} {
-        height: 28px!important;
+        height: 24px!important;
     }
     @media ${device.laptop} {
-        height: 32px!important;
+        height: 26px!important;
     }
     @media ${device.laptopL} {
         height: 40px!important;

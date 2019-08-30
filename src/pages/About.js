@@ -8,7 +8,7 @@ import HeaderCard from '../components/landing/HeaderCard';
 import { aboutContent } from './content.js';
 //Styles
 import styled from 'styled-components';
-import { Bg, Background } from '../assets/css/others.js';
+import { Bg, Background, Br } from '../assets/css/others.js';
 import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox, ToggleFlexBox } from '../assets/css/containers.js';
 import { H2, H5 } from '../assets/css/fonts.js';
 import { device } from '../assets/css/breakpoints.js';
@@ -158,7 +158,7 @@ class About extends Component {
     return (
       <div id="about">
         <Navbar/>
-        <br/><br/>
+        <Br/><Br/>
         <HeaderCard title={aboutContent.title1} content={aboutContent.content1} bg={header} isAction="false"/>
         {/*<nav className="navbar navbar-light justify-content-left position-fixed subnav">
           <ul className="navbar-nav justify-content-center">
@@ -179,7 +179,7 @@ class About extends Component {
             </li>
           </ul>
         </nav>*/}
-        <br/><br/><br/>
+        <Br/><Br/>
         <Bg ref={this.join} id="join">
           <OuterContainer>
             <InnerContainer>
@@ -192,7 +192,7 @@ class About extends Component {
           </OuterContainer>
         </Bg>
 
-        <br/><br/><br/><br/>
+        <Br/><Br/><Br/>
 
         <Bg blue ref={this.value} id="value">
           <OuterContainer>
@@ -208,25 +208,25 @@ class About extends Component {
                   </InnerFlexBox>
                 ))}
               </OuterFlexBox>
-              <br/><br/><br/>
+              <Br/><Br/><Br/>
             </InnerContainer>
           </OuterContainer>
         </Bg>
 
 
-          <br/><br/>
+          <Br/><Br/>
           <Bg ref={this.timeline} id="timeline">
             <OuterContainer>
               <InnerContainer>
-              <br/>
+              <Br/>
               <H2 center>{aboutContent.title4}</H2>
               <H5 left>{aboutContent.content4}</H5>
-              <br/><br/>
+              <Br/><Br/>
               <ToggleFlexBox middle>
                 <ToggleBtn left onClick={this.innovator} active={this.state.isInnovator}>Innovators</ToggleBtn>
                 <ToggleBtn onClick={this.community} active={!this.state.isInnovator}>Community members</ToggleBtn>
               </ToggleFlexBox>
-              <br/>
+              <Br/>
             </InnerContainer>
             <ResponsiveImgVertical src={ppttimeline_vertical} isInnovator={this.state.isInnovator} />
             <ResponsiveImgVertical src={commtimeline_vertical} isInnovator={!this.state.isInnovator} />
@@ -235,24 +235,24 @@ class About extends Component {
             </OuterContainer>
           </Bg>
 
-          <br/><br/>
+          <Br/><Br/>
           <Bg blue ref={this.review} id="review">
             <OuterContainer>
-              <br/><br/><br/><br/>
+              <Br/><Br/><Br/>
               <InnerContainer>
               <H2 center>{aboutContent.title5}</H2>
               <H5 left>{aboutContent.content5}</H5>
               </InnerContainer>
-              <br/>
+              <Br/>
               <OuterFlexBox center>
                 <Btn href={whitepaper} target="_blank">Download 2017 Whitepaper</Btn>
                 <Btn href="http://d4sd.org" target="_blank" top left>D4SD 2017 website</Btn>
               </OuterFlexBox>
-              <br/><br/>
+              <Br/><Br/>
               {/**<a href="http://eepurl.com/c2kFon" target="_blank">
                 <H2>Join our mailing list</H2>
               </a>**/}
-              <br/><br/><br/>
+              <Br/>
             </OuterContainer>
           </Bg>
           <FooterCard/>

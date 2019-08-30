@@ -43,7 +43,7 @@ export const H3 = styled.h3 `
     font-family: 'Open Sans', sans-serif;
     color: #A7A7A7;
     font-weight: 700;
-    line-height: 0.8em;
+    line-height: 1em;
     margin: 15px 15px;
     @media ${device.mobileS} {
         font-size: 0.8em;
@@ -84,7 +84,7 @@ export const H5 = styled.h5 `
         font-size: 1em;
     }
     @media ${device.laptopL} {
-        font-size: 1.25em;!important;
+        font-size: 1.20em;!important;
         line-height: 1.5em!important;
     }
     @media ${device.desktop} {

@@ -92,7 +92,7 @@ export const homeContent = [
       src: home5,
       isAction: "true",
       header: "DESIGN FOR SAN DIEGO",
-      title: "What steps can we take to make San Diego more sustainable?",
+      title: "Share your story and take a step toward a better San Diego.",
       txt: "We want to empower YOU to make a difference. Working together, we can help shape the future of our great city through Design for San Diego (D4SD), an initiative that brings together innovators, designers, mentors and community leaders to address our region’s most challenging issues through human-centered design. Click below to join the initiative, or tell us your stories, experiences, and knowledge related to the challenges above.",
       action: "Share your story",
       link: "https://forms.gle/KKQwFL3JPrDfASmw6",

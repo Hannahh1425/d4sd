@@ -25,7 +25,7 @@ class Home extends Component {
   return (
     <div id="home">
       <Navbar/>
-      <br/><br/>
+      <Br/><Br/>
         {homeContent.map((homeContent, i) => (
           <Relative key={i} id={i}>
             <HomeStyle>

@@ -12,15 +12,15 @@ class HeaderCard extends Component {
       <Bg image={this.props.bg}>
         <OuterContainer>
             <InnerContainer>
-              <br/><br/><br/>
+              <Br/><Br/>
               <H1 center>{this.props.title}</H1>
               <H5 left>{this.props.content}</H5>
+              <Br/>
               <OuterContainer center>
-              <br/>
               <BtnConditional href="http://eepurl.com/c2kFon" target="_blank" isAction={this.props.isAction}>Join our Mailing List</BtnConditional>
               </OuterContainer>
-              <br/><br/>
             </InnerContainer>
+            <Br/><Br/>
         </OuterContainer>
       </Bg>
     );
