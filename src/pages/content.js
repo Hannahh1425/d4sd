@@ -180,7 +180,7 @@ export const involveContent = [
   },
   {
     title: "Sign up for D4SD",
-    txt: "EDIT THIS TEXT",
+    txt: "Want to receive more information and updates about D4SD? Join our mailing list to stay up to date on everything related to D4SD!",
     image: mail,
     id: "mail",
     link: "http://eepurl.com/c2kFon",
