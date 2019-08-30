@@ -214,7 +214,7 @@ class About extends Component {
 
           <br/><br/>
           <Bg ref={this.timeline} id="timeline">
-            <OuterContainer>
+            <OuterContainer center>
               <InnerContainer>
               <H2 center>{aboutContent.title4}</H2>
               <H5 left>
@@ -235,7 +235,7 @@ class About extends Component {
 
           <br/><br/>
           <Bg blue ref={this.review} id="review">
-            <OuterContainer>
+            <OuterContainer center>
               <br/><br/><br/><br/>
               <H2 center>{aboutContent.title5}</H2>
               <H5 left>Check out

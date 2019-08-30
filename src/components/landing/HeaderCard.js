@@ -10,7 +10,7 @@ class HeaderCard extends Component {
   render() {
     return (
       <Background image={this.props.bg}>
-        <OuterContainer>
+        <OuterContainer center>
             <InnerContainer>
               <br/><br/>
               <H2 center>{this.props.title}</H2>
