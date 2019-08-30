@@ -36,10 +36,10 @@ export const Background = styled.div `
         height: 35vh;
     }
     @media ${device.tablet} {
-        height: 30vh!important;
+        height: 35vh!important;
     }
     @media ${device.laptop} {
-        height: 35vh!important;
+        height: 40vh!important;
     }
     @media ${device.laptopL} {
         height: 45vh!important;

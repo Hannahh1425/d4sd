@@ -237,11 +237,13 @@ class About extends Component {
           <Bg blue ref={this.review} id="review">
             <OuterContainer>
               <br/><br/><br/><br/>
+              <InnerContainer>
               <H2 center>{aboutContent.title5}</H2>
               <H5 left>Check out
                 the overview of D4SD 2017 where 23 teams generated concepts on
                 the theme of mobility.
               </H5>
+              </InnerContainer>
               <OuterFlexBox center>
                 <Btn href={whitepaper} target="_blank">Download 2017 Whitepaper</Btn>
                 <Btn href="http://d4sd.org" target="_blank" top left>D4SD 2017 website</Btn>

@@ -18,6 +18,7 @@ import sponsor from "../img/involve_sponsor.png";
 import expert from "../img/involve_expert.png";
 import innovator from "../img/involve_participant.png";
 import question from "../img/involve_question.svg";
+import mail from "../img/involve_mail.svg";
 
 /*************************************Home content***************************************/
 export const homeContent = [
@@ -53,7 +54,7 @@ export const homeContent = [
     isAction: "false",
     header: "ADDRESSING CLIMATE EFFECTS",
     title: "How can we help San Diego prepare for and mitigate climate change?",
-    txt: "Global temperatures will continue to rise for decades to come, largely due to greenhouse gases produced by human activities. What steps might people adopt to mitigate and adapt to climate change? How might we help people to reduce greenhouse gas emissions?",
+    txt: "Our dependency on greenhouse gases has resulted in the gradual increase of global temperatures, and scientists have high confidence that global temperatures will continue to rise for decades to come. Climate change links to a number of areas such as transportation, housing, health, natural resources, food waste, agriculture, air pollution, and education.",
     action: "Get Involved",
     link: "http://eepurl.com/c2kFon",
     isAction2: "false",
@@ -118,7 +119,7 @@ export const aboutContent = {
     img: connect
   },
   {
-    txt: "To increase and diversify participation, particularly for typically underrepresented or marginalized populations, by creating a range of specific roles within the civic design framework and striving for diversity, equity, and inclusion.",
+    txt: "To increase and diversity participation, particularly for typically underrepresented or marginalized populations, by creating a range of specific roles while striving for diversity, equity, and inclusion.",
     img: div
   },
   {
@@ -180,8 +181,8 @@ export const involveContent = [
   {
     title: "Sign up for D4SD",
     txt: "EDIT THIS TEXT",
-    image: sponsor,
-    id: "sponsors",
+    image: mail,
+    id: "mail",
     link: "http://eepurl.com/c2kFon",
     isAction: "true",
     action: "Join our mailing list"
