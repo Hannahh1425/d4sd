@@ -22,6 +22,7 @@ import commtimeline_horizontal from "../img/about_community_horizontal.svg";
 import ppttimeline_vertical from "../img/about_participants_vertical.png";
 import commtimeline_vertical from "../img/about_community_vertical.png";
 import { ReactComponent as Diagram } from "../img/about_diagram.svg";
+import diagram from "../img/about_diagram.svg";
 // import { ReactComponent as Timeline } from "../img/about_timeline.svg";
 
 import './style.css';
@@ -185,7 +186,8 @@ class About extends Component {
               <H2 center>{aboutContent.title2}</H2>
               <H5>{aboutContent.content2}</H5>
               <br/>
-              <Diagram onMouseOver={this.onHover} onMouseOut={this.unHover}/>
+              <img src={diagram}/>
+              {/*}<Diagram onMouseOver={this.onHover} onMouseOut={this.unHover}/>*/}
             </InnerContainer>
           </OuterContainer>
         </Bg>

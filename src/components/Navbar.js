@@ -11,12 +11,15 @@ class Navbar extends Component {
     return (
       <div>
         <nav className="navbar navbar-expand-md navbar-light fixed-top mh-5 main-nav">
-          <Link className="navbar-brand" to='/'><img src={logo} alt="logo"/></Link>
+          <Link className="navbar-brand" to='/home'><img src={logo} alt="logo"/></Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
             <ul className="navbar-nav align-items-end">
+              <li className="nav-item">
+                <NavLink className="nav-link mr-xl-4" to='/home' activeClassName="active">Home</NavLink>
+              </li>
               <li className="nav-item">
                 <NavLink className="nav-link mr-xl-4" to='/about' activeClassName="active">About</NavLink>
               </li>
