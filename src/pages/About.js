@@ -159,7 +159,7 @@ class About extends Component {
       <div id="about">
         <Navbar/>
         <br/><br/>
-        <HeaderCard title="About D4SD" content={aboutContent.content1} bg={header} isAction="false"/>
+        <HeaderCard title={aboutContent.title1} content={aboutContent.content1} bg={header} isAction="false"/>
         {/*<nav className="navbar navbar-light justify-content-left position-fixed subnav">
           <ul className="navbar-nav justify-content-center">
             <li className="nav-item">

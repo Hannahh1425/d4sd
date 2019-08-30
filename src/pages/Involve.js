@@ -55,12 +55,12 @@ class Involve extends Component {
       <div id="involve">
         <Navbar/>
         <br/><br/>
-        <HeaderCard title="Get Involved" content="You can take part in D4SD in a variety of ways! Whether it be ideating solutions, giving feedback, teaching civic design in the classroom, or supporting the initiative, getting involved with D4SD can look a little different for each person. Below are a few ways to get involved." bg={header} isAction="true"/>
+        <HeaderCard title={involveContent.title1} content={involveContent.content1} bg={header} isAction="true"/>
         <br/><br/>
         <OuterContainer>
           <InnerContainer>
             <OuterFlexBox>
-              {involveContent.map(content => (
+              {involveContent.roles.map(content => (
                 <InnerFlexBox half>
                   <RoleCard
                     onClick={() => this.expand(this[content.id])}

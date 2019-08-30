@@ -28,7 +28,7 @@ export const homeContent = [
       isAction: "true",
       header: "DESIGN FOR SAN DIEGO'S 2020 CIVIC CHALLENGE",
       title: "How can we make San Diego a more sustainable city?",
-      txt: "San Diego is an amazing place to live, but like many cities, faces a number of difficult questions around improving mobility, affordable housing, health services, and mitigating climate change. Design for San Diego (D4SD) is a city-wide initiative centered on using human-centered design to develop solutions to these civic challenges.",
+      txt: "San Diego is an amazing place to live. But like many cities, San Diego faces a number of difficult challenges—around mobility, climate, housing, and public health — that could affect the long-term sustainability of the region. Want to make a difference in our community?  Join the Design for San Diego (D4SD) initiative to help address the city’s most pressing challenges using human-centered design.",
       action: "Join our Mailing List",
       link: "http://eepurl.com/c2kFon",
       isAction2: "false",
@@ -41,7 +41,7 @@ export const homeContent = [
     isAction: "true",
     header: "IMPROVING MOBILITY",
     title: "How might we help people move more easily through our city?",
-    txt: "As people are looking for a more efficient way to move around, the mission of reducing our emissions and increasing the inclusivity of transportation continues to be an essential topic of discussion in our urban environments.",
+    txt: "As people are looking for a more efficient way to move around, the mission of reducing our emissions and increasing the inclusivity of transportation continues to be an essential topic of discussion in our urban environments. Mobility can be examined from a number of lenses’ such as motor vehicle systems, transit, parking, intermodal connections, electric vehicles, accident reduction, walkability and bike-ability, and land-use patterns. ",
     action: "See what happened in 2017",
     link: "http://d4sd.org",
     isAction2: "false",
@@ -67,7 +67,7 @@ export const homeContent = [
     isAction: "false",
     header: "CREATING ACCESSIBLE HOUSING",
     title: "How can we reimagine housing to meets the needs of all San Diegans?",
-    txt: "After food and water, shelter is the most fundamental human need. As such, housing is an issue which extends into the lives of all San Diegans. However, housing is just limited to the building itself but extends to other areas such as  homelessness, IoT,affordability, material/resources, etc. Since housing is central to everyday life, everyday people should be able to join the conversation, and begin to generate solutions to some of their housing related problems. ",
+    txt: "After food and water, shelter is the most fundamental human need. Unfortunately, people have limited choices for safe, affordable, and long-term housing in San Diego. The issue affects the lives of all San Diegans. Housing is not just about physical structures, but includes other areas such as homelessness, land development, smart home technology, and mixed-use housing.",
     action: "Get Involved",
     link: "http://eepurl.com/c2kFon",
     isAction2: "false",
@@ -80,7 +80,7 @@ export const homeContent = [
     isAction: "false",
     header: "LIVING HEALTHY LIVES",
     title: "How can we help all San Diegans live healthy and active lives?",
-    txt: "Many people have limited access to preventative and restorative health services. As our community continues to grow, how might we improve the capacity of existing health services to reach more people?",
+    txt: "Many people have limited access to preventative and restorative health services. Health is determined by social and physical environments and is directly connected to how people live, learn, work, and play and touches on topics such as quality of life, population health, mental, physical and emotional health, and well being.",
     action: "Get Involved",
     link: "http://eepurl.com/c2kFon",
     isAction2: "false",
@@ -93,7 +93,7 @@ export const homeContent = [
       isAction: "true",
       header: "DESIGN FOR SAN DIEGO",
       title: "What steps can we take to make San Diego more sustainable?",
-      txt: "Design for San Diego (D4SD) is a civic initiative that brings together innovators, designers, mentors and community leaders to address our region’s most challenging issues through human-centered design. We want these problems to be shaped by your experiences. Click below to tell us your experiences with these problems.",
+      txt: "We want to empower YOU to make a difference. Working together, we can help shape the future of our great city through Design for San Diego (D4SD), an initiative that brings together innovators, designers, mentors and community leaders to address our region’s most challenging issues through human-centered design. Click below to join the initiative, or tell us your stories, experiences, and knowledge related to the challenges above.",
       action: "Share your story",
       link: "https://forms.gle/KKQwFL3JPrDfASmw6",
       isAction2: "true",
@@ -104,12 +104,12 @@ export const homeContent = [
 
 /*************************************About content***************************************/
 export const aboutContent = {
-  title1: "What is D4SD?",
-  content1: "Design for San Diego (D4SD) is a civic design challenge that provides a space for San Diegans to address San Diego's most challenging issues by framing human-centered design problems, prototyping solutions, and connecting with their community to bring those solutions to life.",
+  title1: "About D4SD",
+  content1:"Design for San Diego (D4SD) is a civic design challenge that provides a space for all of us to address the region's most challenging issues. D4SD offers a series of public workshops to bring other a wide range of stakeholders and to scaffold a process of framing human-centered design problems, prototyping solutions, and building alliances to bring good ideas to life.",
   title2: "Who can participate?",
-  content2: "Everyone who cares about the city and has a passion for innovation is more than welcome to participate! Find your place in the challenge!",
-  title3: "What are our goals?",
-  title4: "What are D4SD's events?",
+  content2: "Anyone! If you care about the city and want to have a chance to have your voice included in the conversation, then we welcome you! Find below some potential ways groups that can participate.",
+  title3: "What are the goals of D4SD?",
+  title4: "What and when are the key events?",
   content4: "D4SD will have three public events that link together a human-centered design process: round-table discussions, designathons, and the D4SD Summit. Different roles will have a slightly different process and these events will hold a different purpose. Innovators will be the ones gathering information and iterating upon ideas while community members will be teaching innovators about the problem topics and giving feedback throughout the process.",
   title5: "Learn more about D4SD 2017",
   content5: "In 2017, we started Design For San Diego, where hundreds of people were involved with generating concepts with the goal to create a San Diego where we all move freely. 23 teams ideated solutions using human-centered design principles to help solve the city’s problems regarding mobility. Visit our 2017 website to learn more about what we did in 2017 and to see some of the projects worked on during this time.",
@@ -141,7 +141,10 @@ export const aboutContent = {
 ]}
 
 /*************************************Involve content***************************************/
-export const involveContent = [
+export const involveContent = {
+  title1: "Get Involved",
+  content1:"You can take part in D4SD in a variety of ways! Whether it be ideating solutions, giving feedback, teaching civic design in the classroom, or supporting the initiative, getting involved with D4SD can look a little different for each person. Below are a few ways to get involved.",
+  roles: [
   {
     title: "Start innovating!",
     txt: "As an innovator, you can participate in a variety of in-person events and create innovative solutions in a team. D4SD gives innovators the opportunity to unpack large problems, develop solutions, learn about human-centered design, showcase their ideas, and network with the larger design community.",
@@ -196,4 +199,4 @@ export const involveContent = [
     isAction: "true",
     action: "Make your Suggestion"
   }
-]
+]}
