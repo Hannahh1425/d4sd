@@ -195,7 +195,7 @@ class About extends Component {
         <Bg blue ref={this.value} id="value">
           <OuterContainer>
             <InnerContainer>
-              <br/><br/><br/>
+              <br/><br/><br/><br/>
               <H2 center>{aboutContent.title3}</H2>
               <br/>
               <OuterFlexBox>
@@ -244,7 +244,7 @@ class About extends Component {
               <Br/>
               <OuterFlexBox center>
                 <Btn href={whitepaper} target="_blank">Download 2017 Whitepaper</Btn>
-                <Btn href="http://d4sd.org" target="_blank" top left>D4SD 2017 website</Btn>
+                <Btn href="http://d4sd2017.ucsd.edu/" target="_blank" top left>D4SD 2017 website</Btn>
               </OuterFlexBox>
               <Br/><Br/>
               {/**<a href="http://eepurl.com/c2kFon" target="_blank">
