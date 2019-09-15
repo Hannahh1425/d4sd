@@ -33,7 +33,7 @@ export const homeContent = [
       link: "http://eepurl.com/c2kFon",
       isAction2: "false",
       action2: "",
-      link2: "http://d4sd.org"
+      link2: "http://d4sd2017.org"
   },
   {
     id: 1,
@@ -43,7 +43,7 @@ export const homeContent = [
     title: "How might we help people move more easily through our city?",
     txt: "As people are looking for a more efficient way to move around, the mission of reducing our emissions and increasing the inclusivity of transportation continues to be an essential topic of discussion in our urban environments. Mobility can be examined from a number of lenses’ such as motor vehicle systems, transit, parking, intermodal connections, electric vehicles, accident reduction, walkability and bike-ability, and land-use patterns. ",
     action: "See what happened in 2017",
-    link: "http://d4sd.org",
+    link: "http://d4sd2017.org",
     isAction2: "false",
     action2: "",
     link2: ""

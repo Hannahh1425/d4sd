@@ -19,9 +19,7 @@ import ppttimeline_horizontal from "../img/about_participants_horizontal.svg";
 import commtimeline_horizontal from "../img/about_community_horizontal.svg";
 import ppttimeline_vertical from "../img/about_participants_vertical.png";
 import commtimeline_vertical from "../img/about_community_vertical.png";
-// import { ReactComponent as Diagram } from "../img/about_diagram.svg";
 import diagram from "../img/about_diagram.svg";
-// import { ReactComponent as Timeline } from "../img/about_timeline.svg";
 
 import './style.css';
 
@@ -118,65 +116,12 @@ class About extends Component {
 
   }
 
-  // style = e => {
-  //   console.log("called");
-  //   const ppt_timeline = document.getElementById("ppt_timeline");
-  //   const comm_timeline = document.getElementById("comm_timeline");
-  //   if (this.state.isInnovator) {
-  //     ppt_timeline.style.display = "inline-block";
-  //     comm_timeline.style.display = "none";
-  //     this.setState({role:"Innovators'"});
-  //   }
-  //   else {
-  //     ppt_timeline.style.display = "none";
-  //     comm_timeline.style.display = "inline-block";
-  //     this.setState({role:"Community Members'"});
-  //   }
-  // }
-  //
-  // handlePpt = e =>{
-  //   console.log("participant");
-  //   var ppt_timeline = document.getElementById("ppt_timeline");
-  //   var comm_timeline = document.getElementById("comm_timeline");
-  //   console.log(ppt_timeline);
-  //   ppt_timeline.style.display = "inline-block";
-  //   comm_timeline.style.display = "none";
-  // }
-  //
-  // handleComm = e =>{
-  //   console.log("community");
-  //   var ppt_timeline = document.getElementById("ppt_timeline");
-  //   var comm_timeline = document.getElementById("comm_timeline");
-  //   console.log(ppt_timeline);
-  //   ppt_timeline.style.display = "inline-block";
-  //   comm_timeline.style.display = "none";
-  // }
-
   render() {
     return (
       <div id="about">
         <Navbar/>
         <Br/><Br/>
         <HeaderCard title={aboutContent.title1} content={aboutContent.content1} bg={header} isAction="false"/>
-        {/*<nav className="navbar navbar-light justify-content-left position-fixed subnav">
-          <ul className="navbar-nav justify-content-center">
-            <li className="nav-item">
-              <a className={this.state.overview ? "nav-link text-left subnav-link-active":"nav-link text-left subnav-link"} onClick={() => this.scrollToRef(this.overview)}>What is D4SD</a>
-            </li>
-            <li className="nav-item">
-              <a className={this.state.join ? "nav-link text-left subnav-link-active":"nav-link text-left subnav-link"} onClick={() => this.scrollToRef(this.join)}>Who can participate</a>
-            </li>
-            <li className="nav-item">
-              <a className={this.state.value ? "nav-link text-left subnav-link-active":"nav-link text-left subnav-link"} onClick={() => this.scrollToRef(this.value)}>What does D4SD envision</a>
-            </li>
-            <li className="nav-item">
-              <a className={this.state.timeline ? "nav-link text-left subnav-link-active":"nav-link text-left subnav-link"} onClick={() => this.scrollToRef(this.timeline)}>Timeline</a>
-            </li>
-            <li className="nav-item">
-              <a className={this.state.review ? "nav-link text-left subnav-link-active":"nav-link text-left subnav-link"} onClick={() => this.scrollToRef(this.review)}>Review D4SD2017</a>
-            </li>
-          </ul>
-        </nav>*/}
         <Br/><Br/>
         <Bg ref={this.join} id="join">
           <OuterContainer>
@@ -185,7 +130,6 @@ class About extends Component {
               <H5>{aboutContent.content2}</H5>
               <br/>
               <img src={diagram} alt="diagram"/>
-              {/*}<Diagram onMouseOver={this.onHover} onMouseOut={this.unHover}/>*/}
             </InnerContainer>
           </OuterContainer>
         </Bg>
@@ -244,12 +188,9 @@ class About extends Component {
               <Br/>
               <OuterFlexBox center>
                 <Btn href={whitepaper} target="_blank">Download 2017 Whitepaper</Btn>
-                <Btn href="http://d4sd2017.ucsd.edu/" target="_blank" top left>D4SD 2017 website</Btn>
+                <Btn href="http://d4sd2017.org" target="_blank" top left>D4SD 2017 website</Btn>
               </OuterFlexBox>
               <Br/><Br/>
-              {/**<a href="http://eepurl.com/c2kFon" target="_blank">
-                <H2>Join our mailing list</H2>
-              </a>**/}
               <Br/>
             </OuterContainer>
           </Bg>
