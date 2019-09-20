@@ -64,6 +64,10 @@ export const BtnConditional = styled(Btn) `
 
 
 export const ToggleBtn = styled.div `
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     cursor: pointer;
     border: 1.5px solid #4496FF;
     color: #4496FF;
