@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import { useInView, InView } from 'react-intersection-observer';
+import React from 'react';
+import { InView } from 'react-intersection-observer';
 
 const Forum = (inView, entry) => {
   return (

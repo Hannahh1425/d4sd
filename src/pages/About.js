@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-// import Container from '../components/Container';
 import Navbar from '../components/Navbar';
 import FooterCard from '../components/landing/FooterCard';
 import HeaderCard from '../components/landing/HeaderCard';
@@ -8,7 +6,7 @@ import HeaderCard from '../components/landing/HeaderCard';
 import { aboutContent } from './content.js';
 //Styles
 import styled from 'styled-components';
-import { Bg, Background } from '../assets/css/others.js';
+import { Bg, Br } from '../assets/css/others.js';
 import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox, ToggleFlexBox } from '../assets/css/containers.js';
 import { H2, H5 } from '../assets/css/fonts.js';
 import { device } from '../assets/css/breakpoints.js';
@@ -21,8 +19,7 @@ import ppttimeline_horizontal from "../img/about_participants_horizontal.svg";
 import commtimeline_horizontal from "../img/about_community_horizontal.svg";
 import ppttimeline_vertical from "../img/about_participants_vertical.png";
 import commtimeline_vertical from "../img/about_community_vertical.png";
-import { ReactComponent as Diagram } from "../img/about_diagram.svg";
-// import { ReactComponent as Timeline } from "../img/about_timeline.svg";
+import diagram from "../img/about_diagram.svg";
 
 import './style.css';
 
@@ -119,83 +116,30 @@ class About extends Component {
 
   }
 
-  // style = e => {
-  //   console.log("called");
-  //   const ppt_timeline = document.getElementById("ppt_timeline");
-  //   const comm_timeline = document.getElementById("comm_timeline");
-  //   if (this.state.isInnovator) {
-  //     ppt_timeline.style.display = "inline-block";
-  //     comm_timeline.style.display = "none";
-  //     this.setState({role:"Innovators'"});
-  //   }
-  //   else {
-  //     ppt_timeline.style.display = "none";
-  //     comm_timeline.style.display = "inline-block";
-  //     this.setState({role:"Community Members'"});
-  //   }
-  // }
-  //
-  // handlePpt = e =>{
-  //   console.log("participant");
-  //   var ppt_timeline = document.getElementById("ppt_timeline");
-  //   var comm_timeline = document.getElementById("comm_timeline");
-  //   console.log(ppt_timeline);
-  //   ppt_timeline.style.display = "inline-block";
-  //   comm_timeline.style.display = "none";
-  // }
-  //
-  // handleComm = e =>{
-  //   console.log("community");
-  //   var ppt_timeline = document.getElementById("ppt_timeline");
-  //   var comm_timeline = document.getElementById("comm_timeline");
-  //   console.log(ppt_timeline);
-  //   ppt_timeline.style.display = "inline-block";
-  //   comm_timeline.style.display = "none";
-  // }
-
   render() {
     return (
       <div id="about">
         <Navbar/>
-        <br/><br/>
-        <HeaderCard title="About D4SD" content={aboutContent.content1} bg={header} isAction="false"/>
-        {/*<nav className="navbar navbar-light justify-content-left position-fixed subnav">
-          <ul className="navbar-nav justify-content-center">
-            <li className="nav-item">
-              <a className={this.state.overview ? "nav-link text-left subnav-link-active":"nav-link text-left subnav-link"} onClick={() => this.scrollToRef(this.overview)}>What is D4SD</a>
-            </li>
-            <li className="nav-item">
-              <a className={this.state.join ? "nav-link text-left subnav-link-active":"nav-link text-left subnav-link"} onClick={() => this.scrollToRef(this.join)}>Who can participate</a>
-            </li>
-            <li className="nav-item">
-              <a className={this.state.value ? "nav-link text-left subnav-link-active":"nav-link text-left subnav-link"} onClick={() => this.scrollToRef(this.value)}>What does D4SD envision</a>
-            </li>
-            <li className="nav-item">
-              <a className={this.state.timeline ? "nav-link text-left subnav-link-active":"nav-link text-left subnav-link"} onClick={() => this.scrollToRef(this.timeline)}>Timeline</a>
-            </li>
-            <li className="nav-item">
-              <a className={this.state.review ? "nav-link text-left subnav-link-active":"nav-link text-left subnav-link"} onClick={() => this.scrollToRef(this.review)}>Review D4SD2017</a>
-            </li>
-          </ul>
-        </nav>*/}
-        <br/><br/><br/>
+        <Br/><Br/>
+        <HeaderCard title={aboutContent.title1} content={aboutContent.content1} bg={header} isAction="false"/>
+        <Br/><Br/>
         <Bg ref={this.join} id="join">
           <OuterContainer>
             <InnerContainer>
               <H2 center>{aboutContent.title2}</H2>
               <H5>{aboutContent.content2}</H5>
               <br/>
-              <Diagram onMouseOver={this.onHover} onMouseOut={this.unHover}/>
+              <img src={diagram} alt="diagram"/>
             </InnerContainer>
           </OuterContainer>
         </Bg>
 
-        <br/><br/><br/><br/>
+        <Br/><Br/><Br/>
 
         <Bg blue ref={this.value} id="value">
           <OuterContainer>
             <InnerContainer>
-              <br/><br/><br/>
+              <br/><br/><br/><br/>
               <H2 center>{aboutContent.title3}</H2>
               <br/>
               <OuterFlexBox>
@@ -206,26 +150,26 @@ class About extends Component {
                   </InnerFlexBox>
                 ))}
               </OuterFlexBox>
-              <br/><br/><br/>
+              <Br/><Br/><Br/>
             </InnerContainer>
           </OuterContainer>
         </Bg>
 
 
-          <br/><br/>
+          <Br/><Br/>
           <Bg ref={this.timeline} id="timeline">
-            <OuterContainer center>
+            <OuterContainer>
               <InnerContainer>
+              <Br/>
               <H2 center>{aboutContent.title4}</H2>
-              <H5>
-                Different roles will have slightly different process.
-              </H5>
-              <br/>
+              <H5 left>{aboutContent.content4}</H5>
+              <Br/><Br/>
               <ToggleFlexBox middle>
                 <ToggleBtn left onClick={this.innovator} active={this.state.isInnovator}>Innovators</ToggleBtn>
                 <ToggleBtn onClick={this.community} active={!this.state.isInnovator}>Community members</ToggleBtn>
               </ToggleFlexBox>
-            </InnerContainer>            
+              <Br/>
+            </InnerContainer>
             <ResponsiveImgVertical src={ppttimeline_vertical} isInnovator={this.state.isInnovator} />
             <ResponsiveImgVertical src={commtimeline_vertical} isInnovator={!this.state.isInnovator} />
             <ResponsiveImgHorizontal src={ppttimeline_horizontal} isInnovator={this.state.isInnovator} />
@@ -233,25 +177,21 @@ class About extends Component {
             </OuterContainer>
           </Bg>
 
-          <br/><br/>
+          <Br/><Br/>
           <Bg blue ref={this.review} id="review">
-            <OuterContainer center>
-              <br/><br/><br/><br/>
+            <OuterContainer>
+              <Br/><Br/><Br/>
+              <InnerContainer>
               <H2 center>{aboutContent.title5}</H2>
-              <H5>Check out
-                the overview of D4SD 2017 where 23 teams generated concepts on
-                the theme of mobility.
-              </H5>
-              <br/><br/>
+              <H5 left>{aboutContent.content5}</H5>
+              </InnerContainer>
+              <Br/>
               <OuterFlexBox center>
                 <Btn href={whitepaper} target="_blank">Download 2017 Whitepaper</Btn>
-                <Btn href="http://d4sd.org" target="_blank" top left>D4SD 2017 website</Btn>
+                <Btn href="http://d4sd2017.org" target="_blank" top left>D4SD 2017 website</Btn>
               </OuterFlexBox>
-              <br/><br/>
-              {/**<a href="http://eepurl.com/c2kFon" target="_blank">
-                <H2>Join our mailing list</H2>
-              </a>**/}
-              <br/><br/><br/>
+              <Br/><Br/>
+              <Br/>
             </OuterContainer>
           </Bg>
           <FooterCard/>

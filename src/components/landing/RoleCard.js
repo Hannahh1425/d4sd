@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { IconImg } from '../../assets/css/images.js';
 import { H4, H5 } from '../../assets/css/fonts.js';
 import { InnerFlexBox, Card } from '../../assets/css/containers.js';
@@ -12,12 +12,12 @@ const SmallBtnInvolve = styled(SmallBtn) `
 
 class RoleCard extends Component {
   render() {
-    let button;
-    if (this.props.show.includes(this.props.id)) {
-      button = <i className="fas fa-chevron-up"></i>
-    } else {
-      button = <i className="fas fa-chevron-down"></i>
-    }
+    // let button;
+    // if (this.props.show.includes(this.props.id)) {
+    //   button = <i className="fas fa-chevron-up"></i>
+    // } else {
+    //   button = <i className="fas fa-chevron-down"></i>
+    // }
     return (
       <Card id={this.props.id} ref={this.props.ref} className="h-100">
         <InnerFlexBox center>

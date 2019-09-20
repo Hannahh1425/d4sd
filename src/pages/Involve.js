@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox } from '../assets/css/containers.js';
-import { FullImg, IconImg } from '../assets/css/images.js';
-import { H2, H4, H5, A } from '../assets/css/fonts.js';
-import { Btn } from '../assets/css/buttons.js';
+// import { Btn } from '../assets/css/buttons.js';
 import HeaderCard from '../components/landing/HeaderCard';
 import FooterCard from '../components/landing/FooterCard';
 import RoleCard from '../components/landing/RoleCard';
@@ -55,12 +53,12 @@ class Involve extends Component {
       <div id="involve">
         <Navbar/>
         <br/><br/>
-        <HeaderCard title="Get Involved" content="You can take part in D4SD in a variety of ways" bg={header} isAction="true"/>
+        <HeaderCard title={involveContent.title1} content={involveContent.content1} bg={header} isAction="true"/>
         <br/><br/>
         <OuterContainer>
           <InnerContainer>
             <OuterFlexBox>
-              {involveContent.map(content => (
+              {involveContent.roles.map(content => (
                 <InnerFlexBox half>
                   <RoleCard
                     onClick={() => this.expand(this[content.id])}

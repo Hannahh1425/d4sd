@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
-import { Relative, HomeStyle } from '../assets/css/others.js';
+import { Relative, HomeStyle, Br } from '../assets/css/others.js';
 import { BtnConditional } from '../assets/css/buttons.js';
 import { FullImg } from '../assets/css/images.js';
-import { H2, H5 } from '../assets/css/fonts.js';
+import { H2, H5, H3 } from '../assets/css/fonts.js';
 import { OuterFlexBox } from '../assets/css/containers.js';
 import { homeContent } from './content.js';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 class Home extends Component {
   constructor() {
@@ -25,17 +25,19 @@ class Home extends Component {
   return (
     <div id="home">
       <Navbar/>
-      <br/><br/>
+      <Br/><Br/>
         {homeContent.map((homeContent, i) => (
           <Relative key={i} id={i}>
             <HomeStyle>
               <Relative>
-                <br/>
+                <Br/>
+                <H3>{homeContent.header}</H3>
                 <H2>{homeContent.title}</H2>
                 <H5>{homeContent.txt}</H5>
-                <br/>
+                <Br/>
                 <OuterFlexBox>
                   <BtnConditional left home href={homeContent.link} target="_blank" isAction={homeContent.isAction}>{homeContent.action}</BtnConditional>
+                  <BtnConditional center home href={homeContent.link2} target="_blank" isAction={homeContent.isAction2}>{homeContent.action2}</BtnConditional>
                 </OuterFlexBox>
               </Relative>
              </HomeStyle>

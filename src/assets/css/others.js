@@ -10,6 +10,12 @@ export const HomeStyle = styled.div `
         position: relative;
         top: 3em;
     }
+    @media ${device.tablet} {
+      position: relative;
+      left: 5%;
+      width: 85%;
+      top: 3em;
+    }
     @media ${device.laptop} {
         position: absolute!important;
         left: 10%;
@@ -20,6 +26,11 @@ export const HomeStyle = styled.div `
 
 export const Bg = styled.div `
     background-color: ${props => props.blue ? "#EFF8FF":"white"}
+    background-image: ${props => `url(${props.image})`};
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-width: 100%;
 `
 
 export const FooterBg = styled.div `
@@ -33,31 +44,31 @@ export const Background = styled.div `
     background-repeat: no-repeat;
     background-position: center;
     @media ${device.mobileS} {
-        height: 35vh;
+        height: 40vh!important;
     }
     @media ${device.tablet} {
-        height: 30vh!important;
-    }
-    @media ${device.laptop} {
         height: 35vh!important;
     }
+    @media ${device.laptop} {
+        height: 40vh!important;
+    }
     @media ${device.laptopL} {
-        height: 45vh!important;
+        height: 40vh!important;
     }
 `
 
 export const Br = styled.div `
     @media ${device.mobileS} {
-        height: 32px;
+        height: 20px;
     }
     @media ${device.tablet} {
-        height: 36px!important;
+        height: 24px!important;
     }
     @media ${device.laptop} {
-        height: 40px!important;
+        height: 26px!important;
     }
     @media ${device.laptopL} {
-        height: 72px!important;
+        height: 40px!important;
     }
 `
 

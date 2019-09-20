@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Container from '../components/Container';
 import Navbar from '../components/Navbar';
-import ClimateImage from '../img/lajollacove.png';
+// import ClimateImage from '../img/lajollacove.png';
 import './style.css';
 
 class Challenge extends Component {
