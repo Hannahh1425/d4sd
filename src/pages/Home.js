@@ -35,7 +35,7 @@ class Home extends Component {
                 <Br/>
                 <H3>{homeContent.header}</H3>
                 <H2>{homeContent.title}</H2>
-                <H5>{homeContent.txt}</H5>
+                <H5 dangerouslySetInnerHTML={{ __html: homeContent.txt }} />
                 <H5>{homeContent.question}</H5>
                 <Br/>
                 {/* <div id="btn-set"> */}
@@ -45,7 +45,7 @@ class Home extends Component {
                   </OuterFlexBox>
                   {/* <a id="learn-more">Learn More</a> */}
                 {/* </div> */}
-                
+
               </Relative>
              </HomeStyle>
             <FullImg src={homeContent.src} onLoad={this.load}/>

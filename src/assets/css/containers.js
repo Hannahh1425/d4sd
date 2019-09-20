@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { device } from './breakpoints.js';
+import img from '../../img/about_header.svg';
 
 export const OuterContainer = styled.div `
     text-align: ${props => props.center ? "center":"left"}
@@ -80,4 +81,15 @@ export const ToggleFlexBox = styled.div `
         width: 100%;
         padding: ${props => props.half ? "14px":"0"}
     }
+`
+
+export const IframeContainer = styled.div `
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    background-image: url(${img});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-width: 100%;
 `
