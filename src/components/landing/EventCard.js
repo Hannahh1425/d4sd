@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import event1 from '../../img/event1.jpg';
 import '../style.css';
 
@@ -12,7 +12,7 @@ class EventCard extends Component {
         <br/><br/>
         <h5 className="font-weight-bold text-center">{this.props.title}</h5>
         <h5 className="text-center">{this.props.date}</h5>
-        <p className="text-center"><i className="fas fa-map-marker-alt pr-2"></i>{this.props.location}</p>          
+        <p className="text-center"><i className="fas fa-map-marker-alt pr-2"></i>{this.props.location}</p>
       </div>
     );
   }

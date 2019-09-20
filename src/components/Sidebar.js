@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import './style.css';
 
 class Sidebar extends Component {
@@ -12,16 +11,16 @@ class Sidebar extends Component {
           <ul class="navbar-nav">
             <li>Hi Daniel</li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Workspace</a>
+              <a class="nav-link" href="# ">Workspace</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Submission</a>
+              <a class="nav-link" href="# ">Submission</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Feedback</a>
+              <a class="nav-link" href="# ">Feedback</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Judging</a>
+              <a class="nav-link" href="# ">Judging</a>
             </li>
             <button>
               CREATE TEAM

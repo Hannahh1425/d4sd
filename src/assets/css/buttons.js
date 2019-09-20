@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import { device } from './breakpoints.js';
-import { H5 } from './fonts.js';
 
 export const Btn = styled.a `
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 50px;
     border: 1.5px solid #1A89DB;
     color: #1A89DB;
+    background-color: rgba(239, 248, 255, 0.9);
+    background-opacity: 0.9;
     text-align: center;
     font-weight: 900;
     padding: 0.7em 1.35em;
@@ -58,6 +59,7 @@ export const SmallBtn = styled(Btn) `
 
 export const BtnConditional = styled(Btn) `
   display: ${props => props.isAction === "true" ? "inline":"none"}
+  margin: 30px 10px 10px 10px;
 `
 
 

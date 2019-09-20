@@ -11,7 +11,7 @@ export const OuterContainer = styled.div `
         margin: auto;
         max-width: 720px!important;
     }
-    @media ${device.laptopL} {
+    @media ${device.laptop} {
         margin: auto;
         max-width: 1200px!important;
     }
@@ -28,12 +28,19 @@ export const InnerContainer = styled.div `
     }
     @media ${device.tablet} {
         margin: auto;
-        width: 720px!important;
+        width: 80%!important;
+    }
+    @media ${device.laptop} {
+        margin: auto;
+        width: 65%!important;
     }
     @media ${device.laptopL} {
         margin: auto;
-        width: 70%!important;
+        width: 60%!important;
     }
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 `
 
 export const Card = styled.div `

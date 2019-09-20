@@ -1,6 +1,25 @@
 import styled from 'styled-components';
 import { device } from './breakpoints.js';
 
+export const H1 = styled.h1 `
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1200;
+    color: #333333;
+    position: relative;
+    z-index: 100;
+    padding: 0 14px;
+    text-align: ${props => props.center ? "center":"inherit"}
+    @media ${device.mobileS} {
+        font-size: 30px;
+    }
+    @media ${device.laptopL} {
+        font-size: 2.5em!important;
+    }
+    @media ${device.desktop} {
+        font-size: 4.0em!important;
+    }
+`
+
 export const H2 = styled.h2 `
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
@@ -17,6 +36,24 @@ export const H2 = styled.h2 `
     }
     @media ${device.desktop} {
         font-size: 3.5em!important;
+    }
+`
+
+export const H3 = styled.h3 `
+    font-family: 'Open Sans', sans-serif;
+    color: #A7A7A7;
+    font-weight: 700;
+    line-height: 1em;
+    margin: 15px 15px;
+    @media ${device.mobileS} {
+        font-size: 0.8em;
+    }
+    @media ${device.laptopL} {
+        font-size: 1.1em;!important;
+        line-height: 1.3em!important;
+    }
+    @media ${device.desktop} {
+        font-size: 1.9em!important;
     }
 `
 
@@ -43,11 +80,11 @@ export const H5 = styled.h5 `
     font-family: 'Open Sans', sans-serif;
     color: #333333;
     line-height: 1.5em;
-    @media ${device.mobileS} {        
+    @media ${device.mobileS} {
         font-size: 1em;
     }
     @media ${device.laptopL} {
-        font-size: 1.25em;!important;
+        font-size: 1.20em;!important;
         line-height: 1.5em!important;
     }
     @media ${device.desktop} {

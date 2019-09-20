@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Container from '../components/Container';
 import Navbar from '../components/Navbar';
-import Button from '../components/landing/Button';
+// import Button from '../components/landing/Button';
 import FAQCard from '../components/landing/FAQCard';
 import './style.css';
 
