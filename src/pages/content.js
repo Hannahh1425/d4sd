@@ -28,7 +28,7 @@ export const homeContent = [
     isAction: "true",
     header: "DESIGN FOR SAN DIEGO'S 2020 CIVIC CHALLENGE",
     title: "How can we make San Diego a more sustainable city?",
-    txt: "San Diego is an amazing place to live, work, and visit. But like many cities, San Diego faces a number of difficult challenges—around mobility, climate, housing, and public health, and economic growth — that could affect the long-term sustainability of the region. Want to make a difference in our community?  Join the Design for San Diego (D4SD) initiative to help address the city’s most pressing challenges using human-centered design. <b>Scroll down to see some sample challenges for this year's theme.</b>",
+    txt: "San Diego is an amazing place to live, work, and visit. But like many cities, San Diego faces a number of difficult challenges—around mobility, climate, housing, public health, and economic growth — that could affect the long-term sustainability of the region. Want to make a difference in our community?  Join the Design for San Diego (D4SD) initiative to help address the city’s most pressing challenges using human-centered design. <b>Scroll down to see some sample challenges for this year's theme.</b>",
     action: "Join our Mailing List",
     link: "http://eepurl.com/c2kFon",
     isAction2: "false",
