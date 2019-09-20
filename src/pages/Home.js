@@ -6,6 +6,8 @@ import { FullImg } from '../assets/css/images.js';
 import { H2, H5, H3 } from '../assets/css/fonts.js';
 import { OuterFlexBox } from '../assets/css/containers.js';
 import { homeContent } from './content.js';
+import './style.css';
+
 // import styled from 'styled-components';
 
 class Home extends Component {
@@ -33,12 +35,17 @@ class Home extends Component {
                 <Br/>
                 <H3>{homeContent.header}</H3>
                 <H2>{homeContent.title}</H2>
-                <H5>{homeContent.txt}</H5>
+                <H5 dangerouslySetInnerHTML={{ __html: homeContent.txt }} />
+                <H5>{homeContent.question}</H5>
                 <Br/>
-                <OuterFlexBox>
-                  <BtnConditional left home href={homeContent.link} target="_blank" isAction={homeContent.isAction}>{homeContent.action}</BtnConditional>
-                  <BtnConditional center home href={homeContent.link2} target="_blank" isAction={homeContent.isAction2}>{homeContent.action2}</BtnConditional>
-                </OuterFlexBox>
+                {/* <div id="btn-set"> */}
+                  <OuterFlexBox>
+                    <BtnConditional left home href={homeContent.link} target="_blank" isAction={homeContent.isAction}>{homeContent.action}</BtnConditional>
+                    <BtnConditional center home href={homeContent.link2} target="_blank" isAction={homeContent.isAction2}>{homeContent.action2}</BtnConditional>
+                  </OuterFlexBox>
+                  {/* <a id="learn-more">Learn More</a> */}
+                {/* </div> */}
+
               </Relative>
              </HomeStyle>
             <FullImg src={homeContent.src} onLoad={this.load}/>

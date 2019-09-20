@@ -7,11 +7,12 @@ import { aboutContent } from './content.js';
 //Styles
 import styled from 'styled-components';
 import { Bg, Br } from '../assets/css/others.js';
-import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox, ToggleFlexBox } from '../assets/css/containers.js';
+import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox, ToggleFlexBox, IframeContainer } from '../assets/css/containers.js';
 import { H2, H5 } from '../assets/css/fonts.js';
 import { device } from '../assets/css/breakpoints.js';
 import { Btn, ToggleBtn } from '../assets/css/buttons.js';
 import { FullImg, IconImg } from '../assets/css/images.js';
+import { Iframe } from '../assets/css/others.js';
 
 import whitepaper from '../img/D4SD_2017_WhitePaper.pdf';
 import header from "../img/about_header.svg";
@@ -194,6 +195,14 @@ class About extends Component {
               <Br/>
             </OuterContainer>
           </Bg>
+          <IframeContainer>
+            <Iframe
+              src="https://www.youtube.com/embed/V7LxWFqMm4g?autoplay=1&rel=0&showinfo=0&vq=highres&mute=1"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              frameBorder="0"
+            />
+          </IframeContainer>
           <FooterCard/>
       </div>
     );

@@ -72,7 +72,11 @@ export const Br = styled.div `
     }
 `
 
-
-export const HalfWidth = styled.div `
-    width: 30%;
+export const Iframe = styled.iframe `
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 75%;
+    background-color: #EFF8FF;
 `
