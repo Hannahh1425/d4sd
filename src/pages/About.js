@@ -195,14 +195,14 @@ class About extends Component {
               <Br/>
             </OuterContainer>
           </Bg>
-          <IframeContainer>
+          {/**<IframeContainer>
             <Iframe
               src="https://www.youtube.com/embed/V7LxWFqMm4g?autoplay=1&rel=0&showinfo=0&vq=highres&mute=1"
               allow="autoplay; encrypted-media"
               allowFullScreen
               frameBorder="0"
             />
-          </IframeContainer>
+          </IframeContainer>**/}
           <FooterCard/>
       </div>
     );

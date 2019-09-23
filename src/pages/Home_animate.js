@@ -5,7 +5,6 @@ import Zoom from 'react-reveal/Zoom';
 import 'intersection-observer';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import Container from '../components/Container';
 import home0 from '../assets/img/home_landing.png';
 import home1 from '../assets/img/home_mobility.png';
 import home2 from '../assets/img/home_climate.png';
@@ -59,7 +58,7 @@ const content = [
   }
 ]
 
-class Home extends Component {
+class HomeAnimate extends Component {
   constructor() {
     super();
     const images = [home0, home1, home2, home3, home4, home5];
@@ -169,4 +168,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default HomeAnimate;

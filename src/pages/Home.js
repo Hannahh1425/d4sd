@@ -5,6 +5,7 @@ import { BtnConditional } from '../assets/css/buttons.js';
 import { FullImg } from '../assets/css/images.js';
 import { H2, H5, H3 } from '../assets/css/fonts.js';
 import { OuterFlexBox } from '../assets/css/containers.js';
+import { Bg } from '../assets/css/others.js';
 import { homeContent } from '../assets/content.js';
 import './style.css';
 
@@ -27,6 +28,7 @@ class Home extends Component {
   return (
     <div id="home">
       <Navbar/>
+      <Bg blue>
       <Br/><Br/>
         {homeContent.map((homeContent, i) => (
           <Relative key={i} id={i}>
@@ -51,6 +53,7 @@ class Home extends Component {
             <FullImg src={homeContent.src} onLoad={this.load}/>
           </Relative>
         ))}
+        </Bg>
       </div>
     );
   }

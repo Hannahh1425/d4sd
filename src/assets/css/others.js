@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 import { device } from './breakpoints.js';
 
+//Set the position to be relative
 export const Relative = styled.div `
     position: relative;
 `
 
-export const HomeStyle = styled.div `
+//Set the style in the homepage
+export const HomeStyle = styled.div `    
     @media ${device.mobileS} {
         position: relative;
         top: 3em;
@@ -23,7 +25,9 @@ export const HomeStyle = styled.div `
         top: 3em!important;
     }
 `
-
+//Set the background
+//It can be blue (when blue attribute is presented) or white like the one on about page
+//Or it can be the image if the image attribute is presented in element
 export const Bg = styled.div `
     background-color: ${props => props.blue ? "#EFF8FF":"white"}
     background-image: ${props => `url(${props.image})`};
@@ -33,29 +37,30 @@ export const Bg = styled.div `
     background-width: 100%;
 `
 
+//Background for footer
 export const FooterBg = styled.div `
     background-color: ${props => props.grey ? "#474747":"white"}
 `
 
-
-export const Background = styled.div `
-    background-image: ${props => `url(${props.image})`};
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    @media ${device.mobileS} {
-        height: 40vh!important;
-    }
-    @media ${device.tablet} {
-        height: 35vh!important;
-    }
-    @media ${device.laptop} {
-        height: 40vh!important;
-    }
-    @media ${device.laptopL} {
-        height: 40vh!important;
-    }
-`
+//
+// export const Background = styled.div `
+//     background-image: ${props => `url(${props.image})`};
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     @media ${device.mobileS} {
+//         height: 40vh!important;
+//     }
+//     @media ${device.tablet} {
+//         height: 35vh!important;
+//     }
+//     @media ${device.laptop} {
+//         height: 40vh!important;
+//     }
+//     @media ${device.laptopL} {
+//         height: 40vh!important;
+//     }
+// `
 
 export const Br = styled.div `
     @media ${device.mobileS} {

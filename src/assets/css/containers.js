@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { device } from './breakpoints.js';
 import img from '../img/about_header.svg';
 
+//The outer container defines the maximum width the page no matter what the screen size is
+//The content inside the outer container can either be left-aligned or centered (when the center attribute appears)
 export const OuterContainer = styled.div `
     text-align: ${props => props.center ? "center":"left"}
     @media ${device.mobileS} {
@@ -22,6 +24,8 @@ export const OuterContainer = styled.div `
     }
 `
 
+//The inner container defines the maximum width of the content when you want to
+//leave more space around your contents
 export const InnerContainer = styled.div `
     @media ${device.mobileS} {
         margin: auto;
@@ -44,18 +48,23 @@ export const InnerContainer = styled.div `
     align-content: center;
 `
 
+//For the cards like the ones on Get Involved page
 export const Card = styled.div `
     box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.6);
     padding: 24px 24px 0 24px;
     border-radius: 10px;
 `
 
+//For displaying components in flexbox layout like the Goal section on about page
+//and the cards on get involved page
+//The content inside can be centered (when the center attribute is presented) or left-aligned
 export const OuterFlexBox = styled.div `
     display: flex;
     flex-wrap: wrap;
     justify-content: ${props => props.center ? "center":"flex-start"};
 `
 
+//For diplaying inside the outer flex box
 export const InnerFlexBox = styled.div `
     display: flex;
     align-items: ${props => props.center ? "center":"flex-start"};
