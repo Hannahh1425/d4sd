@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import FooterCard from '../components/landing/FooterCard';
 import HeaderCard from '../components/landing/HeaderCard';
 //Contents
-import { aboutContent } from './content.js';
+import { aboutContent } from '../assets/content.js';
 //Styles
 import styled from 'styled-components';
 import { Bg, Br } from '../assets/css/others.js';
@@ -14,13 +14,13 @@ import { Btn, ToggleBtn } from '../assets/css/buttons.js';
 import { FullImg, IconImg } from '../assets/css/images.js';
 import { Iframe } from '../assets/css/others.js';
 
-import whitepaper from '../img/D4SD_2017_WhitePaper.pdf';
-import header from "../img/about_header.svg";
-import ppttimeline_horizontal from "../img/about_participants_horizontal.svg";
-import commtimeline_horizontal from "../img/about_community_horizontal.svg";
-import ppttimeline_vertical from "../img/about_participants_vertical.png";
-import commtimeline_vertical from "../img/about_community_vertical.png";
-import diagram from "../img/about_diagram.svg";
+import whitepaper from '../assets/img/D4SD_2017_WhitePaper.pdf';
+import header from "../assets/img/about_header.svg";
+import ppttimeline_horizontal from "../assets/img/about_participants_horizontal.svg";
+import commtimeline_horizontal from "../assets/img/about_community_horizontal.svg";
+import ppttimeline_vertical from "../assets/img/about_participants_vertical.png";
+import commtimeline_vertical from "../assets/img/about_community_vertical.png";
+import diagram from "../assets/img/about_diagram.svg";
 
 import './style.css';
 
