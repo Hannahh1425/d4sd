@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Container from '../components/Container';
 import Navbar from '../components/Navbar';
 import FooterCard from '../components/landing/FooterCard';
 
@@ -82,7 +81,6 @@ class PastSolution extends Component {
     return (
       <div id="about">
         <Navbar/>
-        <Container>
           <div className="div-large"/>
           <h3 className="font-weight-bold">Past Solutions</h3>
           <div className="d-flex flex-wrap justify-content-around">
@@ -91,8 +89,7 @@ class PastSolution extends Component {
               <img src={data.teamImg} alt="team"/>
             </div>
           ))}
-          </div>
-        </Container>
+          </div>        
         <br/><br/><br/><br/><br/> <br/><br/>
         <FooterCard/>
       </div>

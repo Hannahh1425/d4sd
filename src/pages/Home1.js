@@ -8,7 +8,6 @@ import ScrollMagic from "scrollmagic";
 
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import Container from '../components/Container';
 import home0 from '../img/home1_2.png';
 import home1 from '../img/home2.png';
 import home2 from '../img/home5.png';

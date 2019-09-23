@@ -7,7 +7,7 @@ import HeaderCard from '../components/landing/HeaderCard';
 import FooterCard from '../components/landing/FooterCard';
 import RoleCard from '../components/landing/RoleCard';
 import header from '../img/involve_header.svg';
-import { involveContent } from './content.js';
+import { involveContent } from '../assets/content.js';
 
 import './style.css';
 

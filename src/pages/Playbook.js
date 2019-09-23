@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import Container from '../components/Container';
 // import Button from '../components/landing/Button';
 // import RoleCard from '../components/landing/RoleCard';
 // import Mailchimp from 'react-mailchimp-form';
@@ -19,9 +18,7 @@ class Playbook extends Component {
     return (
       <div id="playbook">
         <Navbar/>
-        <Container>
           This is playbook
-        </Container>
       </div>
     );
   }

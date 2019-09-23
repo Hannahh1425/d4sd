@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import FooterCard from '../components/landing/FooterCard';
 import HeaderCard from '../components/landing/HeaderCard';
 //Contents
-import { aboutContent } from './content.js';
+import { aboutContent } from '../assets/content.js';
 //Styles
 import styled from 'styled-components';
 import { Bg, Br } from '../assets/css/others.js';
