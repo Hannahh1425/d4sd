@@ -69,7 +69,7 @@
 /****************************HeaderCard******************************/
 #header-card {
   height: 50vh;
-  background-image: url('../img/header.svg');
+  background-image: url('../assets/img/header.svg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

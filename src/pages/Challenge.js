@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-// import ClimateImage from '../img/lajollacove.png';
 import './style.css';
 
 class Challenge extends Component {
@@ -57,7 +56,7 @@ class Challenge extends Component {
                           </div>
                       </div>
                   </div>
-                  <div className="div-endpage"/>            
+                  <div className="div-endpage"/>
       </div>
     );
   }

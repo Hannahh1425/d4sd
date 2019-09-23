@@ -8,13 +8,13 @@ import ScrollMagic from "scrollmagic";
 
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import home0 from '../img/home1_2.png';
-import home1 from '../img/home2.png';
-import home2 from '../img/home5.png';
-import home3 from '../img/home3_1.png';
-import home4 from '../img/home4.png';
-import home5 from '../img/home6.png';
-import icon from '../img/icon.png';
+import home0 from '../assets/img/home1_2.png';
+import home1 from '../assets/img/home2.png';
+import home2 from '../assets/img/home5.png';
+import home3 from '../assets/img/home3_1.png';
+import home4 from '../assets/img/home4.png';
+import home5 from '../assets/img/home6.png';
+import icon from '../assets/img/icon.png';
 
 import './style.css';
 

@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
 import FooterCard from '../components/landing/FooterCard';
 
-import audioMovement from '../img/sol_audioMovement.jpg';
-import beachAccess from '../img/sol_beachAccess.png';
-import cycleDetection from '../img/sol_cycleDetection.jpg';
-import gate from '../img/sol_gate.jpg';
-import remoteService from '../img/sol_remoteService.jpg';
-import roadMap from '../img/sol_roadMap.jpg';
-import sdParking from '../img/sol_sdParking.jpg';
-import spot from '../img/sol_spot.jpg';
+import audioMovement from '../assets/img/sol_audioMovement.jpg';
+import beachAccess from '../assets/img/sol_beachAccess.png';
+import cycleDetection from '../assets/img/sol_cycleDetection.jpg';
+import gate from '../assets/img/sol_gate.jpg';
+import remoteService from '../assets/img/sol_remoteService.jpg';
+import roadMap from '../assets/img/sol_roadMap.jpg';
+import sdParking from '../assets/img/sol_sdParking.jpg';
+import spot from '../assets/img/sol_spot.jpg';
 
 import './style.css';
 
@@ -89,7 +89,7 @@ class PastSolution extends Component {
               <img src={data.teamImg} alt="team"/>
             </div>
           ))}
-          </div>        
+          </div>
         <br/><br/><br/><br/><br/> <br/><br/>
         <FooterCard/>
       </div>

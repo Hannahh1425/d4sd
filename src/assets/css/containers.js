@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { device } from './breakpoints.js';
-import img from '../../img/about_header.svg';
+import img from '../img/about_header.svg';
 
 export const OuterContainer = styled.div `
     text-align: ${props => props.center ? "center":"left"}

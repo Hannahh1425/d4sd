@@ -233,7 +233,7 @@ svg:hover {
 }
 
 .image{
-  background:url('../img/lajollacove.png');
+  background:url('../assets/img/lajollacove.png');
   position: relative;
   height: 45vh;
   width: 100%;

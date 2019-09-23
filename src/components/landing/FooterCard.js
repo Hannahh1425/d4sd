@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../style.css';
-import designlab from '../../img/footer_ucsddesignlabimg.png';
+import designlab from '../../assets/img/footer_ucsddesignlabimg.png';
 import { OuterContainer, OuterFlexBox } from '../../assets/css/containers.js';
 import { FooterBg } from '../../assets/css/others.js';
 import { H6, A } from '../../assets/css/fonts.js';
