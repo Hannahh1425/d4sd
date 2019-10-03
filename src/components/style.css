@@ -22,7 +22,7 @@
 
 .nav-link:hover {
     color: #8FC0FF!important;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .nav-link.active {
