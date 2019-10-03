@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import { device } from './breakpoints.js';
 
+//For titles on the header
 export const H1 = styled.h1 `
     font-family: 'Montserrat', sans-serif;
-    font-weight: 1200;
+    font-weight: 900;
     color: #333333;
     position: relative;
     z-index: 100;
@@ -20,6 +21,7 @@ export const H1 = styled.h1 `
     }
 `
 
+//For questions on the homepage and subtitles on about page
 export const H2 = styled.h2 `
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
@@ -39,6 +41,7 @@ export const H2 = styled.h2 `
     }
 `
 
+//
 export const H3 = styled.h3 `
     font-family: 'Open Sans', sans-serif;
     color: #A7A7A7;
@@ -57,6 +60,7 @@ export const H3 = styled.h3 `
     }
 `
 
+//For card title in get involve page
 export const H4 = styled.h4 `
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
@@ -76,10 +80,12 @@ export const H4 = styled.h4 `
     }
 `
 
+//For all paragraphs
 export const H5 = styled.h5 `
     font-family: 'Open Sans', sans-serif;
     color: #333333;
     line-height: 1.5em;
+    padding: 0 14px;
     @media ${device.mobileS} {
         font-size: 1em;
     }
@@ -92,6 +98,7 @@ export const H5 = styled.h5 `
     }
 `
 
+//For footer
 export const H6 = styled.h6 `
     font-family: 'Open Sans', sans-serif;
     color: #D0D0D0;

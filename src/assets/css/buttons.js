@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { device } from './breakpoints.js';
 
+//Basic template for all regular buttons (for home, headers etc.)
 export const Btn = styled.a `
     cursor: pointer;
     border-radius: 50px;
@@ -9,7 +10,7 @@ export const Btn = styled.a `
     background-color: rgba(239, 248, 255, 0.9);
     background-opacity: 0.9;
     text-align: center;
-    font-weight: 900;
+    font-weight: 700;
     padding: 0.7em 1.35em;
     &:hover {
         text-decoration: none;
@@ -38,6 +39,7 @@ export const Btn = styled.a `
     }
 `
 
+//Small buttons, usually buttons inside cards
 export const SmallBtn = styled(Btn) `
     cursor: pointer;
     border: 1px solid #1A89DB;
@@ -57,12 +59,13 @@ export const SmallBtn = styled(Btn) `
     }
 `
 
+//When the display of the button is conditional
 export const BtnConditional = styled(Btn) `
   display: ${props => props.isAction === "true" ? "inline":"none"}
   margin: 30px 10px 10px 10px;
 `
 
-
+//Toggle button for the timeline
 export const ToggleBtn = styled.div `
     display: flex;
     flex-direction: column;

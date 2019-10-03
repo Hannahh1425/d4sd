@@ -1,24 +1,24 @@
-import home0 from '../img/home_landing.svg';
-import home1 from '../img/home_mobility.svg';
-import home2 from '../img/home_climate.svg';
-import home3 from '../img/home_housing.svg';
-import home4 from '../img/home_health.svg';
-import home5 from '../img/home_about.svg';
+import home0 from './img/home_landing.svg';
+import home1 from './img/home_mobility.svg';
+import home2 from './img/home_climate.svg';
+import home3 from './img/home_housing.svg';
+import home4 from './img/home_health.svg';
+import home5 from './img/home_about.svg';
 
-import city from "../img/about_city.svg";
-import connect from "../img/about_connect.svg";
-import div from "../img/about_div.svg";
-import edu from "../img/about_edu.svg";
-import find from "../img/about_find.svg";
-import communicate from "../img/about_communicate.svg";
+import city from "./img/about_city.svg";
+import connect from "./img/about_connect.svg";
+import div from "./img/about_div.svg";
+import edu from "./img/about_edu.svg";
+import find from "./img/about_find.svg";
+import communicate from "./img/about_communicate.svg";
 
-import playbook_educator from "../img/involve_playbook.pdf";
-import educator from "../img/involve_educator.png";
-import sponsor from "../img/involve_sponsor.png";
-import expert from "../img/involve_expert.png";
-import innovator from "../img/involve_participant.png";
-import question from "../img/involve_question.svg";
-import mail from "../img/involve_mail.svg";
+import playbook_educator from "./img/involve_playbook.pdf";
+import educator from "./img/involve_educator.png";
+import sponsor from "./img/involve_sponsor.png";
+import expert from "./img/involve_expert.png";
+import innovator from "./img/involve_participant.png";
+import question from "./img/involve_question.svg";
+import mail from "./img/involve_mail.svg";
 
 /*************************************Home content***************************************/
 export const homeContent = [
