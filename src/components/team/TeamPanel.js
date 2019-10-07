@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import photo from '../../img/kashdog.jpg';
+import photo from '../../assets/img/kashdog.jpg';
 import '../style.css';
 
 class TeamPanel extends Component {

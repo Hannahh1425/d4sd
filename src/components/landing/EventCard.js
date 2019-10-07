@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
-import event1 from '../../img/event1.jpg';
+import event1 from '../../assets/img/event1.jpg';
 import '../style.css';
 
 class EventCard extends Component {

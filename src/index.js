@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {  HashRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from "react-router-dom";
 import './index.css';
 import AppRouter from './App'
 import * as serviceWorker from './serviceWorker';
@@ -10,13 +10,13 @@ import ScrollToTop from './components/ScrollToTop';
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
 ReactDOM.render(
-  <HashRouter>
+  <Router>
     <ScrollToTop>
       <div>
         <AppRouter routes={AppRouter} />
       </div>
     </ScrollToTop>
-  </HashRouter >
+  </Router >
   ,
   document.getElementById( 'root' ) );
 serviceWorker.unregister();

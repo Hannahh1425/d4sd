@@ -1,46 +1,33 @@
-import home0 from '../img/home_landing.svg';
-import home1 from '../img/home_mobility.svg';
-import home2 from '../img/home_climate.svg';
-import home3 from '../img/home_housing.svg';
-import home4 from '../img/home_health.svg';
-import home5 from '../img/home_about.svg';
+import home0 from './img/home_landing.svg';
+import home1 from './img/home_mobility.svg';
+import home2 from './img/home_climate.svg';
+import home3 from './img/home_housing.svg';
+import home4 from './img/home_health.svg';
+import home5 from './img/home_about.svg';
 
-import city from "../img/about_city.svg";
-import connect from "../img/about_connect.svg";
-import div from "../img/about_div.svg";
-import edu from "../img/about_edu.svg";
-import find from "../img/about_find.svg";
-import communicate from "../img/about_communicate.svg";
+import city from "./img/about_city.svg";
+import connect from "./img/about_connect.svg";
+import div from "./img/about_div.svg";
+import edu from "./img/about_edu.svg";
+import find from "./img/about_find.svg";
+import communicate from "./img/about_communicate.svg";
 
-import playbook_educator from "../img/involve_playbook.pdf";
-import educator from "../img/involve_educator.png";
-import sponsor from "../img/involve_sponsor.png";
-import expert from "../img/involve_expert.png";
-import innovator from "../img/involve_participant.png";
-import question from "../img/involve_question.svg";
-import mail from "../img/involve_mail.svg";
+import playbook_educator from "./img/involve_playbook.pdf";
+import educator from "./img/involve_educator.png";
+import sponsor from "./img/involve_sponsor.png";
+import expert from "./img/involve_expert.png";
+import innovator from "./img/involve_participant.png";
+import question from "./img/involve_question.svg";
+import mail from "./img/involve_mail.svg";
 
 /*************************************Home content***************************************/
-export const homeContent = [
+export const sampleChallenges = [
   {
     id: 0,
-    src: home0,
-    isAction: "true",
-    header: "DESIGN FOR SAN DIEGO'S 2020 CIVIC CHALLENGE",
-    title: "How can we make San Diego a more sustainable city?",
-    txt: "San Diego is an amazing place to live, work, and visit. But like many cities, San Diego faces a number of difficult challenges—around mobility, climate, housing, and public health, and economic growth — that could affect the long-term sustainability of the region. Want to make a difference in our community?  Join the Design for San Diego (D4SD) initiative to help address the city’s most pressing challenges using human-centered design. Scroll down to see some sample challenges for this year's theme.",
-    action: "Join our Mailing List",
-    link: "http://eepurl.com/c2kFon",
-    isAction2: "false",
-    action2: "",
-    link2: "http://d4sd2017.org"
-  },
-  {
-    id: 1,
     src: home1,
     isAction: "true",
     header: "SAMPLE CHALLENGE: IMPROVING MOBILITY",
-    title: "How might we help people move more easily through our city?",
+    title: "How might we help people move freely through our city?",
     txt: "As people are looking for a more efficient way to move around, the mission of reducing our emissions and increasing the inclusivity of transportation continues to be an essential topic of discussion in our urban environments. Mobility can be examined from a number of lenses’ such as motor vehicle systems, transit, parking, intermodal connections, electric vehicles, accident reduction, walkability and bike-ability, and land-use patterns. ",
     action: "See what happened in 2017",
     link: "http://d4sd2017.org",
@@ -49,7 +36,7 @@ export const homeContent = [
     link2: ""
   },
   {
-    id: 2,
+    id: 1,
     src: home2,
     isAction: "false",
     header: "SAMPLE CHALLENGE: ADDRESSING CLIMATE EFFECTS",
@@ -62,7 +49,7 @@ export const homeContent = [
     link2: ""
   },
   {
-    id: 3,
+    id: 2,
     src: home3,
     isAction: "false",
     header: "SAMPLE CHALLENGE: CREATING ACCESSIBLE HOUSING",
@@ -75,7 +62,7 @@ export const homeContent = [
     link2: ""
   },
   {
-    id: 4,
+    id: 3,
     src: home4,
     isAction: "false",
     header: "SAMPLE CHALLENGE: LIVING HEALTHY LIVES",
@@ -86,19 +73,6 @@ export const homeContent = [
     isAction2: "false",
     action2: "",
     link2: ""
-    },
-    {
-      id: 5,
-      src: home5,
-      isAction: "true",
-      header: "DESIGN FOR SAN DIEGO",
-      title: "Share your story and take a step toward a better San Diego.",
-      txt: "We want to empower YOU to make a difference. Working together, we can help shape the future of our great city through Design for San Diego (D4SD), an initiative that brings together innovators, designers, mentors and community leaders to address our region’s most challenging issues through human-centered design. Click below to join the initiative, or tell us your stories, experiences, and knowledge related to the challenges above.",
-      action: "Share your story",
-      link: "https://forms.gle/KKQwFL3JPrDfASmw6",
-      isAction2: "true",
-      action2: "Sign up for D4SD",
-      link2: "http://eepurl.com/c2kFon"
     }
 ]
 
