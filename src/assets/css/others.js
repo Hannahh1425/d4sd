@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import { device } from './breakpoints.js';
 
 //Set the position to be relative
@@ -7,7 +7,7 @@ export const Relative = styled.div `
 `
 
 //Set the style in the homepage
-export const HomeStyle = styled.div `    
+export const HomeStyle = styled.div `
     @media ${device.mobileS} {
         position: relative;
         top: 3em;
@@ -41,6 +41,19 @@ export const Bg = styled.div `
 export const FooterBg = styled.div `
     background-color: ${props => props.grey ? "#474747":"white"}
 `
+
+export const Arrow = styled.div`
+  text-shadow: 1px 1px 1px #fff;
+  z-index: 100;
+  text-align: center;
+  position: absolute;
+  top: 30vh;
+  width: 10%;
+  font-size: 3em;
+  cursor: pointer;
+  user-select: none;
+  ${props => props.right ? css`left: 90%;` : css`left: 0%;`}
+`;
 
 //
 // export const Background = styled.div `
