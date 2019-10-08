@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
 //CSS styles
-import { Relative, HomeStyle, Br } from '../assets/css/others.js';
+import { Relative, HomeStyle, Br, Bg, Arrow } from '../assets/css/others.js';
 import { BtnConditional } from '../assets/css/buttons.js';
 import { FullImg } from '../assets/css/images.js';
 import { H2, H5, H3 } from '../assets/css/fonts.js';
 import { OuterFlexBox } from '../assets/css/containers.js';
-import { Bg, Arrow } from '../assets/css/others.js';
 //Contents
 import { sampleChallenges } from '../assets/content.js';
 import home0 from '../assets/img/home_landing.svg';
+import home5 from '../assets/img/home_about.svg';
 //Carousel
 import makeCarousel from 'react-reveal/makeCarousel';
 import Slide from 'react-reveal/Slide';
@@ -30,12 +30,11 @@ class Home extends Component {
   return (
     <div id="home">
       <Navbar/>
-      <Bg blue>
       <Br/><Br/>
       {/************************First card***********************/}
-      <Relative>
-        <HomeStyle>
-          <Relative>
+
+       <Bg image = {home0}>
+       <HomeStyle>
             <Br/>
             <H3>DESIGN FOR SAN DIEGO'S 2020 CIVIC CHALLENGE</H3>
             <H2>How can we make San Diego a more sustainable city?</H2>
@@ -50,17 +49,34 @@ class Home extends Component {
                 <BtnConditional left home href="http://eepurl.com/c2kFon" target="_blank" isAction="true">Join Mailing List</BtnConditional>
                 <BtnConditional center home href="http://d4sd.org" target="_blank" isAction="true">Learn More</BtnConditional>
               </OuterFlexBox>
-          </Relative>
+              </HomeStyle>
+         </Bg>
+      <Bg image = {home5}>
+        <HomeStyle>
+            <Br/>
+            <H2>Contribute to Our Mission</H2>
+            <H5>San Diego is an amazing place to live, work, and visit. But like many
+            cities, San Diego faces a number of difficult challenges—around mobility,
+            climate, housing, public health, and economic growth — that could affect
+            the long-term sustainability of the region. Want to make a difference
+            in our community? Join the Design for San Diego (D4SD) initiative to
+            help address the city’s most pressing challenges using human-centered
+            design. Scroll down to see some sample challenges for this year's theme.
+            </H5>
+            <Br/>
+              <OuterFlexBox>
+                <BtnConditional left home href="http://eepurl.com/c2kFon" target="_blank" isAction="true">Join Mailing List</BtnConditional>
+                <BtnConditional center home href="http://d4sd.org" target="_blank" isAction="true">Learn More</BtnConditional>
+              </OuterFlexBox>
          </HomeStyle>
-        <FullImg src={home0}/>
-      </Relative>
+         </Bg>
       {/************************Second card***********************/}
       <Relative>
       <Carousel defaultWait={3000}>
       {sampleChallenges.map((sampleChallenge, i) => (
           <Slide right>
             <Relative key={i} id={i}>
-              <HomeStyle>
+              <HomeStyle carousel>
                 <Relative>
                   <Br/>
                   <H3>{sampleChallenge.header}</H3>
@@ -82,7 +98,8 @@ class Home extends Component {
       </Relative>
 
 
-        </Bg>
+
+
       </div>
     );
   }
