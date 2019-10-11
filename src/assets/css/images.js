@@ -10,3 +10,7 @@ export const FullImg = styled.img `
 export const IconImg = styled.img `
     width: ${props => props.small ? "9%":"20%"};
 `
+
+export const IconImgBig = styled.img `
+    width: 80%;  
+`

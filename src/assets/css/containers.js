@@ -5,21 +5,19 @@ import img from '../img/about_header.svg';
 //The outer container defines the maximum width the page no matter what the screen size is
 //The content inside the outer container can either be left-aligned or centered (when the center attribute appears)
 export const OuterContainer = styled.div `
-    text-align: ${props => props.center ? "center":"left"}
+    text-align: ${props => props.center ? "center":"left"};
+    margin: auto;
+    height: ${props => props.full ? "100vh":""};
     @media ${device.mobileS} {
-        margin: auto;
         max-width: 320px;
     }
     @media ${device.tablet} {
-        margin: auto;
         max-width: 720px!important;
     }
     @media ${device.laptop} {
-        margin: auto;
         max-width: 1200px!important;
     }
     @media ${device.laptopL} {
-        margin: auto;
         max-width: 2400px!important;
     }
 `

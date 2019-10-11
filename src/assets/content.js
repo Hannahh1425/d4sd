@@ -21,6 +21,24 @@ import question from "./img/involve_question.svg";
 import mail from "./img/involve_mail.svg";
 
 /*************************************Home content***************************************/
+export const roles = [
+  {
+    image: innovator,
+    contents: "Innovate"
+  },
+  {
+    image: educator,
+    contents: "Partner"
+  },
+  {
+    image: expert,
+    contents: "Volunteer"
+  },
+  {
+    image: sponsor,
+    contents: "Sponsor"
+  }
+]
 export const sampleChallenges = [
   {
     id: 0,

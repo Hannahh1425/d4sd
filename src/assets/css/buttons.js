@@ -5,17 +5,62 @@ import { device } from './breakpoints.js';
 export const Btn = styled.a `
     cursor: pointer;
     border-radius: 50px;
-    border: 1.5px solid #1A89DB;
-    color: #1A89DB;
-    background-color: rgba(239, 248, 255, 0.9);
-    background-opacity: 0.9;
+    border: 1.5px solid #4497FF;
+    color: white;
+    background-color: #4497FF;
     text-align: center;
     font-weight: 700;
-    padding: 0.7em 1.35em;
+    padding: 0.5em 2em;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
     &:hover {
         text-decoration: none;
-        background-color: #1A89DB;
+        background-color: white;
+        border: 1.5px solid #4497FF;
+        color: #4497FF;
+    }
+    @media ${device.mobileS} {
+        font-size: 0.75em;
+        margin-top: ${props => props.top ? "1rem":"0"};
+        margin-left: ${props => props.home ? "1rem!important":"0!important"};
+    }
+    @media ${device.tablet} {
+        font-size: 0.75em!important;
+        margin-top: 0!important;
+        margin-left: ${props => props.left ? "1rem!important":"0!important"};
+    }
+    @media ${device.laptopL} {
+        font-size: 1em!important;
+        margin-top: 0!important;
+        margin-left: ${props => props.left ? "1rem!important":"0!important"};
+    }
+    @media ${device.desktop} {
+        font-size: 1.75em!important;
+        margin-top: 0!important;
+        margin-left: ${props => props.left ? "1rem!important":"0!important"};
+    }
+`
+
+//Basic template for all regular buttons (for home, headers etc.)
+export const BtnSecondary = styled.button `
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1.5px solid #4497FF;
+    color: #4497FF;
+    background-color: white;
+    text-align: center;
+    font-weight: 700;
+    padding: 0.5em 2em;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+    &:hover {
+        text-decoration: none;
+        background-color: #4497FF;
+        border: 1.5px solid #4497FF;
         color: white;
+    }
+    &:focus {
+        outline: none;
     }
     @media ${device.mobileS} {
         font-size: 0.75em;
