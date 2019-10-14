@@ -8,7 +8,7 @@ import { FullImg, IconImgBig } from '../assets/css/images.js';
 import { H2, H5, H3, H4 } from '../assets/css/fonts.js';
 import { OuterFlexBox, OuterContainer, InnerContainer, InnerFlexBox, FlexibleWidth } from '../assets/css/containers.js';
 //Contents
-import { sampleChallenges, roles, actionImg } from '../assets/content.js';
+import { sampleChallenges, roles, actionImg, communityLogo } from '../assets/content.js';
 import home0 from '../assets/img/home_landing.svg';
 import home5 from '../assets/img/home_about.svg';
 //Carousel
@@ -52,13 +52,13 @@ class Home extends Component {
         <OuterContainer center full>
           <InnerContainer>
             <Br/><Br/><Br/>
-            <H3>DESIGN FOR SAN DIEGO'S 2020 CIVIC CHALLENGE</H3>
-            <H2>How can we make San Diego a more sustainable city?</H2>
-            <H5>San Diego is an amazing place to live, work, and visit. But like
-              many cities, San Diego faces a number of difficult challenges—around
-              mobility, climate, housing, public health, and economic development.
-              D4SD is an initiative to address complex challenges in San Diego
-              through design thinking and crowdsourcing.
+            <H3>DESIGN FOR SAN DIEGO'S 2020 CIVIC DESIGN CHALLENGE</H3>
+            <H2 half>How can we make San Diego a more sustainable city?</H2>
+            <H5>San Diego is an amazing place to live, work, and visit. But
+            like many cities, San Diego faces a number of difficult challenges
+            around mobility, climate, housing, and public health. Design for
+            San Diego (D4SD) is an initiative to address complex challenges
+            through design thinking and crowdsourcing.
             </H5>
             <Br/>
             <OuterFlexBox center>
@@ -70,17 +70,21 @@ class Home extends Component {
       </Bg>
       {/************************Second card***********************/}
       <Bg ref={this.mission}>
-        <OuterContainer center full>
+        <OuterContainer center>
           <InnerContainer>
             <Br/><Br/>
             <H2>Contribute to Our Mission</H2>
-            <H5>San Diego is an amazing place to live, work, and visit. But like many
-              cities, San Diego faces a number of difficult challenges—around mobility,
-              climate, housing, public health, and economic growth — that could affect
-              the long-term sustainability of the region. Want to make a difference
-              in our community? Join the Design for San Diego (D4SD) initiative to
-              help address the city’s most pressing challenges using human-centered
-              design. Scroll down to see some sample challenges for this year's theme.
+            <H5 left>D4SD seeks to connect young passionate designers to a
+            network of industry, civic, and community leaders and to structure a
+            process for collectively addressing civic challenges related to the
+            sustainability of our region. We are exploring new models for collective
+            innovation where the community works together to discover problem angles,
+            explore possible solutions, and build prototypes that test ideas. <Br/>
+            D4SD 2020 will host a series of design events including speakers,
+            studios, and desisgathons, starting in January 2020 and culminating
+            in a summit where stakeholders can interact, pitch proposed solutions,
+            discuss trade-offs, and build alliances to make change happen. Come
+            to an event or form a team and submit your proposals!
             </H5>
             <Br/>
             <OuterFlexBox center>
@@ -98,6 +102,7 @@ class Home extends Component {
           </InnerContainer>
         </OuterContainer>
       </Bg>
+      <Br/><Br/>
       {/************************Second card***********************/}
       <Relative>
         <Carousel defaultWait={3000}>
@@ -107,14 +112,14 @@ class Home extends Component {
                   <OuterContainer center full>
                     <InnerContainer>
                       <Br/><Br/>
-                      <H2>Take the Challenges</H2>
+                      <H2>Learn about the challenges!</H2>
                       <H3>{sampleChallenge.header}</H3>
                       <H4>{sampleChallenge.title}</H4>
-                      <H5 dangerouslySetInnerHTML={{ __html: sampleChallenge.txt }} />
+                      <H5 left dangerouslySetInnerHTML={{ __html: sampleChallenge.txt }} />
                       <H5>{sampleChallenge.question}</H5>
                       <Br/>
                       <OuterFlexBox center>
-                        <Btn href="/involve">Join D4SD</Btn>
+                        <Btn href="/involve">Join the discussion</Btn>
                       </OuterFlexBox>
                       <Br/>
                     </InnerContainer>
@@ -126,17 +131,16 @@ class Home extends Component {
       </Relative>
       <Relative top>
       <Bg>
-        <OuterContainer center full>
+        <OuterContainer center>
           <InnerContainer>
             <Br/><Br/><Br/>
             <H2>D4SD in action</H2>
-            <H5>In 2017, we started Design For San Diego, where hundreds of
-              people were involved with generating concepts with the goal to
-              create a San Diego where we all move freely. 23 teams ideated
-              solutions using human-centered design principles to help solve
-              the city’s problems regarding mobility. Visit our 2017 website
-              to learn more about what we did in 2017 and to see some of the
-              projects worked on during this time.
+            <H5>In 2017, hundreds of people helped to generate ideas through the
+             first D4SD challenge:  How to create a San Diego where we all can
+             move freely.  Over a two month period, 23 teams used human-centered
+             design principles to prototype solutions to address the city’s
+             mobility challenges. Visit our 2017 website to learn more about
+             what we did in 2017 and to see some of the prototypes.
             </H5>
             <Br/>
             <OuterFlexBox center>
@@ -153,26 +157,32 @@ class Home extends Component {
             </OuterFlexBox>
         </OuterContainer>
       </Bg>
+      <Br/><Br/>
       <Bg>
-        <OuterContainer center full>
+        <OuterContainer center>
           <InnerContainer>
             <Br/><Br/><Br/>
             <H2>Meet our community</H2>
-            <H5>In 2017, we started Design For San Diego, where hundreds of
-              people were involved with generating concepts with the goal to
-              create a San Diego where we all move freely. 23 teams ideated
-              solutions using human-centered design principles to help solve
-              the city’s problems regarding mobility. Visit our 2017 website
-              to learn more about what we did in 2017 and to see some of the
-              projects worked on during this time.
+            <H5>The D4SD community includes talented and energetic people from
+            across our region.  Through the online and in-person events, we help
+            to foster collaboration and interaction among innovators, civic leaders,
+            industry experts, and other community members.
             </H5>
             <Br/>
             <OuterFlexBox center>
               <Btn left href="/involve">Get Involved</Btn>
             </OuterFlexBox>
-          </InnerContainer>
+            </InnerContainer>
+            <OuterFlexBox>
+              {communityLogo.map(img => (
+                <FlexibleWidth>
+                  <IconImgBig role src={img} />
+                </FlexibleWidth>
+              ))}
+            </OuterFlexBox>
         </OuterContainer>
       </Bg>
+      <Br/><Br/><Br/>
       <FooterCard />
       </Relative>
 

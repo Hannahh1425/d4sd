@@ -13,17 +13,12 @@ class FooterCard extends Component {
       <div id="footer-card" className="d-flex justify-content-center align-items-center">
           <OuterContainer center>
               <br/><br/><br/>
-              <OuterFlexBox center>
-                  <a href= "https://designlab.ucsd.edu/">
-                    <img src={designlab} alt='UC San Diego Design Lab' className="rounded-lg"/>
-                  </a>
-              </OuterFlexBox>
               <br/><br/>
               <H6>Copyright © 2017-2019 D4SD. All Rights Reserved. Send feedback to<span>&nbsp;</span>
               <A href="mailto:team@d4sd.org">
                team@d4sd.org
               </A>.</H6>
-              <br/>
+              <br/><br/><br/><br/>
           </OuterContainer>
       </div>
       </FooterBg>
