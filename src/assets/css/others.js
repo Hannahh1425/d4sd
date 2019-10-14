@@ -4,6 +4,7 @@ import { device } from './breakpoints.js';
 //Set the position to be relative
 export const Relative = styled.div `
     position: relative;
+    top: ${props => props.top ? "100vh":""};
 `
 
 //Set the style in the homepage
@@ -37,8 +38,14 @@ export const Bg = styled.div `
     background-image: ${props => `url(${props.image})`};
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom;
     background-width: 100%;
+    @media ${device.mobileS} {
+        background-size: contain;
+    }
+    @media ${device.tablet} {
+        background-size: cover;
+    }
 `
 
 //Background for footer

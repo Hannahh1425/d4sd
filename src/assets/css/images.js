@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from './breakpoints.js';
 
 //Set width of images to 100%
 export const FullImg = styled.img `
@@ -12,5 +13,5 @@ export const IconImg = styled.img `
 `
 
 export const IconImgBig = styled.img `
-    width: 80%;  
+    width: ${props => props.role ? "70%":"98%"};
 `

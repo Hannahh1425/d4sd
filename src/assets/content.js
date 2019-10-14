@@ -5,6 +5,12 @@ import home3 from './img/home_housing.svg';
 import home4 from './img/home_health.svg';
 import home5 from './img/home_about.svg';
 
+import action1 from './img/home_action1.png';
+import action2 from './img/home_action2.jpg';
+import action3 from './img/home_action3.jpg';
+import action4 from './img/home_action4.jpg';
+import action5 from './img/home_action5.jpg';
+
 import city from "./img/about_city.svg";
 import connect from "./img/about_connect.svg";
 import div from "./img/about_div.svg";
@@ -93,6 +99,8 @@ export const sampleChallenges = [
     link2: ""
     }
 ]
+
+export const actionImg = [action2, action3, action4, action5]
 
 /*************************************About content***************************************/
 export const aboutContent = {

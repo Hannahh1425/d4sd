@@ -4,20 +4,18 @@ import { device } from './breakpoints.js';
 //Basic template for all regular buttons (for home, headers etc.)
 export const Btn = styled.a `
     cursor: pointer;
-    border-radius: 50px;
-    border: 1.5px solid #4497FF;
+    border-radius: 10px;
     color: white;
     background-color: #4497FF;
     text-align: center;
     font-weight: 700;
-    padding: 0.5em 2em;
+    padding: 0.75em 2em;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
     &:hover {
         text-decoration: none;
-        background-color: white;
-        border: 1.5px solid #4497FF;
-        color: #4497FF;
+        color: white;
+        background-color: #66AAFF;
     }
     @media ${device.mobileS} {
         font-size: 0.75em;
@@ -30,7 +28,7 @@ export const Btn = styled.a `
         margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
     @media ${device.laptopL} {
-        font-size: 1em!important;
+        font-size: 0.875em!important;
         margin-top: 0!important;
         margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
@@ -44,20 +42,20 @@ export const Btn = styled.a `
 //Basic template for all regular buttons (for home, headers etc.)
 export const BtnSecondary = styled.button `
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 10px;
     border: 1.5px solid #4497FF;
     color: #4497FF;
     background-color: white;
     text-align: center;
     font-weight: 700;
-    padding: 0.5em 2em;
+    padding: 0.75em 2em;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
     &:hover {
         text-decoration: none;
-        background-color: #4497FF;
-        border: 1.5px solid #4497FF;
-        color: white;
+        background-color: white;
+        border: 1.5px solid #66AAFF;
+        color: #66AAFF;
     }
     &:focus {
         outline: none;
@@ -73,7 +71,7 @@ export const BtnSecondary = styled.button `
         margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
     @media ${device.laptopL} {
-        font-size: 1em!important;
+        font-size: 0.875em!important;
         margin-top: 0!important;
         margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }

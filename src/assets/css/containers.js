@@ -100,3 +100,13 @@ export const IframeContainer = styled.div `
     background-position: center;
     background-width: 100%;
 `
+
+export const FlexibleWidth = styled.div `
+    margin: auto;
+    @media ${device.mobileS} {
+        width: 50%;
+    }
+    @media ${device.tablet} {
+        width: 25%;
+    }
+`

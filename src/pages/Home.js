@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
+import FooterCard from '../components/landing/FooterCard';
 //CSS styles
 import { Relative, HomeStyle, Br, Bg, Arrow } from '../assets/css/others.js';
 import { Btn, BtnSecondary } from '../assets/css/buttons.js';
 import { FullImg, IconImgBig } from '../assets/css/images.js';
-import { H2, H5, H3 } from '../assets/css/fonts.js';
-import { OuterFlexBox, OuterContainer, InnerContainer, InnerFlexBox } from '../assets/css/containers.js';
+import { H2, H5, H3, H4 } from '../assets/css/fonts.js';
+import { OuterFlexBox, OuterContainer, InnerContainer, InnerFlexBox, FlexibleWidth } from '../assets/css/containers.js';
 //Contents
-import { sampleChallenges, roles } from '../assets/content.js';
+import { sampleChallenges, roles, actionImg } from '../assets/content.js';
 import home0 from '../assets/img/home_landing.svg';
 import home5 from '../assets/img/home_about.svg';
 //Carousel
@@ -47,7 +48,7 @@ class Home extends Component {
       <Navbar/>
 
       {/************************First card***********************/}
-      <Bg image = {home0}>
+      <Bg image={home0}>
         <OuterContainer center full>
           <InnerContainer>
             <Br/><Br/><Br/>
@@ -61,8 +62,8 @@ class Home extends Component {
             </H5>
             <Br/>
             <OuterFlexBox center>
-              <Btn href="http://eepurl.com/c2kFon" target="_blank">Join Mailing List</Btn>
-              <BtnSecondary left onClick={() => this.scrollToRef(this.mission)}>Learn More</BtnSecondary>
+              <Btn href="http://eepurl.com/c2kFon" target="_blank">JOIN MAILING LIST</Btn>
+              <BtnSecondary left home top onClick={() => this.scrollToRef(this.mission)}>LEARN MORE</BtnSecondary>
             </OuterFlexBox>
           </InnerContainer>
         </OuterContainer>
@@ -86,46 +87,44 @@ class Home extends Component {
               <Btn href="/involve">Join D4SD</Btn>
             </OuterFlexBox>
             <Br/>
-            <OuterFlexBox>
-              <InnerFlexBox>
-              {roles.map(role => (
-                <div>
-                  <IconImgBig src={role.image}/>
-                  <H5>{role.contents}</H5>
-                  </div>
-              ))}
-              </InnerFlexBox>
-            </OuterFlexBox>
+              <OuterFlexBox>
+                {roles.map(role => (
+                  <FlexibleWidth>
+                    <IconImgBig role src={role.image}/>
+                    <H5>{role.contents}</H5>
+                  </FlexibleWidth>
+                ))}
+              </OuterFlexBox>
           </InnerContainer>
         </OuterContainer>
       </Bg>
       {/************************Second card***********************/}
       <Relative>
-      <Carousel defaultWait={3000}>
-      {/**sampleChallenges.map((sampleChallenge, i) => (
-          <Slide right>
-            <Relative key={i} id={i}>
-              <HomeStyle carousel>
-                <Relative>
-                  <Br/>
-                  <H3>{sampleChallenge.header}</H3>
-                  <H2>{sampleChallenge.title}</H2>
-                  <H5 dangerouslySetInnerHTML={{ __html: sampleChallenge.txt }} />
-                  <H5>{sampleChallenge.question}</H5>
-                  <Br/>
-                    <OuterFlexBox>
-                      <BtnConditional left home href={sampleChallenge.link} target="_blank" isAction={sampleChallenge.isAction}>{sampleChallenge.action}</BtnConditional>
-                      <BtnConditional center home href={sampleChallenge.link2} target="_blank" isAction={sampleChallenge.isAction2}>{sampleChallenge.action2}</BtnConditional>
-                    </OuterFlexBox>
-                </Relative>
-               </HomeStyle>
-              <FullImg src={sampleChallenge.src}/>
-            </Relative>
-        </Slide>
-      ))**/}
-      </Carousel>
+        <Carousel defaultWait={3000}>
+          {sampleChallenges.map((sampleChallenge, i) => (
+              <Slide right>
+                <Bg image={sampleChallenge.src} blue>
+                  <OuterContainer center full>
+                    <InnerContainer>
+                      <Br/><Br/>
+                      <H2>Take the Challenges</H2>
+                      <H3>{sampleChallenge.header}</H3>
+                      <H4>{sampleChallenge.title}</H4>
+                      <H5 dangerouslySetInnerHTML={{ __html: sampleChallenge.txt }} />
+                      <H5>{sampleChallenge.question}</H5>
+                      <Br/>
+                      <OuterFlexBox center>
+                        <Btn href="/involve">Join D4SD</Btn>
+                      </OuterFlexBox>
+                      <Br/>
+                    </InnerContainer>
+                  </OuterContainer>
+                </Bg>
+            </Slide>
+          ))}
+        </Carousel>
       </Relative>
-
+      <Relative top>
       <Bg>
         <OuterContainer center full>
           <InnerContainer>
@@ -143,10 +142,17 @@ class Home extends Component {
             <OuterFlexBox center>
               <Btn left href="http://d4sd2017.ucsd.edu" target="_blank">See what happened in 2017</Btn>
             </OuterFlexBox>
-          </InnerContainer>
+            </InnerContainer>
+            <Br/><Br/>
+            <OuterFlexBox>
+              {actionImg.map(img => (
+                <FlexibleWidth>
+                  <IconImgBig src={img} />
+                </FlexibleWidth>
+              ))}
+            </OuterFlexBox>
         </OuterContainer>
       </Bg>
-
       <Bg>
         <OuterContainer center full>
           <InnerContainer>
@@ -167,8 +173,8 @@ class Home extends Component {
           </InnerContainer>
         </OuterContainer>
       </Bg>
-
-
+      <FooterCard />
+      </Relative>
 
       </div>
     );
