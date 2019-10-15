@@ -113,7 +113,7 @@ export const FlexibleWidth = styled.div `
 `
 
 export const StyledCarouselProvider = styled(CarouselProvider) `
-overflow: hidden;
+    overflow: hidden;
     @media ${device.mobileS} {
         height: 100%;
     }
@@ -125,5 +125,18 @@ overflow: hidden;
     }
     @media ${device.desktop} {
         height: 850px;
+    }
+`
+
+export const TempPadding = styled.div `
+
+    @media ${device.mobileS} {
+        background: transparent;
+        padding: 0;
+    }
+    @media ${device.laptop} {
+        borderRadius: 15px;
+        background-color: rgba(255, 255, 255, 0.5)!important;
+        padding: 3em 3.5em!important;
     }
 `

@@ -76,6 +76,7 @@ export const H4 = styled.h4 `
     z-index: 100;
     padding: 0 14px;
     width: 100%;
+    text-align: ${props => props.left ? "left":"center"}
     @media ${device.mobileS} {
         font-size: 1.25em;
     }

@@ -190,5 +190,10 @@ export const StyledDotGroup = styled(DotGroup) `
         border-radius: 50%;
     }
     z-index: 100;
-
+    position: absolute;
+    top: 600px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 `

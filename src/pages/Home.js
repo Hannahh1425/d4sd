@@ -6,7 +6,7 @@ import { Relative, HomeStyle, Br, Bg, Arrow } from '../assets/css/others.js';
 import { Btn, BtnSecondary, StyledButtonBack, StyledButtonNext, StyledDotGroup } from '../assets/css/buttons.js';
 import { StyledImg } from '../assets/css/images.js';
 import { H2, H5, H3, H4 } from '../assets/css/fonts.js';
-import { OuterFlexBox, OuterContainer, InnerContainer, InnerFlexBox, FlexibleWidth, StyledCarouselProvider } from '../assets/css/containers.js';
+import { OuterFlexBox, OuterContainer, InnerContainer, InnerFlexBox, FlexibleWidth, StyledCarouselProvider, TempPadding } from '../assets/css/containers.js';
 //Contents
 import { sampleChallenges, roles, actionImg, communityLogo } from '../assets/content.js';
 import home0 from '../assets/img/home_landing.svg';
@@ -112,17 +112,18 @@ class Home extends Component {
                 <OuterContainer center full>
                   <InnerContainer>
                     <Br/><Br/>
-                    <H2>Learn about the challenges!</H2>
-                    <H3>{sampleChallenge.header}</H3>
-                    <H4>{sampleChallenge.title}</H4>
-                    <H5 left dangerouslySetInnerHTML={{ __html: sampleChallenge.txt }} />
-                    <Br/>
-                    <OuterFlexBox center>
-                      <Btn href="https://join.slack.com/t/d4sd/shared_invite/enQtMjExMjA5MDY0MjkzLTk3NjY4NGM3MTE0N2M1NTJjODAxMGRiMDgxNmQ4ZDk1NTU4Mzk0OThjMTdkMzc0NTJmY2M1ZmNkZDA3NTdjYTU" target="_blank">Join the discussion</Btn>
-                    </OuterFlexBox>
+                    <TempPadding>
+                      <H2>Learn about the challenges!</H2>
+                      <br/>
+                      <H4 left>{sampleChallenge.title}</H4>
+                      <H5 left dangerouslySetInnerHTML={{ __html: sampleChallenge.txt }} />
+                      <Br/>
+                      <OuterFlexBox center>
+                        <Btn href="https://join.slack.com/t/d4sd/shared_invite/enQtMjExMjA5MDY0MjkzLTk3NjY4NGM3MTE0N2M1NTJjODAxMGRiMDgxNmQ4ZDk1NTU4Mzk0OThjMTdkMzc0NTJmY2M1ZmNkZDA3NTdjYTU" target="_blank">Join the discussion</Btn>
+                      </OuterFlexBox>
+                    </TempPadding>
                     <StyledButtonBack><i className="fas fa-angle-left"></i></StyledButtonBack>
                     <StyledButtonNext><i className="fas fa-angle-right"></i></StyledButtonNext>
-                    <Br/><Br/><Br/><Br/>
                     <StyledDotGroup disableActiveDots={true} dotNumbers={true}/>
                   </InnerContainer>
                 </OuterContainer>
