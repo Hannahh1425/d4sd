@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { device } from './breakpoints.js';
 import img from '../img/about_header.svg';
+import { CarouselProvider } from 'pure-react-carousel';
 
 //The outer container defines the maximum width the page no matter what the screen size is
 //The content inside the outer container can either be left-aligned or centered (when the center attribute appears)
@@ -108,5 +109,21 @@ export const FlexibleWidth = styled.div `
     }
     @media ${device.tablet} {
         width: 25%;
+    }
+`
+
+export const StyledCarouselProvider = styled(CarouselProvider) `
+overflow: hidden;
+    @media ${device.mobileS} {
+        height: 100%;
+    }
+    @media ${device.tablet} {
+        height: 800px;
+    }
+    @media ${device.laptopL} {
+        height: 800px;
+    }
+    @media ${device.desktop} {
+        height: 850px;
     }
 `

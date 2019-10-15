@@ -3,20 +3,28 @@ import Navbar from '../components/Navbar';
 import FooterCard from '../components/landing/FooterCard';
 //CSS styles
 import { Relative, HomeStyle, Br, Bg, Arrow } from '../assets/css/others.js';
-import { Btn, BtnSecondary, StyledButtonBack, StyledButtonNext, StyledDotGroup } from '../assets/css/buttons.js';
-import { StyledImg } from '../assets/css/images.js';
+import { Btn, BtnSecondary } from '../assets/css/buttons.js';
+import { FullImg, IconImgBig } from '../assets/css/images.js';
 import { H2, H5, H3, H4 } from '../assets/css/fonts.js';
-import { OuterFlexBox, OuterContainer, InnerContainer, InnerFlexBox, FlexibleWidth, StyledCarouselProvider } from '../assets/css/containers.js';
+import { OuterFlexBox, OuterContainer, InnerContainer, InnerFlexBox, FlexibleWidth } from '../assets/css/containers.js';
 //Contents
 import { sampleChallenges, roles, actionImg, communityLogo } from '../assets/content.js';
 import home0 from '../assets/img/home_landing.svg';
 import home5 from '../assets/img/home_about.svg';
 //Carousel
-import { Slider, Slide } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
-
+import makeCarousel from 'react-reveal/makeCarousel';
+import Slide from 'react-reveal/Slide';
 import './style.css';
 
+// import styled from 'styled-components';
+const CarouselUI = ({ position, handleClick, children }) => (
+  <div>
+      {children}
+      <Arrow onClick={handleClick} data-position={position - 1}>{'<'}</Arrow>
+      <Arrow right onClick={handleClick} data-position={position + 1}>{'>'}</Arrow>
+  </div>
+);
+const Carousel = makeCarousel(CarouselUI);
 
 class Home extends Component {
   constructor() {
@@ -88,7 +96,7 @@ class Home extends Component {
               <OuterFlexBox>
                 {roles.map(role => (
                   <FlexibleWidth>
-                    <StyledImg theme={{width: "70%"}} src={role.image}/>
+                    <IconImgBig role src={role.image}/>
                     <H5>{role.contents}</H5>
                   </FlexibleWidth>
                 ))}
@@ -98,41 +106,32 @@ class Home extends Component {
       </Bg>
       <Br/><Br/>
       {/************************Second card***********************/}
-
-      <StyledCarouselProvider
-        naturalSlideWidth={100}
-        naturalSlideHeight={250}
-        isPlaying={true}
-        totalSlides={4}
-      >
-        <Slider>
+      <Relative>
+        <Carousel defaultWait={4000}>
           {sampleChallenges.map((sampleChallenge, i) => (
-            <Slide index={i}>
-              <Bg image={sampleChallenge.src} blue>
-                <OuterContainer center full>
-                  <InnerContainer>
-                    <Br/><Br/>
-                    <H2>Learn about the challenges!</H2>
-                    <H3>{sampleChallenge.header}</H3>
-                    <H4>{sampleChallenge.title}</H4>
-                    <H5 left dangerouslySetInnerHTML={{ __html: sampleChallenge.txt }} />
-                    <Br/>
-                    <OuterFlexBox center>
-                      <Btn href="https://join.slack.com/t/d4sd/shared_invite/enQtMjExMjA5MDY0MjkzLTk3NjY4NGM3MTE0N2M1NTJjODAxMGRiMDgxNmQ4ZDk1NTU4Mzk0OThjMTdkMzc0NTJmY2M1ZmNkZDA3NTdjYTU" target="_blank">Join the discussion</Btn>
-                    </OuterFlexBox>
-                    <StyledButtonBack><i className="fas fa-angle-left"></i></StyledButtonBack>
-                    <StyledButtonNext><i className="fas fa-angle-right"></i></StyledButtonNext>
-                    <Br/><Br/><Br/><Br/>
-                    <StyledDotGroup disableActiveDots={true} dotNumbers={true}/>
-                  </InnerContainer>
-                </OuterContainer>
-              </Bg>
+              <Slide right>
+                <Bg image={sampleChallenge.src} blue>
+                  <OuterContainer center full>
+                    <InnerContainer>
+                      <Br/><Br/>
+                      <H2>Learn about the challenges!</H2>
+                      <H3>{sampleChallenge.header}</H3>
+                      <H4>{sampleChallenge.title}</H4>
+                      <H5 left dangerouslySetInnerHTML={{ __html: sampleChallenge.txt }} />
+                      <H5>{sampleChallenge.question}</H5>
+                      <Br/>
+                      <OuterFlexBox center>
+                        <Btn href="https://join.slack.com/t/d4sd/shared_invite/enQtMjExMjA5MDY0MjkzLTk3NjY4NGM3MTE0N2M1NTJjODAxMGRiMDgxNmQ4ZDk1NTU4Mzk0OThjMTdkMzc0NTJmY2M1ZmNkZDA3NTdjYTU" target="_blank">Join the discussion</Btn>
+                      </OuterFlexBox>
+                      <Br/>
+                    </InnerContainer>
+                  </OuterContainer>
+                </Bg>
             </Slide>
           ))}
-        </Slider>
-      </StyledCarouselProvider>
-
-
+        </Carousel>
+      </Relative>
+      <Relative top>
       <Bg>
         <OuterContainer center>
           <InnerContainer>
@@ -155,7 +154,7 @@ class Home extends Component {
             <OuterFlexBox>
               {actionImg.map(img => (
                 <FlexibleWidth>
-                  <StyledImg theme={{width: "98%", height:"auto"}} src={img} />
+                  <IconImgBig src={img} />
                 </FlexibleWidth>
               ))}
             </OuterFlexBox>
@@ -165,9 +164,8 @@ class Home extends Component {
       <Bg>
         <OuterContainer center>
           <InnerContainer>
-            <Br/>
+            <Br/><Br/>
             <H2>Meet our community</H2>
-            <br/>
             <H5>The D4SD community includes talented and energetic people from
             across our region.  Through the online and in-person events, we help
             to foster collaboration and interaction among innovators, civic leaders,
@@ -178,16 +176,19 @@ class Home extends Component {
               <Btn left href="/involve">Get Involved</Btn>
             </OuterFlexBox>
             </InnerContainer>
-            <Br/><Br/>
-            <div style={{"display":"flex", "alignItems":"baseline", "justifyContent":"space-around", "flexWrap":"wrap"}}>
+            <OuterFlexBox>
               {communityLogo.map(img => (
-                  <StyledImg theme={{ heightS:"30px", heightT:"40px", heightL:"70px"}} src={img}/>
+                <FlexibleWidth>
+                  <IconImgBig role src={img} />
+                </FlexibleWidth>
               ))}
-            </div>
+            </OuterFlexBox>
         </OuterContainer>
       </Bg>
       <Br/><Br/><Br/>
       <FooterCard />
+      </Relative>
+
       </div>
     );
   }

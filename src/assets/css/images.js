@@ -12,6 +12,19 @@ export const IconImg = styled.img `
     width: ${props => props.small ? "9%":"20%"};
 `
 
-export const IconImgBig = styled.img `
-    width: ${props => props.role ? "70%":"98%"};
+export const StyledImg = styled.img `
+    width: ${props => props.theme.width};
+    height: ${props => props.theme.height};
+    @media ${device.mobileS} {
+        height: ${props => props.theme.heightS};
+    }
+    @media ${device.tablet} {
+        height: ${props => props.theme.heightT};
+    }
+    @media ${device.laptopL} {
+        height: ${props => props.theme.heightL};
+    }
+    @media ${device.desktop} {
+        height: ${props => props.theme.height};
+    }
 `

@@ -11,10 +11,11 @@ import action3 from './img/home_action3.jpg';
 import action4 from './img/home_action4.jpg';
 import action5 from './img/home_action5.jpg';
 
-import community1 from './img/home_community1.png';
-import community2 from './img/home_community2.png';
-import community3 from './img/home_community3.png';
-import community4 from './img/home_community4.png';
+import community1 from './img/home_id8.png';
+import community2 from './img/home_designlab.svg';
+import community3 from './img/home_urban.png';
+import community4 from './img/home_e3.svg';
+import community5 from './img/home_yankelovich.png';
 
 import city from "./img/about_city.svg";
 import connect from "./img/about_connect.svg";
@@ -57,7 +58,7 @@ export const sampleChallenges = [
     isAction: "true",
     header: "IMPROVING MOBILITY",
     title: "How might we help people move freely through our city?",
-    txt: "As people are looking for a more efficient way to move around, the mission of reducing our emissions and increasing the inclusivity of transportation continues to be an essential topic of discussion in our urban environments. Mobility can be examined from a number of lenses’ such as motor vehicle systems, transit, parking, intermodal connections, electric vehicles, accident reduction, walkability and bike-ability, and land-use patterns. <b>Help shape this problem by joing our discussion</b>",
+    txt: "As people are looking for a more efficient way to move around, the mission of reducing our emissions and increasing the inclusivity of transportation continues to be an essential topic of discussion in our urban environments. Mobility can be examined from a number of lenses’ such as motor vehicle systems, transit, parking, intermodal connections, electric vehicles, accident reduction, walkability and bike-ability, and land-use patterns. <b>Help shape this problem by joing our discussion!</b>",
     action: "See what happened in 2017",
     link: "http://d4sd2017.org",
     isAction2: "false",
@@ -70,7 +71,7 @@ export const sampleChallenges = [
     isAction: "false",
     header: "ADDRESSING CLIMATE EFFECTS",
     title: "How can we help San Diego prepare for and mitigate climate change?",
-    txt: "Greenhouse gas emission from the burning of fossil fuels has resulted in the gradual increase of global temperatures. Scientists have high confidence that global temperatures will continue to rise for decades to come. Climate change impacts areas such as transportation, housing, health, natural resources, food waste, agriculture, air pollution, and education. <b>Help shape this problem by joing our discussion</b>",
+    txt: "Greenhouse gas emission from the burning of fossil fuels has resulted in the gradual increase of global temperatures. Scientists have high confidence that global temperatures will continue to rise for decades to come. Climate change impacts areas such as transportation, housing, health, natural resources, food waste, agriculture, air pollution, and education. <b>Help shape this problem by joing our discussion!</b>",
     action: "Get Involved",
     link: "http://eepurl.com/c2kFon",
     isAction2: "false",
@@ -83,7 +84,7 @@ export const sampleChallenges = [
     isAction: "false",
     header: "CREATING ACCESSIBLE HOUSING",
     title: "How can we reimagine housing to meets the needs of all San Diegans?",
-    txt: "After food and water, shelter is the most fundamental human need. Unfortunately, people have limited choices for safe, affordable, and long-term housing in San Diego. The issue affects the lives of all San Diegans. Housing is not just about physical structures, but includes other areas such as homelessness, land development, smart home technology, and mixed-use housing. <b>Hlep shape this problem by joing our discussion</b>",
+    txt: "After food and water, shelter is the most fundamental human need. Unfortunately, people have limited choices for safe, affordable, and long-term housing in San Diego. The issue affects the lives of all San Diegans. Housing is not just about physical structures, but includes other areas such as homelessness, land development, smart home technology, and mixed-use housing. <b>Hlep shape this problem by joing our discussion!</b>",
     action: "Get Involved",
     link: "http://eepurl.com/c2kFon",
     isAction2: "false",
@@ -96,7 +97,7 @@ export const sampleChallenges = [
     isAction: "false",
     header: "LIVING HEALTHY LIVES",
     title: "How can we help all San Diegans live healthy and active lives?",
-    txt: "Many people have limited access to preventative and restorative health services. Health is determined by social and physical environments and is directly connected to how people live, learn, work, and play and touches on topics such as quality of life, population health, mental, physical and emotional health, and well being. <b>Hlep shape this problem by joing our discussion</b>",
+    txt: "Many people have limited access to preventative and restorative health services. Health is determined by social and physical environments and is directly connected to how people live, learn, work, and play and touches on topics such as quality of life, population health, mental, physical and emotional health, and well being. <b>Hlep shape this problem by joing our discussion!</b>",
     action: "Get Involved",
     link: "http://eepurl.com/c2kFon",
     isAction2: "false",
@@ -106,7 +107,7 @@ export const sampleChallenges = [
 ]
 
 export const actionImg = [action2, action3, action4, action5]
-export const communityLogo = [community1, community2, community3, community4]
+export const communityLogo = [community1, community2, community5, community3, community4]
 
 /*************************************About content***************************************/
 export const aboutContent = {

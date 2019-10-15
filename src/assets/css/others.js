@@ -4,6 +4,7 @@ import { device } from './breakpoints.js';
 //Set the position to be relative
 export const Relative = styled.div `
     position: relative;
+    z-index: 1;
     top: ${props => props.top ? "100vh":""};
 `
 

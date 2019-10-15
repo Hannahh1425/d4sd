@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { device } from './breakpoints.js';
+import { ButtonBack, ButtonNext, DotGroup } from 'pure-react-carousel';
 
 //Basic template for all regular buttons (for home, headers etc.)
 export const Btn = styled.a `
@@ -141,4 +142,53 @@ export const ToggleBtn = styled.div `
         padding: 0.7em 1.35em;
         margin-top: 0!important;
     }
+`
+
+export const StyledButtonBack = styled(ButtonBack) `
+    background: none;
+    border: none;
+    position: absolute;
+    left: 25px;
+    top: 300px;
+    font-size: 4em;
+    z-index: 100;
+    color: rgba(0, 0, 0, 0.7);
+    @media ${device.mobileS} {
+        display: none;
+    }
+    @media ${device.tablet} {
+        display: inline;
+    }
+`
+
+export const StyledButtonNext = styled(ButtonNext) `
+    background: none;
+    border: none;
+    position: absolute;
+    right: 25px;
+    top: 300px;
+    font-size: 4em;
+    z-index: 100;
+    color: rgba(0, 0, 0, 0.7);
+    @media ${device.mobileS} {
+        display: none;
+    }
+    @media ${device.tablet} {
+        display: inline;
+    }
+`
+
+export const StyledDotGroup = styled(DotGroup) `
+    > button {
+        background-color: #B7DFE6;
+        border: solid 1px #E5EEEF;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        width: 30px;
+        height: 30px;
+        margin: 1em;
+        border-radius: 50%;
+    }
+    z-index: 100;
+
 `
