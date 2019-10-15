@@ -128,7 +128,7 @@ export const A = styled.a `
     font-family: 'Open Sans', sans-serif;
     color: #4496FF;
     &:hover {
-    color: #8FC0FF;
-    text-decoration: none;
+      color: #8FC0FF;
+      text-decoration: none;
     }
 `

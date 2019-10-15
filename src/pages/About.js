@@ -11,7 +11,7 @@ import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox, ToggleFlexB
 import { H2, H5 } from '../assets/css/fonts.js';
 import { device } from '../assets/css/breakpoints.js';
 import { Btn, ToggleBtn } from '../assets/css/buttons.js';
-import { FullImg, IconImg } from '../assets/css/images.js';
+import { FlexibleImg } from '../assets/css/images.js';
 import { Iframe } from '../assets/css/others.js';
 
 import whitepaper from '../assets/img/D4SD_2017_WhitePaper.pdf';
@@ -28,7 +28,8 @@ const H5Half = styled(H5) `
     width: 90%;
 `
 
-const ResponsiveImgVertical = styled(FullImg) `
+const ResponsiveImgVertical = styled.img `
+    width: 100%;
     @media ${device.mobileS} {
         display: ${props => props.isInnovator ? "inline":"none"}
     }
@@ -37,7 +38,8 @@ const ResponsiveImgVertical = styled(FullImg) `
     }
 `
 
-const ResponsiveImgHorizontal = styled(FullImg)  `
+const ResponsiveImgHorizontal = styled.img  `
+    width: 100%;
     @media ${device.mobileS} {
         display: none;
     }
@@ -128,43 +130,43 @@ class About extends Component {
           <OuterContainer>
             <InnerContainer>
               <H2 center>{aboutContent.title2}</H2>
-              <H5>{aboutContent.content2}</H5>
               <br/>
+              <H5>{aboutContent.content2}</H5>
+              <Br/>
               <img src={diagram} alt="diagram"/>
             </InnerContainer>
           </OuterContainer>
         </Bg>
 
-        <Br/><Br/><Br/>
+        <Br/><Br/>
 
-        <Bg blue ref={this.value} id="value">
+        <Bg theme={{color: "#EFF8FF"}} ref={this.value} id="value">
           <OuterContainer>
             <InnerContainer>
-              <br/><br/><br/><br/>
+              <Br/><Br/>
               <H2 center>{aboutContent.title3}</H2>
               <br/>
               <OuterFlexBox>
                 {aboutContent.content3.map((value, i) => (
                   <InnerFlexBox half>
-                    <IconImg small src={value.img} />
-                    <H5Half>{value.txt}</H5Half>
+                    <FlexibleImg theme={{width: "9%"}} src={value.img} />
+                    <H5Half left>{value.txt}</H5Half>
                   </InnerFlexBox>
                 ))}
               </OuterFlexBox>
-              <Br/><Br/><Br/>
+              <Br/><Br/>
             </InnerContainer>
           </OuterContainer>
         </Bg>
+        <Br/><Br/>
 
-
-          <Br/><Br/>
           <Bg ref={this.timeline} id="timeline">
             <OuterContainer>
               <InnerContainer>
-              <Br/>
               <H2 center>{aboutContent.title4}</H2>
+              <br/>
               <H5 left>{aboutContent.content4}</H5>
-              <Br/><Br/>
+              <Br/>
               <ToggleFlexBox middle>
                 <ToggleBtn left onClick={this.innovator} active={this.state.isInnovator}>Innovators</ToggleBtn>
                 <ToggleBtn onClick={this.community} active={!this.state.isInnovator}>Community members</ToggleBtn>
@@ -179,11 +181,12 @@ class About extends Component {
           </Bg>
 
           <Br/><Br/>
-          <Bg blue ref={this.review} id="review">
+          <Bg theme={{color: "#EFF8FF"}} ref={this.review} id="review">
             <OuterContainer>
-              <Br/><Br/><Br/>
+              <Br/><Br/>
               <InnerContainer>
               <H2 center>{aboutContent.title5}</H2>
+              <br/>
               <H5 left>{aboutContent.content5}</H5>
               </InnerContainer>
               <Br/>

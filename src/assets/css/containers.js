@@ -26,25 +26,19 @@ export const OuterContainer = styled.div `
 //The inner container defines the maximum width of the content when you want to
 //leave more space around your contents
 export const InnerContainer = styled.div `
+    margin: auto;
     @media ${device.mobileS} {
-        margin: auto;
         width: 320px;
     }
     @media ${device.tablet} {
-        margin: auto;
         width: 80%!important;
     }
     @media ${device.laptop} {
-        margin: auto;
         width: 65%!important;
     }
     @media ${device.laptopL} {
-        margin: auto;
         width: 60%!important;
     }
-    display: flex;
-    flex-direction: column;
-    align-content: center;
 `
 
 //For the cards like the ones on Get Involved page
@@ -118,7 +112,6 @@ export const StyledCarouselProvider = styled(CarouselProvider) `
 `
 
 export const TempPadding = styled.div `
-
     @media ${device.mobileS} {
         background: transparent;
         padding: 0;
