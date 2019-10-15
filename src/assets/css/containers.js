@@ -114,18 +114,7 @@ export const FlexibleWidth = styled.div `
 
 export const StyledCarouselProvider = styled(CarouselProvider) `
     overflow: hidden;
-    @media ${device.mobileS} {
-        height: 100%;
-    }
-    @media ${device.tablet} {
-        height: 800px;
-    }
-    @media ${device.laptopL} {
-        height: 800px;
-    }
-    @media ${device.desktop} {
-        height: 850px;
-    }
+    height: 100vh;
 `
 
 export const TempPadding = styled.div `
@@ -135,8 +124,8 @@ export const TempPadding = styled.div `
         padding: 0;
     }
     @media ${device.laptop} {
-        borderRadius: 15px;
-        background-color: rgba(255, 255, 255, 0.5)!important;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.7)!important;
         padding: 3em 3.5em!important;
     }
 `
