@@ -149,7 +149,7 @@ export const StyledButtonBack = styled(ButtonBack) `
     border: none;
     position: absolute;
     left: 25px;
-    top: 300px;
+    top: 40vh;
     font-size: 4em;
     z-index: 100;
     color: rgba(0, 0, 0, 0.7);
@@ -166,7 +166,7 @@ export const StyledButtonNext = styled(ButtonNext) `
     border: none;
     position: absolute;
     right: 25px;
-    top: 300px;
+    top: 40vh;
     font-size: 4em;
     z-index: 100;
     color: rgba(0, 0, 0, 0.7);
@@ -191,7 +191,7 @@ export const StyledDotGroup = styled(DotGroup) `
     }
     z-index: 100;
     position: absolute;
-    top: 600px;
+    top: 85vh;
     left: 0;
     right: 0;
     margin-left: auto;
