@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
 import FooterCard from '../components/landing/FooterCard';
 //CSS styles
-import { Relative, HomeStyle, Br, Bg, Arrow } from '../assets/css/others.js';
+import { Br, Bg } from '../assets/css/others.js';
 import { Btn, BtnSecondary, StyledButtonBack, StyledButtonNext, StyledDotGroup } from '../assets/css/buttons.js';
-import { StyledImg } from '../assets/css/images.js';
+import { FlexibleImg } from '../assets/css/images.js';
 import { H2, H5, H3, H4 } from '../assets/css/fonts.js';
 import { OuterFlexBox, OuterContainer, InnerContainer, InnerFlexBox, FlexibleWidth, StyledCarouselProvider, TempPadding } from '../assets/css/containers.js';
 //Contents
@@ -12,11 +12,8 @@ import { sampleChallenges, roles, actionImg, communityLogo } from '../assets/con
 import home0 from '../assets/img/home_landing.svg';
 import home5 from '../assets/img/home_about.svg';
 //Carousel
-import { Slider, Slide } from 'pure-react-carousel';
+import { Slider, Slide, CarouselProvider } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-
-import './style.css';
-
 
 class Home extends Component {
   constructor() {
@@ -38,7 +35,6 @@ class Home extends Component {
   return (
     <div id="home">
       <Navbar/>
-
       {/************************First card***********************/}
       <Bg image={home0}>
         <OuterContainer center full>
@@ -61,11 +57,11 @@ class Home extends Component {
           </InnerContainer>
         </OuterContainer>
       </Bg>
-      {/************************Second card***********************/}
+      {/************************Mission***********************/}
+      <Br/><Br/>
       <Bg ref={this.mission}>
         <OuterContainer center>
           <InnerContainer>
-            <Br/><Br/>
             <H2>Contribute to Our Mission</H2>
             <br/>
             <H5 left>D4SD seeks to connect young passionate designers to a
@@ -88,7 +84,7 @@ class Home extends Component {
               <OuterFlexBox>
                 {roles.map(role => (
                   <FlexibleWidth>
-                    <StyledImg theme={{width: "70%"}} src={role.image}/>
+                    <FlexibleImg theme={{width: "70%"}} src={role.image}/>
                     <H5>{role.contents}</H5>
                   </FlexibleWidth>
                 ))}
@@ -97,8 +93,7 @@ class Home extends Component {
         </OuterContainer>
       </Bg>
       <Br/><Br/>
-      {/************************Second card***********************/}
-
+      {/************************Problem topics**********************/}
       <StyledCarouselProvider
         naturalSlideWidth={100}
         naturalSlideHeight={250}
@@ -108,7 +103,7 @@ class Home extends Component {
         <Slider>
           {sampleChallenges.map((sampleChallenge, i) => (
             <Slide index={i}>
-              <Bg image={sampleChallenge.src} blue>
+              <Bg image={sampleChallenge.src} theme={{color: "#EFF8FF"}}>
                 <OuterContainer center full>
                   <InnerContainer>
                     <Br/><Br/>
@@ -133,11 +128,12 @@ class Home extends Component {
         </Slider>
       </StyledCarouselProvider>
 
+      <Br/><Br/>
 
+      {/************************D4SD in action***********************/}
       <Bg>
         <OuterContainer center>
           <InnerContainer>
-            <Br/><Br/>
             <H2>D4SD in action</H2>
             <br/>
             <H5>In 2017, hundreds of people helped to generate ideas through the
@@ -156,17 +152,18 @@ class Home extends Component {
             <OuterFlexBox>
               {actionImg.map(img => (
                 <FlexibleWidth>
-                  <StyledImg theme={{width: "98%", height:"auto"}} src={img} />
+                  <FlexibleImg theme={{width: "98%", height:"auto"}} src={img} />
                 </FlexibleWidth>
               ))}
             </OuterFlexBox>
         </OuterContainer>
       </Bg>
+
       <Br/><Br/>
+      {/************************Community***********************/}
       <Bg>
         <OuterContainer center>
-          <InnerContainer>
-            <Br/>
+          <InnerContainer>            
             <H2>Meet our community</H2>
             <br/>
             <H5>The D4SD community includes talented and energetic people from
@@ -180,11 +177,13 @@ class Home extends Component {
             </OuterFlexBox>
             </InnerContainer>
             <Br/><Br/>
+            <CarouselProvider>
             <div style={{"display":"flex", "alignItems":"baseline", "justifyContent":"space-around", "flexWrap":"wrap"}}>
               {communityLogo.map(img => (
-                  <StyledImg theme={{ heightS:"30px", heightT:"40px", heightL:"70px"}} src={img}/>
+                  <FlexibleImg theme={{ heightS:"30px", heightT:"40px", heightL:"70px"}} src={img}/>
               ))}
             </div>
+          </CarouselProvider>
         </OuterContainer>
       </Bg>
       <Br/><Br/><Br/>

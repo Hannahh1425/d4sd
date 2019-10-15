@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import '../style.css';
 import designlab from '../../assets/img/footer_ucsddesignlabimg.png';
 import { OuterContainer, OuterFlexBox } from '../../assets/css/containers.js';
-import { FooterBg } from '../../assets/css/others.js';
+import { Bg } from '../../assets/css/others.js';
 import { H6, A } from '../../assets/css/fonts.js';
 
 class FooterCard extends Component {
 
   render() {
     return (
-      <FooterBg grey ref={this.value} id="value">
+      <Bg theme={{color: "#474747"}} ref={this.value} id="value">
       <div id="footer-card" className="d-flex justify-content-center align-items-center">
           <OuterContainer center>
               <br/><br/><br/>
@@ -20,7 +20,7 @@ class FooterCard extends Component {
               <br/><br/>
           </OuterContainer>
       </div>
-      </FooterBg>
+    </Bg>
     );
   }
 }
