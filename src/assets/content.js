@@ -1,9 +1,18 @@
-import home0 from './img/home_landing.svg';
 import home1 from './img/home_mobility.svg';
 import home2 from './img/home_climate.svg';
 import home3 from './img/home_housing.svg';
 import home4 from './img/home_health.svg';
-import home5 from './img/home_about.svg';
+
+import action2 from './img/home_action2.jpg';
+import action3 from './img/home_action3.jpg';
+import action4 from './img/home_action4.jpg';
+import action5 from './img/home_action5.jpg';
+
+import community1 from './img/home_designlab.svg';
+import community2 from './img/home_yankelovich.png';
+import community3 from './img/home_id8.png';
+import community4 from './img/home_urban.png';
+import community5 from './img/home_e3.svg';
 
 import city from "./img/about_city.svg";
 import connect from "./img/about_connect.svg";
@@ -21,14 +30,32 @@ import question from "./img/involve_question.svg";
 import mail from "./img/involve_mail.svg";
 
 /*************************************Home content***************************************/
+export const roles = [
+  {
+    image: innovator,
+    contents: "Innovate"
+  },
+  {
+    image: educator,
+    contents: "Partner"
+  },
+  {
+    image: expert,
+    contents: "Volunteer"
+  },
+  {
+    image: sponsor,
+    contents: "Sponsor"
+  }
+]
 export const sampleChallenges = [
   {
     id: 0,
     src: home1,
     isAction: "true",
-    header: "SAMPLE CHALLENGE: IMPROVING MOBILITY",
+    header: "IMPROVING MOBILITY",
     title: "How might we help people move freely through our city?",
-    txt: "As people are looking for a more efficient way to move around, the mission of reducing our emissions and increasing the inclusivity of transportation continues to be an essential topic of discussion in our urban environments. Mobility can be examined from a number of lenses’ such as motor vehicle systems, transit, parking, intermodal connections, electric vehicles, accident reduction, walkability and bike-ability, and land-use patterns. ",
+    txt: "As people are looking for a more efficient way to move around, the mission of reducing our emissions and increasing the inclusivity of transportation continues to be an essential topic of discussion in our urban environments. Mobility can be examined from a number of lenses’ such as motor vehicle systems, transit, parking, intermodal connections, electric vehicles, accident reduction, walkability and bike-ability, and land-use patterns. <b>Help shape this problem by joining our discussion!</b>",
     action: "See what happened in 2017",
     link: "http://d4sd2017.org",
     isAction2: "false",
@@ -39,9 +66,9 @@ export const sampleChallenges = [
     id: 1,
     src: home2,
     isAction: "false",
-    header: "SAMPLE CHALLENGE: ADDRESSING CLIMATE EFFECTS",
+    header: "ADDRESSING CLIMATE EFFECTS",
     title: "How can we help San Diego prepare for and mitigate climate change?",
-    txt: "Our dependency on greenhouse gases has resulted in the gradual increase of global temperatures, and scientists have high confidence that global temperatures will continue to rise for decades to come. Climate change links to a number of areas such as transportation, housing, health, natural resources, food waste, agriculture, air pollution, and education.",
+    txt: "Greenhouse gas emission from the burning of fossil fuels has resulted in the gradual increase of global temperatures. Scientists have high confidence that global temperatures will continue to rise for decades to come. Climate change impacts areas such as transportation, housing, health, natural resources, food waste, agriculture, air pollution, and education. <b>Help shape this problem by joining our discussion!</b>",
     action: "Get Involved",
     link: "http://eepurl.com/c2kFon",
     isAction2: "false",
@@ -52,9 +79,9 @@ export const sampleChallenges = [
     id: 2,
     src: home3,
     isAction: "false",
-    header: "SAMPLE CHALLENGE: CREATING ACCESSIBLE HOUSING",
+    header: "CREATING ACCESSIBLE HOUSING",
     title: "How can we reimagine housing to meets the needs of all San Diegans?",
-    txt: "After food and water, shelter is the most fundamental human need. Unfortunately, people have limited choices for safe, affordable, and long-term housing in San Diego. The issue affects the lives of all San Diegans. Housing is not just about physical structures, but includes other areas such as homelessness, land development, smart home technology, and mixed-use housing.",
+    txt: "After food and water, shelter is the most fundamental human need. Unfortunately, people have limited choices for safe, affordable, and long-term housing in San Diego. The issue affects the lives of all San Diegans. Housing is not just about physical structures, but includes other areas such as homelessness, land development, smart home technology, and mixed-use housing. <b>Help shape this problem by joining our discussion!</b>",
     action: "Get Involved",
     link: "http://eepurl.com/c2kFon",
     isAction2: "false",
@@ -65,9 +92,9 @@ export const sampleChallenges = [
     id: 3,
     src: home4,
     isAction: "false",
-    header: "SAMPLE CHALLENGE: LIVING HEALTHY LIVES",
+    header: "LIVING HEALTHY LIVES",
     title: "How can we help all San Diegans live healthy and active lives?",
-    txt: "Many people have limited access to preventative and restorative health services. Health is determined by social and physical environments and is directly connected to how people live, learn, work, and play and touches on topics such as quality of life, population health, mental, physical and emotional health, and well being.",
+    txt: "Many people have limited access to preventative and restorative health services. Health is determined by social and physical environments and is directly connected to how people live, learn, work, and play and touches on topics such as quality of life, population health, mental, physical and emotional health, and well being. <b>Help shape this problem by joining our discussion!</b>",
     action: "Get Involved",
     link: "http://eepurl.com/c2kFon",
     isAction2: "false",
@@ -75,6 +102,9 @@ export const sampleChallenges = [
     link2: ""
     }
 ]
+
+export const actionImg = [action2, action3, action4, action5]
+export const communityLogo = [community1, community2, community3, community4, community5]
 
 /*************************************About content***************************************/
 export const aboutContent = {
