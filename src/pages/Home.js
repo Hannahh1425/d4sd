@@ -1,56 +1,194 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
-import { Relative, HomeStyle, Br } from '../assets/css/others.js';
-import { BtnConditional } from '../assets/css/buttons.js';
-import { FullImg } from '../assets/css/images.js';
-import { H2, H5, H3 } from '../assets/css/fonts.js';
-import { OuterFlexBox } from '../assets/css/containers.js';
-import { homeContent } from './content.js';
+import FooterCard from '../components/landing/FooterCard';
+//CSS styles
+import { Relative, HomeStyle, Br, Bg, Arrow } from '../assets/css/others.js';
+import { Btn, BtnSecondary, StyledButtonBack, StyledButtonNext, StyledDotGroup } from '../assets/css/buttons.js';
+import { StyledImg } from '../assets/css/images.js';
+import { H2, H5, H3, H4 } from '../assets/css/fonts.js';
+import { OuterFlexBox, OuterContainer, InnerContainer, InnerFlexBox, FlexibleWidth, StyledCarouselProvider, TempPadding } from '../assets/css/containers.js';
+//Contents
+import { sampleChallenges, roles, actionImg, communityLogo } from '../assets/content.js';
+import home0 from '../assets/img/home_landing.svg';
+import home5 from '../assets/img/home_about.svg';
+//Carousel
+import { Slider, Slide } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
+
 import './style.css';
 
-// import styled from 'styled-components';
 
 class Home extends Component {
   constructor() {
     super();
-    this.state = ({
-      loaded: false
-    })
+    this.mission = React.createRef();
   }
 
-  load = () => {
-    this.setState({loaded: true});
-    console.log(this.state.loaded);
+  scrollToRef = ref => {
+    console.log("before");
+    console.log(ref.current);
+    window.scrollTo({
+      left: 0,
+      top: ref.current.offsetTop,
+      behavior: 'smooth'
+    });
   }
 
   render() {
   return (
     <div id="home">
       <Navbar/>
+
+      {/************************First card***********************/}
+      <Bg image={home0}>
+        <OuterContainer center full>
+          <InnerContainer>
+            <Br/><Br/><Br/>
+            <H3>DESIGN FOR SAN DIEGO'S 2020 CIVIC DESIGN CHALLENGE</H3>
+            <H2 half>How can we make San Diego a more sustainable city?</H2>
+            <br/>
+            <H5>San Diego is an amazing place to live, work, and visit. But
+            like many cities, San Diego faces a number of difficult challenges
+            around mobility, climate, housing, and public health. Design for
+            San Diego (D4SD) is an initiative to address complex challenges
+            through design thinking and crowdsourcing.
+            </H5>
+            <Br/>
+            <OuterFlexBox center>
+              <Btn href="http://eepurl.com/c2kFon" target="_blank">JOIN MAILING LIST</Btn>
+              <BtnSecondary left home top onClick={() => this.scrollToRef(this.mission)}>LEARN MORE</BtnSecondary>
+            </OuterFlexBox>
+          </InnerContainer>
+        </OuterContainer>
+      </Bg>
+      {/************************Second card***********************/}
+      <Bg ref={this.mission}>
+        <OuterContainer center>
+          <InnerContainer>
+            <Br/><Br/>
+            <H2>Contribute to Our Mission</H2>
+            <br/>
+            <H5 left>D4SD seeks to connect young passionate designers to a
+            network of industry, civic, and community leaders and to structure a
+            process for collectively addressing civic challenges related to the
+            sustainability of our region. We are exploring new models for collective
+            innovation where the community works together to discover problem angles,
+            explore possible solutions, and build prototypes that test ideas. <br/>
+            D4SD 2020 will host a series of design events including speakers,
+            studios, and desisgathons, starting in January 2020 and culminating
+            in a summit where stakeholders can interact, pitch proposed solutions,
+            discuss trade-offs, and build alliances to make change happen. Come
+            to an event or form a team and submit your proposals!
+            </H5>
+            <Br/>
+            <OuterFlexBox center>
+              <Btn href="/involve">Join D4SD</Btn>
+            </OuterFlexBox>
+            <Br/>
+              <OuterFlexBox>
+                {roles.map(role => (
+                  <FlexibleWidth>
+                    <StyledImg theme={{width: "70%"}} src={role.image}/>
+                    <H5>{role.contents}</H5>
+                  </FlexibleWidth>
+                ))}
+              </OuterFlexBox>
+          </InnerContainer>
+        </OuterContainer>
+      </Bg>
       <Br/><Br/>
-        {homeContent.map((homeContent, i) => (
-          <Relative key={i} id={i}>
-            <HomeStyle>
-              <Relative>
-                <Br/>
-                <H3>{homeContent.header}</H3>
-                <H2>{homeContent.title}</H2>
-                <H5>{homeContent.txt}</H5>
-                <H5>{homeContent.question}</H5>
-                <Br/>
-                {/* <div id="btn-set"> */}
-                  <OuterFlexBox>
-                    <BtnConditional left home href={homeContent.link} target="_blank" isAction={homeContent.isAction}>{homeContent.action}</BtnConditional>
-                    <BtnConditional center home href={homeContent.link2} target="_blank" isAction={homeContent.isAction2}>{homeContent.action2}</BtnConditional>
-                  </OuterFlexBox>
-                  {/* <a id="learn-more">Learn More</a> */}
-                {/* </div> */}
-                
-              </Relative>
-             </HomeStyle>
-            <FullImg src={homeContent.src} onLoad={this.load}/>
-          </Relative>
-        ))}
+      {/************************Second card***********************/}
+
+      <StyledCarouselProvider
+        naturalSlideWidth={100}
+        naturalSlideHeight={250}
+        isPlaying={true}
+        totalSlides={4}
+      >
+        <Slider>
+          {sampleChallenges.map((sampleChallenge, i) => (
+            <Slide index={i}>
+              <Bg image={sampleChallenge.src} blue>
+                <OuterContainer center full>
+                  <InnerContainer>
+                    <Br/><Br/>
+                    <TempPadding>
+                      <H2>Learn about the challenges!</H2>
+                      <br/>
+                      <H4 left>{sampleChallenge.title}</H4>
+                      <H5 left dangerouslySetInnerHTML={{ __html: sampleChallenge.txt }} />
+                      <Br/>
+                      <OuterFlexBox center>
+                        <Btn href="https://join.slack.com/t/d4sd/shared_invite/enQtMjExMjA5MDY0MjkzLTk3NjY4NGM3MTE0N2M1NTJjODAxMGRiMDgxNmQ4ZDk1NTU4Mzk0OThjMTdkMzc0NTJmY2M1ZmNkZDA3NTdjYTU" target="_blank">Join the discussion</Btn>
+                      </OuterFlexBox>
+                    </TempPadding>
+                    <StyledButtonBack><i className="fas fa-angle-left"></i></StyledButtonBack>
+                    <StyledButtonNext><i className="fas fa-angle-right"></i></StyledButtonNext>
+                    <StyledDotGroup disableActiveDots={true} dotNumbers={true}/>
+                  </InnerContainer>
+                </OuterContainer>
+              </Bg>
+            </Slide>
+          ))}
+        </Slider>
+      </StyledCarouselProvider>
+
+
+      <Bg>
+        <OuterContainer center>
+          <InnerContainer>
+            <Br/><Br/>
+            <H2>D4SD in action</H2>
+            <br/>
+            <H5>In 2017, hundreds of people helped to generate ideas through the
+             first D4SD challenge:  How to create a San Diego where we all can
+             move freely.  Over a two month period, 23 teams used human-centered
+             design principles to prototype solutions to address the city’s
+             mobility challenges. Visit our 2017 website to learn more about
+             what we did in 2017 and to see some of the prototypes.
+            </H5>
+            <Br/>
+            <OuterFlexBox center>
+              <Btn left href="http://d4sd2017.ucsd.edu" target="_blank">See what happened in 2017</Btn>
+            </OuterFlexBox>
+            </InnerContainer>
+            <Br/><Br/>
+            <OuterFlexBox>
+              {actionImg.map(img => (
+                <FlexibleWidth>
+                  <StyledImg theme={{width: "98%", height:"auto"}} src={img} />
+                </FlexibleWidth>
+              ))}
+            </OuterFlexBox>
+        </OuterContainer>
+      </Bg>
+      <Br/><Br/>
+      <Bg>
+        <OuterContainer center>
+          <InnerContainer>
+            <Br/>
+            <H2>Meet our community</H2>
+            <br/>
+            <H5>The D4SD community includes talented and energetic people from
+            across our region.  Through the online and in-person events, we help
+            to foster collaboration and interaction among innovators, civic leaders,
+            industry experts, and other community members.
+            </H5>
+            <Br/>
+            <OuterFlexBox center>
+              <Btn left href="/involve">Get Involved</Btn>
+            </OuterFlexBox>
+            </InnerContainer>
+            <Br/><Br/>
+            <div style={{"display":"flex", "alignItems":"baseline", "justifyContent":"space-around", "flexWrap":"wrap"}}>
+              {communityLogo.map(img => (
+                  <StyledImg theme={{ heightS:"30px", heightT:"40px", heightL:"70px"}} src={img}/>
+              ))}
+            </div>
+        </OuterContainer>
+      </Bg>
+      <Br/><Br/><Br/>
+      <FooterCard />
       </div>
     );
   }

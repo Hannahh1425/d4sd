@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
-import Container from '../components/Container';
 import Navbar from '../components/Navbar';
 // import Button from '../components/landing/Button';
 import FAQCard from '../components/landing/FAQCard';
@@ -13,7 +12,6 @@ class FAQ extends Component {
       <div id="faq">
         <Navbar/>
         <div className="div-large"/>
-        <Container>
           <h2 className="font-weight-bold">Frequently asked questions</h2><br/>
           <FAQCard
             question="What is D4SD?"
@@ -140,8 +138,7 @@ class FAQ extends Component {
                     Learn more about these four topics under Challenge Briefs.
                     You can also sign up through this link to learn and share information
                     about mobility problems in the San Diego region."
-          />
-      </Container>
+          />      
       </div>
     );
   }

@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import { device } from './breakpoints.js';
 
+//For titles on the header
 export const H1 = styled.h1 `
     font-family: 'Montserrat', sans-serif;
-    font-weight: 1200;
+    font-weight: 900;
     color: #333333;
     position: relative;
     z-index: 100;
@@ -20,6 +21,7 @@ export const H1 = styled.h1 `
     }
 `
 
+//For questions on the homepage and subtitles on about page
 export const H2 = styled.h2 `
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
@@ -27,18 +29,26 @@ export const H2 = styled.h2 `
     position: relative;
     z-index: 100;
     padding: 0 14px;
+    margin: auto;
     text-align: ${props => props.center ? "center":"inherit"}
     @media ${device.mobileS} {
+        width: ${props => props.half ? "100%":""};
         font-size: 24px;
     }
+    @media ${device.tablet} {
+        width: ${props => props.half ? "60%":""};
+    }
     @media ${device.laptopL} {
+        width: ${props => props.half ? "70%":""};
         font-size: 2em!important;
     }
     @media ${device.desktop} {
+        width: ${props => props.half ? "70%":""};
         font-size: 3.5em!important;
     }
 `
 
+//
 export const H3 = styled.h3 `
     font-family: 'Open Sans', sans-serif;
     color: #A7A7A7;
@@ -57,6 +67,7 @@ export const H3 = styled.h3 `
     }
 `
 
+//For card title in get involve page
 export const H4 = styled.h4 `
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
@@ -65,6 +76,7 @@ export const H4 = styled.h4 `
     z-index: 100;
     padding: 0 14px;
     width: 100%;
+    text-align: ${props => props.left ? "left":"center"}
     @media ${device.mobileS} {
         font-size: 1.25em;
     }
@@ -76,10 +88,13 @@ export const H4 = styled.h4 `
     }
 `
 
+//For all paragraphs
 export const H5 = styled.h5 `
     font-family: 'Open Sans', sans-serif;
     color: #333333;
     line-height: 1.5em;
+    padding: 0 14px;
+    text-align: ${props => props.left ? "left":"center"}
     @media ${device.mobileS} {
         font-size: 1em;
     }
@@ -92,6 +107,7 @@ export const H5 = styled.h5 `
     }
 `
 
+//For footer
 export const H6 = styled.h6 `
     font-family: 'Open Sans', sans-serif;
     color: #D0D0D0;
