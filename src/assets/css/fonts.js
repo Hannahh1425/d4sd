@@ -76,7 +76,7 @@ export const H4 = styled.h4 `
     z-index: 100;
     padding: 0 14px;
     width: 100%;
-    text-align: ${props => props.left ? "left":"center"}
+    text-align: ${props => props.left ? "left":"center"};
     @media ${device.mobileS} {
         font-size: 1.25em;
     }
@@ -94,7 +94,7 @@ export const H5 = styled.h5 `
     color: #333333;
     line-height: 1.5em;
     padding: 0 14px;
-    text-align: ${props => props.left ? "left":"center"}
+    text-align: ${props => props.center ? "center":"left"};
     @media ${device.mobileS} {
         font-size: 1em;
     }
@@ -110,7 +110,8 @@ export const H5 = styled.h5 `
 //For footer
 export const H6 = styled.h6 `
     font-family: 'Open Sans', sans-serif;
-    color: #D0D0D0;
+    color: ${props => props.light ? "#D0D0D0":"#333333"};
+    text-align: ${props => props.left ? "left":"center"};
     line-height: 1em;
     @media ${device.mobileS} {
         font-size: 0.7em;

@@ -5,14 +5,14 @@ import FooterCard from '../components/landing/FooterCard';
 import { Br, Bg } from '../assets/css/others.js';
 import { Btn, BtnSecondary, StyledButtonBack, StyledButtonNext, StyledDotGroup } from '../assets/css/buttons.js';
 import { FlexibleImg } from '../assets/css/images.js';
-import { H2, H5, H3, H4 } from '../assets/css/fonts.js';
-import { OuterFlexBox, OuterContainer, InnerContainer, InnerFlexBox, FlexibleWidth, StyledCarouselProvider, TempPadding } from '../assets/css/containers.js';
+import { H2, H3, H4, H5, H6 } from '../assets/css/fonts.js';
+import { Card, OuterFlexBox, OuterContainer, InnerContainer, InnerFlexBox, FlexibleWidth, StyledCarouselProvider, TempPadding } from '../assets/css/containers.js';
 //Contents
 import { sampleChallenges, roles, actionImg, communityLogo } from '../assets/content.js';
 import home0 from '../assets/img/home_landing.svg';
-import home5 from '../assets/img/home_about.svg';
+import test from '../assets/img/home_action1.png';
 //Carousel
-import { Slider, Slide, CarouselProvider } from 'pure-react-carousel';
+import { Slider, Slide } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 class Home extends Component {
@@ -62,16 +62,16 @@ class Home extends Component {
       <Bg ref={this.mission}>
         <OuterContainer center>
           <InnerContainer>
-            <H2>Contribute to Our Mission</H2>
+            <H2>Contribute to our mission</H2>
             <br/>
             <H5 left>D4SD seeks to connect young passionate designers to a
             network of industry, civic, and community leaders and to structure a
             process for collectively addressing civic challenges related to the
             sustainability of our region. We are exploring new models for collective
             innovation where the community works together to discover problem angles,
-            explore possible solutions, and build prototypes that test ideas. <br/>
+            explore possible solutions, and build prototypes that test ideas. <br/><br/>
             D4SD 2020 will host a series of design events including speakers,
-            studios, and desisgathons, starting in January 2020 and culminating
+            studios, and designathons, starting in January 2020 and culminating
             in a summit where stakeholders can interact, pitch proposed solutions,
             discuss trade-offs, and build alliances to make change happen. Come
             to an event or form a team and submit your proposals!
@@ -83,9 +83,9 @@ class Home extends Component {
             <Br/>
               <OuterFlexBox>
                 {roles.map(role => (
-                  <FlexibleWidth>
+                  <FlexibleWidth theme={{ widthS: "50%", widthM: "25%"}} key={role.image}>
                     <FlexibleImg theme={{width: "70%"}} src={role.image}/>
-                    <H5>{role.contents}</H5>
+                    <H5 center>{role.contents}</H5>
                   </FlexibleWidth>
                 ))}
               </OuterFlexBox>
@@ -102,16 +102,16 @@ class Home extends Component {
       >
         <Slider>
           {sampleChallenges.map((sampleChallenge, i) => (
-            <Slide index={i}>
+            <Slide index={i} key={i}>
               <Bg image={sampleChallenge.src} theme={{color: "#EFF8FF"}}>
                 <OuterContainer center full>
                   <InnerContainer>
                     <Br/><Br/>
                     <TempPadding>
-                      <H2>Learn about the challenges!</H2>
+                      <H3>LEARN ABOUT THE CHALLENGES!</H3>
+                      <H2>{sampleChallenge.title}</H2>
                       <br/>
-                      <H4 left>{sampleChallenge.title}</H4>
-                      <H5 left dangerouslySetInnerHTML={{ __html: sampleChallenge.txt }} />
+                      <H5 dangerouslySetInnerHTML={{ __html: sampleChallenge.txt }} />
                       <Br/>
                       <OuterFlexBox center>
                         <Btn href="https://join.slack.com/t/d4sd/shared_invite/enQtMjExMjA5MDY0MjkzLTk3NjY4NGM3MTE0N2M1NTJjODAxMGRiMDgxNmQ4ZDk1NTU4Mzk0OThjMTdkMzc0NTJmY2M1ZmNkZDA3NTdjYTU" target="_blank">Join the discussion</Btn>
@@ -151,7 +151,7 @@ class Home extends Component {
             <Br/><Br/>
             <OuterFlexBox>
               {actionImg.map(img => (
-                <FlexibleWidth>
+                <FlexibleWidth theme={{ widthS: "50%", widthM: "25%"}} key={img}>
                   <FlexibleImg theme={{width: "98%", height:"auto"}} src={img} />
                 </FlexibleWidth>
               ))}
@@ -163,7 +163,7 @@ class Home extends Component {
       {/************************Community***********************/}
       <Bg>
         <OuterContainer center>
-          <InnerContainer>            
+          <InnerContainer>
             <H2>Meet our community</H2>
             <br/>
             <H5>The D4SD community includes talented and energetic people from
@@ -177,13 +177,38 @@ class Home extends Component {
             </OuterFlexBox>
             </InnerContainer>
             <Br/><Br/>
-            <CarouselProvider>
             <div style={{"display":"flex", "alignItems":"baseline", "justifyContent":"space-around", "flexWrap":"wrap"}}>
               {communityLogo.map(img => (
-                  <FlexibleImg theme={{ heightS:"30px", heightT:"40px", heightL:"70px"}} src={img}/>
+                  <FlexibleImg theme={{ heightS:"30px", heightT:"40px", heightL:"70px"}} src={img} key={img} />
               ))}
             </div>
-          </CarouselProvider>
+            <br/><br/>
+            <OuterFlexBox center>
+              <FlexibleWidth theme={{ widthS: "70%", widthM: "38%"}}>
+                <Card>
+                  <InnerFlexBox start="true" center>
+                  <FlexibleImg src={test} round theme={{width: "15%"}} />
+                    <FlexibleWidth theme={{ widthS: "70%", widthM: "80%"}}>
+                    <H6 left>"Loved the hackathons and the opportunity to talk
+                      to mentors was a really great experience"
+                    </H6>
+                  </FlexibleWidth>
+                  </InnerFlexBox>
+                </Card>
+              </FlexibleWidth>
+              <FlexibleWidth theme={{ widthS: "70%", widthM: "38%"}}>
+                <Card>
+                  <InnerFlexBox start="true" center>
+                  <FlexibleImg src={test} round theme={{width: "15%"}} />
+                    <FlexibleWidth theme={{ widthS: "70%", widthM: "80%"}}>
+                    <H6 left>"Loved the hackathons and the opportunity to talk
+                      to mentors was a really great experience"
+                    </H6>
+                  </FlexibleWidth>
+                  </InnerFlexBox>
+                </Card>
+              </FlexibleWidth>
+            </OuterFlexBox>
         </OuterContainer>
       </Bg>
       <Br/><Br/><Br/>

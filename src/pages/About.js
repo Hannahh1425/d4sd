@@ -7,12 +7,11 @@ import { aboutContent } from '../assets/content.js';
 //Styles
 import styled from 'styled-components';
 import { Bg, Br } from '../assets/css/others.js';
-import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox, ToggleFlexBox, IframeContainer } from '../assets/css/containers.js';
+import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox, ToggleFlexBox } from '../assets/css/containers.js';
 import { H2, H5 } from '../assets/css/fonts.js';
 import { device } from '../assets/css/breakpoints.js';
 import { Btn, ToggleBtn } from '../assets/css/buttons.js';
 import { FlexibleImg } from '../assets/css/images.js';
-import { Iframe } from '../assets/css/others.js';
 
 import whitepaper from '../assets/img/D4SD_2017_WhitePaper.pdf';
 import header from "../assets/img/about_header.svg";
