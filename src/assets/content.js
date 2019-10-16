@@ -22,10 +22,10 @@ import find from "./img/about_find.svg";
 import communicate from "./img/about_communicate.svg";
 
 import playbook_educator from "./img/involve_playbook.pdf";
-import educator from "./img/involve_educator.png";
-import sponsor from "./img/involve_sponsor.png";
-import expert from "./img/involve_expert.png";
-import innovator from "./img/involve_participant.png";
+import educator from "./img/involve_partner.svg";
+import sponsor from "./img/involve_sponsor.svg";
+import expert from "./img/involve_volunteer.svg";
+import innovator from "./img/involve_innovate.svg";
 import question from "./img/involve_question.svg";
 import mail from "./img/involve_mail.svg";
 
