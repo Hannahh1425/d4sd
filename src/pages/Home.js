@@ -11,6 +11,7 @@ import { Card, OuterFlexBox, OuterContainer, InnerContainer, InnerFlexBox, Flexi
 import { sampleChallenges, roles, actionImg, communityLogo } from '../assets/content.js';
 import home0 from '../assets/img/home_landing.svg';
 import test from '../assets/img/home_action1.png';
+import bubbles from '../assets/img/home_bubbles.png';
 //Carousel
 import { Slider, Slide } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
@@ -58,10 +59,10 @@ class Home extends Component {
         </OuterContainer>
       </Bg>
       {/************************Mission***********************/}
-      <Br/><Br/>
       <Bg ref={this.mission}>
         <OuterContainer center>
           <InnerContainer>
+            <Br/><Br/>
             <H2>Contribute to our mission</H2>
             <br/>
             <H5 left>D4SD seeks to connect young passionate designers to a
@@ -89,10 +90,10 @@ class Home extends Component {
                   </FlexibleWidth>
                 ))}
               </OuterFlexBox>
+              <Br/><Br/>
           </InnerContainer>
         </OuterContainer>
       </Bg>
-      <Br/><Br/>
       {/************************Problem topics**********************/}
       <StyledCarouselProvider
         naturalSlideWidth={100}
