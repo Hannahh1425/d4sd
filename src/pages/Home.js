@@ -184,7 +184,7 @@ class Home extends Component {
               ))}
             </div>
             <br/><br/>
-            <OuterFlexBox center>
+            {/**<OuterFlexBox center>
               <FlexibleWidth theme={{ widthS: "70%", widthM: "38%"}}>
                 <Card>
                   <InnerFlexBox start="true" center>
@@ -209,7 +209,7 @@ class Home extends Component {
                   </InnerFlexBox>
                 </Card>
               </FlexibleWidth>
-            </OuterFlexBox>
+            </OuterFlexBox>**/}
         </OuterContainer>
       </Bg>
       <Br/><Br/><Br/>
