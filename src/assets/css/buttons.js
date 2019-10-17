@@ -18,8 +18,8 @@ export const Btn = styled.a `
     &:hover {
         text-decoration: none;
         color: white;
-        box-shadow: 1px 1px 8px 1px #4497FF;
-        background-color: #4497FF;
+        box-shadow: 1px 1px 8px 1px #B7DFE6;
+        background-color: #88BDFF;
     }
     @media ${device.mobileS} {
         font-size: 0.75em;
@@ -215,7 +215,7 @@ export const StyledDotGroup = styled(DotGroup) `
         height: 30px;
         margin: 1em;
         border-radius: 50%;
-        border: none;        
+        border: none;
         box-shadow: 1px 1px 8px 1px #25497A;
         &:hover {
           box-shadow: 1px 1px 8px 1px #4497FF;

@@ -12,7 +12,7 @@ import community1 from './img/home_designlab.svg';
 import community2 from './img/home_yankelovich.png';
 import community3 from './img/home_id8.png';
 import community4 from './img/home_urban.png';
-import community5 from './img/home_e3.svg';
+import community5 from './img/home_e3.png';
 
 import city from "./img/about_city.svg";
 import connect from "./img/about_connect.svg";
