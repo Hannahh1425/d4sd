@@ -8,7 +8,7 @@ import { FlexibleImg } from '../assets/css/images.js';
 import { H2, H3, H4, H5, H6 } from '../assets/css/fonts.js';
 import { Card, OuterFlexBox, OuterContainer, InnerContainer, InnerFlexBox, FlexibleWidth, StyledCarouselProvider, TempPadding } from '../assets/css/containers.js';
 //Contents
-import { sampleChallenges, roles, actionImg, communityLogo } from '../assets/content.js';
+import { sampleChallenges, roles, actionImg, communityLogo, logos } from '../assets/content.js';
 import home0 from '../assets/img/home_landing.svg';
 import test from '../assets/img/home_action1.png';
 //Carousel
@@ -58,10 +58,10 @@ class Home extends Component {
         </OuterContainer>
       </Bg>
       {/************************Mission***********************/}
-      <Br/><Br/>
       <Bg ref={this.mission}>
         <OuterContainer center>
           <InnerContainer>
+            <Br/><Br/>
             <H2>Contribute to our mission</H2>
             <br/>
             <H5 left>D4SD seeks to connect young passionate designers to a
@@ -89,16 +89,17 @@ class Home extends Component {
                   </FlexibleWidth>
                 ))}
               </OuterFlexBox>
+              <Br/><Br/>
           </InnerContainer>
         </OuterContainer>
       </Bg>
-      <Br/><Br/>
       {/************************Problem topics**********************/}
       <StyledCarouselProvider
         naturalSlideWidth={100}
         naturalSlideHeight={250}
         isPlaying={true}
         totalSlides={4}
+        full
       >
         <Slider>
           {sampleChallenges.map((sampleChallenge, i) => (
@@ -107,7 +108,6 @@ class Home extends Component {
                 <OuterContainer center full>
                   <InnerContainer>
                     <Br/><Br/>
-                    <TempPadding>
                       <H3>LEARN ABOUT THE CHALLENGES!</H3>
                       <H2>{sampleChallenge.title}</H2>
                       <br/>
@@ -116,16 +116,15 @@ class Home extends Component {
                       <OuterFlexBox center>
                         <Btn href="https://join.slack.com/t/d4sd/shared_invite/enQtMjExMjA5MDY0MjkzLTk3NjY4NGM3MTE0N2M1NTJjODAxMGRiMDgxNmQ4ZDk1NTU4Mzk0OThjMTdkMzc0NTJmY2M1ZmNkZDA3NTdjYTU" target="_blank">Join the discussion</Btn>
                       </OuterFlexBox>
-                    </TempPadding>
-                    <StyledButtonBack><i className="fas fa-angle-left"></i></StyledButtonBack>
-                    <StyledButtonNext><i className="fas fa-angle-right"></i></StyledButtonNext>
-                    <StyledDotGroup disableActiveDots={true} dotNumbers={true}/>
                   </InnerContainer>
                 </OuterContainer>
               </Bg>
             </Slide>
           ))}
         </Slider>
+        <StyledButtonBack><i className="fas fa-angle-left"></i></StyledButtonBack>
+        <StyledButtonNext><i className="fas fa-angle-right"></i></StyledButtonNext>
+        <StyledDotGroup disableActiveDots={true} dotNumbers={true}/>
       </StyledCarouselProvider>
 
       <Br/><Br/>
@@ -175,15 +174,31 @@ class Home extends Component {
             <OuterFlexBox center>
               <Btn left href="/involve">Get Involved</Btn>
             </OuterFlexBox>
-            </InnerContainer>
-            <Br/><Br/>
-            <div style={{"display":"flex", "alignItems":"baseline", "justifyContent":"space-around", "flexWrap":"wrap"}}>
+            <Br/>
+
+            {/**<div style={{"display":"flex", "alignItems":"baseline", "justifyContent":"space-around", "flexWrap":"wrap"}}>
               {communityLogo.map(img => (
-                  <FlexibleImg theme={{ heightS:"30px", heightT:"40px", heightL:"70px"}} src={img} key={img} />
+                  <FlexibleImg theme={{ width: "150px"}} src={img} key={img} />
               ))}
-            </div>
+            </div>**/}
+            </InnerContainer>
+            <StyledCarouselProvider
+              naturalSlideWidth={100}
+              naturalSlideHeight={100}
+              isPlaying={true}
+              interval={3000}
+              totalSlides={3}
+            >
+              <Slider>
+              {logos.map((logo, i) => (
+                <Slide index={i} key={i}>
+                  <FlexibleImg src={logo} theme={{width: "100%"}}/>
+                </Slide>
+              ))}
+              </Slider>
+            </StyledCarouselProvider>
             <br/><br/>
-            <OuterFlexBox center>
+            {/**<OuterFlexBox center>
               <FlexibleWidth theme={{ widthS: "70%", widthM: "38%"}}>
                 <Card>
                   <InnerFlexBox start="true" center>
@@ -208,10 +223,10 @@ class Home extends Component {
                   </InnerFlexBox>
                 </Card>
               </FlexibleWidth>
-            </OuterFlexBox>
+            </OuterFlexBox>**/}
         </OuterContainer>
       </Bg>
-      <Br/><Br/><Br/>
+      <Br/>
       <FooterCard />
       </div>
     );

@@ -13,11 +13,13 @@ export const Btn = styled.a `
     padding: 0.75em 2em;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
-    transition: 0.5s;
+    transition: 0.3s;
+    box-shadow: 1px 1px 8px 1px #25497A;
     &:hover {
         text-decoration: none;
         color: white;
-        background-color: #66AAFF;
+        box-shadow: 1px 1px 8px 1px #B7DFE6;
+        background-color: #88BDFF;
     }
     @media ${device.mobileS} {
         font-size: 0.75em;
@@ -54,9 +56,11 @@ export const BtnSecondary = styled.button `
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
     transition: 0.5s;
+    box-shadow: 1px 1px 8px 1px #333;
     &:hover {
         text-decoration: none;
         background-color: white;
+        box-shadow: 1px 1px 8px 1px #4497FF;
         border: 1.5px solid #66AAFF;
         color: #66AAFF;
     }
@@ -152,9 +156,23 @@ export const StyledButtonBack = styled(ButtonBack) `
     position: absolute;
     left: 25px;
     top: 40vh;
-    font-size: 4em;
+    font-size: 3em;
     z-index: 100;
     color: rgba(0, 0, 0, 0.7);
+    > i {
+      border: 3px solid rgba(0, 0, 0, 0.7);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background-color: #EFF8FF;
+      &:hover {
+        background-color: #EFF8FF;
+        box-shadow: 0px 0px 5px 1px #a6a6a6;
+      }
+    }
+    &:focus {
+      outline: none;
+    }
     @media ${device.mobileS} {
         display: none;
     }
@@ -169,9 +187,23 @@ export const StyledButtonNext = styled(ButtonNext) `
     position: absolute;
     right: 25px;
     top: 40vh;
-    font-size: 4em;
+    font-size: 3em;
     z-index: 100;
     color: rgba(0, 0, 0, 0.7);
+    > i {
+      background-color: #EFF8FF;
+      border: 3px solid rgba(0, 0, 0, 0.7);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      &:hover {
+        background-color: #EFF8FF;
+        box-shadow: 0px 0px 5px 1px #a6a6a6;
+      }
+    }
+    &:focus {
+      outline: none;
+    }
     @media ${device.mobileS} {
         display: none;
     }
@@ -183,19 +215,21 @@ export const StyledButtonNext = styled(ButtonNext) `
 export const StyledDotGroup = styled(DotGroup) `
     > button {
         background-color: #B7DFE6;
-        border: solid 1px #E5EEEF;
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
         width: 30px;
         height: 30px;
         margin: 1em;
         border-radius: 50%;
+        border: none;
+        box-shadow: 1px 1px 8px 1px #25497A;
+        &:hover {
+          box-shadow: 1px 1px 8px 1px #4497FF;
+        }
     }
     z-index: 100;
     position: absolute;
-    top: 85vh;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    top: 90vh;
+    left: 50%;
+    margin-left: -124px;
 `

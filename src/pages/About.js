@@ -17,8 +17,8 @@ import whitepaper from '../assets/img/D4SD_2017_WhitePaper.pdf';
 import header from "../assets/img/about_header.svg";
 import ppttimeline_horizontal from "../assets/img/about_participants_horizontal.svg";
 import commtimeline_horizontal from "../assets/img/about_community_horizontal.svg";
-import ppttimeline_vertical from "../assets/img/about_participants_vertical.png";
-import commtimeline_vertical from "../assets/img/about_community_vertical.png";
+import ppttimeline_vertical from "../assets/img/about_participants_vertical.svg";
+import commtimeline_vertical from "../assets/img/about_community_vertical.svg";
 import diagram from "../assets/img/about_diagram.svg";
 
 import './style.css';
