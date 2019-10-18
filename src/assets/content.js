@@ -185,7 +185,7 @@ export const involveContent = {
     txt: "The best way to be successful with the design process is to work as a team and let your creative process flow with your peers. We have a Slack workspace set up with multiple channels that will meet the needs of all our D4SD contributors. When you register online, you can be a part of our community of innovators, educators and resources to help you be successful",
     image: innovator,
     id: "innovators",
-    link: "http://eepurl.com/c2kFon",
+    link: "https://join.slack.com/t/d4sd/shared_invite/enQtMjExMjA5MDY0MjkzLTk3NjY4NGM3MTE0N2M1NTJjODAxMGRiMDgxNmQ4ZDk1NTU4Mzk0OThjMTdkMzc0NTJmY2M1ZmNkZDA3NTdjYTU",
     isAction: "true",
     action: "JOIN DISCUSSION"
   },
