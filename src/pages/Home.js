@@ -64,17 +64,16 @@ class Home extends Component {
             <Br/><Br/>
             <H2>Contribute to our mission</H2>
             <br/>
-            <H5 left>D4SD seeks to connect young passionate designers to a
-            network of industry, civic, and community leaders and to structure a
-            process for collectively addressing civic challenges related to the
-            sustainability of our region. We are exploring new models for collective
-            innovation where the community works together to discover problem angles,
-            explore possible solutions, and build prototypes that test ideas. <br/><br/>
+            <H5 left>D4SD seeks to connect young passionate designers to a network
+            of industry professionals and to structure a process for collectively
+            addressing civic challenges related to the sustainability of our
+            region. We are exploring new models for collective innovation where
+            the community works together to discover problems, explore solutions,
+            and build prototypes to test ideas. <br/><br/>
             D4SD 2020 will host a series of design events including speakers,
-            studios, and designathons, starting in January 2020 and culminating
-            in a summit where stakeholders can interact, pitch proposed solutions,
-            discuss trade-offs, and build alliances to make change happen. Come
-            to an event or form a team and submit your proposals!
+            studios, and design-athons, starting in January. This will culminate
+            into a summit in May where stakeholders can pitch proposed solutions,
+            and build alliances to make change happen. 
             </H5>
             <Br/>
             <OuterFlexBox center>

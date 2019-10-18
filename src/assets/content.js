@@ -80,7 +80,7 @@ export const sampleChallenges = [
     isAction: "true",
     header: "IMPROVING MOBILITY",
     title: "How might we help people move freely through our city?",
-    txt: "As people are looking for a more efficient way to move around, the mission of reducing our emissions and increasing the inclusivity of transportation continues to be an essential topic of discussion in our urban environments. Mobility can be examined from a number of lenses’ such as motor vehicle systems, transit, parking, intermodal connections, electric vehicles, accident reduction, walkability and bike-ability, and land-use patterns. <b>Help shape this problem by joining our discussion!</b>",
+    txt: "As people are looking for a more efficient way to move around, the mission of reducing our emissions and increasing the inclusivity of transportation continues to be an essential topic of discussion in our urban environments. Mobility can be examined from a number of lenses such as motor vehicle systems, transit, parking, intermodal connections, electric vehicles, accident reduction, walkability and bike-ability, and land-use patterns. <b>Help shape this problem by joining our discussion!</b>",
     action: "See what happened in 2017",
     link: "http://d4sd2017.org",
     isAction2: "false",
@@ -182,25 +182,25 @@ export const involveContent = {
   roles: [
   {
     title: "Join the discussion",
-    txt: "NEW TEXT",
+    txt: "The best way to be successful with the design process is to work as a team and let your creative process flow with your peers. We have a Slack workspace set up with multiple channels that will meet the needs of all our D4SD contributors. When you register online, you can be a part of our community of innovators, educators and resources to help you be successful",
     image: innovator,
     id: "innovators",
     link: "http://eepurl.com/c2kFon",
-    isAction: "false",
-    action: ""
+    isAction: "true",
+    action: "JOIN DISCUSSION"
   },
   {
     title: "Join the mailing list",
-    txt: "NEW TEXT",
+    txt: "Keep up with all our updates and events with our newsletter! Every week we follow up with a recap of important discussions, community spotlights, and reminders of important deadlines, to help you stay on track during this challenge.",
     image: expert,
     id: "experts",
     link: "http://eepurl.com/c2kFon",
-    isAction: "false",
-    action: ""
+    isAction: "true",
+    action: "JOIN MAILING LIST"
   },
   {
     title: "Sponsor D4SD",
-    txt: "D4SD provides a stage to share the problems and topics you care about. You can tap into a network of innovators to solve problems that matter to you. There are also many opportunities to interact with the broader San Diego community to get further support and traction for the developed solutions.",
+    txt: "Get the chance to further grow your brand within our D4SD community by sponsoring D4SD events. This would be an opportunity to bring your product or services to your target audience, as well as support a mission that matters to you. Let’s work together and service the local San Diego community together.",
     image: sponsor,
     id: "sponsors",
     link: "mailto:team@d4sd.org",
@@ -209,11 +209,11 @@ export const involveContent = {
   },
   {
     title: "Join the D4SD team",
-    txt: "NEW TEXT",
+    txt: "Are you ready to be a part of the D4SD network? We need, innovators, educators, volunteers, and more to help us reach our goal. If you’re interested in any of those roles or want to forge you own role, register with us below!",
     image: mail,
     id: "mail",
     link: "http://eepurl.com/c2kFon",
     isAction: "true",
-    action: "JOIN OUR MAILING LIST"
+    action: "JOIN OUR TEAM"
   },
 ]}
