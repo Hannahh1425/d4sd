@@ -25,7 +25,7 @@ class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav className={this.state.isTop ? "navbar navbar-expand-md navbar-light fixed-top mh-5":"navbar navbar-expand-md navbar-light fixed-top mh-5 main-nav"}>
+        <nav className={this.state.isTop ? "navbar navbar-expand-md navbar-light fixed-top mh-5 bg-white":"navbar navbar-expand-md navbar-light fixed-top mh-5 main-nav"}>
           <Link className="navbar-brand" to='/home'><img src={logo} alt="logo"/></Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span className="navbar-toggler-icon"></span>
