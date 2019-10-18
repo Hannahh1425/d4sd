@@ -13,7 +13,7 @@ export const Btn = styled.a `
     padding: 0.75em 2em;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
-    transition: 0.3s;
+    transition: 0.2s;
     box-shadow: 0px 0px 5px 1px #333;
     &:hover {
         text-decoration: none;
@@ -59,7 +59,7 @@ export const BtnSecondary = styled.button `
     padding: 0.75em 2em;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
-    transition: 0.5s;
+    transition: 0.3s;
     box-shadow: 0px 0px 5px 1px #333;
     &:hover {
         text-decoration: none;
