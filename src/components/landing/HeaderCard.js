@@ -17,7 +17,7 @@ class HeaderCard extends Component {
               <H5 left>{this.props.content}</H5>
               <Br/>
               <OuterContainer center>
-              <BtnConditional href="http://eepurl.com/c2kFon" target="_blank" isAction={this.props.isAction}>Join our Mailing List</BtnConditional>
+              <BtnConditional href="http://eepurl.com/c2kFon" target="_blank" isAction={this.props.isAction}>JOIN OUR MAILING LIST</BtnConditional>
               </OuterContainer>
             </InnerContainer>
             <Br/><Br/>

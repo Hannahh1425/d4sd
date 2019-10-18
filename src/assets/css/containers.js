@@ -44,7 +44,7 @@ export const InnerContainer = styled.div `
 //For the cards like the ones on Get Involved page
 export const Card = styled.div `
     box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.6);
-    padding: 24px 24px 0 24px;
+    padding: 20px;
     border-radius: 10px;
 `
 
@@ -97,18 +97,27 @@ export const IframeContainer = styled.div `
 `
 
 export const FlexibleWidth = styled.div `
-    margin: auto;
+    margin: ${props => props.left ? "":"auto"};
     @media ${device.mobileS} {
-        width: 50%;
+        width: ${props => props.theme.widthS};
     }
     @media ${device.tablet} {
-        width: 25%;
+        width: ${props => props.theme.widthM};
     }
 `
 
 export const StyledCarouselProvider = styled(CarouselProvider) `
     overflow: hidden;
-    height: 100vh;
+    height: ${props => props.full ? "100vh":"400px"};
+    @media ${device.mobileS} {
+        height: ${props => props.full ? "100vh":"10vh"};
+    }
+    @media ${device.tablet} {
+        height: ${props => props.full ? "100vh":"20vh"};
+    }
+    @media ${device.laptopL} {
+        height: ${props => props.full ? "100vh":"50vh"};
+    }
 `
 
 export const TempPadding = styled.div `

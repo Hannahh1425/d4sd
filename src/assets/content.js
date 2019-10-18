@@ -1,21 +1,43 @@
-import home0 from './img/home_landing.svg';
 import home1 from './img/home_mobility.svg';
 import home2 from './img/home_climate.svg';
 import home3 from './img/home_housing.svg';
 import home4 from './img/home_health.svg';
-import home5 from './img/home_about.svg';
 
-import action1 from './img/home_action1.png';
 import action2 from './img/home_action2.jpg';
 import action3 from './img/home_action3.jpg';
 import action4 from './img/home_action4.jpg';
 import action5 from './img/home_action5.jpg';
 
-import community1 from './img/home_id8.png';
-import community2 from './img/home_designlab.svg';
-import community3 from './img/home_urban.png';
-import community4 from './img/home_e3.svg';
-import community5 from './img/home_yankelovich.png';
+import community1 from './img/home_logo_designlab.svg';
+import community2 from './img/home_logo_yankelovich.png';
+import community3 from './img/home_logo_id8.png';
+import community4 from './img/home_logo_hth.png';
+import community5 from './img/home_logo_league.png';
+import community6 from './img/home_logo_AltSchool.png';
+import community7 from './img/home_logo_centerforthearts.jpg';
+import community8 from './img/home_logo_D39C.png';
+import community9 from './img/home_logo_hoover.jpg';
+import community10 from './img/home_logo_usd.png';
+import community11 from './img/home_logo_idealab.jpg';
+import community12 from './img/home_logo_idealabgov.png';
+import community13 from './img/home_logo_wit.png';
+import community14 from './img/home_logo_VIDA.png';
+import community15 from './img/home_logo_LJCDS.png';
+import community16 from './img/home_logo_pointloma.png';
+import community17 from './img/home_logo_sdsu.png';
+import community18 from './img/home_logo_sdja.png';
+import community19 from './img/home_logo_newschool.png';
+import community20 from './img/home_logo_swccd.png';
+import community21 from './img/home_logo_sdcc.png';
+import community22 from './img/home_logo_e3.png';
+import community23 from './img/home_logo_nu.png';
+import community24 from './img/home_logo_zip.jpg';
+import community25 from './img/home_logo_urban.png';
+import community26 from './img/home_logo_ucsd.png';
+
+import logo1 from './img/home_logo1.png';
+import logo2 from './img/home_logo2.png';
+import logo3 from './img/home_logo3.png';
 
 import city from "./img/about_city.svg";
 import connect from "./img/about_connect.svg";
@@ -25,10 +47,10 @@ import find from "./img/about_find.svg";
 import communicate from "./img/about_communicate.svg";
 
 import playbook_educator from "./img/involve_playbook.pdf";
-import educator from "./img/involve_educator.png";
-import sponsor from "./img/involve_sponsor.png";
-import expert from "./img/involve_expert.png";
-import innovator from "./img/involve_participant.png";
+import educator from "./img/involve_partner.svg";
+import sponsor from "./img/involve_sponsor.svg";
+import expert from "./img/involve_volunteer.svg";
+import innovator from "./img/involve_innovate.svg";
 import question from "./img/involve_question.svg";
 import mail from "./img/involve_mail.svg";
 
@@ -58,7 +80,7 @@ export const sampleChallenges = [
     isAction: "true",
     header: "IMPROVING MOBILITY",
     title: "How might we help people move freely through our city?",
-    txt: "As people are looking for a more efficient way to move around, the mission of reducing our emissions and increasing the inclusivity of transportation continues to be an essential topic of discussion in our urban environments. Mobility can be examined from a number of lenses’ such as motor vehicle systems, transit, parking, intermodal connections, electric vehicles, accident reduction, walkability and bike-ability, and land-use patterns. <b>Help shape this problem by joing our discussion!</b>",
+    txt: "As people are looking for a more efficient way to move around, the mission of reducing our emissions and increasing the inclusivity of transportation continues to be an essential topic of discussion in our urban environments. Mobility can be examined from a number of lenses such as motor vehicle systems, transit, parking, intermodal connections, electric vehicles, accident reduction, walkability and bike-ability, and land-use patterns. <b>Help shape this problem by joining our discussion!</b>",
     action: "See what happened in 2017",
     link: "http://d4sd2017.org",
     isAction2: "false",
@@ -71,7 +93,7 @@ export const sampleChallenges = [
     isAction: "false",
     header: "ADDRESSING CLIMATE EFFECTS",
     title: "How can we help San Diego prepare for and mitigate climate change?",
-    txt: "Greenhouse gas emission from the burning of fossil fuels has resulted in the gradual increase of global temperatures. Scientists have high confidence that global temperatures will continue to rise for decades to come. Climate change impacts areas such as transportation, housing, health, natural resources, food waste, agriculture, air pollution, and education. <b>Help shape this problem by joing our discussion!</b>",
+    txt: "Greenhouse gas emission from the burning of fossil fuels has resulted in the gradual increase of global temperatures. Scientists have high confidence that global temperatures will continue to rise for decades to come. Climate change impacts areas such as transportation, housing, health, natural resources, food waste, agriculture, air pollution, and education. <b>Help shape this problem by joining our discussion!</b>",
     action: "Get Involved",
     link: "http://eepurl.com/c2kFon",
     isAction2: "false",
@@ -84,7 +106,7 @@ export const sampleChallenges = [
     isAction: "false",
     header: "CREATING ACCESSIBLE HOUSING",
     title: "How can we reimagine housing to meets the needs of all San Diegans?",
-    txt: "After food and water, shelter is the most fundamental human need. Unfortunately, people have limited choices for safe, affordable, and long-term housing in San Diego. The issue affects the lives of all San Diegans. Housing is not just about physical structures, but includes other areas such as homelessness, land development, smart home technology, and mixed-use housing. <b>Hlep shape this problem by joing our discussion!</b>",
+    txt: "Shelter is a fundamental human need; however people have limited choices for safe, affordable, and long-term housing in San Diego. The issue of housing is more than the physical structures. It also includes homelessness, land development, smart home technology, and mixed-use housing, all of which needs to be addressed with San Diego’s growing population. <b>Help shape this problem by joining our discussion!</b>",
     action: "Get Involved",
     link: "http://eepurl.com/c2kFon",
     isAction2: "false",
@@ -97,7 +119,7 @@ export const sampleChallenges = [
     isAction: "false",
     header: "LIVING HEALTHY LIVES",
     title: "How can we help all San Diegans live healthy and active lives?",
-    txt: "Many people have limited access to preventative and restorative health services. Health is determined by social and physical environments and is directly connected to how people live, learn, work, and play and touches on topics such as quality of life, population health, mental, physical and emotional health, and well being. <b>Hlep shape this problem by joing our discussion!</b>",
+    txt: "Many people have limited access to preventative and restorative health services. Health is determined by social and physical environments and is directly connected to how people live, learn, work, and play. Topics such as quality of life, population health, and social well being, are all different aspects of how we as a city, need to improve our well being. <b>Help shape this problem by joining our discussion!</b>",
     action: "Get Involved",
     link: "http://eepurl.com/c2kFon",
     isAction2: "false",
@@ -107,7 +129,13 @@ export const sampleChallenges = [
 ]
 
 export const actionImg = [action2, action3, action4, action5]
-export const communityLogo = [community1, community2, community5, community3, community4]
+export const communityLogo = [
+  community1, community2, community3, community4, community5, community6,
+  community7, community8, community9, community10, community11, community12, community13,
+  community14, community15, community16, community17, community18, community19,
+  community20, community21, community22, community23, community24, community25, community26]
+
+export const logos = [logo1, logo2, logo3]
 
 /*************************************About content***************************************/
 export const aboutContent = {
@@ -153,57 +181,39 @@ export const involveContent = {
   content1:"You can take part in D4SD in a variety of ways! Whether it be ideating solutions, giving feedback, teaching civic design in the classroom, or supporting the initiative, getting involved with D4SD can look a little different for each person. Below are a few ways to get involved.",
   roles: [
   {
-    title: "Start innovating!",
-    txt: "As an innovator, you can participate in a variety of in-person events and create innovative solutions in a team. D4SD gives innovators the opportunity to unpack large problems, develop solutions, learn about human-centered design, showcase their ideas, and network with the larger design community.",
+    title: "Join the discussion",
+    txt: "The best way to be successful with the design process is to work as a team and let your creative process flow with your peers. We have a Slack workspace set up with multiple channels that will meet the needs of all our D4SD contributors. When you register online, you can be a part of our community of innovators, educators and resources to help you be successful",
     image: innovator,
     id: "innovators",
     link: "http://eepurl.com/c2kFon",
-    isAction: "false",
-    action: ""
+    isAction: "true",
+    action: "JOIN DISCUSSION"
   },
   {
-    title: "Offer your expertise",
-    txt: "D4SD requires the collective effort of people with a variety of backgrounds. There are other dimensions to the challenge which needs additional support. So we encourage all of those who resonate with your cause to reach out and learn about the different ways you can get involved.",
+    title: "Join the mailing list",
+    txt: "Keep up with all our updates and events with our newsletter! Every week we follow up with a recap of important discussions, community spotlights, and reminders of important deadlines, to help you stay on track during this challenge.",
     image: expert,
     id: "experts",
     link: "http://eepurl.com/c2kFon",
-    isAction: "false",
-    action: ""
-  },
-  {
-    title: "Teach your class with D4SD",
-    txt: "D4SD offers a curriculum to help educators use the challenge as a teaching opportunity. Students get experience working on big civic problems using the human-centered design process. This scaffolded learning process is designed to support all skill levels and backgrounds. The topics are also designed to be applicable in many class formats to address a variety of intended learning outcomes.",
-    image: educator,
-    id: "educators",
-    isAction: "false",
-    link: playbook_educator,
-    action: ""
+    isAction: "true",
+    action: "JOIN MAILING LIST"
   },
   {
     title: "Sponsor D4SD",
-    txt: "D4SD provides a stage to share the problems and topics you care about. You can tap into a network of innovators to solve problems that matter to you. There are also many opportunities to interact with the broader San Diego community to get further support and traction for the developed solutions.",
+    txt: "Get the chance to further grow your brand within our D4SD community by sponsoring D4SD events. This would be an opportunity to bring your product or services to your target audience, as well as support a mission that matters to you. Let’s work together and service the local San Diego community together.",
     image: sponsor,
     id: "sponsors",
-    link: "http://eepurl.com/c2kFon",
-    isAction: "false",
-    action: ""
+    link: "mailto:team@d4sd.org",
+    isAction: "true",
+    action: "CONTACT OUR TEAM"
   },
   {
-    title: "Sign up for D4SD",
-    txt: "Want to receive more information and updates about D4SD? Join our mailing list to stay up to date on everything related to D4SD!",
+    title: "Join the D4SD team",
+    txt: "Are you ready to be a part of the D4SD network? We need, innovators, educators, volunteers, and more to help us reach our goal. If you’re interested in any of those roles or want to forge you own role, register with us below!",
     image: mail,
     id: "mail",
     link: "http://eepurl.com/c2kFon",
     isAction: "true",
-    action: "Join our mailing list"
+    action: "JOIN OUR TEAM"
   },
-  {
-    title: "There are infinite ways to get involved",
-    txt: "We’ve imagined a number of ways to get involved, but we’re all about innovation so don’t feel limited! If you want to be involved in a way that isn’t listed above, we hope you will design your own role and join the action! We look forward to innovating with you and leveraging your unique talents and perspective!",
-    image: question,
-    id: "question",
-    link: "https://forms.gle/KKQwFL3JPrDfASmw6",
-    isAction: "true",
-    action: "Make your Suggestion"
-  }
 ]}

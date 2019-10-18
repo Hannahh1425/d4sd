@@ -13,29 +13,34 @@ export const Btn = styled.a `
     padding: 0.75em 2em;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
-    transition: 0.5s;
+    transition: 0.2s;
+    box-shadow: 0px 0px 5px 1px #333;
     &:hover {
         text-decoration: none;
         color: white;
-        background-color: #66AAFF;
+        box-shadow: 1px 1px 8px 1px black;
+        background-color: #4497FF;
     }
     @media ${device.mobileS} {
         font-size: 0.75em;
+        width: 80%;
         margin-top: ${props => props.top ? "1rem":"0"};
-        margin-left: ${props => props.home ? "1rem!important":"0!important"};
+        margin-left: ${props => props.home ? "0rem!important":"0!important"};
     }
     @media ${device.tablet} {
         font-size: 0.75em!important;
+        width: 45%!important;
         margin-top: 0!important;
-        margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
     @media ${device.laptopL} {
         font-size: 0.875em!important;
+        width: 40%!important;
         margin-top: 0!important;
         margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
     @media ${device.desktop} {
         font-size: 1.75em!important;
+        width: 20%!important;
         margin-top: 0!important;
         margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
@@ -48,38 +53,44 @@ export const BtnSecondary = styled.button `
     border: 1.5px solid #4497FF;
     color: #4497FF;
     background-color: white;
+    position: relative;
     text-align: center;
     font-weight: 700;
     padding: 0.75em 2em;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
-    transition: 0.5s;
+    transition: 0.3s;
+    box-shadow: 0px 0px 5px 1px #333;
     &:hover {
         text-decoration: none;
         background-color: white;
-        border: 1.5px solid #66AAFF;
-        color: #66AAFF;
+        box-shadow: 1px 1px 8px 1px #4497FF;
+        border: 1.5px solid #88BDFF;
+        color: #88BDFF;
     }
     &:focus {
         outline: none;
     }
     @media ${device.mobileS} {
         font-size: 0.75em;
+        width: 80%;
         margin-top: ${props => props.top ? "1rem":"0"};
-        margin-left: ${props => props.home ? "1rem!important":"0!important"};
     }
     @media ${device.tablet} {
         font-size: 0.75em!important;
+        width: 45%!important;
         margin-top: 0!important;
         margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
     @media ${device.laptopL} {
         font-size: 0.875em!important;
+        width: 40%!important;
         margin-top: 0!important;
         margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
     @media ${device.desktop} {
         font-size: 1.75em!important;
+        width: 20%!important;
         margin-top: 0!important;
         margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
@@ -152,9 +163,23 @@ export const StyledButtonBack = styled(ButtonBack) `
     position: absolute;
     left: 25px;
     top: 40vh;
-    font-size: 4em;
+    font-size: 3em;
     z-index: 100;
     color: rgba(0, 0, 0, 0.7);
+    > i {
+      border: 3px solid rgba(0, 0, 0, 0.7);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background-color: #EFF8FF;
+      &:hover {
+        background-color: #EFF8FF;
+        box-shadow: 0px 0px 5px 1px #a6a6a6;
+      }
+    }
+    &:focus {
+      outline: none;
+    }
     @media ${device.mobileS} {
         display: none;
     }
@@ -169,9 +194,23 @@ export const StyledButtonNext = styled(ButtonNext) `
     position: absolute;
     right: 25px;
     top: 40vh;
-    font-size: 4em;
+    font-size: 3em;
     z-index: 100;
     color: rgba(0, 0, 0, 0.7);
+    > i {
+      background-color: #EFF8FF;
+      border: 3px solid rgba(0, 0, 0, 0.7);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      &:hover {
+        background-color: #EFF8FF;
+        box-shadow: 0px 0px 5px 1px #a6a6a6;
+      }
+    }
+    &:focus {
+      outline: none;
+    }
     @media ${device.mobileS} {
         display: none;
     }
@@ -183,19 +222,26 @@ export const StyledButtonNext = styled(ButtonNext) `
 export const StyledDotGroup = styled(DotGroup) `
     > button {
         background-color: #B7DFE6;
-        border: solid 1px #E5EEEF;
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
-        width: 30px;
-        height: 30px;
-        margin: 1em;
+        width: 14px;
+        height: 15px;
+        margin: 0.65em;
         border-radius: 50%;
+        border: none;
+        box-shadow: 1px 1px 8px 1px #25497A;
+        &:hover {
+          box-shadow: 1px 1px 8px 1px #4497FF;
+        }
+    }
+
+    > .carousel__dot--selected {
+      background-color: gray;
+      box-shadow: 1px 1px 9px 1px #25497A;
     }
     z-index: 100;
     position: absolute;
-    top: 85vh;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    top: 90vh;
+    left: 50%;
+    margin-left: -69.6px;
 `

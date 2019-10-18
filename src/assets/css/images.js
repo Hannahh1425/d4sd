@@ -6,6 +6,7 @@ import { device } from './breakpoints.js';
 export const FlexibleImg = styled.img `
     width: ${props => props.theme.width};
     height: ${props => props.theme.height};
+    border-radius: ${props => props.round ? "50%":"0"}
     @media ${device.mobileS} {
         height: ${props => props.theme.heightS};
     }
