@@ -167,15 +167,18 @@ export const StyledButtonBack = styled(ButtonBack) `
     z-index: 100;
     color: rgba(0, 0, 0, 0.7);
     > i {
-      box-shadow: 0px 0px 5px 1px #8a8a8a;
       border: 3px solid rgba(0, 0, 0, 0.7);
       border-radius: 50%;
       width: 50px;
       height: 50px;
+      background-color: #EFF8FF;
       &:hover {
-        background-color: white;
+        background-color: #EFF8FF;
         box-shadow: 0px 0px 5px 1px #a6a6a6;
       }
+    }
+    &:focus {
+      outline: none;
     }
     @media ${device.mobileS} {
         display: none;
@@ -195,15 +198,18 @@ export const StyledButtonNext = styled(ButtonNext) `
     z-index: 100;
     color: rgba(0, 0, 0, 0.7);
     > i {
-      box-shadow: 0px 0px 5px 1px #8a8a8a;
+      background-color: #EFF8FF;
       border: 3px solid rgba(0, 0, 0, 0.7);
       border-radius: 50%;
       width: 50px;
       height: 50px;
       &:hover {
-        background-color: white;
+        background-color: #EFF8FF;
         box-shadow: 0px 0px 5px 1px #a6a6a6;
       }
+    }
+    &:focus {
+      outline: none;
     }
     @media ${device.mobileS} {
         display: none;
@@ -230,9 +236,7 @@ export const StyledDotGroup = styled(DotGroup) `
     }
     z-index: 100;
     position: absolute;
-    top: 85vh;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    top: 90vh;
+    left: 50%;
+    margin-left: -124px;
 `

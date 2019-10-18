@@ -108,7 +108,16 @@ export const FlexibleWidth = styled.div `
 
 export const StyledCarouselProvider = styled(CarouselProvider) `
     overflow: hidden;
-    height: 100vh;
+    height: ${props => props.full ? "100vh":"400px"};
+    @media ${device.mobileS} {
+        height: ${props => props.full ? "100vh":"10vh"};
+    }
+    @media ${device.tablet} {
+        height: ${props => props.full ? "100vh":"20vh"};
+    }
+    @media ${device.laptopL} {
+        height: ${props => props.full ? "100vh":"50vh"};
+    }
 `
 
 export const TempPadding = styled.div `

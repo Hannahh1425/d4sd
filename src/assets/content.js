@@ -11,29 +11,33 @@ import action5 from './img/home_action5.jpg';
 import community1 from './img/home_logo_designlab.svg';
 import community2 from './img/home_logo_yankelovich.png';
 import community3 from './img/home_logo_id8.png';
-import community4 from './img/home_logo_urban.png';
-import community5 from './img/home_logo_e3.png';
+import community4 from './img/home_logo_hth.png';
+import community5 from './img/home_logo_league.png';
 import community6 from './img/home_logo_AltSchool.png';
 import community7 from './img/home_logo_centerforthearts.jpg';
 import community8 from './img/home_logo_D39C.png';
 import community9 from './img/home_logo_hoover.jpg';
-import community10 from './img/home_logo_hth.png';
+import community10 from './img/home_logo_usd.png';
 import community11 from './img/home_logo_idealab.jpg';
 import community12 from './img/home_logo_idealabgov.png';
-import community13 from './img/home_logo_LJCDS.png';
-import community14 from './img/home_logo_newschool.png';
-import community15 from './img/home_logo_nu.png';
+import community13 from './img/home_logo_wit.png';
+import community14 from './img/home_logo_VIDA.png';
+import community15 from './img/home_logo_LJCDS.png';
 import community16 from './img/home_logo_pointloma.png';
-import community17 from './img/home_logo_sdcc.png';
+import community17 from './img/home_logo_sdsu.png';
 import community18 from './img/home_logo_sdja.png';
-import community19 from './img/home_logo_sdsu.png';
+import community19 from './img/home_logo_newschool.png';
 import community20 from './img/home_logo_swccd.png';
-import community21 from './img/home_logo_ucsd.png';
-import community22 from './img/home_logo_VIDA.png';
-import community23 from './img/home_logo_wit.png';
+import community21 from './img/home_logo_sdcc.png';
+import community22 from './img/home_logo_e3.png';
+import community23 from './img/home_logo_nu.png';
 import community24 from './img/home_logo_zip.jpg';
-import community25 from './img/home_logo_usd.png';
-import community26 from './img/home_logo_league.png';
+import community25 from './img/home_logo_urban.png';
+import community26 from './img/home_logo_ucsd.png';
+
+import logo1 from './img/home_logo1.png';
+import logo2 from './img/home_logo2.png';
+import logo3 from './img/home_logo3.png';
 
 import city from "./img/about_city.svg";
 import connect from "./img/about_connect.svg";
@@ -130,6 +134,8 @@ export const communityLogo = [
   community7, community8, community9, community10, community11, community12, community13,
   community14, community15, community16, community17, community18, community19,
   community20, community21, community22, community23, community24, community25, community26]
+
+export const logos = [logo1, logo2, logo3]
 
 /*************************************About content***************************************/
 export const aboutContent = {
