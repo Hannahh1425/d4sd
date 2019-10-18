@@ -224,9 +224,9 @@ export const StyledDotGroup = styled(DotGroup) `
         background-color: #B7DFE6;
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
-        width: 30px;
-        height: 30px;
-        margin: 1em;
+        width: 14px;
+        height: 15px;
+        margin: 0.65em;
         border-radius: 50%;
         border: none;
         box-shadow: 1px 1px 8px 1px #25497A;
@@ -234,9 +234,14 @@ export const StyledDotGroup = styled(DotGroup) `
           box-shadow: 1px 1px 8px 1px #4497FF;
         }
     }
+
+    > .carousel__dot--selected {
+      background-color: gray;
+      box-shadow: 1px 1px 9px 1px #25497A;
+    }
     z-index: 100;
     position: absolute;
     top: 90vh;
     left: 50%;
-    margin-left: -124px;
+    margin-left: -69.6px;
 `

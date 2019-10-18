@@ -12,7 +12,7 @@ import { sampleChallenges, roles, actionImg, communityLogo, logos } from '../ass
 import home0 from '../assets/img/home_landing.svg';
 import test from '../assets/img/home_action1.png';
 //Carousel
-import { Slider, Slide } from 'pure-react-carousel';
+import { Slider, Slide, Dot } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 class Home extends Component {
@@ -73,7 +73,7 @@ class Home extends Component {
             D4SD 2020 will host a series of design events including speakers,
             studios, and design-athons, starting in January. This will culminate
             into a summit in May where stakeholders can pitch proposed solutions,
-            and build alliances to make change happen. 
+            and build alliances to make change happen.
             </H5>
             <Br/>
             <OuterFlexBox center>
@@ -123,7 +123,8 @@ class Home extends Component {
         </Slider>
         <StyledButtonBack><i className="fas fa-angle-left"></i></StyledButtonBack>
         <StyledButtonNext><i className="fas fa-angle-right"></i></StyledButtonNext>
-        <StyledDotGroup disableActiveDots={true} dotNumbers={true}/>
+        <StyledDotGroup disableActiveDots={true} />
+
       </StyledCarouselProvider>
 
       <Br/><Br/>
