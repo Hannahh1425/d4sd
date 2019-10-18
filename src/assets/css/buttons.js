@@ -225,7 +225,7 @@ export const StyledDotGroup = styled(DotGroup) `
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
         width: 14px;
-        height: 15px;
+        height: 14px;
         margin: 0.65em;
         border-radius: 50%;
         border: none;

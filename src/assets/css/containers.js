@@ -110,7 +110,7 @@ export const StyledCarouselProvider = styled(CarouselProvider) `
     overflow: hidden;
     height: ${props => props.full ? "100vh":"400px"};
     @media ${device.mobileS} {
-        height: ${props => props.full ? "100vh":"10vh"};
+        height: ${props => props.full ? "100vh":"15vh"};
     }
     @media ${device.tablet} {
         height: ${props => props.full ? "100vh":"20vh"};

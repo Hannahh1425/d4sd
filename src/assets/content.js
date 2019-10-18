@@ -38,6 +38,8 @@ import community26 from './img/home_logo_ucsd.png';
 import logo1 from './img/home_logo1.png';
 import logo2 from './img/home_logo2.png';
 import logo3 from './img/home_logo3.png';
+import logo4 from './img/home_logo4.png';
+import logo5 from './img/home_logo5.png';
 
 import city from "./img/about_city.svg";
 import connect from "./img/about_connect.svg";
@@ -135,7 +137,7 @@ export const communityLogo = [
   community14, community15, community16, community17, community18, community19,
   community20, community21, community22, community23, community24, community25, community26]
 
-export const logos = [logo1, logo2, logo3]
+export const logos = [logo1, logo2, logo3, logo4, logo5]
 
 /*************************************About content***************************************/
 export const aboutContent = {

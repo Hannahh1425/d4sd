@@ -19,6 +19,8 @@ class Home extends Component {
   constructor() {
     super();
     this.mission = React.createRef();
+    console.log("screen");
+    console.log(window.innerWidth);
   }
 
   scrollToRef = ref => {
@@ -187,7 +189,8 @@ class Home extends Component {
               naturalSlideHeight={100}
               isPlaying={true}
               interval={3000}
-              totalSlides={3}
+              totalSlides={5}
+              visibleSlides={window.innerWidth < '768' ? 1:2}
             >
               <Slider>
               {logos.map((logo, i) => (
