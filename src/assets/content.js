@@ -175,8 +175,8 @@ export const involveContent = {
   content1:"You can take part in D4SD in a variety of ways! Whether it be ideating solutions, giving feedback, teaching civic design in the classroom, or supporting the initiative, getting involved with D4SD can look a little different for each person. Below are a few ways to get involved.",
   roles: [
   {
-    title: "Start innovating!",
-    txt: "As an innovator, you can participate in a variety of in-person events and create innovative solutions in a team. D4SD gives innovators the opportunity to unpack large problems, develop solutions, learn about human-centered design, showcase their ideas, and network with the larger design community.",
+    title: "Join the discussion",
+    txt: "NEW TEXT",
     image: innovator,
     id: "innovators",
     link: "http://eepurl.com/c2kFon",
@@ -184,8 +184,8 @@ export const involveContent = {
     action: ""
   },
   {
-    title: "Offer your expertise",
-    txt: "D4SD requires the collective effort of people with a variety of backgrounds. There are other dimensions to the challenge which needs additional support. So we encourage all of those who resonate with your cause to reach out and learn about the different ways you can get involved.",
+    title: "Join the mailing list",
+    txt: "NEW TEXT",
     image: expert,
     id: "experts",
     link: "http://eepurl.com/c2kFon",
@@ -193,39 +193,21 @@ export const involveContent = {
     action: ""
   },
   {
-    title: "Teach your class with D4SD",
-    txt: "D4SD offers a curriculum to help educators use the challenge as a teaching opportunity. Students get experience working on big civic problems using the human-centered design process. This scaffolded learning process is designed to support all skill levels and backgrounds. The topics are also designed to be applicable in many class formats to address a variety of intended learning outcomes.",
-    image: educator,
-    id: "educators",
-    isAction: "false",
-    link: playbook_educator,
-    action: ""
-  },
-  {
     title: "Sponsor D4SD",
     txt: "D4SD provides a stage to share the problems and topics you care about. You can tap into a network of innovators to solve problems that matter to you. There are also many opportunities to interact with the broader San Diego community to get further support and traction for the developed solutions.",
     image: sponsor,
     id: "sponsors",
-    link: "http://eepurl.com/c2kFon",
-    isAction: "false",
-    action: ""
+    link: "mailto:team@d4sd.org",
+    isAction: "true",
+    action: "CONTACT OUR TEAM"
   },
   {
-    title: "Sign up for D4SD",
-    txt: "Want to receive more information and updates about D4SD? Join our mailing list to stay up to date on everything related to D4SD!",
+    title: "Join the D4SD team",
+    txt: "NEW TEXT",
     image: mail,
     id: "mail",
     link: "http://eepurl.com/c2kFon",
     isAction: "true",
-    action: "Join our mailing list"
+    action: "JOIN OUR MAILING LIST"
   },
-  {
-    title: "There are infinite ways to get involved",
-    txt: "We’ve imagined a number of ways to get involved, but we’re all about innovation so don’t feel limited! If you want to be involved in a way that isn’t listed above, we hope you will design your own role and join the action! We look forward to innovating with you and leveraging your unique talents and perspective!",
-    image: question,
-    id: "question",
-    link: "https://forms.gle/KKQwFL3JPrDfASmw6",
-    isAction: "true",
-    action: "Make your Suggestion"
-  }
 ]}

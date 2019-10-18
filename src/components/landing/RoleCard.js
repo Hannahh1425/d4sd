@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 import { FlexibleImg } from '../../assets/css/images.js';
 import { H4, H5 } from '../../assets/css/fonts.js';
 import { InnerFlexBox, Card } from '../../assets/css/containers.js';
-import { SmallBtn } from '../../assets/css/buttons.js';
+import { Btn } from '../../assets/css/buttons.js';
 import styled from 'styled-components';
 
-const SmallBtnInvolve = styled(SmallBtn) `
+const SmallBtnInvolve = styled(Btn) `
   display: ${props => props.isAction === "true" ? "inline":"none"}
 `
 

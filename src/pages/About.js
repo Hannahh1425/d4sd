@@ -10,7 +10,7 @@ import { Bg, Br } from '../assets/css/others.js';
 import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox, ToggleFlexBox } from '../assets/css/containers.js';
 import { H2, H5 } from '../assets/css/fonts.js';
 import { device } from '../assets/css/breakpoints.js';
-import { Btn, ToggleBtn } from '../assets/css/buttons.js';
+import { Btn, ToggleBtn, BtnSecondary } from '../assets/css/buttons.js';
 import { FlexibleImg } from '../assets/css/images.js';
 
 import whitepaper from '../assets/img/D4SD_2017_WhitePaper.pdf';
@@ -19,7 +19,7 @@ import ppttimeline_horizontal from "../assets/img/about_participants_horizontal.
 import commtimeline_horizontal from "../assets/img/about_community_horizontal.svg";
 import ppttimeline_vertical from "../assets/img/about_participants_vertical.svg";
 import commtimeline_vertical from "../assets/img/about_community_vertical.svg";
-import diagram from "../assets/img/about_diagram.svg";
+import diagram from "../assets/img/about_diagram.png";
 
 import './style.css';
 
@@ -132,7 +132,8 @@ class About extends Component {
               <br/>
               <H5>{aboutContent.content2}</H5>
               <Br/>
-              <img src={diagram} alt="diagram"/>
+              <FlexibleImg theme={{width:"100%"}} src={diagram} alt="diagram"/>
+
             </InnerContainer>
           </OuterContainer>
         </Bg>
@@ -187,14 +188,14 @@ class About extends Component {
               <H2 center>{aboutContent.title5}</H2>
               <br/>
               <H5 left>{aboutContent.content5}</H5>
-              </InnerContainer>
               <Br/>
               <OuterFlexBox center>
-                <Btn href={whitepaper} target="_blank">Download 2017 Whitepaper</Btn>
-                <Btn href="http://d4sd2017.org" target="_blank" top left>D4SD 2017 website</Btn>
+                <Btn href={whitepaper} target="_blank">DOWNLOAD 2017 WHITEPAPER</Btn>
+                <BtnSecondary href="http://d4sd2017.org" target="_blank" top left>D4SD 2017 WEBSITE</BtnSecondary>
               </OuterFlexBox>
               <Br/><Br/>
               <Br/>
+              </InnerContainer>
             </OuterContainer>
           </Bg>
           {/**<IframeContainer>

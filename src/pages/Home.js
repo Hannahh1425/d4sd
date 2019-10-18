@@ -79,7 +79,7 @@ class Home extends Component {
             </H5>
             <Br/>
             <OuterFlexBox center>
-              <Btn href="/involve">Join D4SD</Btn>
+              <Btn href="/involve">JOIN D4SD</Btn>
             </OuterFlexBox>
             <Br/>
               <OuterFlexBox>
@@ -115,7 +115,7 @@ class Home extends Component {
                       <H5 dangerouslySetInnerHTML={{ __html: sampleChallenge.txt }} />
                       <Br/>
                       <OuterFlexBox center>
-                        <Btn href="https://join.slack.com/t/d4sd/shared_invite/enQtMjExMjA5MDY0MjkzLTk3NjY4NGM3MTE0N2M1NTJjODAxMGRiMDgxNmQ4ZDk1NTU4Mzk0OThjMTdkMzc0NTJmY2M1ZmNkZDA3NTdjYTU" target="_blank">Join the discussion</Btn>
+                        <Btn href="https://join.slack.com/t/d4sd/shared_invite/enQtMjExMjA5MDY0MjkzLTk3NjY4NGM3MTE0N2M1NTJjODAxMGRiMDgxNmQ4ZDk1NTU4Mzk0OThjMTdkMzc0NTJmY2M1ZmNkZDA3NTdjYTU" target="_blank">JOIN THE DISCUSSION</Btn>
                       </OuterFlexBox>
                     </TempPadding>
                     <StyledButtonBack><i className="fas fa-angle-left"></i></StyledButtonBack>
@@ -146,7 +146,7 @@ class Home extends Component {
             </H5>
             <Br/>
             <OuterFlexBox center>
-              <Btn left href="http://d4sd2017.ucsd.edu" target="_blank">See what happened in 2017</Btn>
+              <Btn left href="http://d4sd2017.ucsd.edu" target="_blank">SEE WHAT HAPPENED IN 2017</Btn>
             </OuterFlexBox>
             </InnerContainer>
             <Br/><Br/>
@@ -174,7 +174,7 @@ class Home extends Component {
             </H5>
             <Br/>
             <OuterFlexBox center>
-              <Btn left href="/involve">Get Involved</Btn>
+              <Btn left href="/involve">GET INVOLVED</Btn>
             </OuterFlexBox>
             </InnerContainer>
             <Br/><Br/>

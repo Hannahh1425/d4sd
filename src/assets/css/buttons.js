@@ -14,30 +14,33 @@ export const Btn = styled.a `
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
     transition: 0.3s;
-    box-shadow: 1px 1px 8px 1px #25497A;
+    /* box-shadow: 1px 1px 8px 1px #25497A; */
     &:hover {
         text-decoration: none;
         color: white;
-        box-shadow: 1px 1px 8px 1px #B7DFE6;
-        background-color: #88BDFF;
+        box-shadow: 1px 1px 8px 1px #4497FF;
+        background-color: #4497FF;
     }
     @media ${device.mobileS} {
         font-size: 0.75em;
+        width: 80%;
         margin-top: ${props => props.top ? "1rem":"0"};
-        margin-left: ${props => props.home ? "1rem!important":"0!important"};
+        margin-left: ${props => props.home ? "0rem!important":"0!important"};
     }
     @media ${device.tablet} {
         font-size: 0.75em!important;
+        width: 45%!important;
         margin-top: 0!important;
-        margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
     @media ${device.laptopL} {
         font-size: 0.875em!important;
+        width: 40%!important;
         margin-top: 0!important;
         margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
     @media ${device.desktop} {
         font-size: 1.75em!important;
+        width: 20%!important;
         margin-top: 0!important;
         margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
@@ -50,40 +53,44 @@ export const BtnSecondary = styled.button `
     border: 1.5px solid #4497FF;
     color: #4497FF;
     background-color: white;
+    position: relative;
     text-align: center;
     font-weight: 700;
     padding: 0.75em 2em;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
     transition: 0.5s;
-    box-shadow: 1px 1px 8px 1px #333;
+    /* box-shadow: 1px 1px 8px 1px #333; */
     &:hover {
         text-decoration: none;
         background-color: white;
         box-shadow: 1px 1px 8px 1px #4497FF;
-        border: 1.5px solid #66AAFF;
-        color: #66AAFF;
+        border: 1.5px solid #88BDFF;
+        color: #88BDFF;
     }
     &:focus {
         outline: none;
     }
     @media ${device.mobileS} {
         font-size: 0.75em;
+        width: 80%;
         margin-top: ${props => props.top ? "1rem":"0"};
-        margin-left: ${props => props.home ? "1rem!important":"0!important"};
     }
     @media ${device.tablet} {
         font-size: 0.75em!important;
+        width: 45%!important;
         margin-top: 0!important;
         margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
     @media ${device.laptopL} {
         font-size: 0.875em!important;
+        width: 40%!important;
         margin-top: 0!important;
         margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
     @media ${device.desktop} {
         font-size: 1.75em!important;
+        width: 20%!important;
         margin-top: 0!important;
         margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
