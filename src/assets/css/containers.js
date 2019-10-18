@@ -1,25 +1,24 @@
 import styled from 'styled-components';
 import { device } from './breakpoints.js';
 import img from '../img/about_header.svg';
+import { CarouselProvider } from 'pure-react-carousel';
 
 //The outer container defines the maximum width the page no matter what the screen size is
 //The content inside the outer container can either be left-aligned or centered (when the center attribute appears)
 export const OuterContainer = styled.div `
-    text-align: ${props => props.center ? "center":"left"}
+    text-align: ${props => props.center ? "center":"left"};
+    margin: auto;
+    height: ${props => props.full ? "100vh":""};
     @media ${device.mobileS} {
-        margin: auto;
         max-width: 320px;
     }
     @media ${device.tablet} {
-        margin: auto;
         max-width: 720px!important;
     }
     @media ${device.laptop} {
-        margin: auto;
         max-width: 1200px!important;
     }
     @media ${device.laptopL} {
-        margin: auto;
         max-width: 2400px!important;
     }
 `
@@ -27,31 +26,25 @@ export const OuterContainer = styled.div `
 //The inner container defines the maximum width of the content when you want to
 //leave more space around your contents
 export const InnerContainer = styled.div `
+    margin: auto;
     @media ${device.mobileS} {
-        margin: auto;
         width: 320px;
     }
     @media ${device.tablet} {
-        margin: auto;
         width: 80%!important;
     }
     @media ${device.laptop} {
-        margin: auto;
         width: 65%!important;
     }
     @media ${device.laptopL} {
-        margin: auto;
         width: 60%!important;
     }
-    display: flex;
-    flex-direction: column;
-    align-content: center;
 `
 
 //For the cards like the ones on Get Involved page
 export const Card = styled.div `
     box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.6);
-    padding: 24px 24px 0 24px;
+    padding: 20px;
     border-radius: 10px;
 `
 
@@ -101,4 +94,40 @@ export const IframeContainer = styled.div `
     background-repeat: no-repeat;
     background-position: center;
     background-width: 100%;
+`
+
+export const FlexibleWidth = styled.div `
+    margin: ${props => props.left ? "":"auto"};
+    @media ${device.mobileS} {
+        width: ${props => props.theme.widthS};
+    }
+    @media ${device.tablet} {
+        width: ${props => props.theme.widthM};
+    }
+`
+
+export const StyledCarouselProvider = styled(CarouselProvider) `
+    overflow: hidden;
+    height: ${props => props.full ? "100vh":"400px"};
+    @media ${device.mobileS} {
+        height: ${props => props.full ? "100vh":"15vh"};
+    }
+    @media ${device.tablet} {
+        height: ${props => props.full ? "100vh":"20vh"};
+    }
+    @media ${device.laptopL} {
+        height: ${props => props.full ? "100vh":"50vh"};
+    }
+`
+
+export const TempPadding = styled.div `
+    @media ${device.mobileS} {
+        background: transparent;
+        padding: 0;
+    }
+    @media ${device.laptop} {
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.7)!important;
+        padding: 3em 3.5em!important;
+    }
 `

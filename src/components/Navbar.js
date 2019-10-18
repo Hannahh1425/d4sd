@@ -6,11 +6,26 @@ import logo from '../assets/img/logo_black.png'
 import './style.css';
 
 class Navbar extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isTop: true,
+    };
+  }
+
+  componentDidMount() {
+    document.addEventListener('scroll', () => {
+      const isTop = window.scrollY < 100;
+      if (isTop !== this.state.isTop) {
+          this.setState({ isTop: isTop });
+      }
+    });
+  }
 
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-md navbar-light fixed-top mh-5 main-nav">
+        <nav className={this.state.isTop ? "navbar navbar-expand-md navbar-light fixed-top mh-5":"navbar navbar-expand-md navbar-light fixed-top mh-5 main-nav"}>
           <Link className="navbar-brand" to='/home'><img src={logo} alt="logo"/></Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span className="navbar-toggler-icon"></span>
