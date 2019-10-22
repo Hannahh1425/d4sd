@@ -18,7 +18,7 @@ export const Btn = styled.a `
     &:hover {
         text-decoration: none;
         color: white;
-        box-shadow: 1px 2px 5px 1px #858585;
+        box-shadow: 1px 1px 8px 1px #858585;        
         background-color: #4497FF;
     }
     @media ${device.mobileS} {
