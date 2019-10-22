@@ -14,11 +14,11 @@ export const Btn = styled.a `
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
     transition: 0.2s;
-    box-shadow: 0px 0px 5px 1px #333;
+    box-shadow: 0px 0px 8px 0px #999999;
     &:hover {
         text-decoration: none;
         color: white;
-        box-shadow: 1px 1px 8px 1px black;
+        box-shadow: 1px 2px 5px 1px #858585;
         background-color: #4497FF;
     }
     @media ${device.mobileS} {
@@ -60,7 +60,7 @@ export const BtnSecondary = styled.button `
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
     transition: 0.3s;
-    box-shadow: 0px 0px 5px 1px #333;
+    box-shadow: 0px 0px 8px 0px #999999;
     &:hover {
         text-decoration: none;
         background-color: white;
