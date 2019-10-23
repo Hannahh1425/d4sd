@@ -189,8 +189,8 @@ class Home extends Component {
               naturalSlideHeight={100}
               isPlaying={true}
               interval={3000}
-              totalSlides={5}
-              visibleSlides={window.innerWidth < '768' ? 1:2}
+              totalSlides={7}
+              visibleSlides={window.innerWidth < '768' ? 1:3}
             >
               <Slider>
               {logos.map((logo, i) => (
