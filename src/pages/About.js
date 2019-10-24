@@ -148,7 +148,7 @@ class About extends Component {
               <br/>
               <OuterFlexBox>
                 {aboutContent.content3.map((value, i) => (
-                  <InnerFlexBox half>
+                  <InnerFlexBox half key={i}>
                     <FlexibleImg theme={{width: "9%"}} src={value.img} />
                     <H5Half left>{value.txt}</H5Half>
                   </InnerFlexBox>

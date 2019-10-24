@@ -5,22 +5,19 @@ import FooterCard from '../components/landing/FooterCard';
 import { Br, Bg } from '../assets/css/others.js';
 import { Btn, BtnSecondary, StyledButtonBack, StyledButtonNext, StyledDotGroup } from '../assets/css/buttons.js';
 import { FlexibleImg } from '../assets/css/images.js';
-import { H2, H3, H4, H5, H6 } from '../assets/css/fonts.js';
-import { Card, OuterFlexBox, OuterContainer, InnerContainer, InnerFlexBox, FlexibleWidth, StyledCarouselProvider, TempPadding } from '../assets/css/containers.js';
+import { H2, H3, H5 } from '../assets/css/fonts.js';
+import { OuterFlexBox, OuterContainer, InnerContainer, FlexibleWidth, StyledCarouselProvider } from '../assets/css/containers.js';
 //Contents
-import { sampleChallenges, roles, actionImg, communityLogo, logos } from '../assets/content.js';
+import { sampleChallenges, roles, actionImg, logos } from '../assets/content.js';
 import home0 from '../assets/img/home_landing.svg';
-import test from '../assets/img/home_action1.png';
 //Carousel
-import { Slider, Slide, Dot } from 'pure-react-carousel';
+import { Slider, Slide } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 class Home extends Component {
   constructor() {
     super();
     this.mission = React.createRef();
-    console.log("screen");
-    console.log(window.innerWidth);
   }
 
   scrollToRef = ref => {
@@ -39,7 +36,7 @@ class Home extends Component {
       <Navbar/>
       {/************************First card***********************/}
       <Bg image={home0}>
-        <OuterContainer center full>
+        <OuterContainer center full="true">
           <InnerContainer>
             <Br/><Br/><Br/>
             <H3>DESIGN FOR SAN DIEGO'S 2020 CIVIC DESIGN CHALLENGE</H3>
@@ -100,7 +97,7 @@ class Home extends Component {
         naturalSlideHeight={250}
         isPlaying={true}
         totalSlides={4}
-        full
+        full="true"
       >
         <Slider>
           {sampleChallenges.map((sampleChallenge, i) => (
