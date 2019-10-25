@@ -2,13 +2,9 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import { FlexibleImg } from '../../assets/css/images.js';
 import { H4, H5 } from '../../assets/css/fonts.js';
-import { InnerFlexBox, Card } from '../../assets/css/containers.js';
+import { InnerFlexBox, Card, OuterContainer } from '../../assets/css/containers.js';
 import { Btn } from '../../assets/css/buttons.js';
 import styled from 'styled-components';
-
-const SmallBtnInvolve = styled(Btn) `
-  display: ${props => props.isAction === "true" ? "inline":"none"}
-`
 
 class RoleCard extends Component {
   render() {
@@ -27,9 +23,11 @@ class RoleCard extends Component {
         <br/>
         <H5 left>{this.props.txt}</H5>
         <br/>
-        <SmallBtnInvolve left href={this.props.link} target="_blank" isAction={this.props.isAction}>
-          {this.props.action}
-        </SmallBtnInvolve>
+        <OuterContainer center>
+          <Btn href={this.props.link} target="_blank">
+            {this.props.action}
+          </Btn>
+        </OuterContainer>
         <br/><br/>
       </Card>
     );
