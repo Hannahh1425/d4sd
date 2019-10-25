@@ -76,7 +76,7 @@ class Home extends Component {
             </H5>
             <Br/>
             <OuterFlexBox center>
-              <Btn href="/involve">JOIN D4SD</Btn>
+              <Btn href="/involve">GET INVOLVED</Btn>
             </OuterFlexBox>
             <Br/>
               <OuterFlexBox>
