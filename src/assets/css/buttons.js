@@ -96,6 +96,16 @@ export const BtnSecondary = styled.button `
     }
 `
 
+export const FAQBtn = styled.button `
+    background-color: white;
+    border: none;
+    width: 100%;
+    margin-bottom: 14px;
+    &:focus {
+        outline: none;
+    }
+`
+
 //Small buttons, usually buttons inside cards
 export const SmallBtn = styled(Btn) `
     cursor: pointer;

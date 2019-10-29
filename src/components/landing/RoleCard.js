@@ -15,7 +15,7 @@ class RoleCard extends Component {
     //   button = <i className="fas fa-chevron-down"></i>
     // }
     return (
-      <Card id={this.props.id} ref={this.props.ref} className="h-100">
+      <Card id={this.props.id} ref={this.props.ref} theme={{padding: "20px"}} className="h-100">
         <InnerFlexBox center>
           <FlexibleImg theme={{width: "20%"}} src={this.props.image} />
           <H4 left>{this.props.title}</H4>

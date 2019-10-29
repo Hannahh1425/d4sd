@@ -43,8 +43,8 @@ export const InnerContainer = styled.div `
 
 //For the cards like the ones on Get Involved page
 export const Card = styled.div `
-    box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.6);
-    padding: 20px;
+    box-shadow: 0px 0px 4px 0px #999999;
+    padding: ${props => props.theme.padding};;
     border-radius: 10px;
 `
 
@@ -55,6 +55,7 @@ export const OuterFlexBox = styled.div `
     display: flex;
     flex-wrap: wrap;
     justify-content: ${props => props.center ? "center":"flex-start"};
+
 `
 
 //For diplaying inside the outer flex box

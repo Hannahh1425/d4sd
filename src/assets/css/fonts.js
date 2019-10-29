@@ -91,7 +91,7 @@ export const H4 = styled.h4 `
 //For all paragraphs
 export const H5 = styled.h5 `
     font-family: 'Open Sans', sans-serif;
-    color: #333333;
+    color: ${props => props.gray ? "#999999":"#333333"};
     line-height: 1.5em;
     padding: 0 14px;
     text-align: ${props => props.center ? "center":"left"};
