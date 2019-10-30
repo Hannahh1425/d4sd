@@ -44,7 +44,9 @@ export const InnerContainer = styled.div `
 //For the cards like the ones on Get Involved page
 export const Card = styled.div `
     box-shadow: 0px 0px 4px 0px #999999;
-    padding: ${props => props.theme.padding};;
+    padding: ${props => props.theme.padding};
+    width: ${props => props.theme.width};
+    height: ${props => props.theme.height};
     border-radius: 10px;
 `
 

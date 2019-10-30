@@ -29,12 +29,12 @@ export const Btn = styled.a `
     }
     @media ${device.tablet} {
         font-size: 0.75em!important;
-        width: 45%!important;
+        /* width: 45%!important; */
         margin-top: 0!important;
     }
     @media ${device.laptopL} {
         font-size: 0.875em!important;
-        width: 40%!important;
+        /* width: 40%!important; */
         margin-top: 0!important;
         margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }

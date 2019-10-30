@@ -108,7 +108,7 @@ export const sampleChallenges = [
     src: home3,
     isAction: "false",
     header: "CREATING ACCESSIBLE HOUSING",
-    title: "How can we reimagine housing to meets the needs of all San Diegans?",
+    title: "How can we reimagine housing to meet the needs of all San Diegans?",
     txt: "Shelter is a fundamental human need; however people have limited choices for safe, affordable, and long-term housing in San Diego. The issue of housing is more than the physical structures. It also includes homelessness, land development, smart home technology, and mixed-use housing, all of which needs to be addressed with San Diego’s growing population. <b>Help shape this problem by joining our discussion!</b>",
     action: "Get Involved",
     link: "http://eepurl.com/c2kFon",
@@ -285,3 +285,27 @@ export const faqContent = [
     answer: 'Contact the D4SD team at <a href=“mailto:team@d4sd.org”> team@d4sd.org</a> for questions about the Civic Design Challenge or if you are having technical difficulties with the D4SD Slack discussion forum.',
   },
 ];
+
+
+export const challengeContent = {
+  title: "Challenge Brief",
+  content:"You can take part in D4SD in a variety of ways! Whether it be ideating solutions, giving feedback, teaching civic design in the classroom, or supporting the initiative, getting involved with D4SD can look a little different for each person. Below are a few ways to get involved.",
+  contents: [
+    {
+      title: "Mobility",
+      img: action2
+    },
+    {
+      title: "Housing",
+      img: action3
+    },
+    {
+      title: "Climate",
+      img: action4
+    },
+    {
+      title: "Health",
+      img: action5
+    }
+  ]
+}

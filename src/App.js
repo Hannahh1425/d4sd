@@ -12,6 +12,7 @@ import Events from "./pages/Events";
 import Involve from "./pages/Involve";
 import Playbook from "./pages/Playbook";
 import PastSolution from "./pages/PastSolution";
+import Process from "./pages/Process";
 import Workspace from "./pages/workspace/Workspace";
 
 class App extends Component<{}> {
@@ -23,6 +24,7 @@ class App extends Component<{}> {
           <Route exact path='/home' component={Home}/>
           <Route exact path='/about' component={About}/>
           <Route exact path='/challenge' component={Challenge}/>
+          <Route exact path='/process' component={Process}/>
           <Route exact path='/resources' component={Resources}/>
           <Route exact path='/solution' component={PastSolution}/>
           <Route exact path='/faq' component={FAQ}/>

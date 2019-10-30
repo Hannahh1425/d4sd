@@ -42,10 +42,13 @@ class Navbar extends Component {
                 <NavLink className="nav-link mr-xl-4" to='/involve' activeClassName="active">Get Involved</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link mr-xl-4" to='/faq' activeClassName="active">FAQ</NavLink>
+                <NavLink className="nav-link mr-xl-4" to='/process' activeClassName="active">Process</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link mr-xl-4" to='/faq' activeClassName="active">Event Details</NavLink>
+                <NavLink className="nav-link mr-xl-4" to='/challenge' activeClassName="active">Challenge</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link mr-xl-4" to='/faq' activeClassName="active">FAQ</NavLink>
               </li>
               {/**<li className="nav-item">
                 <Link className="nav-link pr-3" to='/challenge'>Challenge</Link>

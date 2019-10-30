@@ -25,7 +25,7 @@ export const H1 = styled.h1 `
 export const H2 = styled.h2 `
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-    color: #333333;
+    color: ${props => props.white ? "white":"#333333"};
     position: relative;
     z-index: 100;
     padding: 0 14px;
