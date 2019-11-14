@@ -30,7 +30,7 @@ class App extends Component<{}> {
           <Route exact path='/faq' component={FAQ}/>
           <Route exact path='/forum' component={Forum}/>
           <Route exact path='/events' component={Events}/>
-          <Route exact path='/involve' component={Involve}/>
+          <Route exact path='/getinvolved' component={Involve}/>
           <Route exact path='/involve/:role' component={Playbook}/>
           <Route exact path='/workspace' component={Workspace}/>
         </Switch>

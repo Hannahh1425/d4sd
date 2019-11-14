@@ -10,11 +10,11 @@ export const Btn = styled.a `
     background-color: #4497FF;
     text-align: center;
     font-weight: 700;
-    padding: 0.75em 2em;
+    padding: 0.75em 2.25em;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
     transition: 0.2s;
-    box-shadow: 0px 0px 8px 0px #999999;
+    box-shadow: 0px 0px 8px 0px #999999;  
     &:hover {
         text-decoration: none;
         color: white;
@@ -22,25 +22,25 @@ export const Btn = styled.a `
         background-color: #4497FF;
     }
     @media ${device.mobileS} {
-        font-size: 0.75em;
+        font-size: 1em;
         width: 80%;
         margin-top: ${props => props.top ? "1rem":"0"};
         margin-left: ${props => props.home ? "0rem!important":"0!important"};
     }
     @media ${device.tablet} {
-        font-size: 0.75em!important;
-        /* width: 45%!important; */
+        font-size: 1em!important;
+        width: auto!important;
         margin-top: 0!important;
     }
     @media ${device.laptopL} {
-        font-size: 0.875em!important;
-        /* width: 40%!important; */
+        font-size: 1em!important;
+        width: auto!important;
         margin-top: 0!important;
         margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
     @media ${device.desktop} {
         font-size: 1.75em!important;
-        width: 20%!important;
+        width: auto!important;
         margin-top: 0!important;
         margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
@@ -72,25 +72,25 @@ export const BtnSecondary = styled.button `
         outline: none;
     }
     @media ${device.mobileS} {
-        font-size: 0.75em;
+        font-size: 1em;
         width: 80%;
         margin-top: ${props => props.top ? "1rem":"0"};
     }
     @media ${device.tablet} {
-        font-size: 0.75em!important;
-        width: 45%!important;
+        font-size: 1em!important;
+        width: auto!important;
         margin-top: 0!important;
         margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
     @media ${device.laptopL} {
-        font-size: 0.875em!important;
-        width: 40%!important;
+        font-size: 1em!important;
+        width: auto!important;
         margin-top: 0!important;
         margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
     @media ${device.desktop} {
         font-size: 1.75em!important;
-        width: 20%!important;
+        width: auto!important;
         margin-top: 0!important;
         margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }

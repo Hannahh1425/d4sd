@@ -5,7 +5,7 @@ import FooterCard from '../components/landing/FooterCard';
 import { Br, Bg } from '../assets/css/others.js';
 import { Btn, BtnSecondary, StyledButtonBack, StyledButtonNext, StyledDotGroup } from '../assets/css/buttons.js';
 import { FlexibleImg } from '../assets/css/images.js';
-import { H2, H3, H5 } from '../assets/css/fonts.js';
+import { H1, H2, H3, H5, IconTitle } from '../assets/css/fonts.js';
 import { OuterFlexBox, OuterContainer, InnerContainer, FlexibleWidth, StyledCarouselProvider } from '../assets/css/containers.js';
 //Contents
 import { sampleChallenges, roles, actionImg, logos } from '../assets/content.js';
@@ -21,8 +21,6 @@ class Home extends Component {
   }
 
   scrollToRef = ref => {
-    console.log("before");
-    console.log(ref.current);
     window.scrollTo({
       left: 0,
       top: ref.current.offsetTop,
@@ -40,7 +38,7 @@ class Home extends Component {
           <InnerContainer>
             <Br/><Br/><Br/>
             <H3>DESIGN FOR SAN DIEGO'S 2020 CIVIC DESIGN CHALLENGE</H3>
-            <H2 half>How can we make San Diego a more sustainable city?</H2>
+            <H1 half>How can we make San Diego a more sustainable city?</H1>
             <br/>
             <H5>San Diego is an amazing place to live, work, and visit. But
             like many cities, San Diego faces a number of difficult challenges
@@ -63,16 +61,16 @@ class Home extends Component {
             <Br/><Br/>
             <H2>Contribute to our mission</H2>
             <br/>
-            <H5 left>D4SD seeks to connect young passionate designers to a network
-            of industry professionals and to structure a process for collectively
-            addressing civic challenges related to the sustainability of our
-            region. We are exploring new models for collective innovation where
-            the community works together to discover problems, explore solutions,
-            and build prototypes to test ideas. <br/><br/>
-            D4SD 2020 will host a series of design events including speakers,
-            studios, and design-athons, starting in January. This will culminate
-            into a summit in May where stakeholders can pitch proposed solutions,
-            and build alliances to make change happen.
+            <H5 left>D4SD seeks to connect young, passionate designers to a network of industry
+              professionals and structure a process for collectively addressing
+              civic challenges related to the sustainability of our region. We are
+              exploring new models for collective innovation where the community works
+              together to discover problems, explore solutions, and build prototypes
+              to test ideas. <br/><br/>
+              D4SD 2020 will host a series of design events including speakers,
+              studios, and design-athons, starting in January. This will culminate into
+              a summit in May where innovators can pitch their
+              proposed solutions, and build alliances to make change happen.
             </H5>
             <Br/>
             <OuterFlexBox center>
@@ -83,7 +81,7 @@ class Home extends Component {
                 {roles.map(role => (
                   <FlexibleWidth theme={{ widthS: "50%", widthM: "25%"}} key={role.image}>
                     <FlexibleImg theme={{width: "70%"}} src={role.image}/>
-                    <H5 center>{role.contents}</H5>
+                    <IconTitle center>{role.contents}</IconTitle>
                   </FlexibleWidth>
                 ))}
               </OuterFlexBox>
@@ -106,7 +104,7 @@ class Home extends Component {
                 <OuterContainer center full>
                   <InnerContainer>
                     <Br/><Br/>
-                      <H3>LEARN ABOUT THE CHALLENGES!</H3>
+                      <H3>{sampleChallenge.header}</H3>
                       <H2>{sampleChallenge.title}</H2>
                       <br/>
                       <H5 dangerouslySetInnerHTML={{ __html: sampleChallenge.txt }} />

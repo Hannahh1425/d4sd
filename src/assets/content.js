@@ -61,19 +61,19 @@ import mail from "./img/involve_mail.svg";
 export const roles = [
   {
     image: innovator,
-    contents: "Innovate"
+    contents: "INNOVATE"
   },
   {
     image: educator,
-    contents: "Partner"
+    contents: "PARTNER"
   },
   {
     image: expert,
-    contents: "Volunteer"
+    contents: "VOLUNTEER"
   },
   {
     image: sponsor,
-    contents: "Sponsor"
+    contents: "SPONSOR"
   }
 ]
 export const sampleChallenges = [
@@ -81,9 +81,9 @@ export const sampleChallenges = [
     id: 0,
     src: home1,
     isAction: "true",
-    header: "IMPROVING MOBILITY",
+    header: "LEARN ABOUT THE CHALLENGES: IMPROVING MOBILITY",
     title: "How might we help people move freely through our city?",
-    txt: "As people are looking for a more efficient way to move around, the mission of reducing our emissions and increasing the inclusivity of transportation continues to be an essential topic of discussion in our urban environments. Mobility can be examined from a number of lenses such as motor vehicle systems, transit, parking, intermodal connections, electric vehicles, accident reduction, walkability and bike-ability, and land-use patterns. <b>Help shape this problem by joining our discussion!</b>",
+    txt: "As people are looking for alternate ways to move around, while also wanting to reduce their emissions, the topic of inclusive and environmentally conscious transportation continues to be a pressing issue in our urban environment. Mobility can be examined from a number of lenses such as motor vehicle systems, transit, parking, intermodal connections, electric vehicles, accident reduction, walkability and bike-ability, and land-use patterns. <b>Help shape this problem by joining our discussion!</b>",
     action: "See what happened in 2017",
     link: "http://d4sd2017.org",
     isAction2: "false",
@@ -94,9 +94,9 @@ export const sampleChallenges = [
     id: 1,
     src: home2,
     isAction: "false",
-    header: "ADDRESSING CLIMATE EFFECTS",
+    header: "LEARN ABOUT THE CHALLENGES: ADDRESSING CLIMATE EFFECTS",
     title: "How can we help San Diego prepare for and mitigate climate change?",
-    txt: "Greenhouse gas emission from the burning of fossil fuels has resulted in the gradual increase of global temperatures. Scientists have high confidence that global temperatures will continue to rise for decades to come. Climate change impacts areas such as transportation, housing, health, natural resources, food waste, agriculture, air pollution, and education. <b>Help shape this problem by joining our discussion!</b>",
+    txt: "Burning of fossil fuels has resulted in the gradual increase of global temperatures. Scientists have high confidence that global temperatures will continue to rise for decades to come. Climate change impacts areas such as transportation, housing, health, natural resources, food waste, agriculture, air pollution, and education. <b>Help shape this problem by joining our discussion!</b>",
     action: "Get Involved",
     link: "http://eepurl.com/c2kFon",
     isAction2: "false",
@@ -107,7 +107,7 @@ export const sampleChallenges = [
     id: 2,
     src: home3,
     isAction: "false",
-    header: "CREATING ACCESSIBLE HOUSING",
+    header: "LEARN ABOUT THE CHALLENGES: CREATING ACCESSIBLE HOUSING",
     title: "How can we reimagine housing to meet the needs of all San Diegans?",
     txt: "Shelter is a fundamental human need; however people have limited choices for safe, affordable, and long-term housing in San Diego. The issue of housing is more than the physical structures. It also includes homelessness, land development, smart home technology, and mixed-use housing, all of which needs to be addressed with San Diego’s growing population. <b>Help shape this problem by joining our discussion!</b>",
     action: "Get Involved",
@@ -120,9 +120,9 @@ export const sampleChallenges = [
     id: 3,
     src: home4,
     isAction: "false",
-    header: "LIVING HEALTHY LIVES",
+    header: "LEARN ABOUT THE CHALLENGES: LIVING HEALTHY LIVES",
     title: "How can we help all San Diegans live healthy and active lives?",
-    txt: "Many people have limited access to preventative and restorative health services. Health is determined by social and physical environments and is directly connected to how people live, learn, work, and play. Topics such as quality of life, population health, and social well being, are all different aspects of how we as a city, need to improve our well being. <b>Help shape this problem by joining our discussion!</b>",
+    txt: "Many San Diego residents have limited access to preventative and restorative health services. Health is determined by social and physical environments and is directly connected to how people live, learn, work, and play. Topics such as quality of life, population health, and social well being, are all different aspects of how we as a city, need to improve our well being. <b>Help shape this problem by joining our discussion!</b>",
     action: "Get Involved",
     link: "http://eepurl.com/c2kFon",
     isAction2: "false",
@@ -143,7 +143,7 @@ export const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7]
 /*************************************About content***************************************/
 export const aboutContent = {
   title1: "About D4SD",
-  content1:"Design for San Diego (D4SD) is a civic design challenge that provides a space for all of us to address the region's most challenging issues. D4SD offers a series of public workshops to bring together a wide range of stakeholders and to scaffold a process of framing human-centered design problems, prototyping solutions, and building alliances to bring good ideas to life.",
+  content1:"Design for San Diego (D4SD) is a civic design challenge that provides a space for all of us to address the region's most challenging issues. D4SD offers a series of public workshops to bring together a wide range of stakeholders and scaffold a process of framing human-centered design problems, prototyping solutions, and building alliances to bring good ideas to life.",
   title2: "Who can participate?",
   content2: "Anyone! If you care about the city and want to have a chance to have your voice included in the conversation, then we welcome you! Find below some potential ways groups that can participate.",
   title3: "What are the goals of D4SD?",
@@ -290,22 +290,153 @@ export const faqContent = [
 export const challengeContent = {
   title: "Challenge Brief",
   content:"You can take part in D4SD in a variety of ways! Whether it be ideating solutions, giving feedback, teaching civic design in the classroom, or supporting the initiative, getting involved with D4SD can look a little different for each person. Below are a few ways to get involved.",
-  contents: [
+  nav: [
     {
       title: "Mobility",
-      img: action2
-    },
-    {
-      title: "Housing",
-      img: action3
+      img: home1
     },
     {
       title: "Climate",
-      img: action4
+      img: home3
+    },
+    {
+      title: "Housing",
+      img: home2
     },
     {
       title: "Health",
-      img: action5
+      img: home4
     }
+  ],
+  contents: [
+    {
+      id: "Mobility",
+      subtitle: "Challenge topic: MOBILITY",
+      title: "How might we help people move freely through our city?",
+      problems: [
+        {
+          img: home1,
+          problem: "problem1"
+        },
+        {
+          img: home2,
+          problem: "problem2"
+        },
+        {
+          img: home3,
+          problem: "problem3"
+        },
+        {
+          img: home4,
+          problem: "problem4"
+        }
+      ]
+    },
+    {
+      id: "Climate",
+      subtitle: "Challenge topic: CLIMATE",
+      title: "How can we help San Diego prepare for and mitigate climate change?",
+      problems: [
+        {
+          img: home1,
+          problem: "problem1"
+        },
+        {
+          img: home2,
+          problem: "problem2"
+        },
+        {
+          img: home3,
+          problem: "problem3"
+        },
+        {
+          img: home4,
+          problem: "problem4"
+        }
+      ]
+    },
+    {
+      id: "Housing",
+      subtitle: "Challenge topic: HOUSING",
+      title: "How can we reimagine housing to meet the needs of all San Diegans?",
+      problems: [
+        {
+          img: home1,
+          problem: "problem1"
+        },
+        {
+          img: home2,
+          problem: "problem2"
+        },
+        {
+          img: home3,
+          problem: "problem3"
+        },
+        {
+          img: home4,
+          problem: "problem4"
+        }
+      ]
+    },
+    {
+      id: "Health",
+      subtitle: "Challenge topic: HEALTH",
+      title: "How can we help all San Diegans live healthy and active lives?",
+      problems: [
+        {
+          img: home1,
+          problem: "problem1"
+        },
+        {
+          img: home2,
+          problem: "problem2"
+        },
+        {
+          img: home3,
+          problem: "problem3"
+        },
+        {
+          img: home4,
+          problem: "problem4"
+        }
+      ]
+    }
+  ],
+}
+
+export const timelineContent = {
+  title1: "Process",
+  content1: "Design for San Diego (D4SD) is a city-wide design challenge that seeks to tackle civic issues that affect the Greater San Diego Area through the human centered design process. While working in teams, participants in particular will go through the process of doing initial research, submitting a preliminary concept, requesting and providing feedback, submitting their final concepts, and attending the final summit to pitch their ideas to the City of San Diego. A more detailed process timeline can be found below.",
+  timeline: [
+    {
+      stage: "Contribute to online discussions",
+      date: "STARTS JAN 6",
+      detail: "Discovery is a huge part of the design process, and it is crucial that participants explore their chosen problem space to learn more about how they might tackle the issue. In this phase, participants will contribute to online discussions surrounding the problem topics while adding new insights that might drive the conversation forward and bring about new ideas. Start discussing today! Join the slack channel <a href='https://join.slack.com/t/d4sd/shared_invite/enQtMjExMjA5MDY0MjkzLTk3NjY4NGM3MTE0N2M1NTJjODAxMGRiMDgxNmQ4ZDk1NTU4Mzk0OThjMTdkMzc0NTJmY2M1ZmNkZDA3NTdjYTU' target='_blank'>here</a>."
+    },
+    {
+      stage: "Register your team",
+      date: "BY FEB 3",
+      detail: "Participants will work in groups to develop their ideas and proposals. There is no limit to how many members a team can have, but groups of 4-6 people tend to work best. Working in a team is much more beneficial than working on your own, as it will expose you to new insights and viewpoints and allow you to bounce ideas off one another during the whole D4SD process."
+    },
+    {
+      stage: "Submit a preliminary concept",
+      date: "BY FEB 14",
+      detail: "The preliminary concept participants will be submitting consists of two deliverables: a problem description and a solution description. <br/><b>&#8226 Problem description</b><br/> Define your problem in no more than two sentences. The problem definition should be a product of your own analysis of the problem space, not simply a replication of the questions provided by D4SD. Your problem definition can be possibly grounded in user research, interviews and statistics. You can only submit one problem definition, but you can keep editing it before the deadline. <br/><b>&#8226 Solutions</b> <br/>You can propose at most 3 solutions for the problem you defined. Each solution should be presented as a Solution Proposal, which is suggested to include: a clear description of your solution, it could be either a concept, an illustration, a prototype of your ideas or anything that you think best represent your proposed solution. Keep in mind that at this point, the brainstorming process is more meaningful than a well constructed final product. You can upload at most 3 pdf files, each of which includes a different solution."
+    },
+    {
+      stage: "Request and provide feedback",
+      date: "FEB 15 TO FEB 29",
+      detail: "Want to know if your solution tackles the root cause? Community feedback is valuable in informing you about the desirability and feasibility of your solution. In this stage, participants are able to ask specialists in the field or community members who are affected up to 3 questions regarding their initial concepts which will be answered within a week. During this time, participants will also provide feedback to their peers. Although there is only one formal feedback session, participants are welcome to pursue follow up with their feedback provider through other means of communication."
+    },
+    {
+      stage: "Submit your team's final concept",
+      date: "BY MAR 13",
+      detail: "For the final submission, teams will submit two items: presentation slides and a poster. <br/><b>&#8226 Presentation slides</b> <br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8226 A clear definition <br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8226 An image that clearly illustrates your solution/concept <br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8226 An analysis of the strengths and limitations of your solution <br/><b>&#8226 Poster</b> <br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8226 You can propose multiple solutions for the problem you choose (3 maximum), At this point, the brainstorming process is more meaningful a well constructed final product. <br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8226 Each solution should include a Solution Proposal which is suggested to include: a clear description of your solution, it could be either a concept, an illustration, a prototype of your ideas or anything that you think best represent your proposed solution."
+    },
+    {
+      stage: "View community voting",
+      date: "APR 4",
+      detail: "Want to know how your idea is received? View the community voting to see how community members viewed your idea."
+    },
   ]
 }

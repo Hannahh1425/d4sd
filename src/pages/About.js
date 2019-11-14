@@ -122,7 +122,7 @@ class About extends Component {
     return (
       <div id="about">
         <Navbar/>
-        <Br/><Br/>
+        <br/><br/>
         <HeaderCard title={aboutContent.title1} content={aboutContent.content1} bg={header} isAction="false"/>
         <Br/><Br/>
         <Bg ref={this.join} id="join">
@@ -158,9 +158,8 @@ class About extends Component {
             </InnerContainer>
           </OuterContainer>
         </Bg>
-        <Br/><Br/>
 
-          <Bg ref={this.timeline} id="timeline">
+        {/**  <Bg ref={this.timeline} id="timeline">
             <OuterContainer>
               <InnerContainer>
               <H2 center>{aboutContent.title4}</H2>
@@ -180,7 +179,6 @@ class About extends Component {
             </OuterContainer>
           </Bg>
 
-          <Br/><Br/>
           <Bg theme={{color: "#EFF8FF"}} ref={this.review} id="review">
             <OuterContainer>
               <Br/><Br/>
@@ -198,7 +196,7 @@ class About extends Component {
               </InnerContainer>
             </OuterContainer>
           </Bg>
-          {/**<IframeContainer>
+          <IframeContainer>
             <Iframe
               src="https://www.youtube.com/embed/V7LxWFqMm4g?autoplay=1&rel=0&showinfo=0&vq=highres&mute=1"
               allow="autoplay; encrypted-media"

@@ -44,3 +44,43 @@ export const Iframe = styled.iframe `
     height: 75%;
     background-color: #EFF8FF;
 `
+
+export const Vl = styled.div `
+    border-right: 20px solid #E4F2FF;
+    height: 100%;
+`
+
+export const Hl = styled.div `
+    border-bottom: 4px solid #4497FF;
+    position: relative;
+    top: 32.4px;
+    @media ${device.mobileS} {
+      width: 50px;
+      &:before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: -10px;
+        height: 25px;
+        width: 25px;
+        background: white;
+        border: 4px solid #4497FF;
+        border-radius: 50%;
+      }
+    }
+    @media ${device.tablet} {
+      width: 100px;
+      &:before {
+        content: "";
+        position: absolute;
+        left: -25px;
+        top: -15px;
+        height: 30px;
+        width: 30px;
+        background: white;
+        border: 5px solid #4497FF;
+        border-radius: 50%;
+      }
+    }
+
+`

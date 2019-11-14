@@ -4,7 +4,7 @@ import { device } from './breakpoints.js';
 //For titles on the header
 export const H1 = styled.h1 `
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+    font-weight: 700;
     color: #333333;
     position: relative;
     z-index: 100;
@@ -24,7 +24,7 @@ export const H1 = styled.h1 `
 //For questions on the homepage and subtitles on about page
 export const H2 = styled.h2 `
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+    font-weight: 700;
     color: ${props => props.white ? "white":"#333333"};
     position: relative;
     z-index: 100;
@@ -52,9 +52,10 @@ export const H2 = styled.h2 `
 export const H3 = styled.h3 `
     font-family: 'Open Sans', sans-serif;
     color: #A7A7A7;
-    font-weight: 700;
+    text-align: ${props => props.left ? "left":""};
+    font-weight: ${props => props.thin ? "400":"700"};
     line-height: 1em;
-    margin: 15px 15px;
+    margin: ${props => props.thin ? "0 15px":"15px 15px"};
     @media ${device.mobileS} {
         font-size: 0.8em;
     }
@@ -70,8 +71,8 @@ export const H3 = styled.h3 `
 //For card title in get involve page
 export const H4 = styled.h4 `
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    color: #333333;
+    font-weight: 600;
+    color: ${props => props.gray ? "#999999":"#333333"};
     position: relative;
     z-index: 100;
     padding: 0 14px;
@@ -107,6 +108,27 @@ export const H5 = styled.h5 `
     }
 `
 
+export const Styledh5 = styled(H5) `
+  border: ${props => props.hovered ? "2px solid #25497A":"1px solid #25497A"};
+  color: #25497A;
+  padding: 8px 14px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(68, 151, 255, 0.2);
+  border-radius: 10px;
+  font-weight: ${props => props.hovered ? "600":""};
+  cursor: ${props => props.hovered ? "pointer":""};
+  @media ${device.mobileS} {
+      font-size: 1em;
+  }
+  @media ${device.laptopL} {
+      font-size: 1.1em;!important;
+      line-height: 1.5em!important;
+  }
+  @media ${device.desktop} {
+      font-size: 2em!important;
+  }
+`
+
 //For footer
 export const H6 = styled.h6 `
     font-family: 'Open Sans', sans-serif;
@@ -124,6 +146,27 @@ export const H6 = styled.h6 `
         font-size: 1.7em!important;
     }
 `
+
+//For all paragraphs
+export const IconTitle = styled.h5 `
+    font-family: 'Montserrat', sans-serif;
+    color: ${props => props.gray ? "#999999":"#333333"};
+    line-height: 1.5em;
+    font-weight: 600;
+    padding: 0 14px;
+    text-align: ${props => props.center ? "center":"left"};
+    @media ${device.mobileS} {
+        font-size: 1em;
+    }
+    @media ${device.laptopL} {
+        font-size: 1.20em;!important;
+        line-height: 1.5em!important;
+    }
+    @media ${device.desktop} {
+        font-size: 2em!important;
+    }
+`
+
 
 export const A = styled.a `
     font-family: 'Open Sans', sans-serif;
