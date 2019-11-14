@@ -8,13 +8,12 @@ export const Btn = styled.a `
     border-radius: 10px;
     color: white;
     background-color: #4497FF;
-    text-align: center;
     font-weight: 700;
     padding: 0.75em 2.25em;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
     transition: 0.2s;
-    box-shadow: 0px 0px 8px 0px #999999;  
+    box-shadow: 0px 0px 8px 0px #999999;
     &:hover {
         text-decoration: none;
         color: white;
@@ -108,21 +107,22 @@ export const FAQBtn = styled.button `
 
 //Small buttons, usually buttons inside cards
 export const SmallBtn = styled(Btn) `
-    cursor: pointer;
-    border: 1px solid #1A89DB;
-    font-weight: 500;
-    padding: 0.5em 1em 0.5em 1em;
+    cursor: ${props => props.state === "active" ? "":"not-allowed"};
+    display: ${props => props.isAction ? "inline":"none"};
+    box-shadow: ${props => props.state === "active" ? "":"none"};
+    background-color: ${props => props.state === "active" ? "#4497FF":"#9D9D9D"};
+    &:hover {
+      background-color: ${props => props.state === "active" ? "#4497FF":"#9D9D9D"};
+      box-shadow: ${props => props.state === "active" ? "":"none"};
+    }
     @media ${device.mobileS} {
         font-size: 0.75em;
-        margin-left: ${props => props.left ? "1rem":"0"};
     }
     @media ${device.tablet} {
         font-size: 0.9em!important;
-        margin-left: ${props => props.left ? "1rem":"0"};
     }
     @media ${device.desktop} {
         font-size: 1.5em!important;
-        margin-left: ${props => props.left ? "1rem":"0"};
     }
 `
 

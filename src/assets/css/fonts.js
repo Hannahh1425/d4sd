@@ -167,6 +167,21 @@ export const IconTitle = styled.h5 `
     }
 `
 
+export const P = styled.p `
+    font-family: 'Open Sans', sans-serif;
+    color: #999999;
+    padding-top: 11px;
+    @media ${device.mobileS} {
+        font-size: 0.7em;
+    }
+    @media ${device.laptopL} {
+        font-size: 0.9em;!important;
+    }
+    @media ${device.desktop} {
+        font-size: 1.7em!important;
+    }
+`
+
 
 export const A = styled.a `
     font-family: 'Open Sans', sans-serif;
