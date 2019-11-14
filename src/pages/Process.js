@@ -11,7 +11,7 @@ import { Vl, Hl } from '../assets/css/others.js';
 import { Left, Grid, Card, OuterFlexBox, OuterContainer, InnerContainer, FlexibleWidth, StyledCarouselProvider } from '../assets/css/containers.js';
 //Contents
 import { sampleChallenges, roles, actionImg, logos } from '../assets/content.js';
-import header from "../assets/img/process_header.svg";
+import header from "../assets/img/process_header.png";
 import { timelineContent } from '../assets/content.js';
 import TimelineCard from '../components/landing/TimelineCard';
 
@@ -71,20 +71,16 @@ class Process extends Component {
                     stage={content.stage}
                     date={content.date}
                     detail={content.detail}
+                    action={content.action}
+                    state={content.state}
+                    isAction={content.isAction}
+                    note={content.note}
+                    newpage={content.newpage}
+                    link={content.link}
                   />
                   </Left>
-                  <br/>
                 </div>
               ))}
-            </div>
-            <div>
-              {
-                (this.state.hover) &&
-                <Card theme={{padding: "18px 20px 10px 20px"}}>
-                  <H4>{this.state.hover}</H4>
-                  <H5>{this.state.hoveredContent}</H5>
-                </Card>
-              }
             </div>
           </Grid>
         </InnerContainer>

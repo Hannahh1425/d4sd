@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { FAQBtn } from '../../assets/css/buttons.js';
-import { H2, H3, H4, H5 } from '../../assets/css/fonts.js';
+import { FAQBtn, SmallBtn, Btn } from '../../assets/css/buttons.js';
+import { H2, H3, H4, H5, P } from '../../assets/css/fonts.js';
 import { Card, OuterFlexBox, InnerFlexBox, OuterContainer, InnerContainer, FlexibleWidth, StyledCarouselProvider } from '../../assets/css/containers.js';
 import { Br } from '../../assets/css/others.js';
 
@@ -32,7 +32,7 @@ class TimelineCard extends Component {
       <div id={this.props.question}>
         <div>
             <FAQBtn onClick={this.toggleContent} style={{"padding":"0"}}>
-              <Card  theme={{paddingS: "10px", paddingM: "20px 10px", paddingL: "30px 50px 40px 30px"}}>
+              <Card  theme={{paddingS: "10px", paddingM: "20px 10px", paddingL: "30px 50px 30px 30px"}}>
                 <InnerFlexBox center>
                   <div>
                   <H4 left>{this.props.stage}</H4>
@@ -47,6 +47,9 @@ class TimelineCard extends Component {
                     __html: this.props.detail,
                   }}
                 />
+                <br/>
+                <SmallBtn isAction={this.props.isAction} state={this.props.state} href={this.props.link} target="_blank">{this.props.action}</SmallBtn>
+                <P>{this.props.note}</P>
               </div>
               </Card>
             </FAQBtn>
