@@ -2,13 +2,9 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import { FlexibleImg } from '../../assets/css/images.js';
 import { H4, H5 } from '../../assets/css/fonts.js';
-import { InnerFlexBox, Card } from '../../assets/css/containers.js';
+import { InnerFlexBox, Card, OuterContainer } from '../../assets/css/containers.js';
 import { Btn } from '../../assets/css/buttons.js';
 import styled from 'styled-components';
-
-const SmallBtnInvolve = styled(Btn) `
-  display: ${props => props.isAction === "true" ? "inline":"none"}
-`
 
 class RoleCard extends Component {
   render() {
@@ -19,7 +15,7 @@ class RoleCard extends Component {
     //   button = <i className="fas fa-chevron-down"></i>
     // }
     return (
-      <Card id={this.props.id} ref={this.props.ref} className="h-100">
+      <Card id={this.props.id} ref={this.props.ref} theme={{padding: "20px"}} className="h-100">
         <InnerFlexBox center>
           <FlexibleImg theme={{width: "20%"}} src={this.props.image} />
           <H4 left>{this.props.title}</H4>
@@ -27,9 +23,11 @@ class RoleCard extends Component {
         <br/>
         <H5 left>{this.props.txt}</H5>
         <br/>
-        <SmallBtnInvolve left href={this.props.link} target="_blank" isAction={this.props.isAction}>
-          {this.props.action}
-        </SmallBtnInvolve>
+        <OuterContainer center>
+          <Btn href={this.props.link} target="_blank">
+            {this.props.action}
+          </Btn>
+        </OuterContainer>
         <br/><br/>
       </Card>
     );

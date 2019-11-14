@@ -43,9 +43,20 @@ export const InnerContainer = styled.div `
 
 //For the cards like the ones on Get Involved page
 export const Card = styled.div `
-    box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.6);
-    padding: 20px;
+    box-shadow: 0px 0px 4px 0px #999999;
+    padding: ${props => props.theme.padding};
+    width: ${props => props.theme.width};
+    height: ${props => props.theme.height};
     border-radius: 10px;
+    @media ${device.mobileS} {
+        padding: ${props => props.theme.paddingS}!important;
+    }
+    @media ${device.tablet} {
+        padding: ${props => props.theme.paddingM}!important;
+    }
+    @media ${device.laptopL} {
+        padding: ${props => props.theme.paddingL}!important;
+    }
 `
 
 //For displaying components in flexbox layout like the Goal section on about page
@@ -55,6 +66,7 @@ export const OuterFlexBox = styled.div `
     display: flex;
     flex-wrap: wrap;
     justify-content: ${props => props.center ? "center":"flex-start"};
+
 `
 
 //For diplaying inside the outer flex box
@@ -129,5 +141,26 @@ export const TempPadding = styled.div `
         border-radius: 15px;
         background-color: rgba(255, 255, 255, 0.7)!important;
         padding: 3em 3.5em!important;
+    }
+`
+
+export const Grid = styled.div `
+    display: grid;
+    grid-template-columns: 4% 2% 90%;
+    grid-template-rows: auto;
+    grid-gap: 0;
+    margin-left: auto;
+    margin-right: auto;
+`
+
+export const Left = styled.div `
+    @media ${device.mobileS} {
+        margin-left: 50px;
+    }
+    @media ${device.tablet} {
+        margin-left: 100px;
+    }
+    @media ${device.laptopL} {
+        margin-left: 100px;
     }
 `

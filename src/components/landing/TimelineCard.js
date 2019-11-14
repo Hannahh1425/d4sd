@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { FAQBtn } from '../../assets/css/buttons.js';
-import { H2, H3, H5 } from '../../assets/css/fonts.js';
+import { H2, H3, H4, H5 } from '../../assets/css/fonts.js';
 import { Card, OuterFlexBox, InnerFlexBox, OuterContainer, InnerContainer, FlexibleWidth, StyledCarouselProvider } from '../../assets/css/containers.js';
 import { Br } from '../../assets/css/others.js';
 
-class FAQCard extends Component {
+class TimelineCard extends Component {
 
   constructor(props) {
     super(props);
@@ -31,17 +31,20 @@ class FAQCard extends Component {
     return (
       <div id={this.props.question}>
         <div>
-            <FAQBtn onClick={this.toggleContent}>
-              <Card theme={{padding: "18px 20px 10px 20px"}}>
+            <FAQBtn onClick={this.toggleContent} style={{"padding":"0"}}>
+              <Card  theme={{paddingS: "10px", paddingM: "20px 10px", paddingL: "30px 50px 40px 30px"}}>
                 <InnerFlexBox center>
-                  <H5 gray={this.state.open}>{this.props.question}</H5>
+                  <div>
+                  <H4 left>{this.props.stage}</H4>
+                  <H3 thin left>{this.props.date}</H3>
+                  </div>
                   {this.state.open ? <i className="fas fa-chevron-up" style={{"color":"rgba(0, 0, 0, 0.5)"}}></i>:<i className="fas fa-chevron-down" style={{"color":"rgba(0, 0, 0, 0.5)"}}></i>}
                 </InnerFlexBox>
               <div className={!this.state.open ? "d-none":"d-block"}>
                 <hr/>
                 <H5
                   dangerouslySetInnerHTML={{
-                    __html: this.props.answer,
+                    __html: this.props.detail,
                   }}
                 />
               </div>
@@ -53,4 +56,4 @@ class FAQCard extends Component {
   }
 }
 
-export default FAQCard;
+export default TimelineCard;
