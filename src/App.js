@@ -13,6 +13,7 @@ import Involve from "./pages/Involve";
 import Playbook from "./pages/Playbook";
 import PastSolution from "./pages/PastSolution";
 import Process from "./pages/Process";
+import Stakeholder from "./pages/Stakeholder";
 import Workspace from "./pages/workspace/Workspace";
 
 class App extends Component<{}> {
@@ -33,6 +34,7 @@ class App extends Component<{}> {
           <Route exact path='/getinvolved' component={Involve}/>
           <Route exact path='/involve/:role' component={Playbook}/>
           <Route exact path='/workspace' component={Workspace}/>
+          <Route exact path='/stakeholder' component={Stakeholder}/>
         </Switch>
       </main>
     );

@@ -21,7 +21,7 @@ export const Btn = styled.a `
         background-color: #4497FF;
     }
     @media ${device.mobileS} {
-        font-size: 1em;
+        font-size: 0.85em;
         width: 80%;
         margin-top: ${props => props.top ? "1rem":"0"};
         margin-left: ${props => props.home ? "0rem!important":"0!important"};
@@ -71,7 +71,7 @@ export const BtnSecondary = styled.button `
         outline: none;
     }
     @media ${device.mobileS} {
-        font-size: 1em;
+        font-size: 0.85em;
         width: 80%;
         margin-top: ${props => props.top ? "1rem":"0"};
     }

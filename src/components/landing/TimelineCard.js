@@ -3,7 +3,6 @@ import { FAQBtn, SmallBtn, Btn } from '../../assets/css/buttons.js';
 import { H2, H3, H4, H5, P } from '../../assets/css/fonts.js';
 import { Card, OuterFlexBox, InnerFlexBox, OuterContainer, InnerContainer, FlexibleWidth, StyledCarouselProvider } from '../../assets/css/containers.js';
 import { Br } from '../../assets/css/others.js';
-
 class TimelineCard extends Component {
 
   constructor(props) {
@@ -31,6 +30,7 @@ class TimelineCard extends Component {
     return (
       <div id={this.props.question}>
         <div>
+          
             <FAQBtn onClick={this.toggleContent} style={{"padding":"0"}}>
               <Card  theme={{paddingS: "10px", paddingM: "20px 10px", paddingL: "30px 50px 30px 30px"}}>
                 <InnerFlexBox center>

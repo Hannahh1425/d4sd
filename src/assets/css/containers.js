@@ -46,16 +46,22 @@ export const Card = styled.div `
     box-shadow: 0px 0px 4px 0px #999999;
     padding: ${props => props.theme.padding};
     width: ${props => props.theme.width};
-    height: ${props => props.theme.height};
+
     border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
     @media ${device.mobileS} {
         padding: ${props => props.theme.paddingS}!important;
+        height: ${props => props.theme.heightS}!important;
     }
     @media ${device.tablet} {
         padding: ${props => props.theme.paddingM}!important;
+        height: ${props => props.theme.heightM}!important;
     }
     @media ${device.laptopL} {
         padding: ${props => props.theme.paddingL}!important;
+        height: ${props => props.theme.heightL}!important;
     }
 `
 

@@ -161,7 +161,7 @@ export const aboutContent = {
     img: div
   },
   {
-    txt: "To provide bottom-up community actions with more agency and to enhance the communications between the government and the local groups.",
+    txt: "To increase the agency of bottom-up community initiatives and enhance communication between the community and city.",
     img: communicate
   },
   {
@@ -185,7 +185,7 @@ export const involveContent = {
   roles: [
   {
     title: "Join the discussion",
-    txt: "The best way to be successful with the design process is to work as a team and let your creative process flow with your peers. We have a Slack workspace set up with multiple channels that will meet the needs of all our D4SD contributors. When you register online, you can be a part of our community of innovators, educators and resources to help you be successful",
+    txt: "We have a Slack workspace set up with multiple channels that will allow innovators to communicate with their team members and the greater D4SD community. When you register online, you will be connected to our network of resources to based on how you would like to participate.",
     image: innovator,
     id: "innovators",
     link: "https://join.slack.com/t/d4sd/shared_invite/enQtMjExMjA5MDY0MjkzLTk3NjY4NGM3MTE0N2M1NTJjODAxMGRiMDgxNmQ4ZDk1NTU4Mzk0OThjMTdkMzc0NTJmY2M1ZmNkZDA3NTdjYTU",
@@ -194,7 +194,7 @@ export const involveContent = {
   },
   {
     title: "Join the mailing list",
-    txt: "Keep up with all our updates and events with our newsletter! Every week we follow up with a recap of important discussions, community spotlights, and reminders of important deadlines, to help you stay on track during this challenge.",
+    txt: "Keep up with D4SD updates and events with our newsletter! Every week we highlight key takeaways from discussions, shout out community members, and remind you of important deadlines to help you stay on track during the challenge.",
     image: expert,
     id: "experts",
     link: "http://eepurl.com/c2kFon",
@@ -203,7 +203,7 @@ export const involveContent = {
   },
   {
     title: "Sponsor D4SD",
-    txt: "Get the chance to further grow your brand within our D4SD community by sponsoring D4SD events. This would be an opportunity to bring your product or services to your target audience, as well as support a mission that matters to you. Let’s work together and service the local San Diego community together.",
+    txt: "Get the chance to grow your brand within D4SD’s community by sponsoring events. This would allow either your product or service to reach new ears,while supporting a mission that matters to you.",
     image: sponsor,
     id: "sponsors",
     link: "mailto:team@d4sd.org",
@@ -212,7 +212,7 @@ export const involveContent = {
   },
   {
     title: "Join the D4SD team",
-    txt: "Are you ready to be a part of the D4SD network? We need, innovators, educators, volunteers, and more to help us reach our goal. If you’re interested in any of those roles or want to forge you own role, register with us below!",
+    txt: "We need, innovators, educators, volunteers, and more to help us reach our goal. If you’re interested in any of those roles or want to forge you own role, register with us below!",
     image: mail,
     id: "mail",
     link: "http://eepurl.com/c2kFon",
@@ -456,4 +456,9 @@ export const timelineContent = {
       isAction: true
     },
   ]
+}
+
+export const stakeholderContent = {
+  title: "Stakeholder Relations",
+  content: "Addressing a design challenge involves understanding diverse perspectives from stakeholders within that space--including the people who impact, and the people who are impacted by, a particular problem or opportunity. Oftentimes, investigators seek to gain information from these stakeholders based on their own hunches about the design challenge. While this can deepen understanding on some aspects of the challenge, jumping to targeted questions too early risks missing critical aspects that come up organically in conversations and risks arriving at solutions with limited understanding of their broader impact, including potential unintended consequences. With that in mind, we recommend keeping the following principles in mind when seeking to understand a design challenge. "
 }

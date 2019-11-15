@@ -36,13 +36,13 @@ class Navbar extends Component {
                 <NavLink className="nav-link mr-xl-4" to='/home' activeClassName="active">Home</NavLink>
               </li>
               <li className="nav-item">
+                <NavLink className="nav-link mr-xl-4" to='/process' activeClassName="active">Process</NavLink>
+              </li>
+              <li className="nav-item">
                 <NavLink className="nav-link mr-xl-4" to='/about' activeClassName="active">About</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link mr-xl-4" to='/getinvolved' activeClassName="active">Get Involved</NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link mr-xl-4" to='/process' activeClassName="active">Process</NavLink>
               </li>
               {/**<li className="nav-item">
                 <NavLink className="nav-link mr-xl-4" to='/challenge' activeClassName="active">Challenge</NavLink>
