@@ -74,7 +74,7 @@ class Home extends Component {
             </H5>
             <Br/>
             <OuterFlexBox center>
-              <Btn href="/involve">GET INVOLVED</Btn>
+              <Btn href="/getinvolved">GET INVOLVED</Btn>
             </OuterFlexBox>
             <Br/>
               <OuterFlexBox>
@@ -169,7 +169,7 @@ class Home extends Component {
             </H5>
             <Br/>
             <OuterFlexBox center>
-              <Btn left href="/involve">GET INVOLVED</Btn>
+              <Btn left href="/getinvolved">GET INVOLVED</Btn>
             </OuterFlexBox>
             <Br/>
 

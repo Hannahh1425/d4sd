@@ -54,8 +54,9 @@ import educator from "./img/involve_partner.svg";
 import sponsor from "./img/involve_sponsor.svg";
 import expert from "./img/involve_volunteer.svg";
 import innovator from "./img/involve_innovate.svg";
-// import question from "./img/involve_question.svg";
 import mail from "./img/involve_mail.svg";
+
+import hcd from './img/process_hcd.svg';
 
 /*************************************Home content***************************************/
 export const roles = [
@@ -193,13 +194,13 @@ export const involveContent = {
     action: "JOIN DISCUSSION"
   },
   {
-    title: "Join the mailing list",
+    title: "Become a feedback provider",
     txt: "Keep up with D4SD updates and events with our newsletter! Every week we highlight key takeaways from discussions, shout out community members, and remind you of important deadlines to help you stay on track during the challenge.",
     image: expert,
     id: "experts",
     link: "http://eepurl.com/c2kFon",
     isAction: "true",
-    action: "JOIN MAILING LIST"
+    action: "LEARN MORE"
   },
   {
     title: "Sponsor D4SD",
@@ -219,6 +220,15 @@ export const involveContent = {
     isAction: "true",
     action: "JOIN OUR TEAM"
   },
+  {
+    title: "Join the mailing list",
+    txt: "Keep up with D4SD updates and events with our newsletter! Every week we highlight key takeaways from discussions, shout out community members, and remind you of important deadlines to help you stay on track during the challenge.",
+    image: expert,
+    id: "experts",
+    link: "http://eepurl.com/c2kFon",
+    isAction: "true",
+    action: "JOIN MAILING LIST"
+  }
 ]}
 
 /********************************************FAQ*****************************************/
@@ -313,6 +323,7 @@ export const challengeContent = {
       id: "Mobility",
       subtitle: "Challenge topic: MOBILITY",
       title: "How might we help people move freely through our city?",
+      texts: "As people are looking for alternate ways to move around, while also wanting to reduce their emissions, the topic of inclusive and environmentally conscious transportation continues to be a pressing issue in our urban environment. Mobility can be examined from a number of lenses such as motor vehicle systems, transit, parking, intermodal connections, electric vehicles, accident reduction, walkability and bike-ability, and land-use patterns.",
       problems: [
         {
           img: home1,
@@ -336,6 +347,7 @@ export const challengeContent = {
       id: "Climate",
       subtitle: "Challenge topic: CLIMATE",
       title: "How can we help San Diego prepare for and mitigate climate change?",
+      texts: "Burning of fossil fuels has resulted in the gradual increase of global temperatures. Scientists have high confidence that global temperatures will continue to rise for decades to come. Climate change impacts areas such as transportation, housing, health, natural resources, food waste, agriculture, air pollution, and education.",
       problems: [
         {
           img: home1,
@@ -359,6 +371,7 @@ export const challengeContent = {
       id: "Housing",
       subtitle: "Challenge topic: HOUSING",
       title: "How can we reimagine housing to meet the needs of all San Diegans?",
+      texts: "Shelter is a fundamental human need; however people have limited choices for safe, affordable, and long-term housing in San Diego. The issue of housing is more than the physical structures. It also includes homelessness, land development, smart home technology, and mixed-use housing, all of which needs to be addressed with San Diego’s growing population.",
       problems: [
         {
           img: home1,
@@ -382,6 +395,7 @@ export const challengeContent = {
       id: "Health",
       subtitle: "Challenge topic: HEALTH",
       title: "How can we help all San Diegans live healthy and active lives?",
+      texts: "Many San Diego residents have limited access to preventative and restorative health services. Health is determined by social and physical environments and is directly connected to how people live, learn, work, and play. Topics such as quality of life, population health, and social well being, are all different aspects of how we as a city, need to improve our well being.",
       problems: [
         {
           img: home1,
@@ -406,22 +420,29 @@ export const challengeContent = {
 
 export const timelineContent = {
   title1: "Process",
-  content1: "Design for San Diego (D4SD) is a city-wide design challenge that seeks to tackle civic issues that affect the Greater San Diego Area through the human centered design process. While working in teams, participants in particular will go through the process of doing initial research, submitting a preliminary concept, requesting and providing feedback, submitting their final concepts, and attending the final summit to pitch their ideas to the City of San Diego. A more detailed process timeline can be found below.",
+  content1: "D4SD supports a human-centered design process to discover, ideate, prototype, pitch and activate the local community to address key civic challenges in our region. Participants can use this page to find other innovators, to submit their proposals, and to sign up for events.",
+  title2: "How to get started?",
+  content2: "If you’re a problem solver and you want to devote your ideas, energy, and enthusiasm to addressing complex challenges in San Diego, we want you to participate!  To get started, read the challenge briefs about making a more sustainable San Diego, read our advice on methods for human-centered design, and register your team (opens Jan 6th, 2020).",
+  hcd_img: hcd,
+  title3: "D4SD 2020 Timeline",
+  content3: "The deadline to submit a civic design concept is March 15, 2020. D4SD is structured to help people collaborate through a process of Discovery, Ideation, Prototyping, Pitching, and Activating alliance.  The timeline below offers a schedule of activities for participants who want to innovate.  If you want to get involved as a mentor, feedback provider or speaker, please learn more about these roles and sign up here -->.",
+  title4: "Deliverables",
+  content4: "A valid submission for D4SD 2020 includes a written summary of a specific problem you aim to solve, a written summary of your solution, a link to a prototype of your solution, and a visual poster that can be printed and displayed at a design summit.",
   timeline: [
     {
-      stage: "Contribute to online discussions",
+      stage: "Explore Challenges Impacting our Community ",
       date: "STARTS JAN 6",
-      detail: "Discovery is a huge part of the design process, and it is crucial that participants explore their chosen problem space to learn more about how they might tackle the issue. In this phase, participants will contribute to online discussions surrounding the problem topics while adding new insights that might drive the conversation forward and bring about new ideas. Start discussing today! Join the slack channel now.",
+      detail: "Problem discovery is perhaps the most important part of the design process. It is crucial to learn more about the problems impacting our community before trying to innovate new solutions. To get started, read up on this year’s challenge topics. To further engage in problem discovery, you can contribute to online discussions about these problem topics on the D4SD Slack Channel.  Be sure to read our advice on methods to support the discovery process.",
       action: "Join Discussion",
       state: "active",
       isAction: true,
       link: 'https://join.slack.com/t/d4sd/shared_invite/enQtMjExMjA5MDY0MjkzLTk3NjY4NGM3MTE0N2M1NTJjODAxMGRiMDgxNmQ4ZDk1NTU4Mzk0OThjMTdkMzc0NTJmY2M1ZmNkZDA3NTdjYTU',
-      target: "_blank"
+      target: "_blank",
     },
     {
-      stage: "Register your team",
+      stage: "Share your Ideas and Find a Team",
       date: "BY FEB 3",
-      detail: "Participants will work in groups to develop their ideas and proposals. There is no limit to how many members a team can have, but groups of 4-6 people tend to work best. Working in a team is much more beneficial than working on your own, as it will expose you to new insights and viewpoints and allow you to bounce ideas off one another during the whole D4SD process.",
+      detail: "Collaboration is a big part of successful design. Working in groups is much more beneficial than working on your own, as it will expose you to new insights and viewpoints and allow you to bounce ideas off one another. Visit the D4SD Slack channel to meet other challenge participants. After Jan 6th, you can register as a team to get updates about what’s happening with D4SD.",
       action: "Register",
       state: "inactive",
       note: "Registration will open on JAN 6",
@@ -429,27 +450,21 @@ export const timelineContent = {
 
     },
     {
-      stage: "Submit a preliminary concept",
+      stage: "Propose Initial Concepts and Get Community Feedback",
       date: "BY FEB 14",
-      detail: "The preliminary concept participants will be submitting consists of two deliverables: a problem description and a solution description. <br/><b>&#8226 Problem description</b><br/> Define your problem in no more than two sentences. The problem definition should be a product of your own analysis of the problem space, not simply a replication of the questions provided by D4SD. Your problem definition can be possibly grounded in user research, interviews and statistics. You can only submit one problem definition, but you can keep editing it before the deadline. <br/><b>&#8226 Solutions</b> <br/>You can propose at most 3 solutions for the problem you defined. Each solution should be presented as a Solution Proposal, which is suggested to include: a clear description of your solution, it could be either a concept, an illustration, a prototype of your ideas or anything that you think best represent your proposed solution. Keep in mind that at this point, the brainstorming process is more meaningful than a well constructed final product. You can upload at most 3 pdf files, each of which includes a different solution.",
+      detail: "Your team will have the opportunity to get early feedback from members of the San Diego community on your initial concepts. Community feedback can be particularly valuable as these stakeholders will likely have a sense of what’s feasible and desirable in solutions to address key civic issues. To participate in community feedback, register and submit your team’s preliminary concepts here in the D4SD Workspace by Feb 15th. The preliminary submission must include a description of the problem and potential solutions, details about your team, and questions for feedback providers to answer about your concept.",
       isAction: false
     },
     {
-      stage: "Request and provide feedback",
+      stage: "Submit Final Proposals for the D4SD Summit  ",
       date: "FEB 15 TO FEB 29",
-      detail: "Want to know if your solution tackles the root cause? Community feedback is valuable in informing you about the desirability and feasibility of your solution. In this stage, participants are able to ask specialists in the field or community members who are affected up to 3 questions regarding their initial concepts which will be answered within a week. During this time, participants will also provide feedback to their peers. Although there is only one formal feedback session, participants are welcome to pursue follow up with their feedback provider through other means of communication.",
+      detail: "No idea is perfect from the start. Almost all designs go through many iterations before being implemented. After viewing feedback on your ideas, refine your concept and submit your final submission here.  A complete submission includes… ",
       isAction: false
     },
     {
-      stage: "Submit your team's final concept",
-      date: "BY MAR 13",
-      detail: "For the final submission, teams will submit two items: presentation slides and a poster. <br/><b>&#8226 Presentation slides</b> <br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8226 A clear definition <br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8226 An image that clearly illustrates your solution/concept <br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8226 An analysis of the strengths and limitations of your solution <br/><b>&#8226 Poster</b> <br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8226 You can propose multiple solutions for the problem you choose (3 maximum), At this point, the brainstorming process is more meaningful a well constructed final product. <br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8226 Each solution should include a Solution Proposal which is suggested to include: a clear description of your solution, it could be either a concept, an illustration, a prototype of your ideas or anything that you think best represent your proposed solution.",
-      isAction: false
-    },
-    {
-      stage: "View community voting",
+      stage: "Create Community Alliances to Support your Proposal ",
       date: "APR 4",
-      detail: "Want to know how your idea is received? View the community voting to see how community members viewed your idea.",
+      detail: "Want to know how the community reacts to your proposal?",
       action: "View voting",
       state: "inactive",
       note: "Votes will be available in April",
@@ -458,7 +473,19 @@ export const timelineContent = {
   ]
 }
 
+export const processContent = {
+    title1: "Process",
+    content1: "D4SD participants will work together on teams to discover civic issues, to ideate novel solutions for those issues, to prototype and get feedback on proposed solutions, to pitch your refined concept, and to activate your community to help bring good ideas to life.  The following resources are meant to help you and your team get started at each phase of the D4SD civic design process.",
+    title2: "Human-Centered Design"
+}
+
 export const stakeholderContent = {
   title: "Stakeholder Relations",
-  content: "Addressing a design challenge involves understanding diverse perspectives from stakeholders within that space--including the people who impact, and the people who are impacted by, a particular problem or opportunity. Oftentimes, investigators seek to gain information from these stakeholders based on their own hunches about the design challenge. While this can deepen understanding on some aspects of the challenge, jumping to targeted questions too early risks missing critical aspects that come up organically in conversations and risks arriving at solutions with limited understanding of their broader impact, including potential unintended consequences. With that in mind, we recommend keeping the following principles in mind when seeking to understand a design challenge. "
+  content: "Addressing a design challenge involves understanding diverse perspectives from stakeholders within that space--including the people who impact, and the people who are impacted by, a particular problem or opportunity. Oftentimes, investigators seek to gain information from these stakeholders based on their own hunches about the design challenge. While this can deepen understanding on some aspects of the challenge, jumping to targeted questions too early risks missing critical aspects that come up organically in conversations and risks arriving at solutions with limited understanding of their broader impact, including potential unintended consequences. With that in mind, we recommend keeping the following principles in mind when seeking to understand a design challenge. ",
+  process: [
+    {
+      title: "Discover",
+      content: "To investigate a civic issue, civic innovators conduct interviews, focus groups, and other field work to deeply understand how an issue affects different stakeholders as they deeply engage with the communities of people affected most by an issue (called “stakeholders”).  During the discovery phase, innovators listen for stakeholder values, resources, and concerns, which they translate into design constraints that bound the space of viable solutions as well as questions to explore further.  Innovators build empathy with the stakeholders through the process of discovery."
+    }
+  ]
 }

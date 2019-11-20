@@ -30,13 +30,13 @@ class TimelineCard extends Component {
     return (
       <div id={this.props.question}>
         <div>
-          
+
             <FAQBtn onClick={this.toggleContent} style={{"padding":"0"}}>
               <Card  theme={{paddingS: "10px", paddingM: "20px 10px", paddingL: "30px 50px 30px 30px"}}>
                 <InnerFlexBox center>
                   <div>
                   <H4 left>{this.props.stage}</H4>
-                  <H3 thin left>{this.props.date}</H3>
+                  {!this.state.open && <H5>{this.props.first}</H5>}
                   </div>
                   {this.state.open ? <i className="fas fa-chevron-up" style={{"color":"rgba(0, 0, 0, 0.5)"}}></i>:<i className="fas fa-chevron-down" style={{"color":"rgba(0, 0, 0, 0.5)"}}></i>}
                 </InnerFlexBox>

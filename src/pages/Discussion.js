@@ -15,7 +15,7 @@ import header from "../assets/img/stakeholder_header.svg";
 import { stakeholderContent } from '../assets/content.js';
 import TimelineCard from '../components/landing/TimelineCard';
 
-class Stakeholder extends Component {
+class Discussion extends Component {
 
   constructor() {
     super();
@@ -59,7 +59,7 @@ class Stakeholder extends Component {
       <HeaderCard title={stakeholderContent.title} content={stakeholderContent.content} bg={header} isAction="false"/>
       <OuterContainer>
         <InnerContainer>
-          
+
         </InnerContainer>
       </OuterContainer>
       <Br/><Br/>
@@ -69,4 +69,4 @@ class Stakeholder extends Component {
   }
 }
 
-export default Stakeholder;
+export default Discussion;
