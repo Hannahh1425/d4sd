@@ -555,7 +555,7 @@ export const resourcesContent = {
     },
     {
       title: "Stakeholder Relationships",
-      content: "Addressing civic challenges often involves understanding diverse perspectives from many stakeholders, including people who are directly and indirectly impacted by a particular problem or opportunity.  We developed a guide to help participants to establish relationships with community stakeholders.",
+      content: "Addressing civic challenges often involves understanding diverse perspectives from many stakeholders, including people who are directly and indirectly impacted by a particular problem or opportunity. See our guide on building community relationships.",
       action: "LEARN MORE",
       link: "resources/stakeholder"
     },
