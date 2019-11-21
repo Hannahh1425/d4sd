@@ -11,55 +11,26 @@ import { Vl, Hl } from '../assets/css/others.js';
 import { Left, Grid, Card, OuterFlexBox, OuterContainer, InnerContainer, FlexibleWidth, StyledCarouselProvider } from '../assets/css/containers.js';
 //Contents
 import { sampleChallenges, roles, actionImg, logos } from '../assets/content.js';
-import header from "../assets/img/stakeholder_header.svg";
-import { stakeholderContent } from '../assets/content.js';
+import header from "../assets/img/involve_header.svg";
+import { feedbackContent } from '../assets/content.js';
 import TimelineCard from '../components/landing/TimelineCard';
 
 class FeedbackProvider extends Component {
-
-  constructor() {
-    super();
-    this.state = {
-      hover: "",
-      hoveredContent: "",
-      click: "",
-      clickedContent: ""
-    }
-  }
-
-  // hover = e => {
-  //   const target = e.target.id;
-  //   const content = e.target.title;
-  //   if (this.state.hover === target) {
-  //     this.setState({ hover : "", hoveredContent: "" });
-  //   }
-  //   else {
-  //     this.setState({ hover: target, hoveredContent: content });
-  //   }
-  // }
-
-  hover = e => {
-    const target = e.target.id;
-    const content = e.target.title;
-    this.setState({ hover: target, hoveredContent: content });
-  }
-
-  click = e => {
-    const target = e.target.id;
-    const content = e.target.title;
-    this.setState({ click: target, clickedContent: content });
-    console.log(this.state.click)
-  }
 
   render() {
   return (
     <div>
       <Navbar/>
       <Br/>
-      <HeaderCard title={stakeholderContent.title} content={stakeholderContent.content} bg={header} isAction="false"/>
+      <HeaderCard title={feedbackContent.title1} content={feedbackContent.content1} bg={header} isAction="false"/>
+      <br/><br/>
       <OuterContainer>
         <InnerContainer>
-
+          <H2 center>{feedbackContent.title2}</H2>
+          <br/>
+          <H5 dangerouslySetInnerHTML={{ __html: feedbackContent.content2 }} />
+          <br/>
+          <Btn style={{"marginLeft":"14px!important"}} href='https://docs.google.com/forms/d/e/1FAIpQLSdEcREjU4sMGjv9ZfNNL_Ljl1T7VjSqlgDlIla_HsVMRfB0ww/viewform?usp=sf_link' target='_blank'>Sign up as a feedback provider</Btn>
         </InnerContainer>
       </OuterContainer>
       <Br/><Br/>

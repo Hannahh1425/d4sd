@@ -6,8 +6,8 @@ import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox } from '../a
 import HeaderCard from '../components/landing/HeaderCard';
 import FooterCard from '../components/landing/FooterCard';
 import RoleCard from '../components/landing/RoleCard';
-import header from '../assets/img/involve_header.svg';
-import { involveContent } from '../assets/content.js';
+import header from '../assets/img/resource_header.svg';
+import { resourcesContent, involveContent } from '../assets/content.js';
 
 
 
@@ -52,24 +52,21 @@ class Resources extends Component {
       <div id="involve">
         <Navbar/>
         <br/><br/>
-        <HeaderCard title={involveContent.title1} content={involveContent.content1} bg={header} isAction="true"/>
+        <HeaderCard title={resourcesContent.title1} content={resourcesContent.content1} bg={header} isAction="true"/>
         <br/><br/>
         <OuterContainer>
           <InnerContainer>
             <OuterFlexBox>
-              {involveContent.roles.map((content, i) => (
+              {resourcesContent.resource.map((resource, i) => (
                 <InnerFlexBox half key={i}>
                   <RoleCard
-                    onClick={() => this.expand(this[content.id])}
-                    ref={this[content.id]}
-                    id={content.id}
-                    show = {this.state.show}
-                    title={content.title}
-                    txt={content.txt}
-                    image={content.image}
-                    link={content.link}
-                    action={content.action}
-                    isAction={content.isAction}
+                    involve="false"
+                    title={resource.title}
+                    txt={resource.content}
+                    image={resource.image}
+                    link={resource.link}
+                    action={resource.action}
+                    isAction={resource.isAction}
                   />
                 </InnerFlexBox>
               ))}

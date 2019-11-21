@@ -8,10 +8,10 @@ import { Btn, BtnSecondary, StyledButtonBack, StyledButtonNext, StyledDotGroup }
 import { FlexibleImg } from '../assets/css/images.js';
 import { H2, H3, H4, H5, H6, Styledh5 } from '../assets/css/fonts.js';
 import { Vl, Hl } from '../assets/css/others.js';
-import { Left, Grid, Card, OuterFlexBox, OuterContainer, InnerContainer, FlexibleWidth, StyledCarouselProvider } from '../assets/css/containers.js';
+import { Left, Grid, Card, OuterFlexBox, OuterContainer, InnerContainer, FlexibleWidth, InnerFlexBox } from '../assets/css/containers.js';
 //Contents
 import { sampleChallenges, roles, actionImg, logos } from '../assets/content.js';
-import header from "../assets/img/process_header.svg";
+import header from "../assets/img/workspace_header.svg";
 import { timelineContent } from '../assets/content.js';
 import { ReactComponent as HCD } from "../assets/img/process_hcd.svg";
 import TimelineCard from '../components/landing/TimelineCard';
@@ -36,24 +36,28 @@ class Workspace extends Component {
           <H5 dangerouslySetInnerHTML={{ __html: timelineContent.content3 }} />
           <Br/>
           <Grid>
-            <div/>
-            <div><Vl/></div>
+            <div><Vl style={{"overflow":"hidden"}}/></div>
             <div>
               {timelineContent.timeline.map(content => (
                 <div>
-                  <Hl/>
+                  <Hl image={content.img}/>
                   <Left>
                   <TimelineCard
                     stage={content.stage}
                     date={content.date}
                     detail={content.detail}
-                    action={content.action}
-                    state={content.state}
-                    isAction={content.isAction}
+                    action1={content.action1}
+                    action2={content.action2}
+                    state1={content.state1}
+                    state2={content.state2}
+                    isAction1={content.isAction1}
+                    isAction2={content.isAction2}
                     note={content.note}
                     newpage={content.newpage}
-                    link={content.link}
+                    link1={content.link1}
+                    link2={content.link2}
                     first={content.first}
+                    img={content.img}
                   />
                   </Left>
                 </div>

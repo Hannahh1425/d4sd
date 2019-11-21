@@ -3,6 +3,7 @@ import { FAQBtn, SmallBtn, Btn } from '../../assets/css/buttons.js';
 import { H2, H3, H4, H5, P } from '../../assets/css/fonts.js';
 import { Card, OuterFlexBox, InnerFlexBox, OuterContainer, InnerContainer, FlexibleWidth, StyledCarouselProvider } from '../../assets/css/containers.js';
 import { Br } from '../../assets/css/others.js';
+import { FlexibleImg } from '../../assets/css/images.js';
 class TimelineCard extends Component {
 
   constructor(props) {
@@ -30,14 +31,11 @@ class TimelineCard extends Component {
     return (
       <div id={this.props.question}>
         <div>
-
-            <FAQBtn onClick={this.toggleContent} style={{"padding":"0"}}>
-              <Card  theme={{paddingS: "10px", paddingM: "20px 10px", paddingL: "30px 50px 30px 30px"}}>
+            <FAQBtn onClick={this.toggleContent} style={{"width":"100%"}}>
+              <Card theme={{paddingS: "10px", paddingM: "20px 10px", paddingL: "30px 50px 30px 30px"}} style={{"width":"100%"}}>
                 <InnerFlexBox center>
-                  <div>
                   <H4 left>{this.props.stage}</H4>
                   {!this.state.open && <H5>{this.props.first}</H5>}
-                  </div>
                   {this.state.open ? <i className="fas fa-chevron-up" style={{"color":"rgba(0, 0, 0, 0.5)"}}></i>:<i className="fas fa-chevron-down" style={{"color":"rgba(0, 0, 0, 0.5)"}}></i>}
                 </InnerFlexBox>
               <div className={!this.state.open ? "d-none":"d-block"}>
@@ -47,9 +45,11 @@ class TimelineCard extends Component {
                     __html: this.props.detail,
                   }}
                 />
-                <br/>
-                <SmallBtn isAction={this.props.isAction} state={this.props.state} href={this.props.link} target="_blank">{this.props.action}</SmallBtn>
-                <P>{this.props.note}</P>
+              <br/>
+              <OuterFlexBox>
+                <SmallBtn isAction={this.props.isAction1} state={this.props.state1} href={this.props.link1} target="_blank">{this.props.action1}</SmallBtn>
+                <SmallBtn isAction={this.props.isAction2} state={this.props.state2} href={this.props.link2} target="_blank">{this.props.action2}</SmallBtn>
+                </OuterFlexBox>
               </div>
               </Card>
             </FAQBtn>

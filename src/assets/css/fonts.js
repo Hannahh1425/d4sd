@@ -89,6 +89,20 @@ export const H4 = styled.h4 `
     }
 `
 
+export const ChallengeH4 = styled(H4) `
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
+   height: 200px;
+   color:white;
+   background-color: rgba(0, 0, 0, 0.3);
+   border-radius:20px;
+   &:hover {
+     background-color: rgba(0, 0, 0, 0.1);
+   }
+`
+
 //For all paragraphs
 export const H5 = styled.h5 `
     font-family: 'Open Sans', sans-serif;

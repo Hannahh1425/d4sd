@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import { OuterContainer, FlexibleWidth, InnerContainer, OuterFlexBox, InnerFlexBox, Card } from '../assets/css/containers.js';
-import { H2, H3, H4, H5, IconTitle } from '../assets/css/fonts.js';
-import { Bg, Br } from '../assets/css/others.js';
+import { H2, H3, H4, H5, IconTitle, ChallengeH4 } from '../assets/css/fonts.js';
+import { ChallengeBg, Br, Shade } from '../assets/css/others.js';
 import { FlexibleImg } from '../assets/css/images.js';
 // import { Btn } from '../assets/css/buttons.js';
 import HeaderCard from '../components/landing/HeaderCard';
 import FooterCard from '../components/landing/FooterCard';
-import header from '../assets/img/involve_header.svg';
+import header from '../assets/img/challenge_header.svg';
 import { challengeContent } from '../assets/content.js';
 
 class Challenge extends Component {
@@ -18,9 +18,13 @@ class Challenge extends Component {
     this.Housing = React.createRef();
     this.Climate = React.createRef();
     this.Health = React.createRef();
+    this.state = {
+      hover: ""
+    }
   }
 
   scrollToRef = ref => {
+    console.log(ref);
     const position = ref.current.offsetTop - 90;
     window.scrollTo({
       left: 0,
@@ -28,6 +32,18 @@ class Challenge extends Component {
       behavior: 'smooth'
     });
   }
+
+ onHover = e => {
+   const target = e.target.id;
+   console.log("target" + target);
+   console.log(e.target);
+   if (this.state.hover !== target) {
+     this.setState({hover: target});
+   }
+   else {
+     this.setState({hover: ""});
+   }
+ }
 
   render() {
     return (
@@ -48,20 +64,20 @@ class Challenge extends Component {
                 </FlexibleWidth>
               )})}
             </OuterFlexBox>
-            <Br/>
             <OuterFlexBox center>
               {challengeContent.contents.map((content, i) => (
                 <React.Fragment>
-                  <H3 ref={this[content.id]}>{content.subtitle}</H3>
-                  <H4>{content.title}</H4>
-                  <H5 style={{"paddingBottom":"50px"}}>{content.texts}</H5>
-                  {/**content.problems.map((problem, i) => (
+                  <H4 ref={this[content.id]} style={{"paddingTop":"70px","paddingBottom":"30px"}}><span style={{"color":"#4496FF"}}>{content.subtitle}: </span>{content.title}</H4>
+                  {content.problems.map((problem, i) => {
+                    const target = problem.problem;
+                    return (
                     <InnerFlexBox half key={i}>
-                      <Bg image={problem.img} style={{"width":"400px", "height":"150px"}}>
-                        <H4>{problem.problem}</H4>
-                      </Bg>
+                      <ChallengeBg id={problem.problem} onMouseEnter={this.onHover} onMouseLeave={this.onHover} image={problem.img}>
+                        {(this.state.hover !== target) && <ChallengeH4 id={problem.problem}>{problem.problem}</ChallengeH4>}
+                        {(this.state.hover === target) && <H5 style={{"padding":"20px 20px 0 20px", "height":"200px","color":"white", "backgroundColor":"rgba(0, 0, 0, 0.7)", "borderRadius":"20px", "display":"flex", "justifyContent":"center", "alignItems":"center"}}>{problem.detail}</H5>}
+                      </ChallengeBg>
                     </InnerFlexBox>
-                  ))**/}
+                  )})}
                 </React.Fragment>
               ))}
             </OuterFlexBox>

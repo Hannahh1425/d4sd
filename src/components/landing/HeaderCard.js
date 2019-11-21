@@ -14,8 +14,8 @@ class HeaderCard extends Component {
             <InnerContainer>
               <Br/><Br/>
               <H1 center>{this.props.title}</H1>
-              <H5 left>{this.props.content}</H5>
-              <Br/>              
+              <H5 left dangerouslySetInnerHTML={{ __html: this.props.content }} />
+              <Br/>
             </InnerContainer>
             <Br/><Br/>
         </OuterContainer>

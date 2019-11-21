@@ -10,9 +10,9 @@ import FAQ from "./pages/FAQ";
 import About from "./pages/About";
 import Workspace from "./pages/Workspace";
 import Process from "./pages/Resources/Process";
+import Stakeholder from "./pages/Resources/Stakeholder";
 import Events from "./pages/Events";
 import PastSolution from "./pages/PastSolution";
-import Stakeholder from "./pages/Stakeholder";
 import FeedbackProvider from "./pages/FeedbackProvider";
 import Discussion from "./pages/Discussion";
 
@@ -32,10 +32,11 @@ class App extends Component<{}> {
           <Route exact path='/workspace' component={Workspace}/>
 
           <Route exact path='/resources/process' component={Process}/>
+          <Route exact path='/resources/stakeholder' component={Stakeholder}/>
+          <Route exact path='/getinvolved/feedback_provider' component={FeedbackProvider}/>
+          
           <Route exact path='/solution' component={PastSolution}/>
           <Route exact path='/events' component={Events}/>
-          <Route exact path='/stakeholder' component={Stakeholder}/>
-          <Route exact path='/feedback_provider' component={FeedbackProvider}/>
           <Route exact path='/discussion' component={Discussion}/>
         </Switch>
       </main>

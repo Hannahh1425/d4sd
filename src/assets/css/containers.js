@@ -46,11 +46,13 @@ export const Card = styled.div `
     box-shadow: 0px 0px 4px 0px #999999;
     padding: ${props => props.theme.padding};
     width: ${props => props.theme.width};
-
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
+    &:hover {
+      box-shadow: 0px 0px 8px 0px #999999;
+    }
     @media ${device.mobileS} {
         padding: ${props => props.theme.paddingS}!important;
         height: ${props => props.theme.heightS}!important;
@@ -152,7 +154,7 @@ export const TempPadding = styled.div `
 
 export const Grid = styled.div `
     display: grid;
-    grid-template-columns: 4% 2% 90%;
+    grid-template-columns: 4% 92%;
     grid-template-rows: auto;
     grid-gap: 0;
     margin-left: auto;
@@ -164,9 +166,6 @@ export const Left = styled.div `
         margin-left: 50px;
     }
     @media ${device.tablet} {
-        margin-left: 100px;
-    }
-    @media ${device.laptopL} {
-        margin-left: 100px;
+        margin-left: 90px;
     }
 `

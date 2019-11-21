@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
+import HeaderCard from '../components/landing/HeaderCard';
 import FooterCard from '../components/landing/FooterCard';
+import header from '../assets/img/faq_header.svg';
 import FAQCard from '../components/landing/FAQCard';
 import { faqContent } from '../assets/content.js';
 //css
@@ -15,7 +17,9 @@ class FAQ extends Component {
     return (
       <div>
       <Navbar />
-      <Br/><Br/><Br/>
+      <br/><br/>
+      <HeaderCard title="FAQ" content={faqContent.content} bg={header} isAction="true"/>
+      <br/><br/>
       <OuterContainer>
         <InnerContainer>
         {faqContent.map(faqContent => (

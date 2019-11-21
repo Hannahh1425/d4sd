@@ -18,7 +18,7 @@ class RoleCard extends Component {
       <Card id={this.props.id} ref={this.props.ref} theme={{padding: "20px", heightS:"auto", heightM:"auto", heightL:"60vh"}}>
         <div>
         <InnerFlexBox center>
-          <FlexibleImg theme={{width: "20%"}} src={this.props.image} />
+          {!this.props.involve&&<FlexibleImg theme={{width: "20%"}} src={this.props.image} alt={this.props.image}/>}
           <H4 left>{this.props.title}</H4>
         </InnerFlexBox>
         <br/>
