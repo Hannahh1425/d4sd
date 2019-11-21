@@ -27,9 +27,8 @@ export const ChallengeBg = styled.div `
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-width: 100%;
-    width: 400px;
-    height: 200px;
+    background-width: 400px;
+    background-height: 200px;
     border-radius: 20px;
     &:hover {
       cursor: pointer;
