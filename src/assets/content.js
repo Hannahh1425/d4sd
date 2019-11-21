@@ -570,7 +570,7 @@ export const processContent = {
     content3: [
       {
         title: "Discover:	What experiences do people have with different civic issues?",
-        txt: "To investigate a civic issue, civic innovators conduct interviews, focus groups, and other fieldwork to deeply understand how an issue affects different stakeholders as they engage with the communities of people affected most by an issue.  During the discovery phase, innovators listen for stakeholder values, resources, and concerns, which they translate into design constraints that bound the space of viable solutions as well as questions to explore further.  Innovators build empathy with the stakeholders through the process of discovery.<li><a href='/resources/stakeholder'>How do I identify stakeholder groups?</a></li>"
+        txt: "To investigate a civic issue, civic innovators conduct interviews, focus groups, and other fieldwork to deeply understand how an issue affects different stakeholders as they engage with the communities of people affected most by an issue.  During the discovery phase, innovators listen for stakeholder values, resources, and concerns, which they translate into design constraints that bound the space of viable solutions as well as questions to explore further.  Innovators build empathy with the stakeholders through the process of discovery.<br/><a href='/resources/stakeholder'>How do I identify stakeholder groups?</a>"
       },
       {
         title: "Ideate: Can we imagine better ways to address the issues? ",
@@ -585,7 +585,7 @@ export const processContent = {
         txt: "Prototypes do not need to be fully fleshed out to add value to the civic design process.  A well-crafted paper prototype can provide enough context so that community stakeholders can offer feedback about the ideas.  Through an iterative process, civic innovators work with community stakeholders to generate feedback that leads toward refining a prototyped idea.  At this phase, a civic innovator might use talk aloud scenarios, focus groups, experiments, and field deployment through an iterative process of testing-and-refinement."
       },
       {
-        title: "Activate card: What are the opportunities and barriers toward deployment?",
+        title: "Activate: What are the opportunities and barriers toward deployment?",
         txt: "Many civic ideas suffer without community support.  After developing a viable prototype, civic innovators will take it back to the communities affected by an issue to build alliances with community leaders and organizations."
       }
     ]
