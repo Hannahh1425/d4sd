@@ -327,7 +327,7 @@ export const faqContent = [
 
 export const challengeContent = {
   title: "Challenge Brief",
-  content:"You can take part in D4SD in a variety of ways! Whether it be ideating solutions, giving feedback, teaching civic design in the classroom, or supporting the initiative, getting involved with D4SD can look a little different for each person. Below are a few ways to get involved.",
+  content:"The challenge descriptions below highlight concerns that currently face San Diego, while also looking towards the future of a sustainable city. D4SD participants can explore any of these challenges, or propose their own topic!",
   nav: [
     {
       title: "Mobility",
