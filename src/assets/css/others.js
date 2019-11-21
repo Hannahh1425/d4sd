@@ -20,6 +20,35 @@ export const Bg = styled.div `
     }
 `
 
+export const ChallengeBg = styled.div `
+    background-color: ${props => props.theme.color};
+    background-image: ${props => `url(${props.image})`};
+    box-shadow: 0px 0px 3px 0px #999999;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-width: 100%;
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 8px 0px #999999;
+    }
+    @media ${device.mobileS} {
+        background-size: contain;
+    }
+    @media ${device.tablet} {
+        background-size: cover;
+    }
+`
+
+export const Shade = styled.div `
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+`
 
 export const Br = styled.div `
     @media ${device.mobileS} {
@@ -46,40 +75,59 @@ export const Iframe = styled.iframe `
 `
 
 export const Vl = styled.div `
-    border-right: 20px solid #E4F2FF;
-    height: 100%;
+    border-left: 4px solid #4497FF;
+    height: 90%;
+    margin-top: 40px;
+    @media ${device.mobileS} {
+      margin-left: 33px;
+    }
+    @media ${device.tablet} {
+      margin-left: 43px;
+    }
+    @media ${device.laptopL} {
+      margin-left: 43px;
+    }
 `
 
 export const Hl = styled.div `
-    border-bottom: 4px solid #4497FF;
     position: relative;
-    top: 32.4px;
+    top: 15px;
     @media ${device.mobileS} {
-      width: 50px;
+      &:before {
+        content: "";
+        position: absolute;
+        height: 45px;
+        width: 45px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: ${props => `url(${props.image})`};
+      }
+    }
+    @media ${device.tablet} {
       &:before {
         content: "";
         position: absolute;
         left: -10px;
-        top: -10px;
-        height: 25px;
-        width: 25px;
-        background: white;
-        border: 4px solid #4497FF;
-        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: ${props => `url(${props.image})`};
       }
     }
-    @media ${device.tablet} {
-      width: 100px;
+    @media ${device.laptopL} {
       &:before {
         content: "";
         position: absolute;
         left: -25px;
-        top: -15px;
-        height: 30px;
-        width: 30px;
-        background: white;
-        border: 5px solid #4497FF;
-        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: ${props => `url(${props.image})`};
       }
     }
 

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { device } from './breakpoints.js';
 import { ButtonBack, ButtonNext, DotGroup } from 'pure-react-carousel';
+import { ReactComponent as HCD } from "../img/process_hcd.svg";
 
 //Basic template for all regular buttons (for home, headers etc.)
 export const Btn = styled.a `
@@ -21,7 +22,7 @@ export const Btn = styled.a `
         background-color: #4497FF;
     }
     @media ${device.mobileS} {
-        font-size: 1em;
+        font-size: 0.85em;
         width: 80%;
         margin-top: ${props => props.top ? "1rem":"0"};
         margin-left: ${props => props.home ? "0rem!important":"0!important"};
@@ -71,7 +72,7 @@ export const BtnSecondary = styled.button `
         outline: none;
     }
     @media ${device.mobileS} {
-        font-size: 1em;
+        font-size: 0.85em;
         width: 80%;
         margin-top: ${props => props.top ? "1rem":"0"};
     }
@@ -109,14 +110,18 @@ export const FAQBtn = styled.button `
 export const SmallBtn = styled(Btn) `
     cursor: ${props => props.state === "active" ? "":"not-allowed"};
     display: ${props => props.isAction ? "inline":"none"};
+    color: ${props => props.state === "active" ? "white!important":""};
     box-shadow: ${props => props.state === "active" ? "":"none"};
     background-color: ${props => props.state === "active" ? "#4497FF":"#9D9D9D"};
+    margin-left: 14px!important;
     &:hover {
       background-color: ${props => props.state === "active" ? "#4497FF":"#9D9D9D"};
       box-shadow: ${props => props.state === "active" ? "":"none"};
     }
     @media ${device.mobileS} {
         font-size: 0.75em;
+        margin-top: 10px!important;
+        margin-left: 14px!important;
     }
     @media ${device.tablet} {
         font-size: 0.9em!important;
@@ -254,4 +259,10 @@ export const StyledDotGroup = styled(DotGroup) `
     top: 90vh;
     left: 50%;
     margin-left: -60px;
+`
+
+export const StyledHCD = styled(HCD) `
+    &:hover {
+      cursor: pointer;
+    }
 `

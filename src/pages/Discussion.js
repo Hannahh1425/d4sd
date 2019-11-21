@@ -11,11 +11,11 @@ import { Vl, Hl } from '../assets/css/others.js';
 import { Left, Grid, Card, OuterFlexBox, OuterContainer, InnerContainer, FlexibleWidth, StyledCarouselProvider } from '../assets/css/containers.js';
 //Contents
 import { sampleChallenges, roles, actionImg, logos } from '../assets/content.js';
-import header from "../assets/img/process_header.png";
-import { timelineContent } from '../assets/content.js';
+import header from "../assets/img/stakeholder_header.svg";
+import { stakeholderContent } from '../assets/content.js';
 import TimelineCard from '../components/landing/TimelineCard';
 
-class Process extends Component {
+class Discussion extends Component {
 
   constructor() {
     super();
@@ -56,33 +56,10 @@ class Process extends Component {
     <div>
       <Navbar/>
       <Br/>
-      <HeaderCard title={timelineContent.title1} content={timelineContent.content1} bg={header} isAction="false"/>
+      <HeaderCard title={stakeholderContent.title} content={stakeholderContent.content} bg={header} isAction="false"/>
       <OuterContainer>
         <InnerContainer>
-          <Grid>
-            <div/>
-            <div><Vl/></div>
-            <div style={{"marginTop":"50px"}}>
-              {timelineContent.timeline.map(content => (
-                <div>
-                  <Hl/>
-                  <Left>
-                  <TimelineCard
-                    stage={content.stage}
-                    date={content.date}
-                    detail={content.detail}
-                    action={content.action}
-                    state={content.state}
-                    isAction={content.isAction}
-                    note={content.note}
-                    newpage={content.newpage}
-                    link={content.link}
-                  />
-                  </Left>
-                </div>
-              ))}
-            </div>
-          </Grid>
+
         </InnerContainer>
       </OuterContainer>
       <Br/><Br/>
@@ -92,4 +69,4 @@ class Process extends Component {
   }
 }
 
-export default Process;
+export default Discussion;

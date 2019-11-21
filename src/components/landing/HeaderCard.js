@@ -14,11 +14,8 @@ class HeaderCard extends Component {
             <InnerContainer>
               <Br/><Br/>
               <H1 center>{this.props.title}</H1>
-              <H5 left>{this.props.content}</H5>
+              <H5 left dangerouslySetInnerHTML={{ __html: this.props.content }} />
               <Br/>
-              <OuterContainer center>
-              <BtnConditional href="http://eepurl.com/c2kFon" target="_blank" isAction={this.props.isAction}>JOIN OUR MAILING LIST</BtnConditional>
-              </OuterContainer>
             </InnerContainer>
             <Br/><Br/>
         </OuterContainer>
