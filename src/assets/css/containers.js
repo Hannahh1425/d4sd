@@ -64,6 +64,10 @@ export const Card = styled.div `
     }
     @media ${device.laptop} {
         padding: ${props => props.theme.paddingL}!important;
+        height: ${props => props.theme.heightML}!important;
+    }
+    @media ${device.laptopL} {
+        padding: ${props => props.theme.paddingL}!important;
         height: ${props => props.theme.heightL}!important;
     }
 `
