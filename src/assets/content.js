@@ -298,9 +298,11 @@ export const faqContent = [
 
 export const challengeContent = {
   title: "Challenge Brief",
-  content:"<b>What does it mean to be a Sustainable City?</b> For us, a sustainable San Diego is one where all parts of our city connect and support each other and the environment. ",
+  content:"What does it mean to be a Sustainable City?  For us, a sustainable San Diego is one where all parts of our city connect and support each other and the environment.  Working together, we can design ways to improve mobility, health, housing, and the climate for our region.",
   title2: "How do you fit in?",
-  content2: "Everyone is important in advancing a more sustainable San Diego, including you! Below are several challenges that, together, we can address.",
+  content2: "Everyone is important in advancing a more sustainable San Diego, including you!  Below are several examples of challenges that we can address, together. This is just the start of our collective effort. If you see a problem not listed here, go investigate it and share back to the D4SD discussion forum, or come to an event where you can motivate others to join you.",
+  title3: "Other challenge topics",
+  content3: "<b>How are other D4SD participants engaging with the topic of making San Diego a more Sustainable City?</b> We don’t want participants to be bound by the problem space we have constructed. If you or your team want to pursue a problem that isn’t represented on our website, please feel free to explore it. For example,  one of our educator partners—the entire 8th grade class at Vista Innovation and Design Academy— has been exploring a theme of \"Survive or Thrive\", based on the Sim City model, to explore a range of sustainability issues affecting SD regionally. \"Our umbrella topics are Social, Economic, Environmental. Students explored what all that means and specific topics within each umbrella topic ranging from Immigration & Refugees to Bee Colonies to Arts & Culture…\" Design away, friends!",
   nav: [
     {
       title: "Mobility",
@@ -528,7 +530,7 @@ export const resourcesContent = {
     },
     {
       title: "Stakeholder Relationships",
-      content: "Addressing civic challenges often involves understanding diverse perspectives from many stakeholders, including people who are directly and indirectly impacted by a particular problem or opportunity. See our guide on building community relationships.",
+      content: "Good civic design involves understanding the diverse perspectives of many stakeholders, including people directly and indirectly impacted by a problem or opportunity.  This guide can help D4SD participants establish and cultivate community relationships.",
       action: "LEARN MORE",
       link: "resources/stakeholder"
     },
@@ -609,7 +611,7 @@ export const stakeholderContent = {
 
 export const feedbackContent = {
   title1: "Sign up to be a feedback provider",
-  content1: "Innovators in D4SD would love to hear community members’ perspectives on their proposals.All community members are welcome to sign up here and to share their knowledge and experience with D4SD teams.",
-  title2: "What do I do as a feedback provider?  ",
-  content2:"<ul><li>Sign up below by Feb 1st.<ul><li>  Feedback providers will registered on our system and will receive an email with instructions and next steps </li></ul></li> <li>Review design concepts by different teams: <ul><li> D4SD teams will submit their preliminary design concepts by XX, including details about their design proposals and questions for you to answer As a feedback provider, you will get an email with a request to review proposals from 1-3 teams. The community feedback exchange will take place from Feb 6th - Feb 14th.</li></ul></li> <li>Provide feedback:<ul><li> Using the feedback interface, try to understand the team’s problem framing, design proposal, and goals. Explore the question and provide open-ended feedback follow the advice provided by a checklist-style guideline. If you finish reviewing one team and you still have time, provide feedback for another!</li></ul></li> <li>Stay in touch with your teams.</li> <li>Your feedback will be sent directly to the D4SD teams to help them refine their concepts  for the final submission. You have the option to leave your contact information so the team can contact you directly with follow-up questions.  </li></ul> <br/>If this sounds like a fun way to contribute to this initiative, sign up here:"
+  content1: "Innovators in D4SD would love to hear community members’ perspectives on their proposals. All San Diego community members are welcome to sign up here and to share their knowledge and experience with D4SD teams.",
+  title2: "How can I be a feedback provider?",
+  content2:"<li>Sign up below.  Feedback providers will register on our system and will receive an email with instructions and next steps.</li> <li>In February 2020, we will email you a request to review design concepts by different teams. D4SD participants will submit their preliminary design concepts, including details about their design proposals and questions for you to answer.</li> <li>Through the D4SD feedback exchange, you can learn more about the team’s problem framing, design proposal, and goals. Pick questions to answer and provide open-ended feedback. If you finish reviewing one team, and you have time, provide feedback for another!</li> <li>Stay in touch with your teams. Your feedback will be sent directly to the D4SD teams to help them refine their concepts for the final submission. You have the option to leave your contact information so the team ask follow-up questions.</li> <br/>If this sounds like a fun way to contribute to this initiative, sign up here:"
 }
