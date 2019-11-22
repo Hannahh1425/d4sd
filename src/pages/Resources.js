@@ -67,6 +67,7 @@ class Resources extends Component {
                     link={resource.link}
                     action={resource.action}
                     isAction={resource.isAction}
+                    new={resource.new}
                   />
                 </InnerFlexBox>
               ))}

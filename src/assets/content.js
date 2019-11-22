@@ -8,33 +8,6 @@ import action3 from './img/home_action3.jpg';
 import action4 from './img/home_action4.jpg';
 import action5 from './img/home_action5.jpg';
 
-import community1 from './img/home_logo_designlab.svg';
-import community2 from './img/home_logo_yankelovich.png';
-import community3 from './img/home_logo_id8.png';
-import community4 from './img/home_logo_hth.png';
-import community5 from './img/home_logo_league.png';
-import community6 from './img/home_logo_AltSchool.png';
-import community7 from './img/home_logo_centerforthearts.jpg';
-import community8 from './img/home_logo_D39C.png';
-import community9 from './img/home_logo_hoover.jpg';
-import community10 from './img/home_logo_usd.png';
-import community11 from './img/home_logo_idealab.jpg';
-import community12 from './img/home_logo_idealabgov.png';
-import community13 from './img/home_logo_wit.png';
-import community14 from './img/home_logo_VIDA.png';
-import community15 from './img/home_logo_LJCDS.png';
-import community16 from './img/home_logo_pointloma.png';
-import community17 from './img/home_logo_sdsu.png';
-import community18 from './img/home_logo_sdja.png';
-import community19 from './img/home_logo_newschool.png';
-import community20 from './img/home_logo_swccd.png';
-import community21 from './img/home_logo_sdcc.png';
-import community22 from './img/home_logo_e3.png';
-import community23 from './img/home_logo_nu.png';
-import community24 from './img/home_logo_zip.jpg';
-import community25 from './img/home_logo_urban.png';
-import community26 from './img/home_logo_ucsd.png';
-
 import logo1 from './img/home_logo1.png';
 import logo2 from './img/home_logo2.png';
 import logo3 from './img/home_logo3.png';
@@ -162,11 +135,6 @@ export const sampleChallenges = [
 ]
 
 export const actionImg = [action2, action3, action4, action5]
-export const communityLogo = [
-  community1, community2, community3, community4, community5, community6,
-  community7, community8, community9, community10, community11, community12, community13,
-  community14, community15, community16, community17, community18, community19,
-  community20, community21, community22, community23, community24, community25, community26]
 
 export const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7]
 
@@ -187,7 +155,7 @@ export const aboutContent = {
     img: connect
   },
   {
-    txt: "To increase and diversity participation, particularly for typically underrepresented or marginalized populations, by creating a range of specific roles while striving for diversity, equity, and inclusion.",
+    txt: "To increase and diversify participation, particularly for typically underrepresented or marginalized populations, by creating a range of specific roles while striving for diversity, equity, and inclusion.",
     img: div
   },
   {
@@ -215,16 +183,17 @@ export const involveContent = {
   roles: [
   {
     title: "Join the discussion",
-    txt: "We have a Slack workspace set up with multiple channels that will allow innovators to communicate with their team members and the greater D4SD community. When you register online, you will be connected to our network of resources to based on how you would like to participate.",
+    txt: "We have a Slack workspace set up with multiple channels that will allow innovators to communicate with their team members and the greater D4SD community. When you register online, you will be connected to our network of resources  based on how you want to participate.",
     image: innovator,
     id: "innovators",
     link: "https://join.slack.com/t/d4sd/shared_invite/enQtMjExMjA5MDY0MjkzLTk3NjY4NGM3MTE0N2M1NTJjODAxMGRiMDgxNmQ4ZDk1NTU4Mzk0OThjMTdkMzc0NTJmY2M1ZmNkZDA3NTdjYTU",
     isAction: "true",
-    action: "JOIN DISCUSSION"
+    action: "JOIN DISCUSSION",
+    new: "_blank"
   },
   {
     title: "Become a feedback provider",
-    txt: "Contribute to the D4SD as a feedback provider! Innovators in D4SD need diverse community members’ perspectives to improve their solutions on civic issues. Feedback provider could use their  constructive suggestions to help innovators.",
+    txt: "You can take part in D4SD in a variety of ways! Whether by ideating solutions, giving feedback, teaching civic design in the classroom, or supporting the initiative, getting involved with D4SD will  look a little different for each person. Below are a few ways to get involved.",
     image: feedback,
     id: "experts",
     link: "/getinvolved/feedback_provider",
@@ -238,7 +207,7 @@ export const involveContent = {
     id: "sponsors",
     link: "mailto:team@d4sd.org",
     isAction: "true",
-    action: "CONTACT OUR TEAM"
+    action: "CONTACT OUR TEAM",
   },
   {
     title: "Join the D4SD team",
@@ -247,7 +216,8 @@ export const involveContent = {
     id: "mail",
     link: "http://eepurl.com/c2kFon",
     isAction: "true",
-    action: "JOIN OUR TEAM"
+    action: "JOIN OUR TEAM",
+    new: "_blank"
   },
   {
     title: "Join the mailing list",
@@ -256,7 +226,8 @@ export const involveContent = {
     id: "experts",
     link: "http://eepurl.com/c2kFon",
     isAction: "true",
-    action: "JOIN MAILING LIST"
+    action: "JOIN MAILING LIST",
+    new: "_blank"
   }
 ]}
 
@@ -275,10 +246,6 @@ export const faqContent = [
     answer: "Our goal is to motivate and support citizens in learning how to use human-centered design to truly understand issues facing our region and to creatively generate solutions that could improve sustainability in San Diego. There’s many ways to get started:<li>You can learn more about the D4SD sustainability topics on the <a href='/challenges'>Challenges page</a>. </li><li>You can also <a href='http://eepurl.com/c2kFon' target='_blank'>sign up to be on our mailing list</a> and to volunteer for other roles as part of the challenge. </li><li>You can chat online with other innovators, experts, and citizens through our <a href='https://join.slack.com/t/d4sd/shared_invite/enQtMjExMjA5MDY0MjkzLTk3NjY4NGM3MTE0N2M1NTJjODAxMGRiMDgxNmQ4ZDk1NTU4Mzk0OThjMTdkMzc0NTJmY2M1ZmNkZDA3NTdjYTU' target='_blank'>D4SD Slack forum</a>. </li><li>You can attend one of the in-person events to help you connect with other innovators and to get mentorship from design practitioners.</li><li>You can read up on human-centered design, get advice on building stakeholder relationships, and see example solutions on the <a href='/resources'>Resources page</a>.",
   },
   {
-    question: 'How and when do I register for the challenge?',
-    answer: "Participants can register here for the challenge between Jan 6th and March 15th 2020. Once you create a D4SD account, visit the Workspace to participate in key activities, such as discussing the challenges in the online forum, finding a team, developing a proposal, and requesting feedback from the community.",
-  },
-  {
     question: 'How do I form teams? ',
     answer: "While you do not need a team to enter the D4SD challenge, a team can help you build your good idea into a great solution. An effective team is one that has a mix of diverse talents all striving towards a common goal. <br/><br/>The best way to find team members is to attend one of the public D4SD events (announcements coming soon). The events will give you a chance to participate in fun hands-on activities, such as small group discussions, brainstorming, and prototyping, and will help you find people interested in similar problems. <br/><br/>If you cannot attend the in-person events, you can take advantage of the D4SD Slack Channel to look for teammates and discuss solutions with other challenge participants. You are free to communicate directly with other participants and form teams on your own. There is no limit to team size, however we recommend team sizes of 4-6.",
   },
@@ -294,6 +261,10 @@ export const faqContent = [
     question: 'How can my team get help on our project?',
     answer: 'D4SD supports many ways for you and your team to get help. Your team can reach out through the Slack channel, for example, by posting a message to one of the problem thread channels. Later, during the prototyping phase of D4SD, we will open a feedback exchange where you can get input from the community. D4SD also has a resources page with various tips on how to get started.',
   },
+  // {
+  //   question: 'How and when do I register for the challenge?',
+  //   answer: "Participants can register here for the challenge between Jan 6th and March 15th 2020. Once you create a D4SD account, visit the Workspace to participate in key activities, such as discussing the challenges in the online forum, finding a team, developing a proposal, and requesting feedback from the community.",
+  // },
   // {
   //   question: 'What do I need to submit throughout the challenge?',
   //   answer: "There are two deadlines for submissions: The 1st deadline is for preliminary submission which is OPTIONAL, and the 2nd deadline is for final submission which is REQUIRED. After the first deadline, there will be a feedback session during which the domain experts and community members review your submitted work and give you feedback and suggestions. After the final deadline, the deliverables will be given to our jurors to determine the winners of the challenge. So your progress on the preliminary feedback session does not play into the final judging process and it only serves for a resource for all teams to improve on their work. This is the specific requirements for these two rounds of submissions: <br/><br/><ol><li><b>Preliminary Submission</b></li><br/>The preliminary submission is valuable for you to keep track of your progress and to reflect on your work. More importantly, submitting the works by this early deadline allows you to receive feedback from the community partners of D4SD. It is up to you whether you would like to be part of this feedback session or not and your final submission will be judged on a fair basis regardless of whether you decide to enter this session or not. In other words, you can skip this deadline, submit the final submission only and still get a chance to win the challenge. However, we highly recommend that you could participate in this stage because it is the only time that you are able to get help from D4SD in terms of connecting with the specialists in the field and with the community members who are potentially affected by the problems that you defined. Their feedback might provide guidance on the iteration of your solution or even the scoping of your project overall.<br/><ol><li><b>Problem description</b></li><ol><li>Define your problem in no more than two sentences. The problem definition should be a product of your own analysis of the problem space, not simply a replication of the questions provided by D4SD. Your problem definition can be possibly grounded in user research, interviews and statistics. You can only submit one problem definition, but you can keep editing it before the deadline.</li></ol><li><b>Solutions</b></li><ol><li>You can propose at most 3 solutions for the problem you defined. Each solution should be presented as a Solution Proposal, which is suggested to include: a clear description of your solution, it could be either a concept, an illustration, a prototype of your ideas or anything that you think best represent your proposed solution. Keep in mind that at this point, the brainstorming process is more meaningful than a well constructed final product. You can upload at most 3 pdf files, each of which includes a different solution.</li></ol></ol><br/><br/><li><b>Final Submission</b></li><br/>All teams are required to submit presentation slides and a poster but only the finalists are able to give their final pitches at the summit while all teams have a chance to present their posters at the summit. These are the specific requirements for the two items in your submission:<ol><li><b>Presentation slides</b></li> <ol><li>A clear definition</li><li>An image that clearly illustrates your solution/concept </li><li> An analysis of the strengths and limitations of your solution </li></ol><li><b>Poster</b></li><ol><li>You can propose multiple solutions for the problem you choose (3 maximum), At this point, the brainstorming process is more meaningful a well constructed final product.</li><li> Each solution should include a Solution Proposal which is suggested to include: a clear description of your solution, it could be either a concept, an illustration, a prototype of your ideas or anything that you think best represent your proposed solution.</li></ol></ol>",
@@ -327,7 +298,9 @@ export const faqContent = [
 
 export const challengeContent = {
   title: "Challenge Brief",
-  content:"The challenge descriptions below highlight concerns that currently face San Diego, while also looking towards the future of a sustainable city. D4SD participants can explore any of these challenges, or propose their own topic!",
+  content:"<b>What does it mean to be a Sustainable City?</b> For us, a sustainable San Diego is one where all parts of our city connect and support each other and the environment. ",
+  title2: "How do you fit in?",
+  content2: "Everyone is important in advancing a more sustainable San Diego, including you! Below are several challenges that, together, we can address.",
   nav: [
     {
       title: "Mobility",
@@ -361,17 +334,17 @@ export const challengeContent = {
         {
           img: mobility2,
           problem: "Safety",
-          detail: "What steps can be taken to minimize accidents and protect drivers and pedestrians?"
+          detail: "How can we reduce car accidents?"
         },
         {
           img: mobility3,
           problem: "Equitable Access",
-          detail: "How can we provide mobility solutions that meet the unique needs of every San Diegan?"
+          detail: "How can we improve access to mobility for people with accessibility needs?"
         },
         {
           img: mobility4,
-          problem: "Multimobdal Transportation",
-          detail: "How can transportation adapt to changing day to day needs?"
+          problem: "Autonomous Vehicles",
+          detail: "How will autonomous vehicles impact mobility, our commute, our community?"
         }
       ]
     },
@@ -389,7 +362,7 @@ export const challengeContent = {
         {
           img: climate2,
           problem: "Waste Management",
-          detail:"How can we reduce the amount of food, water, energy wasted in San Diego? "
+          detail:"How can we improve resource management to close waste loops in San Diego?"
         },
         {
           img: climate3,
@@ -412,22 +385,22 @@ export const challengeContent = {
         {
           img: housing1,
           problem: "Mixed-Use Housing and Placemaking",
-          detail: "How might we do a better job of creating a sense of place and community in the face of vacation rentals, mixed-use houses, and gentrification?"
+          detail: "What changes or modifications to the physical environment might we make to promote a stronger sense of community? "
         },
         {
           img: housing2,
           problem: "Resilient Homes",
-          detail: "How can we make homes more resilient to climate change, desertification, and other environmental challenges facing San Diego?"
+          detail: "How can we make homes more resilient to the effects of climate change, such as desertification, fires, flooding, etc.? "
         },
         {
           img: housing3,
           problem: "Homelessness",
-          detail: "How can we create opportunities to address the needs of the most vulnerable (shelter, safety, nutrition..)?"
+          detail: "How can we create opportunities to address the safety, shelter, and nutritional needs of the most vulnerable?"
         },
         {
           img: housing4,
           problem: "Internet of Things (IoT)",
-          detail: "How can smart home technology connect us rather than isolate us while still keeping a sense of privacy and security?"
+          detail: "How do we prepare for an increasingly data-driven home-environment? "
         }
       ]
     },
@@ -440,22 +413,22 @@ export const challengeContent = {
         {
           img: health1,
           problem: "Senior Health Care",
-          detail: "How can we offer effective care services for senior people?"
+          detail: "What forms of care do seniors in our community need?"
         },
         {
           img: health2,
           problem: "Mental Health",
-          detail: "How might we provide the care and resources needed to help people with mental health issues?"
+          detail: "How might we provide care and resources to help people who are struggling with depression and mental health issues? "
         },
         {
           img: health3,
           problem: "Safety",
-          detail: "How can we build resilience into our community so that people feel safe? "
+          detail: "How can we improve the physical safety and sense of being safe in a neighborhood? "
         },
         {
           img: health4,
           problem: "Food Insecurity",
-          detail: "How might we ensure that everyone in San Diego has reliable access to food?"
+          detail: "How might we ensure that everyone in San Diego has reliable access to nutritious and affordable food?"
         }
       ]
     }
@@ -468,7 +441,7 @@ export const timelineContent = {
   title2: "How to get started?",
   content2: "If you’re a problem solver and you want to devote your ideas, energy, and enthusiasm to addressing complex challenges in San Diego, we want you to participate!  To get started, <a href='/challenges'>read the challenge briefs</a> about making a more sustainable San Diego, read our <a href='/resources/process/'>advice on methods for human-centered design</a>, and register on the platform (opens Jan 6th, 2020).",
   title3: "D4SD 2020 Timeline",
-  content3: "The deadline to submit a civic design concept is <b>March 15, 2020</b>. D4SD is structured to help people collaborate through a process of Discovery, Ideation, Prototyping, Pitching, and Activation. The timeline below offers a schedule of activities for participants who want to innovate.  If you want to get involved as a mentor, feedback provider or speaker, please <a href='/getinvolved'>learn more about these roles</a>.",
+  content3: "We are still working to settle on exact event dates and deadlines for D4SD 2020, but we anticipate a submission deadline of March 20, 2020. D4SD is structured to help people collaborate through a process of Discovery, Ideation, Prototyping, Pitching, and Activation. The timeline below offers a schedule of activities for participants who want to innovate.  If you want to get involved as a mentor, feedback provider or speaker, please <a href='/getinvolved'>learn more about these roles</a>.",
   title4: "Deliverables",
   content4: "A valid submission for D4SD 2020 includes a written summary of a specific problem you aim to solve, a written summary of your solution, a link to a prototype of your solution, and a visual poster that can be printed and displayed at a design summit.",
   timeline: [
@@ -490,7 +463,7 @@ export const timelineContent = {
     {
       stage: "Share your Ideas and Find a Team",
       date: "BY FEB 3",
-      detail: "Great teams can tap into the diversity of skills and perspectives of their members as they collaborate. Visit the D4SD Slack channel to meet other participants and form teams around the D4SD challenges. After Jan 6th, you can register and to get updates about what’s happening with D4SD.",
+      detail: "Collaboration is essential for truly innovative design work. If you have ideas or are passionate about a problem, D4SD provides you an opportunity to share with others and build a team around your concepts. Great teams tap into the diversity of skills and perspectives of their members as they collaborate. Visit the D4SD Slack channel to meet other participants and form teams around the D4SD challenges. Register to get updates about what’s happening with D4SD.",
       action1: "Search for teammates on Slack",
       state1: "active",
       action2: "Register your team",
@@ -504,7 +477,7 @@ export const timelineContent = {
     {
       stage: "Propose Initial Concepts and Get Community Feedback",
       date: "BY FEB 14",
-      detail: "Your team will have the opportunity to get early feedback from members of the San Diego community on your initial concepts. Community feedback can be particularly valuable as these stakeholders will likely have a sense of what’s feasible and desirable in solutions to address key civic issues. To participate in community feedback, register and submit your team’s preliminary concepts here in the D4SD Workspace by Feb 15th. The preliminary submission must include a description of the problem and potential solutions, details about your team, and questions for feedback providers to answer about your concept.",
+      detail: "Your team will have the opportunity to get early feedback from members of the San Diego community on your initial concepts. Community feedback can be particularly valuable as these stakeholders will likely have a sense of what’s feasible and desirable in solutions to address key civic issues. To participate in community feedback, register and submit your team’s preliminary concepts here in the D4SD Workspace by Feb 15th. The preliminary submission must include a description of the problem and proposal, details about your team, and questions for feedback providers to answer about your concept.",
       action1: "Sign up for D4SD",
       state1: "inactive",
       action2: "Register your team",
@@ -551,7 +524,7 @@ export const resourcesContent = {
       title: "D4SD Process Guide",
       content: "Modeled after best practices in human-centered design research, the D4SD process involves five key phases: Discovery, Ideate, Prototype, Pitch, Activate.  Read more about how you and your team can get the most out of each phase.",
       action: "LEARN MORE",
-      link: "/resources/process"
+      link: "/resources/process",
     },
     {
       title: "Stakeholder Relationships",
@@ -565,59 +538,63 @@ export const resourcesContent = {
 export const processContent = {
     title1: "Process",
     content1: "D4SD participants will work together on teams to <b>discover</b> civic issues, to <b>ideate</b> novel solutions for those issues, to <b>prototype</b> and get feedback on proposed solutions, to pitch your refined concept, and to <b>activate</b> your community to help bring good ideas to life.  The following resources are meant to help you and your team get started at each phase of the D4SD civic design process.",
-    title2: "Human-Centered Design",
+    title2: "Strategies for Human-Centered Design",
     content2: "Design for San Diego seeks to tackle complex civic challenges that affect our region by engaging and coordinating hundreds of innovators in a process of human-centered design.",
     content3: [
       {
         title: "Discover:	What experiences do people have with different civic issues?",
-        txt: "To investigate a civic issue, civic innovators conduct interviews, focus groups, and other fieldwork to deeply understand how an issue affects different stakeholders as they engage with the communities of people affected most by an issue.  During the discovery phase, innovators listen for stakeholder values, resources, and concerns, which they translate into design constraints that bound the space of viable solutions as well as questions to explore further.  Innovators build empathy with the stakeholders through the process of discovery.<br/><a href='/resources/stakeholder'>How do I identify stakeholder groups?</a>"
+        txt: "To investigate a civic issue, D4SD participants conduct interviews, focus groups, and other fieldwork to deeply understand how an issue affects different stakeholders as they engage with the communities of people affected most by an issue.  During the discovery phase, innovators listen for stakeholder values, resources, and concerns, which they translate into design constraints that bound the space of viable solutions as well as questions to explore further.  Innovators build empathy with the stakeholders through the process of discovery.<br/><br/>Resources: <br/><a href='/resources/stakeholder'>How do I identify stakeholder groups?</a></dl>"
       },
       {
         title: "Ideate: Can we imagine better ways to address the issues? ",
-        txt: "Civic innovators generate ideas with other people and as teams. Through the process of generating ideas, civic innovators explore the solutions an issue in the design space paying careful attention to the design constraints and design questions identified during the Discovery phase.  Civic innovators may also reach out to the stakeholder community as collaborators throughout the ideation process."
+        txt: "D4SD participants generate ideas with other people and as teams. Through the process of generating ideas, D4SD participants explore the problem-space of a civic issue by paying careful attention to the design constraints and design questions identified during the Discovery phase.  D4SD participants may also reach out to the stakeholder community as collaborators throughout the ideation process."
       },
       {
         title: "Prototype: How can we make our ideas concrete and testable?  ",
-        txt: "As civic innovators identify viable design ideas, they begin to work with physical materials, such as paper, web systems, and other lightweight media to rapidly realize the idea.  By working with physical materials, civic innovators may also recognize new design constraints and design questions about the issue, which can require revisiting their Discovery phase."
+        txt: "As D4SD participants identify viable design ideas, they begin to work with physical materials, such as paper, web systems, and other lightweight media to rapidly realize the idea.  By working with materials and engaging with feedback provided by community stakeholders, D4SD participants may recognize new design constraints and questions about the issue."
       },
       {
         title: "Pitch: How can we convince other people that we have a good concept?",
-        txt: "Prototypes do not need to be fully fleshed out to add value to the civic design process.  A well-crafted paper prototype can provide enough context so that community stakeholders can offer feedback about the ideas.  Through an iterative process, civic innovators work with community stakeholders to generate feedback that leads toward refining a prototyped idea.  At this phase, a civic innovator might use talk aloud scenarios, focus groups, experiments, and field deployment through an iterative process of testing-and-refinement."
+        txt: "Without a good story, even the best of ideas can fall flat. During this phase, D4SD participants will develop pitch materials, including a poster and a short elevator pitch, to introduce other people to the problem and to the proposed solutions.  Read the advice here to refine your team’s concept and create polished pitch materials to help prepare for the D4SD Summit."
       },
       {
         title: "Activate: What are the opportunities and barriers toward deployment?",
-        txt: "Many civic ideas suffer without community support.  After developing a viable prototype, civic innovators will take it back to the communities affected by an issue to build alliances with community leaders and organizations."
+        txt: "Many civic proposals will fail to gain traction without community support.  After developing a viable prototype, your team will need to reach out to those affected by an issue and build alliances with key community leaders and organizers. D4SD participants will have an opportunity to activate their network and to build alliances through the D4SD Summit. "
       }
     ]
 }
 
 export const stakeholderContent = {
-  title1: "How to build stakeholder relationships",
-  content1: "Addressing a design challenge involves understanding diverse perspectives from stakeholders within that space—including the people who impact, and the people who are impacted by, a particular problem or opportunity.   With the goal of building relationships and community around civic design, we have developed this guide for leading “relationship-based inquiry” with community stakeholders.",
+  title1: "How to cultivate stakeholder relationships",
+  content1: "Addressing civic challenges often involves understanding diverse perspectives from many stakeholders, including people who are directly and indirectly impacted by a particular problem.  Towards the goal of supporting community-driven design, we developed a guide to help participants and mentors establish and build relationships with community stakeholders.  Always remember that stakeholders are people.",
   title2: "Principles for engaging with stakeholders over time",
   content2: [
     {
-      title: "Focus on cultivating a relationship before asking for help",
-      txt: "When developing a relationship with a stakeholder group, cultivate your relationship with the group before asking for their ideas, help, and time.  Strive to move at the pace of trust.  Focus first on getting to know people rather than getting to know problems. Build empathy by focusing on what matters to the stakeholder. <br/><br/>Create the space for parties to build alignment on values and set realistic expectations.  The following are several articles about how to cultivate a meaningful relationship with stakeholders through empathy."
+      title: "Focus on cultivating the relationship before asking for what you need",
+      txt: "When developing a relationship with a stakeholder, cultivate your relationship with the person before asking for their ideas, help, and time.  Strive to move at the pace of trust.  Focus first on getting to know people rather than getting to know problems. Build empathy by focusing on what matters to the person you will be working with."
     },
     {
-      title: "Prioritize small improvements over massive changes to the system",
-      txt: "What is feasible today, tomorrow, or might be in the future?  Muddling through, incrementalism, tinkering, addressing modules—all these activities are important, but risk missing the root cause of a civic issue.  When decisions about how to engage with an issue are too focused on feasibility today, the decisions may divert energy from impactful work. <br/><br/>Seek to understand the complexity of the system and root causes to challenges.  Leave enough time to tinker, as a way to leave space to detect unintended consequences early in the civic design process.  Think about your work with stakeholders as cultivating assets to address an immediate challenge now, but that leave room to lead more substantial change through the future. <br/><br/>The following is a small collection of articles about project scoping, management, and communication."
+      title: "Prioritize small improvements over massive change",
+      txt: "Thoughtful civic design might offer a small, seemingly trivial, but impactful change.  One approach to civic design is to look for many opportunities to make definite, even incremental short-term improvements to the ways that people experience a civic issue.  On their own, each small improvement might feel trivial, but (a) try not to lose track of the fact that small changes can meaningfully improve a person’s life, and (b) each small opportunity for improvement might point toward bigger opportunities to make lasting improvement as well as (c) root causes underlying the challenge."
     },
     {
       title: "Appreciate that stakeholders have shared their time with you",
-      txt: "Time is valuable.  When you request something from stakeholders remember that you are asking for their time and energy.  While you and your team are working to address meaningful civic issues that may matter to the stakeholder, be grateful when they offer their time and energy.  You might demonstrate your appreciation by writing thank you notes, by responding promptly when stakeholders raise questions, and by paying attention to them.<br/><br/>The following are a few templates for writing thank you notes and demonstrating your appreciation for the stakeholders time and energy."
+      txt: "Time is valuable.  When you request something from stakeholders, remember that you are asking for their time and energy.  While you and your team are working to address meaningful civic issues that may matter to the stakeholder, be grateful when they offer their time and energy.  You might demonstrate your appreciation by writing thank you notes, by responding promptly when stakeholders raise questions, and by paying attention to them."
     },
   ],
   title3: "What does that look like in action?",
   content3: [
     {
       title: "Establish connections",
-      txt: "A first meeting will feel less like an interview and more like a meet-and-greet.  When reaching out to a stakeholder, come with general questions about their day-to-day, rather than targeted questions based on your hunches about the design challenge space. (e.g., What kind of role do you play related to [design challenge arena]? In what ways do you currently work to address [design challenge arena]? What is going well? What is not going so well? Where do you anticipate this going in the future (near term, long term)?) <br/><br/>Resources below include sample interview questions and agendas for a first meeting with a stakeholder group."
+      txt: "There are many ways to find people with whom you want to connect. Start by thinking about who you know in your immediate community of friends, family, and neighbors and branch out from there.  After thinking about your own personal network, think about the challenge itself, e.g., does it occur more often in some regions of San Diego than others, what groups of people might be affected by or related to the challenge, who are the people or institutions that might already be working to address the challenge?  This line of inquiry can help to identify the stakeholders involved with a civic challenge. <br/><br/> When initially connecting with a stakeholder, aim for the first meeting to operate less like an interview and more like a meet-and-greet.  When reaching out to a stakeholder, come with general questions about their day-to-day, rather than targeted questions based on your hunches about the design challenge space. <i>(e.g., What kind of role do you play related to [design challenge arena]? In what ways do you currently work to address [design challenge arena]? What is going well? What is not going so well? Where do you anticipate this going in the future (near term, long term)?)</i>"
+    },
+    {
+      title: "Express sincere interest",
+      txt: "Enter the conversation with a sincere interest in what matters most to the person you are meeting.  Strive to ground your questions in the perspective and language of your stakeholder, rather than drawing exclusively from your preconceived hunch about possible solutions."
     },
     {
       title: "Be honest and committed",
-      txt: "Be transparent and realistic.  Don’t promise a stakeholder more than you know you can contribute:  Under-promise and over-deliver.  Ask the stakeholder about their level of interest in the civic design process, to appropriately plan for their participation (or lack thereof) in the future. <br/><br/>Linked below are a set of articles about how to negotiate expectations related to community projects."
+      txt: "Be transparent and realistic.  Don’t promise a stakeholder more than you know you can contribute:  Under-promise and over-deliver.  Ask the person about their level of interest in the civic design process, to appropriately plan for their participation (or lack thereof) in the future."
     },
     {
       title: "Document the evolving relationship",
@@ -625,7 +602,7 @@ export const stakeholderContent = {
     },
     {
       title: "Monitor for unintended consequences",
-      txt: "Sometimes a particular design proposal can result in negative unintended consequences for a stakeholder group.  For example, a design proposal may advantage those with rich resources over those with few resources, and thus, perpetuating inequity among stakeholder groups.  As you and your team build stakeholder relationships, we encourage you to regularly pause and reflect on those relationships, how they influence your approach to civic design, and shape your role as a civic innovator. <br/><br/>The links below point to a few case studies of times when civic design went wrong and some strategies for recovery. "
+      txt: "Sometimes a particular design proposal can result in negative unintended consequences for a stakeholder.  For example, a design proposal may advantage those with rich resources over those with few resources, and thus, perpetuating inequity among stakeholders.  As you and your team build stakeholder relationships, we encourage you to regularly pause and reflect on those relationships, how they influence your approach to civic design, and shape your role as a civic innovator."
     },
   ]
 }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import { OuterContainer, FlexibleWidth, InnerContainer, OuterFlexBox, InnerFlexBox, Card } from '../assets/css/containers.js';
-import { H2, H3, H4, H5, IconTitle, ChallengeH4 } from '../assets/css/fonts.js';
+import { H2, H3, H4, H5, IconTitle, ChallengeH4, ChallengeH5 } from '../assets/css/fonts.js';
 import { ChallengeBg, Br, Shade } from '../assets/css/others.js';
 import { FlexibleImg } from '../assets/css/images.js';
 // import { Btn } from '../assets/css/buttons.js';
@@ -60,10 +60,14 @@ class Challenge extends Component {
                 return (
                 <FlexibleWidth theme={{ widthS: "50%", widthM: "25%"}} onClick={() => this.scrollToRef(this[nav.title])} key={nav.title}>
                   <FlexibleImg hover theme={{width: "70%"}} src={nav.img}/>
-                  <IconTitle center>{nav.title}</IconTitle>
+                  <IconTitle center hover>{nav.title}</IconTitle>
                 </FlexibleWidth>
               )})}
             </OuterFlexBox>
+            <br/><br/>
+            <H2 center>{challengeContent.title2}</H2>
+            <br/>
+            <H5 dangerouslySetInnerHTML={{ __html: challengeContent.content2 }} />
             <OuterFlexBox center>
               {challengeContent.contents.map((content, i) => (
                 <React.Fragment>
@@ -74,7 +78,7 @@ class Challenge extends Component {
                     <InnerFlexBox half key={i}>
                       <ChallengeBg id={problem.problem} onMouseEnter={this.onHover} onMouseLeave={this.onHover} image={problem.img}>
                         {(this.state.hover !== target) && <ChallengeH4 id={problem.problem}>{problem.problem}</ChallengeH4>}
-                        {(this.state.hover === target) && <H5 style={{"padding":"20px 20px 0 20px", "height":"200px","color":"white", "backgroundColor":"rgba(0, 0, 0, 0.7)", "borderRadius":"20px", "display":"flex", "justifyContent":"center", "alignItems":"center"}}>{problem.detail}</H5>}
+                        {(this.state.hover === target) && <ChallengeH5>{problem.detail}</ChallengeH5>}
                       </ChallengeBg>
                     </InnerFlexBox>
                   )})}

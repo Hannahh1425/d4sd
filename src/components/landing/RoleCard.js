@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { FlexibleImg } from '../../assets/css/images.js';
 import { H4, H5 } from '../../assets/css/fonts.js';
 import { InnerFlexBox, Card, OuterContainer } from '../../assets/css/containers.js';
-import { Btn } from '../../assets/css/buttons.js';
+import { Btn, SmallBtn } from '../../assets/css/buttons.js';
 import styled from 'styled-components';
 
 class RoleCard extends Component {
@@ -15,7 +15,7 @@ class RoleCard extends Component {
     //   button = <i className="fas fa-chevron-down"></i>
     // }
     return (
-      <Card id={this.props.id} ref={this.props.ref} theme={{padding: "20px", heightS:"auto", heightM:"auto", heightL:"60vh"}}>
+      <Card id={this.props.id} ref={this.props.ref} theme={{padding: "20px", heightS:"auto", heightM:"auto", heightL:"500px"}}>
         <div>
         <InnerFlexBox center>
           {!this.props.involve&&<FlexibleImg theme={{width: "20%"}} src={this.props.image} alt={this.props.image}/>}
@@ -25,11 +25,9 @@ class RoleCard extends Component {
         <H5 left>{this.props.txt}</H5>
         </div>
         <br/><br/>
-        <OuterContainer center>
-          <Btn href={this.props.link} target="_blank">
-            {this.props.action}
-          </Btn>
-        </OuterContainer>
+        <SmallBtn isAction="true" state="active" href={this.props.link} target={this.props.new}>
+          {this.props.action}
+        </SmallBtn>
         <br/><br/>
       </Card>
     );

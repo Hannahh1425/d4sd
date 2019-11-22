@@ -9,7 +9,7 @@ class HeaderCard extends Component {
 
   render() {
     return (
-      <Bg image={this.props.bg}>
+      <Bg image={this.props.bg} theme={{height:"350px"}}>
         <OuterContainer>
             <InnerContainer>
               <Br/><Br/>

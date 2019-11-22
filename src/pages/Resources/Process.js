@@ -46,8 +46,7 @@ class Process extends Component {
           <br/><br/><br/>
           {processContent.content3.map(content => (
             <div>
-              <H4 dangerouslySetInnerHTML={{ __html: content.title }} />
-              <br/>
+              <H4 left dangerouslySetInnerHTML={{ __html: content.title }} />              
               <H5 dangerouslySetInnerHTML={{ __html: content.txt }} />
               <br/><br/>
             </div>

@@ -89,20 +89,6 @@ export const H4 = styled.h4 `
     }
 `
 
-export const ChallengeH4 = styled(H4) `
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin: auto;
-   height: 200px;
-   color:white;
-   background-color: rgba(0, 0, 0, 0.3);
-   border-radius:20px;
-   &:hover {
-     background-color: rgba(0, 0, 0, 0.1);
-   }
-`
-
 //For all paragraphs
 export const H5 = styled.h5 `
     font-family: 'Open Sans', sans-serif;
@@ -119,6 +105,42 @@ export const H5 = styled.h5 `
     }
     @media ${device.desktop} {
         font-size: 2em!important;
+    }
+`
+
+
+export const ChallengeH4 = styled(H4) `
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
+   color:white;
+   background-color: rgba(0, 0, 0, 0.3);
+   border-radius:20px;
+   &:hover {
+     background-color: rgba(0, 0, 0, 0.1);
+   }
+   @media ${device.mobileS} {
+       height: 150px;
+   }
+   @media ${device.tablet} {
+       height: 200px;
+   }
+`
+
+export const ChallengeH5 = styled(H5) `
+    padding: 20px 20px 0 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    @media ${device.mobileS} {
+        height: 150px;
+    }
+    @media ${device.tablet} {
+        height: 200px;
     }
 `
 
@@ -169,6 +191,10 @@ export const IconTitle = styled.h5 `
     font-weight: 600;
     padding: 0 14px;
     text-align: ${props => props.center ? "center":"left"};
+    &:hover {
+      color: ${props => props.hover ? "#4496FF":"#333333"};
+      cursor: pointer;
+    }
     @media ${device.mobileS} {
         font-size: 1em;
     }

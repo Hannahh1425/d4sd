@@ -30,11 +30,11 @@ class Home extends Component {
 
   render() {
   return (
-    <div id="home">
+    <div>
       <Navbar/>
       {/************************First card***********************/}
-      <Bg image={home0}>
-        <OuterContainer center full="true">
+      <Bg image={home0} theme={{heightML: "100vh", heightM:"90vh", heightS: "100vh"}}>
+        <OuterContainer center>
           <InnerContainer>
             <Br/><Br/><Br/>
             <H3>DESIGN FOR SAN DIEGO'S 2020 CIVIC DESIGN CHALLENGE</H3>
@@ -48,8 +48,8 @@ class Home extends Component {
             </H5>
             <Br/>
             <OuterFlexBox center>
-              <Btn href="http://eepurl.com/c2kFon" target="_blank">JOIN MAILING LIST</Btn>
-              <BtnSecondary left home top onClick={() => this.scrollToRef(this.mission)}>LEARN MORE</BtnSecondary>
+              <Btn home href="http://eepurl.com/c2kFon" target="_blank">JOIN MAILING LIST</Btn>
+              <BtnSecondary home onClick={() => this.scrollToRef(this.mission)}>LEARN MORE</BtnSecondary>
             </OuterFlexBox>
           </InnerContainer>
         </OuterContainer>
@@ -69,7 +69,7 @@ class Home extends Component {
               to test ideas. <br/><br/>
               D4SD 2020 will host a series of design events including speakers,
               studios, and design-athons, starting in January. This will culminate into
-              a summit in May where innovators can pitch their
+              a summit in April where innovators can pitch their
               proposed solutions, and build alliances to make change happen.
             </H5>
             <Br/>
@@ -100,7 +100,7 @@ class Home extends Component {
         <Slider>
           {sampleChallenges.map((sampleChallenge, i) => (
             <Slide index={i} key={i}>
-              <Bg image={sampleChallenge.src} theme={{color: "#EFF8FF"}}>
+              <Bg image={sampleChallenge.src}  theme={{heightML: "100vh", heightM:"90vh", heightS: "100vh", color: "#EFF8FF"}}>
                 <OuterContainer center full>
                   <InnerContainer>
                     <Br/><Br/>
@@ -110,7 +110,7 @@ class Home extends Component {
                       <H5 dangerouslySetInnerHTML={{ __html: sampleChallenge.txt }} />
                       <Br/>
                       <OuterFlexBox center>
-                        <Btn href="https://join.slack.com/t/d4sd/shared_invite/enQtMjExMjA5MDY0MjkzLTk3NjY4NGM3MTE0N2M1NTJjODAxMGRiMDgxNmQ4ZDk1NTU4Mzk0OThjMTdkMzc0NTJmY2M1ZmNkZDA3NTdjYTU" target="_blank">JOIN THE DISCUSSION</Btn>
+                        <Btn href="/challenges">LEARN MORE</Btn>
                       </OuterFlexBox>
                   </InnerContainer>
                 </OuterContainer>

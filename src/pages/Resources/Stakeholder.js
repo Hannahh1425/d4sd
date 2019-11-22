@@ -64,7 +64,7 @@ class Stakeholder extends Component {
           <br/>
           {stakeholderContent.content2.map(content => (
             <div>
-              <H4>{content.title}</H4>
+              <H4 left>{content.title}</H4>
               <H5 dangerouslySetInnerHTML={{ __html: content.txt }} />
               <br/><br/>
             </div>
@@ -74,7 +74,7 @@ class Stakeholder extends Component {
           <br/>
             {stakeholderContent.content3.map(content => (
               <div>
-                <H4>{content.title}</H4>
+                <H4 left>{content.title}</H4>
                 <H5 dangerouslySetInnerHTML={{ __html: content.txt }} />
                 <br/><br/>
               </div>

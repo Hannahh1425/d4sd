@@ -14,9 +14,19 @@ export const Bg = styled.div `
     background-width: 100%;
     @media ${device.mobileS} {
         background-size: contain;
+        height: ${props => props.theme.heightS};
     }
     @media ${device.tablet} {
         background-size: cover;
+        height: ${props => props.theme.heightM}!important;
+    }
+    @media ${device.laptop} {
+        background-size: cover;
+        height: ${props => props.theme.heightML}!important;
+    }
+    @media ${device.laptopL} {
+        background-size: cover;
+        height: ${props => props.theme.heightL}!important;
     }
 `
 
@@ -28,26 +38,18 @@ export const ChallengeBg = styled.div `
     background-repeat: no-repeat;
     background-position: center bottom;
     background-width: 100%;
-    width: 400px;
-    height: 200px;
+    width: 100%;
     border-radius: 20px;
     &:hover {
       cursor: pointer;
       box-shadow: 0px 0px 8px 0px #999999;
     }
     @media ${device.mobileS} {
-        background-size: contain;
+        height: 150px;
     }
-    @media ${device.tablet} {
-        background-size: cover;
+    @media ${device.tablet} {        
+        height: 200px;
     }
-`
-
-export const Shade = styled.div `
-    width: 400px;
-    height: 200px;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.4);
 `
 
 export const Br = styled.div `

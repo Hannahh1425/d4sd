@@ -7,7 +7,12 @@ export const FlexibleImg = styled.img `
     width: ${props => props.theme.width};
     height: ${props => props.theme.height};
     border-radius: ${props => props.round ? "50%":"0"};
-    cursor: ${props => props.hover ? "pointer":""};    
+    cursor: ${props => props.hover ? "pointer":""};
+    &:hover {
+      + h5 {
+        color: ${props => props.hover ? "#4496FF":"#333333"};
+      }
+    }
     @media ${device.mobileS} {
         height: ${props => props.theme.heightS};
     }
