@@ -183,7 +183,7 @@ export const involveContent = {
   roles: [
   {
     title: "Join the discussion",
-    txt: "We have a Slack workspace set up with multiple channels that will allow innovators to communicate with their team members and the greater D4SD community. When you register online, you will be connected to our network of resources  based on how you want to participate.",
+    txt: "We have a Slack workspace set up with multiple channels that will allow participants to communicate with their team members and the greater D4SD community. When you register online, you will be connected to our network of resources  based on how you want to participate.",
     image: innovator,
     id: "innovators",
     link: "https://join.slack.com/t/d4sd/shared_invite/enQtMjExMjA5MDY0MjkzLTk3NjY4NGM3MTE0N2M1NTJjODAxMGRiMDgxNmQ4ZDk1NTU4Mzk0OThjMTdkMzc0NTJmY2M1ZmNkZDA3NTdjYTU",
@@ -202,7 +202,7 @@ export const involveContent = {
   },
   {
     title: "Sponsor D4SD",
-    txt: "Get the chance to grow your brand within D4SD’s community by sponsoring events. This would allow either your product or service to reach new ears,while supporting a mission that matters to you.",
+    txt: "Get the chance to grow your brand within D4SD’s community by sponsoring events. This would allow either your product or service to reach new ears, while supporting a mission that matters to you.",
     image: sponsor,
     id: "sponsors",
     link: "mailto:team@d4sd.org",
