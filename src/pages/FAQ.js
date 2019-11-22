@@ -1,145 +1,39 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-// import Button from '../components/landing/Button';
+import HeaderCard from '../components/landing/HeaderCard';
+import FooterCard from '../components/landing/FooterCard';
+import header from '../assets/img/faq_header.svg';
 import FAQCard from '../components/landing/FAQCard';
+import { faqContent } from '../assets/content.js';
+//css
+import { Br, Bg } from '../assets/css/others.js';
+import { OuterContainer, InnerContainer } from '../assets/css/containers.js';
+
 import './style.css';
 
 class FAQ extends Component {
 
   render() {
     return (
-      <div id="faq">
-        <Navbar/>
-        <div className="div-large"/>
-          <h2 className="font-weight-bold">Frequently asked questions</h2><br/>
+      <div>
+      <Navbar />
+      <br/><br/>
+      <HeaderCard title="Frequently Asked Questions" content={faqContent.content} bg={header} isAction="true"/>
+      <br/><br/>
+      <OuterContainer>
+        <InnerContainer>
+        {faqContent.map(faqContent => (
           <FAQCard
-            question="What is D4SD?"
-            answer="Design for San Diego (D4SD) is a civic design challenge
-                    initiated by the UC San Diego Design Lab in partnership with the
-                    City of San Diego, Design Forward Alliance, and SCALE San Diego.
-                    This year’s challenge focuses on urban mobility. We all have
-                    places to go and people to see. So, whether you’re traveling by
-                    car, bike, train, bus, boat or foot for work or play, mobility
-                    significantly affects millions of citizens every day.
-                    This year’s challenge focuses on four topics:
-                    Enhancing the commuter experience
-                    Promoting walkable and bikeable communities
-                    Improving accessibility
-                    Preparing for our city’s future with autonomous vehicles.
-                    Learn more about these four topics under Challenge Briefs.
-                    You can also sign up through this link to learn and share information
-                    about mobility problems in the San Diego region."
+            key={faqContent.question}
+            question={faqContent.question}
+            answer={faqContent.answer}
           />
-          <FAQCard
-            question="What is D4SD?"
-            answer="Design for San Diego (D4SD) is a civic design challenge
-                    initiated by the UC San Diego Design Lab in partnership with the
-                    City of San Diego, Design Forward Alliance, and SCALE San Diego.
-                    This year’s challenge focuses on urban mobility. We all have
-                    places to go and people to see. So, whether you’re traveling by
-                    car, bike, train, bus, boat or foot for work or play, mobility
-                    significantly affects millions of citizens every day.
-                    This year’s challenge focuses on four topics:
-                    Enhancing the commuter experience
-                    Promoting walkable and bikeable communities
-                    Improving accessibility
-                    Preparing for our city’s future with autonomous vehicles.
-                    Learn more about these four topics under Challenge Briefs.
-                    You can also sign up through this link to learn and share information
-                    about mobility problems in the San Diego region."
-          />
-          <FAQCard
-            question="What is D4SD?"
-            answer="Design for San Diego (D4SD) is a civic design challenge
-                    initiated by the UC San Diego Design Lab in partnership with the
-                    City of San Diego, Design Forward Alliance, and SCALE San Diego.
-                    This year’s challenge focuses on urban mobility. We all have
-                    places to go and people to see. So, whether you’re traveling by
-                    car, bike, train, bus, boat or foot for work or play, mobility
-                    significantly affects millions of citizens every day.
-                    This year’s challenge focuses on four topics:
-                    Enhancing the commuter experience
-                    Promoting walkable and bikeable communities
-                    Improving accessibility
-                    Preparing for our city’s future with autonomous vehicles.
-                    Learn more about these four topics under Challenge Briefs.
-                    You can also sign up through this link to learn and share information
-                    about mobility problems in the San Diego region."
-          />
-          <FAQCard
-            question="What is D4SD?"
-            answer="Design for San Diego (D4SD) is a civic design challenge
-                    initiated by the UC San Diego Design Lab in partnership with the
-                    City of San Diego, Design Forward Alliance, and SCALE San Diego.
-                    This year’s challenge focuses on urban mobility. We all have
-                    places to go and people to see. So, whether you’re traveling by
-                    car, bike, train, bus, boat or foot for work or play, mobility
-                    significantly affects millions of citizens every day.
-                    This year’s challenge focuses on four topics:
-                    Enhancing the commuter experience
-                    Promoting walkable and bikeable communities
-                    Improving accessibility
-                    Preparing for our city’s future with autonomous vehicles.
-                    Learn more about these four topics under Challenge Briefs.
-                    You can also sign up through this link to learn and share information
-                    about mobility problems in the San Diego region."
-          />
-          <FAQCard
-            question="What is D4SD?"
-            answer="Design for San Diego (D4SD) is a civic design challenge
-                    initiated by the UC San Diego Design Lab in partnership with the
-                    City of San Diego, Design Forward Alliance, and SCALE San Diego.
-                    This year’s challenge focuses on urban mobility. We all have
-                    places to go and people to see. So, whether you’re traveling by
-                    car, bike, train, bus, boat or foot for work or play, mobility
-                    significantly affects millions of citizens every day.
-                    This year’s challenge focuses on four topics:
-                    Enhancing the commuter experience
-                    Promoting walkable and bikeable communities
-                    Improving accessibility
-                    Preparing for our city’s future with autonomous vehicles.
-                    Learn more about these four topics under Challenge Briefs.
-                    You can also sign up through this link to learn and share information
-                    about mobility problems in the San Diego region."
-          />
-          <FAQCard
-            question="What is D4SD?"
-            answer="Design for San Diego (D4SD) is a civic design challenge
-                    initiated by the UC San Diego Design Lab in partnership with the
-                    City of San Diego, Design Forward Alliance, and SCALE San Diego.
-                    This year’s challenge focuses on urban mobility. We all have
-                    places to go and people to see. So, whether you’re traveling by
-                    car, bike, train, bus, boat or foot for work or play, mobility
-                    significantly affects millions of citizens every day.
-                    This year’s challenge focuses on four topics:
-                    Enhancing the commuter experience
-                    Promoting walkable and bikeable communities
-                    Improving accessibility
-                    Preparing for our city’s future with autonomous vehicles.
-                    Learn more about these four topics under Challenge Briefs.
-                    You can also sign up through this link to learn and share information
-                    about mobility problems in the San Diego region."
-          />
-          <FAQCard
-            question="What is D4SD?"
-            answer="Design for San Diego (D4SD) is a civic design challenge
-                    initiated by the UC San Diego Design Lab in partnership with the
-                    City of San Diego, Design Forward Alliance, and SCALE San Diego.
-                    This year’s challenge focuses on urban mobility. We all have
-                    places to go and people to see. So, whether you’re traveling by
-                    car, bike, train, bus, boat or foot for work or play, mobility
-                    significantly affects millions of citizens every day.
-                    This year’s challenge focuses on four topics:
-                    Enhancing the commuter experience
-                    Promoting walkable and bikeable communities
-                    Improving accessibility
-                    Preparing for our city’s future with autonomous vehicles.
-                    Learn more about these four topics under Challenge Briefs.
-                    You can also sign up through this link to learn and share information
-                    about mobility problems in the San Diego region."
-          />      
-      </div>
+        ))}
+        </InnerContainer>
+      </OuterContainer>
+      <Br/><Br/>
+      <FooterCard />
+    </div>
     );
   }
 }

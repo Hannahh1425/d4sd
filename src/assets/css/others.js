@@ -14,12 +14,43 @@ export const Bg = styled.div `
     background-width: 100%;
     @media ${device.mobileS} {
         background-size: contain;
+        height: ${props => props.theme.heightS};
     }
     @media ${device.tablet} {
         background-size: cover;
+        height: ${props => props.theme.heightM}!important;
+    }
+    @media ${device.laptop} {
+        background-size: cover;
+        height: ${props => props.theme.heightML}!important;
+    }
+    @media ${device.laptopL} {
+        background-size: cover;
+        height: ${props => props.theme.heightL}!important;
     }
 `
 
+export const ChallengeBg = styled.div `
+    background-color: ${props => props.theme.color};
+    background-image: ${props => `url(${props.image})`};
+    box-shadow: 0px 0px 3px 0px #999999;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-width: 100%;
+    width: 100%;
+    border-radius: 20px;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 8px 0px #999999;
+    }
+    @media ${device.mobileS} {
+        height: 150px;
+    }
+    @media ${device.tablet} {        
+        height: 200px;
+    }
+`
 
 export const Br = styled.div `
     @media ${device.mobileS} {
@@ -43,4 +74,63 @@ export const Iframe = styled.iframe `
     width: 80%;
     height: 75%;
     background-color: #EFF8FF;
+`
+
+export const Vl = styled.div `
+    border-left: 4px solid #4497FF;
+    height: 90%;
+    margin-top: 40px;
+    @media ${device.mobileS} {
+      margin-left: 33px;
+    }
+    @media ${device.tablet} {
+      margin-left: 43px;
+    }
+    @media ${device.laptopL} {
+      margin-left: 43px;
+    }
+`
+
+export const Hl = styled.div `
+    position: relative;
+    top: 15px;
+    @media ${device.mobileS} {
+      &:before {
+        content: "";
+        position: absolute;
+        height: 45px;
+        width: 45px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: ${props => `url(${props.image})`};
+      }
+    }
+    @media ${device.tablet} {
+      &:before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        width: 60px;
+        height: 60px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: ${props => `url(${props.image})`};
+      }
+    }
+    @media ${device.laptopL} {
+      &:before {
+        content: "";
+        position: absolute;
+        left: -25px;
+        width: 70px;
+        height: 70px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: ${props => `url(${props.image})`};
+      }
+    }
+
 `
