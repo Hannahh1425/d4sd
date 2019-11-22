@@ -14,7 +14,9 @@ export const Btn = styled.a `
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
     transition: 0.2s;
+    text-align: center;
     box-shadow: 0px 0px 8px 0px #999999;
+    margin: ${props => props.home ? "14px":"20px 14px"};
     &:hover {
         text-decoration: none;
         color: white;
@@ -23,26 +25,20 @@ export const Btn = styled.a `
     }
     @media ${device.mobileS} {
         font-size: 0.85em;
-        width: 80%;
-        margin-top: ${props => props.top ? "1rem":"0"};
-        margin-left: ${props => props.home ? "0rem!important":"0!important"};
+        width: ${props => props.home ? "80%":""};
     }
     @media ${device.tablet} {
         font-size: 1em!important;
         width: auto!important;
-        margin-top: 0!important;
     }
     @media ${device.laptopL} {
         font-size: 1em!important;
         width: auto!important;
-        margin-top: 0!important;
-        margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
     @media ${device.desktop} {
         font-size: 1.75em!important;
         width: auto!important;
-        margin-top: 0!important;
-        margin-left: ${props => props.left ? "1rem!important":"0!important"};
+
     }
 `
 
@@ -50,6 +46,7 @@ export const Btn = styled.a `
 export const BtnSecondary = styled.button `
     cursor: pointer;
     border-radius: 10px;
+    text-align: center;
     border: 1.5px solid #4497FF;
     color: #4497FF;
     background-color: white;
@@ -61,6 +58,7 @@ export const BtnSecondary = styled.button `
     letter-spacing: 0.05em;
     transition: 0.3s;
     box-shadow: 0px 0px 8px 0px #999999;
+    margin: ${props => props.home ? "14px":"28px 14px"};
     &:hover {
         text-decoration: none;
         background-color: white;
@@ -74,25 +72,18 @@ export const BtnSecondary = styled.button `
     @media ${device.mobileS} {
         font-size: 0.85em;
         width: 80%;
-        margin-top: ${props => props.top ? "1rem":"0"};
     }
     @media ${device.tablet} {
         font-size: 1em!important;
         width: auto!important;
-        margin-top: 0!important;
-        margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
     @media ${device.laptopL} {
         font-size: 1em!important;
         width: auto!important;
-        margin-top: 0!important;
-        margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
     @media ${device.desktop} {
         font-size: 1.75em!important;
         width: auto!important;
-        margin-top: 0!important;
-        margin-left: ${props => props.left ? "1rem!important":"0!important"};
     }
 `
 
@@ -177,7 +168,6 @@ export const StyledButtonBack = styled(ButtonBack) `
     border: none;
     position: absolute;
     left: 25px;
-    top: 40vh;
     font-size: 3em;
     z-index: 100;
     color: rgba(0, 0, 0, 0.7);
@@ -200,6 +190,15 @@ export const StyledButtonBack = styled(ButtonBack) `
     }
     @media ${device.tablet} {
         display: inline;
+        top: 20vh;
+    }
+    @media ${device.laptop} {
+        display: inline;
+        top: 45vh;
+    }
+    @media ${device.laptopL} {
+        display: inline;
+        top: 40vh;
     }
 `
 
@@ -231,6 +230,15 @@ export const StyledButtonNext = styled(ButtonNext) `
     }
     @media ${device.tablet} {
         display: inline;
+        top: 20vh;
+    }
+    @media ${device.laptop} {
+        display: inline;
+        top: 45vh;
+    }
+    @media ${device.laptopL} {
+        display: inline;
+        top: 40vh;
     }
 `
 

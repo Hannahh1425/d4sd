@@ -49,6 +49,7 @@ export const Card = styled.div `
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-content: space-between;
     &:hover {
       box-shadow: 0px 0px 8px 0px #999999;
@@ -61,7 +62,7 @@ export const Card = styled.div `
         padding: ${props => props.theme.paddingM}!important;
         height: ${props => props.theme.heightM}!important;
     }
-    @media ${device.laptopL} {
+    @media ${device.laptop} {
         padding: ${props => props.theme.paddingL}!important;
         height: ${props => props.theme.heightL}!important;
     }
@@ -133,7 +134,10 @@ export const StyledCarouselProvider = styled(CarouselProvider) `
         height: ${props => props.full ? "100vh":"35vh"};
     }
     @media ${device.tablet} {
-        height: ${props => props.full ? "100vh":"20vh"};
+        height: ${props => props.full ? "50vh":"20vh"};
+    }
+    @media ${device.laptop} {
+        height: ${props => props.full ? "90vh":"20vh"};
     }
     @media ${device.laptopL} {
         height: ${props => props.full ? "100vh":"50vh"};

@@ -18,7 +18,7 @@ class FAQ extends Component {
       <div>
       <Navbar />
       <br/><br/>
-      <HeaderCard title="FAQ" content={faqContent.content} bg={header} isAction="true"/>
+      <HeaderCard title="Frequently Asked Questions" content={faqContent.content} bg={header} isAction="true"/>
       <br/><br/>
       <OuterContainer>
         <InnerContainer>

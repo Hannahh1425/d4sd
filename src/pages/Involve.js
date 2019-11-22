@@ -71,6 +71,7 @@ class Involve extends Component {
                     link={content.link}
                     action={content.action}
                     isAction={content.isAction}
+                    new={content.new}
                   />
                 </InnerFlexBox>
               ))}
