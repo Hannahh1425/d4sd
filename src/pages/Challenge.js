@@ -85,6 +85,10 @@ class Challenge extends Component {
                 </React.Fragment>
               ))}
             </OuterFlexBox>
+            <br/><br/>
+            <H2 center>{challengeContent.title3}</H2>
+            <br/>
+            <H5 dangerouslySetInnerHTML={{ __html: challengeContent.content3 }} />
           </InnerContainer>
         </OuterContainer>
         <br/><br/>
