@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import { FlexibleImg } from '../../assets/css/images.js';
 import { H4, H5 } from '../../assets/css/fonts.js';
-import { InnerFlexBox, Card, OuterContainer } from '../../assets/css/containers.js';
-import { Btn, SmallBtn } from '../../assets/css/buttons.js';
-import styled from 'styled-components';
+import { InnerFlexBox, Card } from '../../assets/css/containers.js';
+import { SmallBtn } from '../../assets/css/buttons.js';
 
 class RoleCard extends Component {
   render() {
@@ -15,7 +14,7 @@ class RoleCard extends Component {
     //   button = <i className="fas fa-chevron-down"></i>
     // }
     return (
-      <Card id={this.props.id} ref={this.props.ref} theme={{padding: "20px", heightS:"auto", heightM:"auto", heightML:"450px", heightL:"500px"}}>
+      <Card id={this.props.id} theme={{padding: "20px", heightS:"auto", heightM:"auto", heightML:"450px", heightL:"500px"}}>
         <div>
         <InnerFlexBox center>
           {!this.props.involve&&<FlexibleImg theme={{width: "20%"}} src={this.props.image} alt={this.props.image}/>}

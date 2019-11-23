@@ -7,7 +7,7 @@ import HeaderCard from '../components/landing/HeaderCard';
 import FooterCard from '../components/landing/FooterCard';
 import ResourcesCard from '../components/landing/ResourcesCard';
 import header from '../assets/img/resource_header.svg';
-import { resourcesContent, involveContent } from '../assets/content.js';
+import { resourcesContent } from '../assets/content.js';
 
 
 

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import { OuterContainer, FlexibleWidth, InnerContainer, OuterFlexBox, InnerFlexBox, Card } from '../assets/css/containers.js';
-import { H2, H3, H4, H5, IconTitle, ChallengeH4, ChallengeH5 } from '../assets/css/fonts.js';
-import { ChallengeBg, Br, Shade } from '../assets/css/others.js';
+import { OuterContainer, FlexibleWidth, InnerContainer, OuterFlexBox, InnerFlexBox } from '../assets/css/containers.js';
+import { H2, H4, H5, IconTitle, ChallengeH4, ChallengeH5 } from '../assets/css/fonts.js';
+import { ChallengeBg } from '../assets/css/others.js';
 import { FlexibleImg } from '../assets/css/images.js';
 // import { Btn } from '../assets/css/buttons.js';
 import HeaderCard from '../components/landing/HeaderCard';
@@ -55,14 +55,12 @@ class Challenge extends Component {
         <OuterContainer center>
           <InnerContainer>
             <OuterFlexBox>
-              {challengeContent.nav.map(nav =>
-              {console.log(nav.title);
-                return (
+              {challengeContent.nav.map(nav => (
                 <FlexibleWidth theme={{ widthS: "50%", widthM: "25%"}} onClick={() => this.scrollToRef(this[nav.title])} key={nav.title}>
                   <FlexibleImg hover theme={{width: "70%"}} src={nav.img}/>
                   <IconTitle center hover>{nav.title}</IconTitle>
                 </FlexibleWidth>
-              )})}
+              ))}
             </OuterFlexBox>
             <br/><br/>
             <H2 center>{challengeContent.title2}</H2>
@@ -70,7 +68,7 @@ class Challenge extends Component {
             <H5 dangerouslySetInnerHTML={{ __html: challengeContent.content2 }} />
             <OuterFlexBox center>
               {challengeContent.contents.map((content, i) => (
-                <React.Fragment>
+                <React.Fragment key={i}>
                   <H4 ref={this[content.id]} style={{"paddingTop":"70px","paddingBottom":"30px"}}><span style={{"color":"#4496FF"}}>{content.subtitle}: </span>{content.title}</H4>
                   {content.problems.map((problem, i) => {
                     const target = problem.problem;

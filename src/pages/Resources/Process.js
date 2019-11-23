@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from '../../components/Navbar';
-import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox } from '../../assets/css/containers.js';
-import { H2, H3, H4, H5, H6, Styledh5 } from '../../assets/css/fonts.js';
+import { OuterContainer, InnerContainer } from '../../assets/css/containers.js';
+import { H2, H4, H5 } from '../../assets/css/fonts.js';
 import {StyledHCD} from '../../assets/css/buttons.js';
 import {Br} from '../../assets/css/others.js';
 // import { Btn } from '../assets/css/buttons.js';
@@ -46,7 +46,7 @@ class Process extends Component {
           <br/><br/><br/>
           {processContent.content3.map(content => (
             <div>
-              <H4 left dangerouslySetInnerHTML={{ __html: content.title }} />              
+              <H4 left dangerouslySetInnerHTML={{ __html: content.title }} />
               <H5 dangerouslySetInnerHTML={{ __html: content.txt }} />
               <br/><br/>
             </div>

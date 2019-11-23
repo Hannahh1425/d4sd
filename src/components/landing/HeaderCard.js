@@ -3,7 +3,6 @@ import '../style.css';
 import { H5, H1 } from '../../assets/css/fonts.js';
 import { OuterContainer, InnerContainer } from '../../assets/css/containers.js';
 import { Bg, Br } from '../../assets/css/others.js';
-import { BtnConditional } from '../../assets/css/buttons.js';
 
 class HeaderCard extends Component {
 

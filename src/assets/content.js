@@ -30,7 +30,6 @@ import innovator from "./img/involve_innovate.svg";
 import mail from "./img/involve_mail.svg";
 import feedback from './img/involve_feedback.svg';
 
-import hcd from './img/process_hcd.svg';
 import discover from './img/timeline_discover.svg';
 import ideate from './img/timeline_ideate.svg';
 import prototype from './img/timeline_prototype.svg';

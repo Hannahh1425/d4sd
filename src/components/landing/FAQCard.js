@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { FAQBtn } from '../../assets/css/buttons.js';
-import { H2, H3, H5 } from '../../assets/css/fonts.js';
-import { Card, OuterFlexBox, InnerFlexBox, OuterContainer, InnerContainer, FlexibleWidth, StyledCarouselProvider } from '../../assets/css/containers.js';
-import { Br } from '../../assets/css/others.js';
+import { H5 } from '../../assets/css/fonts.js';
+import { Card, InnerFlexBox } from '../../assets/css/containers.js';
 
 class FAQCard extends Component {
 
@@ -27,7 +26,7 @@ class FAQCard extends Component {
   }
 
   render() {
-    const contentStyle = { height: this.getContentToggleHeight() };
+    // const contentStyle = { height: this.getContentToggleHeight() };
     return (
       <div id={this.props.question}>
         <div>
