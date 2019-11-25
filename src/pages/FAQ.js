@@ -18,11 +18,11 @@ class FAQ extends Component {
       <div>
       <Navbar />
       <br/><br/>
-      <HeaderCard title="Frequently Asked Questions" content={faqContent.content} bg={header} isAction="true"/>
+      <HeaderCard title={faqContent.title} content={faqContent.content} bg={header} isAction="true"/>
       <br/><br/>
       <OuterContainer>
         <InnerContainer>
-        {faqContent.map(faqContent => (
+        {faqContent.faqs.map(faqContent => (
           <FAQCard
             key={faqContent.question}
             question={faqContent.question}
