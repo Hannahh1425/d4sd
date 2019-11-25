@@ -42,7 +42,7 @@ class Home extends Component {
             <br/>
             <H5>San Diego is an amazing place to live, work, and visit. But
             like many cities, San Diego faces a number of difficult challenges
-            around mobility, climate, housing, and public health. Design for
+            around mobility, environment, housing, and public health. Design for
             San Diego (D4SD) is an initiative to address complex challenges
             through design thinking and crowdsourcing.
             </H5>

@@ -84,7 +84,7 @@ export const sampleChallenges = [
     src: home1,
     isAction: "true",
     header: "LEARN ABOUT THE CHALLENGES: IMPROVING MOBILITY",
-    title: "How might we help people move freely through our city?",
+    title: "How might we help people move freely in San Diego?",
     txt: "As people are looking for alternate ways to move around, while also wanting to reduce their emissions, the topic of inclusive and environmentally conscious transportation continues to be a pressing issue in our urban environment. Mobility can be examined from a number of lenses such as motor vehicle systems, transit, parking, intermodal connections, electric vehicles, accident reduction, walkability and bike-ability, and land-use patterns. <b>Help shape this problem by joining our discussion!</b>",
     action: "See what happened in 2017",
     link: "http://d4sd2017.org",
@@ -96,8 +96,8 @@ export const sampleChallenges = [
     id: 1,
     src: home2,
     isAction: "false",
-    header: "LEARN ABOUT THE CHALLENGES: ADDRESSING CLIMATE EFFECTS",
-    title: "How can we help San Diego prepare for and mitigate climate change?",
+    header: "LEARN ABOUT THE CHALLENGES: ADDRESSING ENVIRONMENT EFFECTS",
+    title: "How might we prepare San Diego for natural and human-influenced environmental challenges?",
     txt: "Burning of fossil fuels has resulted in the gradual increase of global temperatures. Scientists have high confidence that global temperatures will continue to rise for decades to come. Climate change impacts areas such as transportation, housing, health, natural resources, food waste, agriculture, air pollution, and education. <b>Help shape this problem by joining our discussion!</b>",
     action: "Get Involved",
     link: "http://eepurl.com/c2kFon",
@@ -110,7 +110,7 @@ export const sampleChallenges = [
     src: home3,
     isAction: "false",
     header: "LEARN ABOUT THE CHALLENGES: CREATING ACCESSIBLE HOUSING",
-    title: "How can we reimagine housing to meet the needs of all San Diegans?",
+    title: "How might we reimagine housing to meet the needs of all San Diegans?",
     txt: "Shelter is a fundamental human need; however people have limited choices for safe, affordable, and long-term housing in San Diego. The issue of housing is more than the physical structures. It also includes homelessness, land development, smart home technology, and mixed-use housing, all of which needs to be addressed with San Diego’s growing population. <b>Help shape this problem by joining our discussion!</b>",
     action: "Get Involved",
     link: "http://eepurl.com/c2kFon",
@@ -123,7 +123,7 @@ export const sampleChallenges = [
     src: home4,
     isAction: "false",
     header: "LEARN ABOUT THE CHALLENGES: LIVING HEALTHY LIVES",
-    title: "How can we help all San Diegans live healthy and active lives?",
+    title: "How might we help all San Diegans live healthy and active lives?",
     txt: "Many San Diego residents have limited access to preventative and restorative health services. Health is determined by social and physical environments and is directly connected to how people live, learn, work, and play. Topics such as quality of life, population health, and social well being, are all different aspects of how we as a city, need to improve our well being. <b>Help shape this problem by joining our discussion!</b>",
     action: "Get Involved",
     link: "http://eepurl.com/c2kFon",
@@ -299,9 +299,9 @@ export const challengeContent = {
   title: "Challenge Brief",
   content:"What does it mean to be a Sustainable City?  For us, a sustainable San Diego is one where all parts of our city connect and support each other and the environment.  Working together, we can design ways to improve mobility, health, housing, and the climate for our region.",
   title2: "How do you fit in?",
-  content2: "Everyone is important in advancing a more sustainable San Diego, including you!  Below are several examples of challenges that we can address, together. This is just the start of our collective effort. If you see a problem not listed here, go investigate it and share back to the D4SD discussion forum, or come to an event where you can motivate others to join you.",
+  content2: "Everyone is important in advancing a more sustainable San Diego, including you!  Below are several examples of challenges that we can address, together. This is just the start of our collective effort. If you see a problem not listed here, go investigate it and share back to the <a href='https://join.slack.com/t/d4sd/shared_invite/enQtMjExMjA5MDY0MjkzLTk3NjY4NGM3MTE0N2M1NTJjODAxMGRiMDgxNmQ4ZDk1NTU4Mzk0OThjMTdkMzc0NTJmY2M1ZmNkZDA3NTdjYTU' target='_blank'>D4SD discussion forum</a>, or come to an event where you can motivate others to join you.",
   title3: "Other challenge topics",
-  content3: "<b>How are other D4SD participants engaging with the topic of making San Diego a more Sustainable City?</b> We don’t want participants to be bound by the problem space we have constructed. If you or your team want to pursue a problem that isn’t represented on our website, please feel free to explore it. For example,  one of our educator partners—the entire 8th grade class at Vista Innovation and Design Academy— has been exploring a theme of \"Survive or Thrive\", based on the Sim City model, to explore a range of sustainability issues affecting SD regionally. \"Our umbrella topics are Social, Economic, Environmental. Students explored what all that means and specific topics within each umbrella topic ranging from Immigration & Refugees to Bee Colonies to Arts & Culture…\" Design away, friends!",
+  content3: "How are other D4SD participants engaging with the topic of making San Diego a more Sustainable City? We don’t want participants to be bound by the problem space we have constructed. If you or your team wants to pursue a problem that isn’t represented on our website, please feel free to explore it.  Please share back your efforts to the <a href='https://join.slack.com/t/d4sd/shared_invite/enQtMjExMjA5MDY0MjkzLTk3NjY4NGM3MTE0N2M1NTJjODAxMGRiMDgxNmQ4ZDk1NTU4Mzk0OThjMTdkMzc0NTJmY2M1ZmNkZDA3NTdjYTU' target='_blank'>D4SD discussion forum</a>, or come to an event where you can motivate others to join you. <br/><br/> For example, one of our educator partners—the entire 8th grade class at Vista Innovation and Design Academy— has been exploring the theme of \"Survive or Thrive\", based on the Sim City model, to explore a range of sustainability issues affecting SD regionally. \"Our umbrella topics are Social, Economic, Environmental. Students explored what all that means and specific topics within each umbrella topic ranging from Immigration & Refugees to Bee Colonies to Arts & Culture…\" Design away, friends!  ",
   nav: [
     {
       title: "Mobility",
@@ -324,107 +324,107 @@ export const challengeContent = {
     {
       id: "Mobility",
       subtitle: "MOBILITY",
-      title: "How might we help people move freely through our city?",
+      title: "How might we help people move freely in San Diego?",
       texts: "As people are looking for alternate ways to move around, while also wanting to reduce their emissions, the topic of inclusive and environmentally conscious transportation continues to be a pressing issue in our urban environment. Mobility can be examined from a number of lenses such as motor vehicle systems, transit, parking, intermodal connections, electric vehicles, accident reduction, walkability and bike-ability, and land-use patterns.",
       problems: [
         {
           img: mobility1,
           problem: "Last Mile",
-          detail: "How might we optimize the last mile of a commute?"
+          detail: "How might we improve the last-mile experience where traffic is congested, parking is scarce, and public transportation is limited?"
         },
         {
           img: mobility2,
-          problem: "Safety",
-          detail: "How can we reduce car accidents?"
+          problem: "Safe Roadways",
+          detail: "Given the city’s aim to reduce roadway fatalities to zero, how might we protect pedestrians, reduce distractions for drivers, and improve emergency response?"
         },
         {
           img: mobility3,
           problem: "Equitable Access",
-          detail: "How can we improve access to mobility for people with accessibility needs?"
+          detail: "How might we provide mobility resources that are accessible to the many diverse needs of people in San Diego? "
         },
         {
           img: mobility4,
           problem: "Autonomous Vehicles",
-          detail: "How will autonomous vehicles impact mobility, our commute, our community?"
+          detail: "With the potential of self-driving cars on the horizon, how might we prepare our city for major changes to transportation infrastructure? "
         }
       ]
     },
     {
       id: "Climate",
-      subtitle: "CLIMATE",
-      title: "How can we help San Diego prepare for and mitigate climate change?",
+      subtitle: "ENVIRONMENT",
+      title: "How might we prepare San Diego for natural and human-influenced environmental challenges?",
       texts: "Burning of fossil fuels has resulted in the gradual increase of global temperatures. Scientists have high confidence that global temperatures will continue to rise for decades to come. Climate change impacts areas such as transportation, housing, health, natural resources, food waste, agriculture, air pollution, and education.",
       problems: [
         {
           img: climate1,
           problem: "Education and Awareness",
-          detail:"How can we educate San Diegans about climate change and encourage them to take action in their communities?"
+          detail:"How might we make people more aware of and responsible for their own personal impact on the environment? "
         },
         {
           img: climate2,
           problem: "Waste Management",
-          detail:"How can we improve resource management to close waste loops in San Diego?"
+          detail:"How might we create a circular loop that transforms “waste” into useful resources? "
         },
         {
           img: climate3,
-          problem: "Coastal Living",
-          detail:"How can we design San Diego to be resilient in the face of climate change, beach erosion, and rising water levels?"
+          problem: "Smart Grids",
+          detail:"How might we design services to help people monitor and better allocate energy resources at home and across neighborhoods?"
         },
         {
           img: climate4,
-          problem: "Community Infrastructure ",
-          detail:"How can we leverage connections between people and organizations to create community-based climate interventions?"
+          problem: "Climate Infrastructure",
+          detail:"How can we prepare San Diego to be resilient in the face of climate change, beach erosion, and rising water levels?"
         }
       ]
     },
     {
       id: "Housing",
       subtitle: "HOUSING",
-      title: "How can we reimagine housing to meet the needs of all San Diegans?",
+      title: "How might we reimagine housing to meet the needs of all San Diegans?",
       texts: "Shelter is a fundamental human need; however people have limited choices for safe, affordable, and long-term housing in San Diego. The issue of housing is more than the physical structures. It also includes homelessness, land development, smart home technology, and mixed-use housing, all of which needs to be addressed with San Diego’s growing population.",
       problems: [
         {
           img: housing1,
           problem: "Mixed-Use Housing and Placemaking",
-          detail: "What changes or modifications to the physical environment might we make to promote a stronger sense of community? "
+          detail: "How might we foster a sense of place and community in the face of vacation rentals, mixed-use houses, and gentrification?"
         },
         {
           img: housing2,
           problem: "Resilient Homes",
-          detail: "How can we make homes more resilient to the effects of climate change, such as desertification, fires, flooding, etc.? "
+          detail: "How might we make homes and communities more resilient to the effects of climate change, such as desertification, fires, flooding, and beach erosion? "
         },
         {
           img: housing3,
           problem: "Homelessness",
-          detail: "How can we create opportunities to address the safety, shelter, and nutritional needs of the most vulnerable?"
+          detail: "How might we address the safety, shelter, and nutritional needs of people who are without housing for short-term and long-term periods of time?"
         },
         {
           img: housing4,
           problem: "Internet of Things (IoT)",
-          detail: "How do we prepare for an increasingly data-driven home-environment? "
+          detail: "How might we design services and internet-connected products for the home to make everyday life easier, more fun, and more secure?"
         }
       ]
     },
     {
       id: "Health",
       subtitle: "HEALTH",
-      title: "How can we help all San Diegans live healthy and active lives?",
+      title: "How might we help all San Diegans live healthy and active lives?",
       texts: "Many San Diego residents have limited access to preventative and restorative health services. Health is determined by social and physical environments and is directly connected to how people live, learn, work, and play. Topics such as quality of life, population health, and social well being, are all different aspects of how we as a city, need to improve our well being.",
       problems: [
         {
           img: health1,
-          problem: "Senior Health Care",
-          detail: "What forms of care do seniors in our community need?"
+          problem: "Senior Health",
+          detail: "How might we create new opportunities for seniors to stay active, feel appreciated, and remain socially integrated within the community?"
         },
         {
           img: health2,
-          problem: "Mental Health",
-          detail: "How might we provide care and resources to help people who are struggling with depression and mental health issues? "
+          problem: "Community Well-Being ",
+          detail: "How might we offer community support to those experiencing social isolation, depression or who are seeking support from others?"
         },
         {
           img: health3,
-          problem: "Safety",
-          detail: "How can we improve the physical safety and sense of being safe in a neighborhood? "
+          problem: "Personal Data and Agency",
+          detail: "How might data, wearable technology, and appropriate support help people take control of their journey to better health? "
         },
         {
           img: health4,
