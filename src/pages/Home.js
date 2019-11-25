@@ -132,12 +132,12 @@ class Home extends Component {
           <InnerContainer>
             <H2>D4SD in action</H2>
             <br/>
-            <H5>In 2017, hundreds of people helped to generate ideas through the
-             first D4SD challenge:  How to create a San Diego where we all can
-             move freely.  Over a two month period, 23 teams used human-centered
-             design principles to prototype solutions to address the city’s
-             mobility challenges. Visit our 2017 website to learn more about
-             what we did in 2017 and to see some of the prototypes.
+            <H5>In 2017, hundreds of people generated ideas through the first D4SD
+              challenge, How to create a San Diego where we all can move freely.
+              Over a two month period, 23 teams used human-centered design principles
+              to prototype solutions to address the city’s mobility challenges. Visit
+              our 2017 website to learn more about what we did in 2017 to see some of
+              the prototypes.
             </H5>
             <Br/>
             <OuterFlexBox center>
