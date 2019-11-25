@@ -6,7 +6,7 @@ import header from '../assets/img/faq_header.svg';
 import FAQCard from '../components/landing/FAQCard';
 import { faqContent } from '../assets/content.js';
 //css
-import { Br, Bg } from '../assets/css/others.js';
+import { Br } from '../assets/css/others.js';
 import { OuterContainer, InnerContainer } from '../assets/css/containers.js';
 
 import './style.css';

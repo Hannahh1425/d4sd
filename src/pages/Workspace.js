@@ -3,17 +3,13 @@ import Navbar from '../components/Navbar';
 import FooterCard from '../components/landing/FooterCard';
 import HeaderCard from '../components/landing/HeaderCard';
 //CSS styles
-import { Br, Bg } from '../assets/css/others.js';
-import { Btn, BtnSecondary, StyledButtonBack, StyledButtonNext, StyledDotGroup } from '../assets/css/buttons.js';
-import { FlexibleImg } from '../assets/css/images.js';
-import { H2, H3, H4, H5, H6, Styledh5 } from '../assets/css/fonts.js';
+import { Br } from '../assets/css/others.js';
+import { H2, H5 } from '../assets/css/fonts.js';
 import { Vl, Hl } from '../assets/css/others.js';
-import { Left, Grid, Card, OuterFlexBox, OuterContainer, InnerContainer, FlexibleWidth, InnerFlexBox } from '../assets/css/containers.js';
+import { Left, Grid, OuterContainer, InnerContainer } from '../assets/css/containers.js';
 //Contents
-import { sampleChallenges, roles, actionImg, logos } from '../assets/content.js';
 import header from "../assets/img/workspace_header.svg";
 import { timelineContent } from '../assets/content.js';
-import { ReactComponent as HCD } from "../assets/img/process_hcd.svg";
 import TimelineCard from '../components/landing/TimelineCard';
 
 class Workspace extends Component {
@@ -38,8 +34,8 @@ class Workspace extends Component {
           <Grid>
             <div><Vl style={{"overflow":"hidden"}}/></div>
             <div>
-              {timelineContent.timeline.map(content => (
-                <div>
+              {timelineContent.timeline.map((content, i) => (
+                <div key={i}>
                   <Hl image={content.img}/>
                   <Left>
                   <TimelineCard

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { FAQBtn, SmallBtn, Btn } from '../../assets/css/buttons.js';
-import { H2, H3, H4, H5, P } from '../../assets/css/fonts.js';
-import { Card, OuterFlexBox, InnerFlexBox, OuterContainer, InnerContainer, FlexibleWidth, StyledCarouselProvider } from '../../assets/css/containers.js';
-import { Br } from '../../assets/css/others.js';
-import { FlexibleImg } from '../../assets/css/images.js';
+import { FAQBtn, SmallBtn } from '../../assets/css/buttons.js';
+import { H4, H5 } from '../../assets/css/fonts.js';
+import { Card, OuterFlexBox, InnerFlexBox } from '../../assets/css/containers.js';
+
 class TimelineCard extends Component {
 
   constructor(props) {
@@ -27,7 +26,7 @@ class TimelineCard extends Component {
   }
 
   render() {
-    const contentStyle = { height: this.getContentToggleHeight() };
+    // const contentStyle = { height: this.getContentToggleHeight() };
     return (
       <div id={this.props.question}>
         <div>

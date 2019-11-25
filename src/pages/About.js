@@ -7,18 +7,11 @@ import { aboutContent } from '../assets/content.js';
 //Styles
 import styled from 'styled-components';
 import { Bg, Br } from '../assets/css/others.js';
-import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox, ToggleFlexBox } from '../assets/css/containers.js';
+import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox } from '../assets/css/containers.js';
 import { H2, H5 } from '../assets/css/fonts.js';
-import { device } from '../assets/css/breakpoints.js';
-import { Btn, ToggleBtn, BtnSecondary } from '../assets/css/buttons.js';
 import { FlexibleImg } from '../assets/css/images.js';
 
-import whitepaper from '../assets/img/D4SD_2017_WhitePaper.pdf';
 import header from "../assets/img/about_header.svg";
-import ppttimeline_horizontal from "../assets/img/about_participants_horizontal.svg";
-import commtimeline_horizontal from "../assets/img/about_community_horizontal.svg";
-import ppttimeline_vertical from "../assets/img/about_participants_vertical.svg";
-import commtimeline_vertical from "../assets/img/about_community_vertical.svg";
 import diagram from "../assets/img/about_diagram.png";
 
 import './style.css';
@@ -27,25 +20,25 @@ const H5Half = styled(H5) `
     width: 90%;
 `
 
-const ResponsiveImgVertical = styled.img `
-    width: 100%;
-    @media ${device.mobileS} {
-        display: ${props => props.isInnovator ? "inline":"none"}
-    }
-    @media ${device.tablet} {
-        display: none;
-    }
-`
-
-const ResponsiveImgHorizontal = styled.img  `
-    width: 100%;
-    @media ${device.mobileS} {
-        display: none;
-    }
-    @media ${device.tablet} {
-        display: ${props => props.isInnovator ? "inline":"none"}
-    }
-`
+// const ResponsiveImgVertical = styled.img `
+//     width: 100%;
+//     @media ${device.mobileS} {
+//         display: ${props => props.isInnovator ? "inline":"none"}
+//     }
+//     @media ${device.tablet} {
+//         display: none;
+//     }
+// `
+//
+// const ResponsiveImgHorizontal = styled.img  `
+//     width: 100%;
+//     @media ${device.mobileS} {
+//         display: none;
+//     }
+//     @media ${device.tablet} {
+//         display: ${props => props.isInnovator ? "inline":"none"}
+//     }
+// `
 
 class About extends Component {
   constructor() {
