@@ -296,7 +296,7 @@ export const faqContent = [
 
 
 export const challengeContent = {
-  title: "Challenge Brief",
+  title: "Challenge Briefs",
   content:"What does it mean to be a Sustainable City?  For us, a sustainable San Diego is one where all parts of our city connect and support each other and the environment.  Working together, we can design ways to improve mobility, health, housing, and the climate for our region.",
   title2: "How do you fit in?",
   content2: "Everyone is important in advancing a more sustainable San Diego, including you!  Below are several examples of challenges that we can address, together. This is just the start of our collective effort. If you see a problem not listed here, go investigate it and share back to the <a href='https://join.slack.com/t/d4sd/shared_invite/enQtMjExMjA5MDY0MjkzLTk3NjY4NGM3MTE0N2M1NTJjODAxMGRiMDgxNmQ4ZDk1NTU4Mzk0OThjMTdkMzc0NTJmY2M1ZmNkZDA3NTdjYTU' target='_blank'>D4SD discussion forum</a>, or come to an event where you can motivate others to join you.",
