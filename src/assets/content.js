@@ -192,7 +192,7 @@ export const involveContent = {
   },
   {
     title: "Become a feedback provider",
-    txt: "You can take part in D4SD in a variety of ways! Whether by ideating solutions, giving feedback, teaching civic design in the classroom, or supporting the initiative, getting involved with D4SD will  look a little different for each person. Below are a few ways to get involved.",
+    txt: "Contribute to D4SD as a feedback provider! Innovators in D4SD need diverse community members’ perspectives to improve their proposals  on civic issues. Please sign up to provide constructive suggestions for our network of participants.",
     image: feedback,
     id: "experts",
     link: "/getinvolved/feedback_provider",
