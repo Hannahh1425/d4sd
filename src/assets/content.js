@@ -231,7 +231,10 @@ export const involveContent = {
 ]}
 
 /********************************************FAQ*****************************************/
-export const faqContent = [
+export const faqContent = {
+  title: "Frequently Asked Questions",
+  content: "Find answers to some of your questions below. If you still have a question that we did not address, please reach out by email at <a href='mailto:team@d4sd.org'> team@d4sd.org</a> and we will do our best to respond quickly.",
+faqs: [
   {
     question: 'What is D4SD?',
     answer: 'Design for San Diego (D4SD) is a civic design initiative that brings together innovators, mentors, experts, and citizens to address San Diego’s most challenging issues through human-centered design. Our aim is to provide a space that allows for the community to discover key civic issues, to ideate and prototype solutions to the problems they see, to pitch their proposals in a public forum, and to activate others to help bring them to life.<br/><br/>This year’s theme— How can we make San Diego a more sustainable city— is rooted in the United Nations’ 2030 vision to transform our world by making cities inclusive, safe, resilient and sustainable. D4SD has organized the challenges around four main topics, but you are welcome to explore anything related to sustainability:<li>Housing</li><li>Mobility</li> <li>Health</li> <li>Climate</li>',
@@ -292,7 +295,7 @@ export const faqContent = [
   //   question: 'If I still have questions, who can I contact for more information?',
   //   answer: "Contact the D4SD team at <a href='mailto:team@d4sd.org'> team@d4sd.org</a> for questions about the Civic Design Challenge or if you are having technical difficulties with the D4SD Slack discussion forum.",
   // }
-];
+]};
 
 
 export const challengeContent = {
@@ -308,7 +311,7 @@ export const challengeContent = {
       img: challenge_mobility,
     },
     {
-      title: "Climate",
+      title: "Environment",
       img: challenge_climate
     },
     {
