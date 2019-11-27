@@ -16,7 +16,7 @@ class Challenge extends Component {
     super();
     this.Mobility = React.createRef();
     this.Housing = React.createRef();
-    this.Climate = React.createRef();
+    this.Environment = React.createRef();
     this.Health = React.createRef();
     this.state = {
       hover: ""

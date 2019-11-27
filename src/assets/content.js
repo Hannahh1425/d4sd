@@ -353,7 +353,7 @@ export const challengeContent = {
       ]
     },
     {
-      id: "Climate",
+      id: "Environment",
       subtitle: "ENVIRONMENT",
       title: "How might we prepare San Diego for natural and human-influenced environmental challenges?",
       texts: "Burning of fossil fuels has resulted in the gradual increase of global temperatures. Scientists have high confidence that global temperatures will continue to rise for decades to come. Climate change impacts areas such as transportation, housing, health, natural resources, food waste, agriculture, air pollution, and education.",
