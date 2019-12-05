@@ -93,6 +93,19 @@ export const sampleChallenges = [
     link2: ""
   },
   {
+    id: 3,
+    src: home4,
+    isAction: "false",
+    header: "LEARN ABOUT THE CHALLENGES: LIVING HEALTHY LIVES",
+    title: "How might we help all San Diegans live healthy and active lives?",
+    txt: "Many San Diego residents have limited access to preventative and restorative health services. Health is determined by social and physical environments and is directly connected to how people live, learn, work, and play. Topics such as quality of life, population health, and social well being, are all different aspects of how we as a city, need to improve our well being. <b>Help shape this problem by joining our discussion!</b>",
+    action: "Get Involved",
+    link: "http://eepurl.com/c2kFon",
+    isAction2: "false",
+    action2: "",
+    link2: ""
+  },
+  {
     id: 1,
     src: home2,
     isAction: "false",
@@ -117,20 +130,7 @@ export const sampleChallenges = [
     isAction2: "false",
     action2: "",
     link2: ""
-  },
-  {
-    id: 3,
-    src: home4,
-    isAction: "false",
-    header: "LEARN ABOUT THE CHALLENGES: LIVING HEALTHY LIVES",
-    title: "How might we help all San Diegans live healthy and active lives?",
-    txt: "Many San Diego residents have limited access to preventative and restorative health services. Health is determined by social and physical environments and is directly connected to how people live, learn, work, and play. Topics such as quality of life, population health, and social well being, are all different aspects of how we as a city, need to improve our well being. <b>Help shape this problem by joining our discussion!</b>",
-    action: "Get Involved",
-    link: "http://eepurl.com/c2kFon",
-    isAction2: "false",
-    action2: "",
-    link2: ""
-    }
+  }
 ]
 
 export const actionImg = [action2, action3, action4, action5]
