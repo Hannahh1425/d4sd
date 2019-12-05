@@ -311,16 +311,16 @@ export const challengeContent = {
       img: challenge_mobility,
     },
     {
+      title: "Health",
+      img: challenge_health
+    },
+    {
       title: "Environment",
       img: challenge_climate
     },
     {
       title: "Housing",
       img: challenge_housing
-    },
-    {
-      title: "Health",
-      img: challenge_health
     }
   ],
   contents: [
@@ -349,6 +349,34 @@ export const challengeContent = {
           img: mobility4,
           problem: "Autonomous Vehicles",
           detail: "With the potential of self-driving cars on the horizon, how might we prepare our city for major changes to transportation infrastructure? "
+        }
+      ]
+    },
+    {
+      id: "Health",
+      subtitle: "HEALTH",
+      title: "How might we help all San Diegans live healthy and active lives?",
+      texts: "Many San Diego residents have limited access to preventative and restorative health services. Health is determined by social and physical environments and is directly connected to how people live, learn, work, and play. Topics such as quality of life, population health, and social well being, are all different aspects of how we as a city, need to improve our well being.",
+      problems: [
+        {
+          img: health1,
+          problem: "Senior Health",
+          detail: "How might we create new opportunities for seniors to stay active, feel appreciated, and remain socially integrated within the community?"
+        },
+        {
+          img: health2,
+          problem: "Community Well-Being ",
+          detail: "How might we offer community support to those experiencing social isolation, depression or who are seeking support from others?"
+        },
+        {
+          img: health3,
+          problem: "Personal Data and Agency",
+          detail: "How might data, wearable technology, and appropriate support help people take control of their journey to better health? "
+        },
+        {
+          img: health4,
+          problem: "Food Insecurity",
+          detail: "How might we ensure that everyone in San Diego has reliable access to nutritious and affordable food?"
         }
       ]
     },
@@ -405,34 +433,6 @@ export const challengeContent = {
           img: housing4,
           problem: "Internet of Things (IoT)",
           detail: "How might we design services and internet-connected products for the home to make everyday life easier, more fun, and more secure?"
-        }
-      ]
-    },
-    {
-      id: "Health",
-      subtitle: "HEALTH",
-      title: "How might we help all San Diegans live healthy and active lives?",
-      texts: "Many San Diego residents have limited access to preventative and restorative health services. Health is determined by social and physical environments and is directly connected to how people live, learn, work, and play. Topics such as quality of life, population health, and social well being, are all different aspects of how we as a city, need to improve our well being.",
-      problems: [
-        {
-          img: health1,
-          problem: "Senior Health",
-          detail: "How might we create new opportunities for seniors to stay active, feel appreciated, and remain socially integrated within the community?"
-        },
-        {
-          img: health2,
-          problem: "Community Well-Being ",
-          detail: "How might we offer community support to those experiencing social isolation, depression or who are seeking support from others?"
-        },
-        {
-          img: health3,
-          problem: "Personal Data and Agency",
-          detail: "How might data, wearable technology, and appropriate support help people take control of their journey to better health? "
-        },
-        {
-          img: health4,
-          problem: "Food Insecurity",
-          detail: "How might we ensure that everyone in San Diego has reliable access to nutritious and affordable food?"
         }
       ]
     }
