@@ -43,9 +43,33 @@ export const InnerContainer = styled.div `
 
 //For the cards like the ones on Get Involved page
 export const Card = styled.div `
-    box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.6);
-    padding: 20px;
+    box-shadow: 0px 0px 4px 0px #999999;
+    padding: ${props => props.theme.padding};
+    width: ${props => props.theme.width};
     border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    &:hover {
+      box-shadow: 0px 0px 8px 0px #999999;
+    }
+    @media ${device.mobileS} {
+        padding: ${props => props.theme.paddingS}!important;
+        height: ${props => props.theme.heightS}!important;
+    }
+    @media ${device.tablet} {
+        padding: ${props => props.theme.paddingM}!important;
+        height: ${props => props.theme.heightM}!important;
+    }
+    @media ${device.laptop} {
+        padding: ${props => props.theme.paddingL}!important;
+        height: ${props => props.theme.heightML}!important;
+    }
+    @media ${device.laptopL} {
+        padding: ${props => props.theme.paddingL}!important;
+        height: ${props => props.theme.heightL}!important;
+    }
 `
 
 //For displaying components in flexbox layout like the Goal section on about page
@@ -55,6 +79,7 @@ export const OuterFlexBox = styled.div `
     display: flex;
     flex-wrap: wrap;
     justify-content: ${props => props.center ? "center":"flex-start"};
+
 `
 
 //For diplaying inside the outer flex box
@@ -110,10 +135,13 @@ export const StyledCarouselProvider = styled(CarouselProvider) `
     overflow: hidden;
     height: ${props => props.full ? "100vh":"400px"};
     @media ${device.mobileS} {
-        height: ${props => props.full ? "100vh":"10vh"};
+        height: ${props => props.full ? "100vh":"35vh"};
     }
     @media ${device.tablet} {
-        height: ${props => props.full ? "100vh":"20vh"};
+        height: ${props => props.full ? "50vh":"20vh"};
+    }
+    @media ${device.laptop} {
+        height: ${props => props.full ? "90vh":"20vh"};
     }
     @media ${device.laptopL} {
         height: ${props => props.full ? "100vh":"50vh"};
@@ -129,5 +157,23 @@ export const TempPadding = styled.div `
         border-radius: 15px;
         background-color: rgba(255, 255, 255, 0.7)!important;
         padding: 3em 3.5em!important;
+    }
+`
+
+export const Grid = styled.div `
+    display: grid;
+    grid-template-columns: 4% 92%;
+    grid-template-rows: auto;
+    grid-gap: 0;
+    margin-left: auto;
+    margin-right: auto;
+`
+
+export const Left = styled.div `
+    @media ${device.mobileS} {
+        margin-left: 50px;
+    }
+    @media ${device.tablet} {
+        margin-left: 90px;
     }
 `

@@ -7,19 +7,12 @@ import { aboutContent } from '../assets/content.js';
 //Styles
 import styled from 'styled-components';
 import { Bg, Br } from '../assets/css/others.js';
-import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox, ToggleFlexBox } from '../assets/css/containers.js';
+import { OuterContainer, InnerContainer, OuterFlexBox, InnerFlexBox } from '../assets/css/containers.js';
 import { H2, H5 } from '../assets/css/fonts.js';
-import { device } from '../assets/css/breakpoints.js';
-import { Btn, ToggleBtn } from '../assets/css/buttons.js';
 import { FlexibleImg } from '../assets/css/images.js';
 
-import whitepaper from '../assets/img/D4SD_2017_WhitePaper.pdf';
 import header from "../assets/img/about_header.svg";
-import ppttimeline_horizontal from "../assets/img/about_participants_horizontal.svg";
-import commtimeline_horizontal from "../assets/img/about_community_horizontal.svg";
-import ppttimeline_vertical from "../assets/img/about_participants_vertical.svg";
-import commtimeline_vertical from "../assets/img/about_community_vertical.svg";
-import diagram from "../assets/img/about_diagram.svg";
+import diagram from "../assets/img/about_diagram.png";
 
 import './style.css';
 
@@ -27,25 +20,25 @@ const H5Half = styled(H5) `
     width: 90%;
 `
 
-const ResponsiveImgVertical = styled.img `
-    width: 100%;
-    @media ${device.mobileS} {
-        display: ${props => props.isInnovator ? "inline":"none"}
-    }
-    @media ${device.tablet} {
-        display: none;
-    }
-`
-
-const ResponsiveImgHorizontal = styled.img  `
-    width: 100%;
-    @media ${device.mobileS} {
-        display: none;
-    }
-    @media ${device.tablet} {
-        display: ${props => props.isInnovator ? "inline":"none"}
-    }
-`
+// const ResponsiveImgVertical = styled.img `
+//     width: 100%;
+//     @media ${device.mobileS} {
+//         display: ${props => props.isInnovator ? "inline":"none"}
+//     }
+//     @media ${device.tablet} {
+//         display: none;
+//     }
+// `
+//
+// const ResponsiveImgHorizontal = styled.img  `
+//     width: 100%;
+//     @media ${device.mobileS} {
+//         display: none;
+//     }
+//     @media ${device.tablet} {
+//         display: ${props => props.isInnovator ? "inline":"none"}
+//     }
+// `
 
 class About extends Component {
   constructor() {
@@ -122,7 +115,7 @@ class About extends Component {
     return (
       <div id="about">
         <Navbar/>
-        <Br/><Br/>
+        <br/><br/>
         <HeaderCard title={aboutContent.title1} content={aboutContent.content1} bg={header} isAction="false"/>
         <Br/><Br/>
         <Bg ref={this.join} id="join">
@@ -132,7 +125,8 @@ class About extends Component {
               <br/>
               <H5>{aboutContent.content2}</H5>
               <Br/>
-              <img src={diagram} alt="diagram"/>
+              <FlexibleImg theme={{width:"100%"}} src={diagram} alt="diagram"/>
+
             </InnerContainer>
           </OuterContainer>
         </Bg>
@@ -147,7 +141,7 @@ class About extends Component {
               <br/>
               <OuterFlexBox>
                 {aboutContent.content3.map((value, i) => (
-                  <InnerFlexBox half>
+                  <InnerFlexBox half key={i}>
                     <FlexibleImg theme={{width: "9%"}} src={value.img} />
                     <H5Half left>{value.txt}</H5Half>
                   </InnerFlexBox>
@@ -157,9 +151,8 @@ class About extends Component {
             </InnerContainer>
           </OuterContainer>
         </Bg>
-        <Br/><Br/>
 
-          <Bg ref={this.timeline} id="timeline">
+        {/**  <Bg ref={this.timeline} id="timeline">
             <OuterContainer>
               <InnerContainer>
               <H2 center>{aboutContent.title4}</H2>
@@ -179,7 +172,6 @@ class About extends Component {
             </OuterContainer>
           </Bg>
 
-          <Br/><Br/>
           <Bg theme={{color: "#EFF8FF"}} ref={this.review} id="review">
             <OuterContainer>
               <Br/><Br/>
@@ -187,17 +179,17 @@ class About extends Component {
               <H2 center>{aboutContent.title5}</H2>
               <br/>
               <H5 left>{aboutContent.content5}</H5>
-              </InnerContainer>
               <Br/>
               <OuterFlexBox center>
-                <Btn href={whitepaper} target="_blank">Download 2017 Whitepaper</Btn>
-                <Btn href="http://d4sd2017.org" target="_blank" top left>D4SD 2017 website</Btn>
+                <Btn href={whitepaper} target="_blank">DOWNLOAD 2017 WHITEPAPER</Btn>
+                <BtnSecondary href="http://d4sd2017.org" target="_blank" top left>D4SD 2017 WEBSITE</BtnSecondary>
               </OuterFlexBox>
               <Br/><Br/>
               <Br/>
+              </InnerContainer>
             </OuterContainer>
           </Bg>
-          {/**<IframeContainer>
+          <IframeContainer>
             <Iframe
               src="https://www.youtube.com/embed/V7LxWFqMm4g?autoplay=1&rel=0&showinfo=0&vq=highres&mute=1"
               allow="autoplay; encrypted-media"

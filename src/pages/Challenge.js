@@ -1,62 +1,96 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import './style.css';
+import { OuterContainer, FlexibleWidth, InnerContainer, OuterFlexBox, InnerFlexBox } from '../assets/css/containers.js';
+import { H2, H4, H5, IconTitle, ChallengeH4, ChallengeH5 } from '../assets/css/fonts.js';
+import { ChallengeBg } from '../assets/css/others.js';
+import { FlexibleImg } from '../assets/css/images.js';
+// import { Btn } from '../assets/css/buttons.js';
+import HeaderCard from '../components/landing/HeaderCard';
+import FooterCard from '../components/landing/FooterCard';
+import header from '../assets/img/challenge_header.svg';
+import { challengeContent } from '../assets/content.js';
 
 class Challenge extends Component {
+  constructor() {
+    super();
+    this.Mobility = React.createRef();
+    this.Housing = React.createRef();
+    this.Environment = React.createRef();
+    this.Health = React.createRef();
+    this.state = {
+      hover: ""
+    }
+  }
+
+  scrollToRef = ref => {
+    console.log(ref);
+    const position = ref.current.offsetTop - 90;
+    window.scrollTo({
+      left: 0,
+      top: position,
+      behavior: 'smooth'
+    });
+  }
+
+ onHover = e => {
+   const target = e.target.id;
+   console.log("target" + target);
+   console.log(e.target);
+   if (this.state.hover !== target) {
+     this.setState({hover: target});
+   }
+   else {
+     this.setState({hover: ""});
+   }
+ }
 
   render() {
     return (
       <div>
         <Navbar/>
-
-                  <div className="div-large"/>
-                  <div className="text-block">
-                      <h3>Challenge Briefs</h3>
-                      <h6>The challenges below explore the concerns currently facing San
-                      Diegans while also looking towards the future of transportation.
-                      Join a conversation about the issue that concerns you most and find
-                      teammates to submit a proposal. In addition to the Grand Prize, at the
-                      Design Forward Alliance we will award prizes for the best prototype in
-                      each of the four challenge categories.</h6>
-                  </div>
-                  <div className="div-small"/>
-                  <div className="image-grid">
-                      <div className="row">
-                          <div className="col-lg-6">
-                          <Link to='/'>
-                              <div className="image d-flex align-items-center justify-content-center">
-                                      <h3>CLIMATE</h3>
-                              </div>
-                          </Link>
-                          </div>
-                          <div className="col-lg-6">
-                          <Link to='/'>
-                              <div className="image d-flex align-items-center justify-content-center">
-                                      <h3>CLIMATE</h3>
-                              </div>
-                          </Link>
-                          </div>
-                      </div>
-                      <br className="div-small"/>
-                      <div className="row">
-                          <div className="col-lg-6">
-                          <Link to='/'>
-                              <div className="image d-flex align-items-center justify-content-center">
-                                      <h3>CLIMATE</h3>
-                              </div>
-                          </Link>
-                          </div>
-                          <div className="col-lg-6">
-                          <Link to='/'>
-                              <div className="image d-flex align-items-center justify-content-center">
-                                      <h3>CLIMATE</h3>
-                              </div>
-                          </Link>
-                          </div>
-                      </div>
-                  </div>
-                  <div className="div-endpage"/>
+        <br/><br/>
+        <HeaderCard title={challengeContent.title} content={challengeContent.content} bg={header} isAction="true"/>
+        <br/><br/>
+        <OuterContainer center>
+          <InnerContainer>
+            <OuterFlexBox>
+              {challengeContent.nav.map(nav => (
+                <FlexibleWidth theme={{ widthS: "50%", widthM: "25%"}} onClick={() => this.scrollToRef(this[nav.title])} key={nav.title}>
+                  <FlexibleImg hover theme={{width: "70%"}} src={nav.img}/>
+                  <IconTitle center hover>{nav.title}</IconTitle>
+                </FlexibleWidth>
+              ))}
+            </OuterFlexBox>
+            <br/><br/>
+            <H2 center>{challengeContent.title2}</H2>
+            <br/>
+            <H5 dangerouslySetInnerHTML={{ __html: challengeContent.content2 }} />
+            <OuterFlexBox center>
+              {challengeContent.contents.map((content, i) => (
+                <React.Fragment key={i}>
+                  <H4 ref={this[content.id]} style={{"paddingTop":"70px","paddingBottom":"30px"}}><span style={{"color":"#4496FF"}}>{content.subtitle}: </span>{content.title}</H4>
+                  {content.problems.map((problem, i) => {
+                    const target = problem.problem;
+                    return (
+                    <InnerFlexBox half key={i}>
+                      <ChallengeBg id={problem.problem} onMouseEnter={this.onHover} onMouseLeave={this.onHover} image={problem.img}>
+                        {(this.state.hover !== target) && <ChallengeH4 id={problem.problem}>{problem.problem}</ChallengeH4>}
+                        {(this.state.hover === target) && <ChallengeH5>{problem.detail}</ChallengeH5>}
+                      </ChallengeBg>
+                    </InnerFlexBox>
+                  )})}
+                </React.Fragment>
+              ))}
+            </OuterFlexBox>
+            <br/><br/>
+            <H2 center>{challengeContent.title3}</H2>
+            <br/>
+            <H5 dangerouslySetInnerHTML={{ __html: challengeContent.content3 }} />
+          </InnerContainer>
+        </OuterContainer>
+        <br/><br/>
+        <FooterCard/>
       </div>
     );
   }

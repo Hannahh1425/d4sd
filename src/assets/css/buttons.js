@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { device } from './breakpoints.js';
 import { ButtonBack, ButtonNext, DotGroup } from 'pure-react-carousel';
+import { ReactComponent as HCD } from "../img/process_hcd.svg";
 
 //Basic template for all regular buttons (for home, headers etc.)
 export const Btn = styled.a `
@@ -8,38 +9,36 @@ export const Btn = styled.a `
     border-radius: 10px;
     color: white;
     background-color: #4497FF;
-    text-align: center;
     font-weight: 700;
-    padding: 0.75em 2em;
+    padding: 0.75em 2.25em;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
-    transition: 0.3s;
-    box-shadow: 1px 1px 8px 1px #25497A;
+    transition: 0.2s;
+    text-align: center;
+    box-shadow: 0px 0px 8px 0px #999999;
+    margin: ${props => props.home ? "14px":"20px 14px"};
     &:hover {
         text-decoration: none;
         color: white;
-        box-shadow: 1px 1px 8px 1px #B7DFE6;
-        background-color: #88BDFF;
+        box-shadow: 1px 1px 8px 1px #858585;
+        background-color: #4497FF;
     }
     @media ${device.mobileS} {
-        font-size: 0.75em;
-        margin-top: ${props => props.top ? "1rem":"0"};
-        margin-left: ${props => props.home ? "1rem!important":"0!important"};
+        font-size: 0.85em;
+        width: ${props => props.home ? "80%":""};
     }
     @media ${device.tablet} {
-        font-size: 0.75em!important;
-        margin-top: 0!important;
-        margin-left: ${props => props.left ? "1rem!important":"0!important"};
+        font-size: 1em!important;
+        width: auto!important;
     }
     @media ${device.laptopL} {
-        font-size: 0.875em!important;
-        margin-top: 0!important;
-        margin-left: ${props => props.left ? "1rem!important":"0!important"};
+        font-size: 1em!important;
+        width: auto!important;
     }
     @media ${device.desktop} {
         font-size: 1.75em!important;
-        margin-top: 0!important;
-        margin-left: ${props => props.left ? "1rem!important":"0!important"};
+        width: auto!important;
+
     }
 `
 
@@ -47,65 +46,79 @@ export const Btn = styled.a `
 export const BtnSecondary = styled.button `
     cursor: pointer;
     border-radius: 10px;
+    text-align: center;
     border: 1.5px solid #4497FF;
     color: #4497FF;
     background-color: white;
+    position: relative;
     text-align: center;
     font-weight: 700;
     padding: 0.75em 2em;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
-    transition: 0.5s;
-    box-shadow: 1px 1px 8px 1px #333;
+    transition: 0.3s;
+    box-shadow: 0px 0px 8px 0px #999999;
+    margin: ${props => props.home ? "14px":"28px 14px"};
     &:hover {
         text-decoration: none;
         background-color: white;
         box-shadow: 1px 1px 8px 1px #4497FF;
-        border: 1.5px solid #66AAFF;
-        color: #66AAFF;
+        border: 1.5px solid #88BDFF;
+        color: #88BDFF;
     }
     &:focus {
         outline: none;
     }
     @media ${device.mobileS} {
-        font-size: 0.75em;
-        margin-top: ${props => props.top ? "1rem":"0"};
-        margin-left: ${props => props.home ? "1rem!important":"0!important"};
+        font-size: 0.85em;
+        width: 80%;
     }
     @media ${device.tablet} {
-        font-size: 0.75em!important;
-        margin-top: 0!important;
-        margin-left: ${props => props.left ? "1rem!important":"0!important"};
+        font-size: 1em!important;
+        width: auto!important;
     }
     @media ${device.laptopL} {
-        font-size: 0.875em!important;
-        margin-top: 0!important;
-        margin-left: ${props => props.left ? "1rem!important":"0!important"};
+        font-size: 1em!important;
+        width: auto!important;
     }
     @media ${device.desktop} {
         font-size: 1.75em!important;
-        margin-top: 0!important;
-        margin-left: ${props => props.left ? "1rem!important":"0!important"};
+        width: auto!important;
+    }
+`
+
+export const FAQBtn = styled.button `
+    background-color: white;
+    border: none;
+    width: 100%;
+    margin-bottom: 14px;
+    &:focus {
+        outline: none;
     }
 `
 
 //Small buttons, usually buttons inside cards
 export const SmallBtn = styled(Btn) `
-    cursor: pointer;
-    border: 1px solid #1A89DB;
-    font-weight: 500;
-    padding: 0.5em 1em 0.5em 1em;
+    cursor: ${props => props.state === "active" ? "":"not-allowed"};
+    display: ${props => props.isAction ? "inline":"none"};
+    color: ${props => props.state === "active" ? "white!important":""};
+    box-shadow: ${props => props.state === "active" ? "":"none"};
+    background-color: ${props => props.state === "active" ? "#4497FF":"#9D9D9D"};
+    margin-left: 14px!important;
+    &:hover {
+      background-color: ${props => props.state === "active" ? "#4497FF":"#9D9D9D"};
+      box-shadow: ${props => props.state === "active" ? "":"none"};
+    }
     @media ${device.mobileS} {
         font-size: 0.75em;
-        margin-left: ${props => props.left ? "1rem":"0"};
+        margin-top: 10px!important;
+        margin-left: 14px!important;
     }
     @media ${device.tablet} {
         font-size: 0.9em!important;
-        margin-left: ${props => props.left ? "1rem":"0"};
     }
     @media ${device.desktop} {
         font-size: 1.5em!important;
-        margin-left: ${props => props.left ? "1rem":"0"};
     }
 `
 
@@ -155,7 +168,6 @@ export const StyledButtonBack = styled(ButtonBack) `
     border: none;
     position: absolute;
     left: 25px;
-    top: 40vh;
     font-size: 3em;
     z-index: 100;
     color: rgba(0, 0, 0, 0.7);
@@ -178,6 +190,15 @@ export const StyledButtonBack = styled(ButtonBack) `
     }
     @media ${device.tablet} {
         display: inline;
+        top: 20vh;
+    }
+    @media ${device.laptop} {
+        display: inline;
+        top: 45vh;
+    }
+    @media ${device.laptopL} {
+        display: inline;
+        top: 40vh;
     }
 `
 
@@ -209,6 +230,15 @@ export const StyledButtonNext = styled(ButtonNext) `
     }
     @media ${device.tablet} {
         display: inline;
+        top: 20vh;
+    }
+    @media ${device.laptop} {
+        display: inline;
+        top: 45vh;
+    }
+    @media ${device.laptopL} {
+        display: inline;
+        top: 40vh;
     }
 `
 
@@ -217,9 +247,9 @@ export const StyledDotGroup = styled(DotGroup) `
         background-color: #B7DFE6;
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
-        width: 30px;
-        height: 30px;
-        margin: 1em;
+        width: 14px;
+        height: 14px;
+        margin: 8px;
         border-radius: 50%;
         border: none;
         box-shadow: 1px 1px 8px 1px #25497A;
@@ -227,9 +257,20 @@ export const StyledDotGroup = styled(DotGroup) `
           box-shadow: 1px 1px 8px 1px #4497FF;
         }
     }
+
+    > .carousel__dot--selected {
+      background-color: gray;
+      box-shadow: 1px 1px 9px 1px #25497A;
+    }
     z-index: 100;
     position: absolute;
     top: 90vh;
     left: 50%;
-    margin-left: -124px;
+    margin-left: -60px;
+`
+
+export const StyledHCD = styled(HCD) `
+    &:hover {
+      cursor: pointer;
+    }
 `

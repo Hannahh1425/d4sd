@@ -58,8 +58,8 @@ class Involve extends Component {
         <OuterContainer>
           <InnerContainer>
             <OuterFlexBox>
-              {involveContent.roles.map(content => (
-                <InnerFlexBox half>
+              {involveContent.roles.map((content, i) => (
+                <InnerFlexBox half key={i}>
                   <RoleCard
                     onClick={() => this.expand(this[content.id])}
                     ref={this[content.id]}
@@ -71,6 +71,7 @@ class Involve extends Component {
                     link={content.link}
                     action={content.action}
                     isAction={content.isAction}
+                    new={content.new}
                   />
                 </InnerFlexBox>
               ))}

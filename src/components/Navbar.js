@@ -25,7 +25,7 @@ class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav className={this.state.isTop ? "navbar navbar-expand-md navbar-light fixed-top mh-5":"navbar navbar-expand-md navbar-light fixed-top mh-5 main-nav"}>
+        <nav className={this.state.isTop ? "navbar navbar-expand-md navbar-light fixed-top mh-5 bg-white":"navbar navbar-expand-md navbar-light fixed-top mh-5 main-nav"}>
           <Link className="navbar-brand" to='/home'><img src={logo} alt="logo"/></Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span className="navbar-toggler-icon"></span>
@@ -36,10 +36,22 @@ class Navbar extends Component {
                 <NavLink className="nav-link mr-xl-4" to='/home' activeClassName="active">Home</NavLink>
               </li>
               <li className="nav-item">
+                <NavLink className="nav-link mr-xl-4" to='/getinvolved' activeClassName="active">Get Involved</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link mr-xl-4" to='/challenges' activeClassName="active">Challenges</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link mr-xl-4" to='/resources' activeClassName="active">Resources</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link mr-xl-4" to='/faq' activeClassName="active">FAQs</NavLink>
+              </li>
+              <li className="nav-item">
                 <NavLink className="nav-link mr-xl-4" to='/about' activeClassName="active">About</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link mr-xl-4" to='/involve' activeClassName="active">Get Involved</NavLink>
+                <NavLink className="nav-link mr-xl-4" to='/workspace' activeClassName="active">Workspace</NavLink>
               </li>
               {/**<li className="nav-item">
                 <Link className="nav-link pr-3" to='/challenge'>Challenge</Link>
